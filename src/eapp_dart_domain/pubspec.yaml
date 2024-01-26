@@ -10,6 +10,7 @@ environment:
 # Add regular dependencies here.
 dependencies:
   # path: ^1.8.0
+  grpc: ^3.0.0
   protobuf: ^3.0.0
 
 dev_dependencies:
