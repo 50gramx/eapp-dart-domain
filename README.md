@@ -1,11 +1,32 @@
 # EAPP Dart Domain 🎯
 
-[![Dart Version](https://img.shields.io/badge/dart-3.0+-blue.svg)](https://dart.dev/)
+[![System Contracts Build](https://img.shields.io/github/actions/workflow/status/50gramx/eapp-system-contracts/protobuf-distribution.yml?label=system-contracts%20CI)](https://github.com/50gramx/eapp-system-contracts/actions/workflows/protobuf-distribution.yml)
+[![Latest Release](https://img.shields.io/github/v/release/50gramx/eapp-dart-domain?label=latest%20release)](https://github.com/50gramx/eapp-dart-domain/releases/latest)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/50gramx/eapp-dart-domain/protobuf-distribution.yml)](https://github.com/50gramx/eapp-dart-domain/actions)
-[![Pub Version](https://img.shields.io/pub/v/eapp_dart_domain.svg)](https://pub.dev/packages/eapp_dart_domain)
+[![Package Index](https://img.shields.io/badge/index-private%20package%20index-blue)](https://raw.githubusercontent.com/50gramx/eapp-dart-domain/master/packages/index.html)
 
 > **Dart client library for EAPP (Ethos Apps Platform)** - Auto-generated protobuf client code for seamless Flutter and Dart integration with EAPP services.
+
+## 📦 Package Index & Downloads
+
+### 🚀 Quick Access
+- **[📋 Package Index (HTML Preview)](https://html-preview.github.io/?url=https://github.com/50gramx/eapp-dart-domain/blob/master/packages/index.html)** - View all available packages
+- **[📋 Raw Package Index](https://raw.githubusercontent.com/50gramx/eapp-dart-domain/master/packages/index.html)** - Direct package index
+- **[📥 Latest Release](https://github.com/50gramx/eapp-dart-domain/releases/latest)** - Download latest version
+- **[🏗️ Build Status](https://github.com/50gramx/eapp-system-contracts/actions/workflows/protobuf-distribution.yml)** - Check CI/CD status
+
+### 📦 Available Packages
+> **📋 View all available packages and versions in our [Package Index (HTML Preview)](https://html-preview.github.io/?url=https://github.com/50gramx/eapp-dart-domain/blob/master/packages/index.html)**
+
+### 🔧 Installation
+```yaml
+# Add to pubspec.yaml
+dependencies:
+  eapp_dart_domain:
+    git:
+      url: https://github.com/50gramx/eapp-dart-domain.git
+      ref: master  # or specific version tag
+```
 
 ## 📋 Table of Contents
 
