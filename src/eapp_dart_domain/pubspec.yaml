@@ -1,6 +1,6 @@
 name: eapp_dart_domain
 description: ethos applications entities and service contracts for dart domain.
-version: 2025.07.60
+version: 2025.07.57
 # repository: https://github.com/my_org/my_repo
 publish_to: https://dart.pkg.jetbrains.space/50gramx/p/main/dart-delivery/
 
