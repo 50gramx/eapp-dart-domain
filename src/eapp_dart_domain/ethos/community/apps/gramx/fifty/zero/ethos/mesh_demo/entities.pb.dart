@@ -14,12 +14,12 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../../../../google/protobuf/any.pb.dart' as $98;
-import '../../../../../../../google/protobuf/duration.pb.dart' as $104;
-import '../../../../../../../google/protobuf/empty.pb.dart' as $105;
-import '../../../../../../../google/protobuf/field_mask.pb.dart' as $107;
-import '../../../../../../../google/protobuf/struct.pb.dart' as $106;
-import '../../../../../../../google/protobuf/timestamp.pb.dart' as $85;
+import '../../../../../../../google/protobuf/any.pb.dart' as $5;
+import '../../../../../../../google/protobuf/duration.pb.dart' as $2;
+import '../../../../../../../google/protobuf/empty.pb.dart' as $3;
+import '../../../../../../../google/protobuf/field_mask.pb.dart' as $6;
+import '../../../../../../../google/protobuf/struct.pb.dart' as $4;
+import '../../../../../../../google/protobuf/timestamp.pb.dart' as $1;
 
 class EAMV8002 extends $pb.GeneratedMessage {
   factory EAMV8002({
@@ -91,13 +91,13 @@ class EAMV8001 extends $pb.GeneratedMessage {
     $fixnum.Int64? eamvt8017,
     $core.int? eamvt8018,
     $fixnum.Int64? eamvt8019,
-    $85.Timestamp? eamvt8020,
-    $104.Duration? eamvt8021,
-    $105.Empty? eamvt8022,
-    $106.Struct? eamvt8023,
-    $98.Any? eamvt8024,
-    $107.FieldMask? eamvt8025,
-    $106.ListValue? eamvt8030,
+    $1.Timestamp? eamvt8020,
+    $2.Duration? eamvt8021,
+    $3.Empty? eamvt8022,
+    $4.Struct? eamvt8023,
+    $5.Any? eamvt8024,
+    $6.FieldMask? eamvt8025,
+    $4.ListValue? eamvt8030,
     EAMV8002? eamvt8031,
   }) {
     final $result = create();
@@ -204,13 +204,13 @@ class EAMV8001 extends $pb.GeneratedMessage {
     ..a<$fixnum.Int64>(16, _omitFieldNames ? '' : 'eamvt8017', $pb.PbFieldType.OF6, defaultOrMaker: $fixnum.Int64.ZERO)
     ..a<$core.int>(17, _omitFieldNames ? '' : 'eamvt8018', $pb.PbFieldType.OSF3)
     ..a<$fixnum.Int64>(18, _omitFieldNames ? '' : 'eamvt8019', $pb.PbFieldType.OSF6, defaultOrMaker: $fixnum.Int64.ZERO)
-    ..aOM<$85.Timestamp>(19, _omitFieldNames ? '' : 'eamvt8020', subBuilder: $85.Timestamp.create)
-    ..aOM<$104.Duration>(20, _omitFieldNames ? '' : 'eamvt8021', subBuilder: $104.Duration.create)
-    ..aOM<$105.Empty>(21, _omitFieldNames ? '' : 'eamvt8022', subBuilder: $105.Empty.create)
-    ..aOM<$106.Struct>(22, _omitFieldNames ? '' : 'eamvt8023', subBuilder: $106.Struct.create)
-    ..aOM<$98.Any>(23, _omitFieldNames ? '' : 'eamvt8024', subBuilder: $98.Any.create)
-    ..aOM<$107.FieldMask>(24, _omitFieldNames ? '' : 'eamvt8025', subBuilder: $107.FieldMask.create)
-    ..aOM<$106.ListValue>(25, _omitFieldNames ? '' : 'eamvt8030', subBuilder: $106.ListValue.create)
+    ..aOM<$1.Timestamp>(19, _omitFieldNames ? '' : 'eamvt8020', subBuilder: $1.Timestamp.create)
+    ..aOM<$2.Duration>(20, _omitFieldNames ? '' : 'eamvt8021', subBuilder: $2.Duration.create)
+    ..aOM<$3.Empty>(21, _omitFieldNames ? '' : 'eamvt8022', subBuilder: $3.Empty.create)
+    ..aOM<$4.Struct>(22, _omitFieldNames ? '' : 'eamvt8023', subBuilder: $4.Struct.create)
+    ..aOM<$5.Any>(23, _omitFieldNames ? '' : 'eamvt8024', subBuilder: $5.Any.create)
+    ..aOM<$6.FieldMask>(24, _omitFieldNames ? '' : 'eamvt8025', subBuilder: $6.FieldMask.create)
+    ..aOM<$4.ListValue>(25, _omitFieldNames ? '' : 'eamvt8030', subBuilder: $4.ListValue.create)
     ..aOM<EAMV8002>(26, _omitFieldNames ? '' : 'eamvt8031', subBuilder: EAMV8002.create)
     ..hasRequiredFields = false
   ;
@@ -401,81 +401,81 @@ class EAMV8001 extends $pb.GeneratedMessage {
   void clearEamvt8019() => clearField(18);
 
   @$pb.TagNumber(19)
-  $85.Timestamp get eamvt8020 => $_getN(18);
+  $1.Timestamp get eamvt8020 => $_getN(18);
   @$pb.TagNumber(19)
-  set eamvt8020($85.Timestamp v) { setField(19, v); }
+  set eamvt8020($1.Timestamp v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasEamvt8020() => $_has(18);
   @$pb.TagNumber(19)
   void clearEamvt8020() => clearField(19);
   @$pb.TagNumber(19)
-  $85.Timestamp ensureEamvt8020() => $_ensure(18);
+  $1.Timestamp ensureEamvt8020() => $_ensure(18);
 
   @$pb.TagNumber(20)
-  $104.Duration get eamvt8021 => $_getN(19);
+  $2.Duration get eamvt8021 => $_getN(19);
   @$pb.TagNumber(20)
-  set eamvt8021($104.Duration v) { setField(20, v); }
+  set eamvt8021($2.Duration v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasEamvt8021() => $_has(19);
   @$pb.TagNumber(20)
   void clearEamvt8021() => clearField(20);
   @$pb.TagNumber(20)
-  $104.Duration ensureEamvt8021() => $_ensure(19);
+  $2.Duration ensureEamvt8021() => $_ensure(19);
 
   @$pb.TagNumber(21)
-  $105.Empty get eamvt8022 => $_getN(20);
+  $3.Empty get eamvt8022 => $_getN(20);
   @$pb.TagNumber(21)
-  set eamvt8022($105.Empty v) { setField(21, v); }
+  set eamvt8022($3.Empty v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasEamvt8022() => $_has(20);
   @$pb.TagNumber(21)
   void clearEamvt8022() => clearField(21);
   @$pb.TagNumber(21)
-  $105.Empty ensureEamvt8022() => $_ensure(20);
+  $3.Empty ensureEamvt8022() => $_ensure(20);
 
   @$pb.TagNumber(22)
-  $106.Struct get eamvt8023 => $_getN(21);
+  $4.Struct get eamvt8023 => $_getN(21);
   @$pb.TagNumber(22)
-  set eamvt8023($106.Struct v) { setField(22, v); }
+  set eamvt8023($4.Struct v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasEamvt8023() => $_has(21);
   @$pb.TagNumber(22)
   void clearEamvt8023() => clearField(22);
   @$pb.TagNumber(22)
-  $106.Struct ensureEamvt8023() => $_ensure(21);
+  $4.Struct ensureEamvt8023() => $_ensure(21);
 
   @$pb.TagNumber(23)
-  $98.Any get eamvt8024 => $_getN(22);
+  $5.Any get eamvt8024 => $_getN(22);
   @$pb.TagNumber(23)
-  set eamvt8024($98.Any v) { setField(23, v); }
+  set eamvt8024($5.Any v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasEamvt8024() => $_has(22);
   @$pb.TagNumber(23)
   void clearEamvt8024() => clearField(23);
   @$pb.TagNumber(23)
-  $98.Any ensureEamvt8024() => $_ensure(22);
+  $5.Any ensureEamvt8024() => $_ensure(22);
 
   @$pb.TagNumber(24)
-  $107.FieldMask get eamvt8025 => $_getN(23);
+  $6.FieldMask get eamvt8025 => $_getN(23);
   @$pb.TagNumber(24)
-  set eamvt8025($107.FieldMask v) { setField(24, v); }
+  set eamvt8025($6.FieldMask v) { setField(24, v); }
   @$pb.TagNumber(24)
   $core.bool hasEamvt8025() => $_has(23);
   @$pb.TagNumber(24)
   void clearEamvt8025() => clearField(24);
   @$pb.TagNumber(24)
-  $107.FieldMask ensureEamvt8025() => $_ensure(23);
+  $6.FieldMask ensureEamvt8025() => $_ensure(23);
 
   @$pb.TagNumber(25)
-  $106.ListValue get eamvt8030 => $_getN(24);
+  $4.ListValue get eamvt8030 => $_getN(24);
   @$pb.TagNumber(25)
-  set eamvt8030($106.ListValue v) { setField(25, v); }
+  set eamvt8030($4.ListValue v) { setField(25, v); }
   @$pb.TagNumber(25)
   $core.bool hasEamvt8030() => $_has(24);
   @$pb.TagNumber(25)
   void clearEamvt8030() => clearField(25);
   @$pb.TagNumber(25)
-  $106.ListValue ensureEamvt8030() => $_ensure(24);
+  $4.ListValue ensureEamvt8030() => $_ensure(24);
 
   @$pb.TagNumber(26)
   EAMV8002 get eamvt8031 => $_getN(25);
