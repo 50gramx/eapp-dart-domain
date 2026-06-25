@@ -15,16 +15,16 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'update_account.pb.dart' as $38;
+import 'update_account.pb.dart' as $54;
 
 export 'update_account.pb.dart';
 
 @$pb.GrpcServiceName('elint.services.product.identity.account.UpdateAccountService')
 class UpdateAccountServiceClient extends $grpc.Client {
-  static final _$updateAccountProfilePicture = $grpc.ClientMethod<$38.UpdateAccountProfilePictureRequest, $38.UpdateAccountProfilePictureResponse>(
+  static final _$updateAccountProfilePicture = $grpc.ClientMethod<$54.UpdateAccountProfilePictureRequest, $54.UpdateAccountProfilePictureResponse>(
       '/elint.services.product.identity.account.UpdateAccountService/UpdateAccountProfilePicture',
-      ($38.UpdateAccountProfilePictureRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $38.UpdateAccountProfilePictureResponse.fromBuffer(value));
+      ($54.UpdateAccountProfilePictureRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $54.UpdateAccountProfilePictureResponse.fromBuffer(value));
 
   UpdateAccountServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -32,7 +32,7 @@ class UpdateAccountServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$38.UpdateAccountProfilePictureResponse> updateAccountProfilePicture($38.UpdateAccountProfilePictureRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$54.UpdateAccountProfilePictureResponse> updateAccountProfilePicture($54.UpdateAccountProfilePictureRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateAccountProfilePicture, request, options: options);
   }
 }
@@ -42,18 +42,18 @@ abstract class UpdateAccountServiceBase extends $grpc.Service {
   $core.String get $name => 'elint.services.product.identity.account.UpdateAccountService';
 
   UpdateAccountServiceBase() {
-    $addMethod($grpc.ServiceMethod<$38.UpdateAccountProfilePictureRequest, $38.UpdateAccountProfilePictureResponse>(
+    $addMethod($grpc.ServiceMethod<$54.UpdateAccountProfilePictureRequest, $54.UpdateAccountProfilePictureResponse>(
         'UpdateAccountProfilePicture',
         updateAccountProfilePicture_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $38.UpdateAccountProfilePictureRequest.fromBuffer(value),
-        ($38.UpdateAccountProfilePictureResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $54.UpdateAccountProfilePictureRequest.fromBuffer(value),
+        ($54.UpdateAccountProfilePictureResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$38.UpdateAccountProfilePictureResponse> updateAccountProfilePicture_Pre($grpc.ServiceCall call, $async.Future<$38.UpdateAccountProfilePictureRequest> request) async {
+  $async.Future<$54.UpdateAccountProfilePictureResponse> updateAccountProfilePicture_Pre($grpc.ServiceCall call, $async.Future<$54.UpdateAccountProfilePictureRequest> request) async {
     return updateAccountProfilePicture(call, await request);
   }
 
-  $async.Future<$38.UpdateAccountProfilePictureResponse> updateAccountProfilePicture($grpc.ServiceCall call, $38.UpdateAccountProfilePictureRequest request);
+  $async.Future<$54.UpdateAccountProfilePictureResponse> updateAccountProfilePicture($grpc.ServiceCall call, $54.UpdateAccountProfilePictureRequest request);
 }

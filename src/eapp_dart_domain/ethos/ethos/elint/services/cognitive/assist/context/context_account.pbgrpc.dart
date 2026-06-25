@@ -15,16 +15,16 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'context_account.pb.dart' as $79;
+import 'context_account.pb.dart' as $74;
 
 export 'context_account.pb.dart';
 
 @$pb.GrpcServiceName('elint.services.cognitive.assist.context.account.ContextAccountService')
 class ContextAccountServiceClient extends $grpc.Client {
-  static final _$getAccountMessageContext = $grpc.ClientMethod<$79.AccountMessage, $79.AccountMessageContext>(
+  static final _$getAccountMessageContext = $grpc.ClientMethod<$74.AccountMessage, $74.AccountMessageContext>(
       '/elint.services.cognitive.assist.context.account.ContextAccountService/GetAccountMessageContext',
-      ($79.AccountMessage value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $79.AccountMessageContext.fromBuffer(value));
+      ($74.AccountMessage value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $74.AccountMessageContext.fromBuffer(value));
 
   ContextAccountServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -32,7 +32,7 @@ class ContextAccountServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseStream<$79.AccountMessageContext> getAccountMessageContext($async.Stream<$79.AccountMessage> request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseStream<$74.AccountMessageContext> getAccountMessageContext($async.Stream<$74.AccountMessage> request, {$grpc.CallOptions? options}) {
     return $createStreamingCall(_$getAccountMessageContext, request, options: options);
   }
 }
@@ -42,14 +42,14 @@ abstract class ContextAccountServiceBase extends $grpc.Service {
   $core.String get $name => 'elint.services.cognitive.assist.context.account.ContextAccountService';
 
   ContextAccountServiceBase() {
-    $addMethod($grpc.ServiceMethod<$79.AccountMessage, $79.AccountMessageContext>(
+    $addMethod($grpc.ServiceMethod<$74.AccountMessage, $74.AccountMessageContext>(
         'GetAccountMessageContext',
         getAccountMessageContext,
         true,
         true,
-        ($core.List<$core.int> value) => $79.AccountMessage.fromBuffer(value),
-        ($79.AccountMessageContext value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $74.AccountMessage.fromBuffer(value),
+        ($74.AccountMessageContext value) => value.writeToBuffer()));
   }
 
-  $async.Stream<$79.AccountMessageContext> getAccountMessageContext($grpc.ServiceCall call, $async.Stream<$79.AccountMessage> request);
+  $async.Stream<$74.AccountMessageContext> getAccountMessageContext($grpc.ServiceCall call, $async.Stream<$74.AccountMessage> request);
 }

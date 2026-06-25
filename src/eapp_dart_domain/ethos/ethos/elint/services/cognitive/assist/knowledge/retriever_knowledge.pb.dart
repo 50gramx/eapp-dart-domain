@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../entities/generic.pb.dart' as $7;
-import '../../../../entities/space_knowledge_domain_file_page.pb.dart' as $69;
-import '../../../../entities/space_knowledge_domain_file_page_para.pb.dart' as $102;
-import '../../../product/knowledge/space_knowledge_domain/access_space_knowledge_domain.pb.dart' as $40;
+import '../../../../entities/generic.pb.dart' as $9;
+import '../../../../entities/space_knowledge_domain_file_page.pb.dart' as $22;
+import '../../../../entities/space_knowledge_domain_file_page_para.pb.dart' as $94;
+import '../../../product/knowledge/space_knowledge_domain/access_space_knowledge_domain.pb.dart' as $19;
 
 /// Message Definitions
 class RetrieveClosestPagesReq extends $pb.GeneratedMessage {
   factory RetrieveClosestPagesReq({
-    $40.SpaceKnowledgeDomainServicesAccessAuthDetails? accessAuthDetails,
+    $19.SpaceKnowledgeDomainServicesAccessAuthDetails? accessAuthDetails,
     $core.String? message,
     $core.int? retrievePageCount,
   }) {
@@ -42,7 +42,7 @@ class RetrieveClosestPagesReq extends $pb.GeneratedMessage {
   factory RetrieveClosestPagesReq.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RetrieveClosestPagesReq', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.cognitive.assist.knowledge.retriever'), createEmptyInstance: create)
-    ..aOM<$40.SpaceKnowledgeDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'accessAuthDetails', subBuilder: $40.SpaceKnowledgeDomainServicesAccessAuthDetails.create)
+    ..aOM<$19.SpaceKnowledgeDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'accessAuthDetails', subBuilder: $19.SpaceKnowledgeDomainServicesAccessAuthDetails.create)
     ..aOS(2, _omitFieldNames ? '' : 'message')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'retrievePageCount', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
@@ -71,15 +71,15 @@ class RetrieveClosestPagesReq extends $pb.GeneratedMessage {
 
   /// Auth Properties
   @$pb.TagNumber(1)
-  $40.SpaceKnowledgeDomainServicesAccessAuthDetails get accessAuthDetails => $_getN(0);
+  $19.SpaceKnowledgeDomainServicesAccessAuthDetails get accessAuthDetails => $_getN(0);
   @$pb.TagNumber(1)
-  set accessAuthDetails($40.SpaceKnowledgeDomainServicesAccessAuthDetails v) { setField(1, v); }
+  set accessAuthDetails($19.SpaceKnowledgeDomainServicesAccessAuthDetails v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAccessAuthDetails() => $_has(0);
   @$pb.TagNumber(1)
   void clearAccessAuthDetails() => clearField(1);
   @$pb.TagNumber(1)
-  $40.SpaceKnowledgeDomainServicesAccessAuthDetails ensureAccessAuthDetails() => $_ensure(0);
+  $19.SpaceKnowledgeDomainServicesAccessAuthDetails ensureAccessAuthDetails() => $_ensure(0);
 
   /// Request Properties
   @$pb.TagNumber(2)
@@ -103,7 +103,7 @@ class RetrieveClosestPagesReq extends $pb.GeneratedMessage {
 
 class RetrieveClosestParasRequest extends $pb.GeneratedMessage {
   factory RetrieveClosestParasRequest({
-    $40.SpaceKnowledgeDomainServicesAccessAuthDetails? accessAuthDetails,
+    $19.SpaceKnowledgeDomainServicesAccessAuthDetails? accessAuthDetails,
     $core.String? message,
     $core.int? retrieveParaCount,
   }) {
@@ -124,7 +124,7 @@ class RetrieveClosestParasRequest extends $pb.GeneratedMessage {
   factory RetrieveClosestParasRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RetrieveClosestParasRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.cognitive.assist.knowledge.retriever'), createEmptyInstance: create)
-    ..aOM<$40.SpaceKnowledgeDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'accessAuthDetails', subBuilder: $40.SpaceKnowledgeDomainServicesAccessAuthDetails.create)
+    ..aOM<$19.SpaceKnowledgeDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'accessAuthDetails', subBuilder: $19.SpaceKnowledgeDomainServicesAccessAuthDetails.create)
     ..aOS(2, _omitFieldNames ? '' : 'message')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'retrieveParaCount', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
@@ -153,15 +153,15 @@ class RetrieveClosestParasRequest extends $pb.GeneratedMessage {
 
   /// Auth Properties
   @$pb.TagNumber(1)
-  $40.SpaceKnowledgeDomainServicesAccessAuthDetails get accessAuthDetails => $_getN(0);
+  $19.SpaceKnowledgeDomainServicesAccessAuthDetails get accessAuthDetails => $_getN(0);
   @$pb.TagNumber(1)
-  set accessAuthDetails($40.SpaceKnowledgeDomainServicesAccessAuthDetails v) { setField(1, v); }
+  set accessAuthDetails($19.SpaceKnowledgeDomainServicesAccessAuthDetails v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAccessAuthDetails() => $_has(0);
   @$pb.TagNumber(1)
   void clearAccessAuthDetails() => clearField(1);
   @$pb.TagNumber(1)
-  $40.SpaceKnowledgeDomainServicesAccessAuthDetails ensureAccessAuthDetails() => $_ensure(0);
+  $19.SpaceKnowledgeDomainServicesAccessAuthDetails ensureAccessAuthDetails() => $_ensure(0);
 
   /// Request Properties
   @$pb.TagNumber(2)
@@ -186,7 +186,7 @@ class RetrieveClosestParasRequest extends $pb.GeneratedMessage {
 class ClosestPages extends $pb.GeneratedMessage {
   factory ClosestPages({
     $core.Iterable<RankedPage>? rankedPages,
-    $7.ResponseMeta? responseMeta,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (rankedPages != null) {
@@ -203,7 +203,7 @@ class ClosestPages extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ClosestPages', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.cognitive.assist.knowledge.retriever'), createEmptyInstance: create)
     ..pc<RankedPage>(1, _omitFieldNames ? '' : 'rankedPages', $pb.PbFieldType.PM, subBuilder: RankedPage.create)
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -232,21 +232,21 @@ class ClosestPages extends $pb.GeneratedMessage {
   $core.List<RankedPage> get rankedPages => $_getList(0);
 
   @$pb.TagNumber(2)
-  $7.ResponseMeta get responseMeta => $_getN(1);
+  $9.ResponseMeta get responseMeta => $_getN(1);
   @$pb.TagNumber(2)
-  set responseMeta($7.ResponseMeta v) { setField(2, v); }
+  set responseMeta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponseMeta() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponseMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(1);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(1);
 }
 
 class ClosestParas extends $pb.GeneratedMessage {
   factory ClosestParas({
     $core.Iterable<RankedPara>? rankedParas,
-    $7.ResponseMeta? responseMeta,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (rankedParas != null) {
@@ -263,7 +263,7 @@ class ClosestParas extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ClosestParas', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.cognitive.assist.knowledge.retriever'), createEmptyInstance: create)
     ..pc<RankedPara>(1, _omitFieldNames ? '' : 'rankedParas', $pb.PbFieldType.PM, subBuilder: RankedPara.create)
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -292,20 +292,20 @@ class ClosestParas extends $pb.GeneratedMessage {
   $core.List<RankedPara> get rankedParas => $_getList(0);
 
   @$pb.TagNumber(2)
-  $7.ResponseMeta get responseMeta => $_getN(1);
+  $9.ResponseMeta get responseMeta => $_getN(1);
   @$pb.TagNumber(2)
-  set responseMeta($7.ResponseMeta v) { setField(2, v); }
+  set responseMeta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponseMeta() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponseMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(1);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(1);
 }
 
 class RankedPage extends $pb.GeneratedMessage {
   factory RankedPage({
-    $69.SpaceKnowledgeDomainFilePage? page,
+    $22.SpaceKnowledgeDomainFilePage? page,
     $core.double? pageRank,
   }) {
     final $result = create();
@@ -322,7 +322,7 @@ class RankedPage extends $pb.GeneratedMessage {
   factory RankedPage.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RankedPage', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.cognitive.assist.knowledge.retriever'), createEmptyInstance: create)
-    ..aOM<$69.SpaceKnowledgeDomainFilePage>(1, _omitFieldNames ? '' : 'page', subBuilder: $69.SpaceKnowledgeDomainFilePage.create)
+    ..aOM<$22.SpaceKnowledgeDomainFilePage>(1, _omitFieldNames ? '' : 'page', subBuilder: $22.SpaceKnowledgeDomainFilePage.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'pageRank', $pb.PbFieldType.OF)
     ..hasRequiredFields = false
   ;
@@ -349,15 +349,15 @@ class RankedPage extends $pb.GeneratedMessage {
   static RankedPage? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $69.SpaceKnowledgeDomainFilePage get page => $_getN(0);
+  $22.SpaceKnowledgeDomainFilePage get page => $_getN(0);
   @$pb.TagNumber(1)
-  set page($69.SpaceKnowledgeDomainFilePage v) { setField(1, v); }
+  set page($22.SpaceKnowledgeDomainFilePage v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPage() => $_has(0);
   @$pb.TagNumber(1)
   void clearPage() => clearField(1);
   @$pb.TagNumber(1)
-  $69.SpaceKnowledgeDomainFilePage ensurePage() => $_ensure(0);
+  $22.SpaceKnowledgeDomainFilePage ensurePage() => $_ensure(0);
 
   @$pb.TagNumber(2)
   $core.double get pageRank => $_getN(1);
@@ -371,7 +371,7 @@ class RankedPage extends $pb.GeneratedMessage {
 
 class RankedPara extends $pb.GeneratedMessage {
   factory RankedPara({
-    $102.SpaceKnowledgeDomainFilePagePara? para,
+    $94.SpaceKnowledgeDomainFilePagePara? para,
     $core.double? paraRank,
   }) {
     final $result = create();
@@ -388,7 +388,7 @@ class RankedPara extends $pb.GeneratedMessage {
   factory RankedPara.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RankedPara', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.cognitive.assist.knowledge.retriever'), createEmptyInstance: create)
-    ..aOM<$102.SpaceKnowledgeDomainFilePagePara>(1, _omitFieldNames ? '' : 'para', subBuilder: $102.SpaceKnowledgeDomainFilePagePara.create)
+    ..aOM<$94.SpaceKnowledgeDomainFilePagePara>(1, _omitFieldNames ? '' : 'para', subBuilder: $94.SpaceKnowledgeDomainFilePagePara.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'paraRank', $pb.PbFieldType.OF)
     ..hasRequiredFields = false
   ;
@@ -415,15 +415,15 @@ class RankedPara extends $pb.GeneratedMessage {
   static RankedPara? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $102.SpaceKnowledgeDomainFilePagePara get para => $_getN(0);
+  $94.SpaceKnowledgeDomainFilePagePara get para => $_getN(0);
   @$pb.TagNumber(1)
-  set para($102.SpaceKnowledgeDomainFilePagePara v) { setField(1, v); }
+  set para($94.SpaceKnowledgeDomainFilePagePara v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPara() => $_has(0);
   @$pb.TagNumber(1)
   void clearPara() => clearField(1);
   @$pb.TagNumber(1)
-  $102.SpaceKnowledgeDomainFilePagePara ensurePara() => $_ensure(0);
+  $94.SpaceKnowledgeDomainFilePagePara ensurePara() => $_ensure(0);
 
   @$pb.TagNumber(2)
   $core.double get paraRank => $_getN(1);

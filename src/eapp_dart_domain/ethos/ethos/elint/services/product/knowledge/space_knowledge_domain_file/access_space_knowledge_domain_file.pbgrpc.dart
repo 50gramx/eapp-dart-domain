@@ -15,20 +15,20 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'access_space_knowledge_domain_file.pb.dart' as $64;
+import 'access_space_knowledge_domain_file.pb.dart' as $20;
 
 export 'access_space_knowledge_domain_file.pb.dart';
 
 @$pb.GrpcServiceName('elint.services.product.knowledge.file.AccessSpaceKnowledgeDomainFileService')
 class AccessSpaceKnowledgeDomainFileServiceClient extends $grpc.Client {
-  static final _$spaceKnowledgeDomainFileAccessToken = $grpc.ClientMethod<$64.SpaceKnowledgeDomainFileAccessTokenRequest, $64.SpaceKnowledgeDomainFileAccessTokenResponse>(
+  static final _$spaceKnowledgeDomainFileAccessToken = $grpc.ClientMethod<$20.SpaceKnowledgeDomainFileAccessTokenRequest, $20.SpaceKnowledgeDomainFileAccessTokenResponse>(
       '/elint.services.product.knowledge.file.AccessSpaceKnowledgeDomainFileService/SpaceKnowledgeDomainFileAccessToken',
-      ($64.SpaceKnowledgeDomainFileAccessTokenRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $64.SpaceKnowledgeDomainFileAccessTokenResponse.fromBuffer(value));
-  static final _$validateSpaceKnowledgeDomainFileServices = $grpc.ClientMethod<$64.SpaceKnowledgeDomainFileServicesAccessAuthDetails, $64.ValidateSpaceKnowledgeDomainFileServicesResponse>(
+      ($20.SpaceKnowledgeDomainFileAccessTokenRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $20.SpaceKnowledgeDomainFileAccessTokenResponse.fromBuffer(value));
+  static final _$validateSpaceKnowledgeDomainFileServices = $grpc.ClientMethod<$20.SpaceKnowledgeDomainFileServicesAccessAuthDetails, $20.ValidateSpaceKnowledgeDomainFileServicesResponse>(
       '/elint.services.product.knowledge.file.AccessSpaceKnowledgeDomainFileService/ValidateSpaceKnowledgeDomainFileServices',
-      ($64.SpaceKnowledgeDomainFileServicesAccessAuthDetails value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $64.ValidateSpaceKnowledgeDomainFileServicesResponse.fromBuffer(value));
+      ($20.SpaceKnowledgeDomainFileServicesAccessAuthDetails value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $20.ValidateSpaceKnowledgeDomainFileServicesResponse.fromBuffer(value));
 
   AccessSpaceKnowledgeDomainFileServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -36,11 +36,11 @@ class AccessSpaceKnowledgeDomainFileServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$64.SpaceKnowledgeDomainFileAccessTokenResponse> spaceKnowledgeDomainFileAccessToken($64.SpaceKnowledgeDomainFileAccessTokenRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$20.SpaceKnowledgeDomainFileAccessTokenResponse> spaceKnowledgeDomainFileAccessToken($20.SpaceKnowledgeDomainFileAccessTokenRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$spaceKnowledgeDomainFileAccessToken, request, options: options);
   }
 
-  $grpc.ResponseFuture<$64.ValidateSpaceKnowledgeDomainFileServicesResponse> validateSpaceKnowledgeDomainFileServices($64.SpaceKnowledgeDomainFileServicesAccessAuthDetails request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$20.ValidateSpaceKnowledgeDomainFileServicesResponse> validateSpaceKnowledgeDomainFileServices($20.SpaceKnowledgeDomainFileServicesAccessAuthDetails request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$validateSpaceKnowledgeDomainFileServices, request, options: options);
   }
 }
@@ -50,30 +50,30 @@ abstract class AccessSpaceKnowledgeDomainFileServiceBase extends $grpc.Service {
   $core.String get $name => 'elint.services.product.knowledge.file.AccessSpaceKnowledgeDomainFileService';
 
   AccessSpaceKnowledgeDomainFileServiceBase() {
-    $addMethod($grpc.ServiceMethod<$64.SpaceKnowledgeDomainFileAccessTokenRequest, $64.SpaceKnowledgeDomainFileAccessTokenResponse>(
+    $addMethod($grpc.ServiceMethod<$20.SpaceKnowledgeDomainFileAccessTokenRequest, $20.SpaceKnowledgeDomainFileAccessTokenResponse>(
         'SpaceKnowledgeDomainFileAccessToken',
         spaceKnowledgeDomainFileAccessToken_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $64.SpaceKnowledgeDomainFileAccessTokenRequest.fromBuffer(value),
-        ($64.SpaceKnowledgeDomainFileAccessTokenResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$64.SpaceKnowledgeDomainFileServicesAccessAuthDetails, $64.ValidateSpaceKnowledgeDomainFileServicesResponse>(
+        ($core.List<$core.int> value) => $20.SpaceKnowledgeDomainFileAccessTokenRequest.fromBuffer(value),
+        ($20.SpaceKnowledgeDomainFileAccessTokenResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$20.SpaceKnowledgeDomainFileServicesAccessAuthDetails, $20.ValidateSpaceKnowledgeDomainFileServicesResponse>(
         'ValidateSpaceKnowledgeDomainFileServices',
         validateSpaceKnowledgeDomainFileServices_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $64.SpaceKnowledgeDomainFileServicesAccessAuthDetails.fromBuffer(value),
-        ($64.ValidateSpaceKnowledgeDomainFileServicesResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $20.SpaceKnowledgeDomainFileServicesAccessAuthDetails.fromBuffer(value),
+        ($20.ValidateSpaceKnowledgeDomainFileServicesResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$64.SpaceKnowledgeDomainFileAccessTokenResponse> spaceKnowledgeDomainFileAccessToken_Pre($grpc.ServiceCall call, $async.Future<$64.SpaceKnowledgeDomainFileAccessTokenRequest> request) async {
+  $async.Future<$20.SpaceKnowledgeDomainFileAccessTokenResponse> spaceKnowledgeDomainFileAccessToken_Pre($grpc.ServiceCall call, $async.Future<$20.SpaceKnowledgeDomainFileAccessTokenRequest> request) async {
     return spaceKnowledgeDomainFileAccessToken(call, await request);
   }
 
-  $async.Future<$64.ValidateSpaceKnowledgeDomainFileServicesResponse> validateSpaceKnowledgeDomainFileServices_Pre($grpc.ServiceCall call, $async.Future<$64.SpaceKnowledgeDomainFileServicesAccessAuthDetails> request) async {
+  $async.Future<$20.ValidateSpaceKnowledgeDomainFileServicesResponse> validateSpaceKnowledgeDomainFileServices_Pre($grpc.ServiceCall call, $async.Future<$20.SpaceKnowledgeDomainFileServicesAccessAuthDetails> request) async {
     return validateSpaceKnowledgeDomainFileServices(call, await request);
   }
 
-  $async.Future<$64.SpaceKnowledgeDomainFileAccessTokenResponse> spaceKnowledgeDomainFileAccessToken($grpc.ServiceCall call, $64.SpaceKnowledgeDomainFileAccessTokenRequest request);
-  $async.Future<$64.ValidateSpaceKnowledgeDomainFileServicesResponse> validateSpaceKnowledgeDomainFileServices($grpc.ServiceCall call, $64.SpaceKnowledgeDomainFileServicesAccessAuthDetails request);
+  $async.Future<$20.SpaceKnowledgeDomainFileAccessTokenResponse> spaceKnowledgeDomainFileAccessToken($grpc.ServiceCall call, $20.SpaceKnowledgeDomainFileAccessTokenRequest request);
+  $async.Future<$20.ValidateSpaceKnowledgeDomainFileServicesResponse> validateSpaceKnowledgeDomainFileServices($grpc.ServiceCall call, $20.SpaceKnowledgeDomainFileServicesAccessAuthDetails request);
 }

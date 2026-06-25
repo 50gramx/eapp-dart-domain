@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../google/protobuf/timestamp.pb.dart' as $85;
-import 'account.pb.dart' as $22;
+import 'account.pb.dart' as $39;
 import 'space.pb.dart' as $87;
 
 export '../../../google/protobuf/timestamp.pb.dart';
@@ -23,7 +23,7 @@ class SpaceThings extends $pb.GeneratedMessage {
   factory SpaceThings({
     $core.String? name,
     $core.String? id,
-    $22.Account? admin,
+    $39.Account? admin,
     $87.Space? space,
     $85.Timestamp? createdAt,
   }) {
@@ -52,7 +52,7 @@ class SpaceThings extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SpaceThings', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.entity'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'id')
-    ..aOM<$22.Account>(3, _omitFieldNames ? '' : 'admin', subBuilder: $22.Account.create)
+    ..aOM<$39.Account>(3, _omitFieldNames ? '' : 'admin', subBuilder: $39.Account.create)
     ..aOM<$87.Space>(4, _omitFieldNames ? '' : 'space', subBuilder: $87.Space.create)
     ..aOM<$85.Timestamp>(5, _omitFieldNames ? '' : 'createdAt', subBuilder: $85.Timestamp.create)
     ..hasRequiredFields = false
@@ -98,15 +98,15 @@ class SpaceThings extends $pb.GeneratedMessage {
   void clearId() => clearField(2);
 
   @$pb.TagNumber(3)
-  $22.Account get admin => $_getN(2);
+  $39.Account get admin => $_getN(2);
   @$pb.TagNumber(3)
-  set admin($22.Account v) { setField(3, v); }
+  set admin($39.Account v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAdmin() => $_has(2);
   @$pb.TagNumber(3)
   void clearAdmin() => clearField(3);
   @$pb.TagNumber(3)
-  $22.Account ensureAdmin() => $_ensure(2);
+  $39.Account ensureAdmin() => $_ensure(2);
 
   @$pb.TagNumber(4)
   $87.Space get space => $_getN(3);

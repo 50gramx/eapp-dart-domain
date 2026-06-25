@@ -14,18 +14,18 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../google/protobuf/timestamp.pb.dart' as $85;
-import 'associate.pb.dart' as $98;
-import 'organisation.pb.dart' as $97;
+import 'associate.pb.dart' as $102;
+import 'organisation.pb.dart' as $101;
 
 export '../../../google/protobuf/timestamp.pb.dart';
 
 class Team extends $pb.GeneratedMessage {
   factory Team({
-    $98.Associate? adminAssociate,
-    $97.Organisation? ofOrganisation,
+    $102.Associate? adminAssociate,
+    $101.Organisation? ofOrganisation,
     $core.int? teamId,
     $core.String? teamDescription,
-    $core.Iterable<$98.Associate>? teamMembers,
+    $core.Iterable<$102.Associate>? teamMembers,
     $core.Iterable<TeamTag>? teamTags,
     $85.Timestamp? createdAt,
   }) {
@@ -58,11 +58,11 @@ class Team extends $pb.GeneratedMessage {
   factory Team.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Team', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.entity'), createEmptyInstance: create)
-    ..aOM<$98.Associate>(1, _omitFieldNames ? '' : 'adminAssociate', subBuilder: $98.Associate.create)
-    ..aOM<$97.Organisation>(2, _omitFieldNames ? '' : 'ofOrganisation', subBuilder: $97.Organisation.create)
+    ..aOM<$102.Associate>(1, _omitFieldNames ? '' : 'adminAssociate', subBuilder: $102.Associate.create)
+    ..aOM<$101.Organisation>(2, _omitFieldNames ? '' : 'ofOrganisation', subBuilder: $101.Organisation.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'teamId', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'teamDescription')
-    ..pc<$98.Associate>(5, _omitFieldNames ? '' : 'teamMembers', $pb.PbFieldType.PM, subBuilder: $98.Associate.create)
+    ..pc<$102.Associate>(5, _omitFieldNames ? '' : 'teamMembers', $pb.PbFieldType.PM, subBuilder: $102.Associate.create)
     ..pc<TeamTag>(6, _omitFieldNames ? '' : 'teamTags', $pb.PbFieldType.PM, subBuilder: TeamTag.create)
     ..aOM<$85.Timestamp>(10, _omitFieldNames ? '' : 'createdAt', subBuilder: $85.Timestamp.create)
     ..hasRequiredFields = false
@@ -90,26 +90,26 @@ class Team extends $pb.GeneratedMessage {
   static Team? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $98.Associate get adminAssociate => $_getN(0);
+  $102.Associate get adminAssociate => $_getN(0);
   @$pb.TagNumber(1)
-  set adminAssociate($98.Associate v) { setField(1, v); }
+  set adminAssociate($102.Associate v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAdminAssociate() => $_has(0);
   @$pb.TagNumber(1)
   void clearAdminAssociate() => clearField(1);
   @$pb.TagNumber(1)
-  $98.Associate ensureAdminAssociate() => $_ensure(0);
+  $102.Associate ensureAdminAssociate() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $97.Organisation get ofOrganisation => $_getN(1);
+  $101.Organisation get ofOrganisation => $_getN(1);
   @$pb.TagNumber(2)
-  set ofOrganisation($97.Organisation v) { setField(2, v); }
+  set ofOrganisation($101.Organisation v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasOfOrganisation() => $_has(1);
   @$pb.TagNumber(2)
   void clearOfOrganisation() => clearField(2);
   @$pb.TagNumber(2)
-  $97.Organisation ensureOfOrganisation() => $_ensure(1);
+  $101.Organisation ensureOfOrganisation() => $_ensure(1);
 
   @$pb.TagNumber(3)
   $core.int get teamId => $_getIZ(2);
@@ -130,7 +130,7 @@ class Team extends $pb.GeneratedMessage {
   void clearTeamDescription() => clearField(4);
 
   @$pb.TagNumber(5)
-  $core.List<$98.Associate> get teamMembers => $_getList(4);
+  $core.List<$102.Associate> get teamMembers => $_getList(4);
 
   @$pb.TagNumber(6)
   $core.List<TeamTag> get teamTags => $_getList(5);

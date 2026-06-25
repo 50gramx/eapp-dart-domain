@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../../../google/protobuf/timestamp.pb.dart' as $85;
-import '../../../../entities/generic.pb.dart' as $7;
+import '../../../../entities/generic.pb.dart' as $9;
 import '../../../../entities/space.pb.dart' as $87;
 
 class SpaceAccessTokenResponse extends $pb.GeneratedMessage {
@@ -166,7 +166,7 @@ class ValidateSpaceServicesResponse extends $pb.GeneratedMessage {
 class SpaceServicesAccessAuthDetails extends $pb.GeneratedMessage {
   factory SpaceServicesAccessAuthDetails({
     $87.Space? space,
-    $7.PersistentSessionTokenDetails? spaceServicesAccessSessionTokenDetails,
+    $9.PersistentSessionTokenDetails? spaceServicesAccessSessionTokenDetails,
     $85.Timestamp? requestedAt,
   }) {
     final $result = create();
@@ -187,7 +187,7 @@ class SpaceServicesAccessAuthDetails extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SpaceServicesAccessAuthDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.space'), createEmptyInstance: create)
     ..aOM<$87.Space>(1, _omitFieldNames ? '' : 'space', subBuilder: $87.Space.create)
-    ..aOM<$7.PersistentSessionTokenDetails>(2, _omitFieldNames ? '' : 'spaceServicesAccessSessionTokenDetails', subBuilder: $7.PersistentSessionTokenDetails.create)
+    ..aOM<$9.PersistentSessionTokenDetails>(2, _omitFieldNames ? '' : 'spaceServicesAccessSessionTokenDetails', subBuilder: $9.PersistentSessionTokenDetails.create)
     ..aOM<$85.Timestamp>(3, _omitFieldNames ? '' : 'requestedAt', subBuilder: $85.Timestamp.create)
     ..hasRequiredFields = false
   ;
@@ -226,15 +226,15 @@ class SpaceServicesAccessAuthDetails extends $pb.GeneratedMessage {
   $87.Space ensureSpace() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $7.PersistentSessionTokenDetails get spaceServicesAccessSessionTokenDetails => $_getN(1);
+  $9.PersistentSessionTokenDetails get spaceServicesAccessSessionTokenDetails => $_getN(1);
   @$pb.TagNumber(2)
-  set spaceServicesAccessSessionTokenDetails($7.PersistentSessionTokenDetails v) { setField(2, v); }
+  set spaceServicesAccessSessionTokenDetails($9.PersistentSessionTokenDetails v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSpaceServicesAccessSessionTokenDetails() => $_has(1);
   @$pb.TagNumber(2)
   void clearSpaceServicesAccessSessionTokenDetails() => clearField(2);
   @$pb.TagNumber(2)
-  $7.PersistentSessionTokenDetails ensureSpaceServicesAccessSessionTokenDetails() => $_ensure(1);
+  $9.PersistentSessionTokenDetails ensureSpaceServicesAccessSessionTokenDetails() => $_ensure(1);
 
   /// Meta Properties
   @$pb.TagNumber(3)

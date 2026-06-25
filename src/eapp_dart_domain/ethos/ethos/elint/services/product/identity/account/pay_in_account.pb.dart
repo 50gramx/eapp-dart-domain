@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../entities/account.pb.dart' as $22;
+import '../../../../entities/account.pb.dart' as $39;
 import '../../../../entities/galaxy.pbenum.dart' as $86;
-import '../../../../entities/generic.pb.dart' as $7;
+import '../../../../entities/generic.pb.dart' as $9;
 import 'access_account.pb.dart' as $0;
 import 'pay_in_account.pbenum.dart';
 
@@ -24,7 +24,7 @@ export 'pay_in_account.pbenum.dart';
 class AccountPayInPublishableKey extends $pb.GeneratedMessage {
   factory AccountPayInPublishableKey({
     $core.String? key,
-    $7.ResponseMeta? responseMeta,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (key != null) {
@@ -41,7 +41,7 @@ class AccountPayInPublishableKey extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccountPayInPublishableKey', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.account'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'key')
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -76,21 +76,21 @@ class AccountPayInPublishableKey extends $pb.GeneratedMessage {
   void clearKey() => clearField(1);
 
   @$pb.TagNumber(2)
-  $7.ResponseMeta get responseMeta => $_getN(1);
+  $9.ResponseMeta get responseMeta => $_getN(1);
   @$pb.TagNumber(2)
-  set responseMeta($7.ResponseMeta v) { setField(2, v); }
+  set responseMeta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponseMeta() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponseMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(1);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(1);
 }
 
 class AccountPayInAccessKey extends $pb.GeneratedMessage {
   factory AccountPayInAccessKey({
     $core.String? jsonKey,
-    $7.ResponseMeta? responseMeta,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (jsonKey != null) {
@@ -107,7 +107,7 @@ class AccountPayInAccessKey extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccountPayInAccessKey', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.account'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'jsonKey')
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -142,15 +142,15 @@ class AccountPayInAccessKey extends $pb.GeneratedMessage {
   void clearJsonKey() => clearField(1);
 
   @$pb.TagNumber(2)
-  $7.ResponseMeta get responseMeta => $_getN(1);
+  $9.ResponseMeta get responseMeta => $_getN(1);
   @$pb.TagNumber(2)
-  set responseMeta($7.ResponseMeta v) { setField(2, v); }
+  set responseMeta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponseMeta() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponseMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(1);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(1);
 }
 
 class AccountPayInSecretKey extends $pb.GeneratedMessage {
@@ -271,7 +271,7 @@ class GetAccountPayInIntentRequest extends $pb.GeneratedMessage {
 
 class GetAccountPayInIntentResponse extends $pb.GeneratedMessage {
   factory GetAccountPayInIntentResponse({
-    $7.ResponseMeta? responseMeta,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (responseMeta != null) {
@@ -284,7 +284,7 @@ class GetAccountPayInIntentResponse extends $pb.GeneratedMessage {
   factory GetAccountPayInIntentResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetAccountPayInIntentResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.account'), createEmptyInstance: create)
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -310,21 +310,21 @@ class GetAccountPayInIntentResponse extends $pb.GeneratedMessage {
   static GetAccountPayInIntentResponse? _defaultInstance;
 
   @$pb.TagNumber(2)
-  $7.ResponseMeta get responseMeta => $_getN(0);
+  $9.ResponseMeta get responseMeta => $_getN(0);
   @$pb.TagNumber(2)
-  set responseMeta($7.ResponseMeta v) { setField(2, v); }
+  set responseMeta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponseMeta() => $_has(0);
   @$pb.TagNumber(2)
   void clearResponseMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(0);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(0);
 }
 
 class ListAllCardsResponse extends $pb.GeneratedMessage {
   factory ListAllCardsResponse({
-    $core.Iterable<$22.AccountPayInCardDetails>? accountPayInCards,
-    $7.ResponseMeta? responseMeta,
+    $core.Iterable<$39.AccountPayInCardDetails>? accountPayInCards,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (accountPayInCards != null) {
@@ -340,8 +340,8 @@ class ListAllCardsResponse extends $pb.GeneratedMessage {
   factory ListAllCardsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListAllCardsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.account'), createEmptyInstance: create)
-    ..pc<$22.AccountPayInCardDetails>(1, _omitFieldNames ? '' : 'accountPayInCards', $pb.PbFieldType.PM, subBuilder: $22.AccountPayInCardDetails.create)
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..pc<$39.AccountPayInCardDetails>(1, _omitFieldNames ? '' : 'accountPayInCards', $pb.PbFieldType.PM, subBuilder: $39.AccountPayInCardDetails.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -367,24 +367,24 @@ class ListAllCardsResponse extends $pb.GeneratedMessage {
   static ListAllCardsResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.List<$22.AccountPayInCardDetails> get accountPayInCards => $_getList(0);
+  $core.List<$39.AccountPayInCardDetails> get accountPayInCards => $_getList(0);
 
   @$pb.TagNumber(2)
-  $7.ResponseMeta get responseMeta => $_getN(1);
+  $9.ResponseMeta get responseMeta => $_getN(1);
   @$pb.TagNumber(2)
-  set responseMeta($7.ResponseMeta v) { setField(2, v); }
+  set responseMeta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponseMeta() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponseMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(1);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(1);
 }
 
 class SaveCardResponse extends $pb.GeneratedMessage {
   factory SaveCardResponse({
     $core.String? saveCardSecret,
-    $7.ResponseMeta? responseMeta,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (saveCardSecret != null) {
@@ -401,7 +401,7 @@ class SaveCardResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SaveCardResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.account'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'saveCardSecret')
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -436,20 +436,20 @@ class SaveCardResponse extends $pb.GeneratedMessage {
   void clearSaveCardSecret() => clearField(1);
 
   @$pb.TagNumber(2)
-  $7.ResponseMeta get responseMeta => $_getN(1);
+  $9.ResponseMeta get responseMeta => $_getN(1);
   @$pb.TagNumber(2)
-  set responseMeta($7.ResponseMeta v) { setField(2, v); }
+  set responseMeta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponseMeta() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponseMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(1);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(1);
 }
 
 class AccountEthosCoinBalanceResponse extends $pb.GeneratedMessage {
   factory AccountEthosCoinBalanceResponse({
-    $7.ResponseMeta? responseMeta,
+    $9.ResponseMeta? responseMeta,
     $core.double? balance,
   }) {
     final $result = create();
@@ -466,7 +466,7 @@ class AccountEthosCoinBalanceResponse extends $pb.GeneratedMessage {
   factory AccountEthosCoinBalanceResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccountEthosCoinBalanceResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.account'), createEmptyInstance: create)
-    ..aOM<$7.ResponseMeta>(1, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..aOM<$9.ResponseMeta>(1, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'balance', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
   ;
@@ -493,15 +493,15 @@ class AccountEthosCoinBalanceResponse extends $pb.GeneratedMessage {
   static AccountEthosCoinBalanceResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $7.ResponseMeta get responseMeta => $_getN(0);
+  $9.ResponseMeta get responseMeta => $_getN(0);
   @$pb.TagNumber(1)
-  set responseMeta($7.ResponseMeta v) { setField(1, v); }
+  set responseMeta($9.ResponseMeta v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasResponseMeta() => $_has(0);
   @$pb.TagNumber(1)
   void clearResponseMeta() => clearField(1);
   @$pb.TagNumber(1)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(0);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(0);
 
   @$pb.TagNumber(2)
   $core.double get balance => $_getN(1);

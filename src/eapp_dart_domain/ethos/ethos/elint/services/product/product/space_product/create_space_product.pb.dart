@@ -15,7 +15,7 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../../../google/protobuf/timestamp.pb.dart' as $85;
 import '../../identity/space/access_space.pb.dart' as $2;
-import 'access_space_product.pb.dart' as $4;
+import 'access_space_product.pb.dart' as $12;
 
 export '../../../../../../google/protobuf/timestamp.pb.dart';
 
@@ -107,7 +107,7 @@ class CreateAccountSpaceProductRequest extends $pb.GeneratedMessage {
 
 class CreateAccountSpaceProductResponse extends $pb.GeneratedMessage {
   factory CreateAccountSpaceProductResponse({
-    $4.SpaceProductServicesAccessAuthDetails? spaceProductServicesAccessAuthDetails,
+    $12.SpaceProductServicesAccessAuthDetails? spaceProductServicesAccessAuthDetails,
     $core.bool? createAccountSpaceProductDone,
     $core.String? createAccountSpaceProductMessage,
   }) {
@@ -128,7 +128,7 @@ class CreateAccountSpaceProductResponse extends $pb.GeneratedMessage {
   factory CreateAccountSpaceProductResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateAccountSpaceProductResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.product.space'), createEmptyInstance: create)
-    ..aOM<$4.SpaceProductServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'spaceProductServicesAccessAuthDetails', subBuilder: $4.SpaceProductServicesAccessAuthDetails.create)
+    ..aOM<$12.SpaceProductServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'spaceProductServicesAccessAuthDetails', subBuilder: $12.SpaceProductServicesAccessAuthDetails.create)
     ..aOB(2, _omitFieldNames ? '' : 'createAccountSpaceProductDone')
     ..aOS(3, _omitFieldNames ? '' : 'createAccountSpaceProductMessage')
     ..hasRequiredFields = false
@@ -157,15 +157,15 @@ class CreateAccountSpaceProductResponse extends $pb.GeneratedMessage {
 
   /// Service Response Properties
   @$pb.TagNumber(1)
-  $4.SpaceProductServicesAccessAuthDetails get spaceProductServicesAccessAuthDetails => $_getN(0);
+  $12.SpaceProductServicesAccessAuthDetails get spaceProductServicesAccessAuthDetails => $_getN(0);
   @$pb.TagNumber(1)
-  set spaceProductServicesAccessAuthDetails($4.SpaceProductServicesAccessAuthDetails v) { setField(1, v); }
+  set spaceProductServicesAccessAuthDetails($12.SpaceProductServicesAccessAuthDetails v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSpaceProductServicesAccessAuthDetails() => $_has(0);
   @$pb.TagNumber(1)
   void clearSpaceProductServicesAccessAuthDetails() => clearField(1);
   @$pb.TagNumber(1)
-  $4.SpaceProductServicesAccessAuthDetails ensureSpaceProductServicesAccessAuthDetails() => $_ensure(0);
+  $12.SpaceProductServicesAccessAuthDetails ensureSpaceProductServicesAccessAuthDetails() => $_ensure(0);
 
   /// Meta Properties
   @$pb.TagNumber(2)

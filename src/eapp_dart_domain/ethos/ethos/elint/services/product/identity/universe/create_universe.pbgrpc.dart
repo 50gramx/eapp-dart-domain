@@ -15,16 +15,16 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'create_universe.pb.dart' as $35;
+import 'create_universe.pb.dart' as $66;
 
 export 'create_universe.pb.dart';
 
 @$pb.GrpcServiceName('elint.services.product.identity.universe.CreateUniverseService')
 class CreateUniverseServiceClient extends $grpc.Client {
-  static final _$createUniverse = $grpc.ClientMethod<$35.CreateUniverseRequest, $35.CreateUniverseResponse>(
+  static final _$createUniverse = $grpc.ClientMethod<$66.CreateUniverseRequest, $66.CreateUniverseResponse>(
       '/elint.services.product.identity.universe.CreateUniverseService/CreateUniverse',
-      ($35.CreateUniverseRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $35.CreateUniverseResponse.fromBuffer(value));
+      ($66.CreateUniverseRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $66.CreateUniverseResponse.fromBuffer(value));
 
   CreateUniverseServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -32,7 +32,7 @@ class CreateUniverseServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$35.CreateUniverseResponse> createUniverse($35.CreateUniverseRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$66.CreateUniverseResponse> createUniverse($66.CreateUniverseRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createUniverse, request, options: options);
   }
 }
@@ -42,18 +42,18 @@ abstract class CreateUniverseServiceBase extends $grpc.Service {
   $core.String get $name => 'elint.services.product.identity.universe.CreateUniverseService';
 
   CreateUniverseServiceBase() {
-    $addMethod($grpc.ServiceMethod<$35.CreateUniverseRequest, $35.CreateUniverseResponse>(
+    $addMethod($grpc.ServiceMethod<$66.CreateUniverseRequest, $66.CreateUniverseResponse>(
         'CreateUniverse',
         createUniverse_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $35.CreateUniverseRequest.fromBuffer(value),
-        ($35.CreateUniverseResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $66.CreateUniverseRequest.fromBuffer(value),
+        ($66.CreateUniverseResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$35.CreateUniverseResponse> createUniverse_Pre($grpc.ServiceCall call, $async.Future<$35.CreateUniverseRequest> request) async {
+  $async.Future<$66.CreateUniverseResponse> createUniverse_Pre($grpc.ServiceCall call, $async.Future<$66.CreateUniverseRequest> request) async {
     return createUniverse(call, await request);
   }
 
-  $async.Future<$35.CreateUniverseResponse> createUniverse($grpc.ServiceCall call, $35.CreateUniverseRequest request);
+  $async.Future<$66.CreateUniverseResponse> createUniverse($grpc.ServiceCall call, $66.CreateUniverseRequest request);
 }

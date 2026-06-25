@@ -15,16 +15,16 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../entities/universe.pb.dart' as $36;
+import '../../../../entities/universe.pb.dart' as $68;
 
 export 'discover_universe.pb.dart';
 
 @$pb.GrpcServiceName('elint.services.product.identity.universe.DiscoverUniverseService')
 class DiscoverUniverseServiceClient extends $grpc.Client {
-  static final _$byID = $grpc.ClientMethod<$36.Universe, $36.Universe>(
+  static final _$byID = $grpc.ClientMethod<$68.Universe, $68.Universe>(
       '/elint.services.product.identity.universe.DiscoverUniverseService/ByID',
-      ($36.Universe value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $36.Universe.fromBuffer(value));
+      ($68.Universe value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $68.Universe.fromBuffer(value));
 
   DiscoverUniverseServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -32,7 +32,7 @@ class DiscoverUniverseServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$36.Universe> byID($36.Universe request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$68.Universe> byID($68.Universe request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$byID, request, options: options);
   }
 }
@@ -42,18 +42,18 @@ abstract class DiscoverUniverseServiceBase extends $grpc.Service {
   $core.String get $name => 'elint.services.product.identity.universe.DiscoverUniverseService';
 
   DiscoverUniverseServiceBase() {
-    $addMethod($grpc.ServiceMethod<$36.Universe, $36.Universe>(
+    $addMethod($grpc.ServiceMethod<$68.Universe, $68.Universe>(
         'ByID',
         byID_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $36.Universe.fromBuffer(value),
-        ($36.Universe value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $68.Universe.fromBuffer(value),
+        ($68.Universe value) => value.writeToBuffer()));
   }
 
-  $async.Future<$36.Universe> byID_Pre($grpc.ServiceCall call, $async.Future<$36.Universe> request) async {
+  $async.Future<$68.Universe> byID_Pre($grpc.ServiceCall call, $async.Future<$68.Universe> request) async {
     return byID(call, await request);
   }
 
-  $async.Future<$36.Universe> byID($grpc.ServiceCall call, $36.Universe request);
+  $async.Future<$68.Universe> byID($grpc.ServiceCall call, $68.Universe request);
 }

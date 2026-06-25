@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../entities/account.pb.dart' as $22;
-import '../../../../entities/space_knowledge_domain_file.pb.dart' as $63;
-import '../space_knowledge_domain/access_space_knowledge_domain.pb.dart' as $40;
+import '../../../../entities/account.pb.dart' as $39;
+import '../../../../entities/space_knowledge_domain_file.pb.dart' as $31;
+import '../space_knowledge_domain/access_space_knowledge_domain.pb.dart' as $19;
 
 /// Message Definitions
 class GetFileByIDRequest extends $pb.GeneratedMessage {
   factory GetFileByIDRequest({
-    $40.SpaceKnowledgeDomainServicesAccessAuthDetails? skdAuth,
+    $19.SpaceKnowledgeDomainServicesAccessAuthDetails? skdAuth,
     $core.String? fileId,
   }) {
     final $result = create();
@@ -37,7 +37,7 @@ class GetFileByIDRequest extends $pb.GeneratedMessage {
   factory GetFileByIDRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetFileByIDRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.knowledge.file'), createEmptyInstance: create)
-    ..aOM<$40.SpaceKnowledgeDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'skdAuth', subBuilder: $40.SpaceKnowledgeDomainServicesAccessAuthDetails.create)
+    ..aOM<$19.SpaceKnowledgeDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'skdAuth', subBuilder: $19.SpaceKnowledgeDomainServicesAccessAuthDetails.create)
     ..aOS(2, _omitFieldNames ? '' : 'fileId')
     ..hasRequiredFields = false
   ;
@@ -64,15 +64,15 @@ class GetFileByIDRequest extends $pb.GeneratedMessage {
   static GetFileByIDRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $40.SpaceKnowledgeDomainServicesAccessAuthDetails get skdAuth => $_getN(0);
+  $19.SpaceKnowledgeDomainServicesAccessAuthDetails get skdAuth => $_getN(0);
   @$pb.TagNumber(1)
-  set skdAuth($40.SpaceKnowledgeDomainServicesAccessAuthDetails v) { setField(1, v); }
+  set skdAuth($19.SpaceKnowledgeDomainServicesAccessAuthDetails v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSkdAuth() => $_has(0);
   @$pb.TagNumber(1)
   void clearSkdAuth() => clearField(1);
   @$pb.TagNumber(1)
-  $40.SpaceKnowledgeDomainServicesAccessAuthDetails ensureSkdAuth() => $_ensure(0);
+  $19.SpaceKnowledgeDomainServicesAccessAuthDetails ensureSkdAuth() => $_ensure(0);
 
   @$pb.TagNumber(2)
   $core.String get fileId => $_getSZ(1);
@@ -86,7 +86,7 @@ class GetFileByIDRequest extends $pb.GeneratedMessage {
 
 class FileExistsByIDRequest extends $pb.GeneratedMessage {
   factory FileExistsByIDRequest({
-    $22.AccountSpaceKnowledgeDomainFileAccessMeta? accountKnowledgeDomainFileAccessMeta,
+    $39.AccountSpaceKnowledgeDomainFileAccessMeta? accountKnowledgeDomainFileAccessMeta,
     $core.String? fileId,
   }) {
     final $result = create();
@@ -103,7 +103,7 @@ class FileExistsByIDRequest extends $pb.GeneratedMessage {
   factory FileExistsByIDRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FileExistsByIDRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.knowledge.file'), createEmptyInstance: create)
-    ..aOM<$22.AccountSpaceKnowledgeDomainFileAccessMeta>(1, _omitFieldNames ? '' : 'accountKnowledgeDomainFileAccessMeta', subBuilder: $22.AccountSpaceKnowledgeDomainFileAccessMeta.create)
+    ..aOM<$39.AccountSpaceKnowledgeDomainFileAccessMeta>(1, _omitFieldNames ? '' : 'accountKnowledgeDomainFileAccessMeta', subBuilder: $39.AccountSpaceKnowledgeDomainFileAccessMeta.create)
     ..aOS(2, _omitFieldNames ? '' : 'fileId')
     ..hasRequiredFields = false
   ;
@@ -130,15 +130,15 @@ class FileExistsByIDRequest extends $pb.GeneratedMessage {
   static FileExistsByIDRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $22.AccountSpaceKnowledgeDomainFileAccessMeta get accountKnowledgeDomainFileAccessMeta => $_getN(0);
+  $39.AccountSpaceKnowledgeDomainFileAccessMeta get accountKnowledgeDomainFileAccessMeta => $_getN(0);
   @$pb.TagNumber(1)
-  set accountKnowledgeDomainFileAccessMeta($22.AccountSpaceKnowledgeDomainFileAccessMeta v) { setField(1, v); }
+  set accountKnowledgeDomainFileAccessMeta($39.AccountSpaceKnowledgeDomainFileAccessMeta v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAccountKnowledgeDomainFileAccessMeta() => $_has(0);
   @$pb.TagNumber(1)
   void clearAccountKnowledgeDomainFileAccessMeta() => clearField(1);
   @$pb.TagNumber(1)
-  $22.AccountSpaceKnowledgeDomainFileAccessMeta ensureAccountKnowledgeDomainFileAccessMeta() => $_ensure(0);
+  $39.AccountSpaceKnowledgeDomainFileAccessMeta ensureAccountKnowledgeDomainFileAccessMeta() => $_ensure(0);
 
   @$pb.TagNumber(2)
   $core.String get fileId => $_getSZ(1);
@@ -202,8 +202,8 @@ class FileExistsByIDResponse extends $pb.GeneratedMessage {
 
 class DownloadRequest extends $pb.GeneratedMessage {
   factory DownloadRequest({
-    $40.SpaceKnowledgeDomainServicesAccessAuthDetails? skdAuth,
-    $63.SpaceKnowledgeDomainFile? file,
+    $19.SpaceKnowledgeDomainServicesAccessAuthDetails? skdAuth,
+    $31.SpaceKnowledgeDomainFile? file,
   }) {
     final $result = create();
     if (skdAuth != null) {
@@ -219,8 +219,8 @@ class DownloadRequest extends $pb.GeneratedMessage {
   factory DownloadRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DownloadRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.knowledge.file'), createEmptyInstance: create)
-    ..aOM<$40.SpaceKnowledgeDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'skdAuth', subBuilder: $40.SpaceKnowledgeDomainServicesAccessAuthDetails.create)
-    ..aOM<$63.SpaceKnowledgeDomainFile>(11, _omitFieldNames ? '' : 'file', subBuilder: $63.SpaceKnowledgeDomainFile.create)
+    ..aOM<$19.SpaceKnowledgeDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'skdAuth', subBuilder: $19.SpaceKnowledgeDomainServicesAccessAuthDetails.create)
+    ..aOM<$31.SpaceKnowledgeDomainFile>(11, _omitFieldNames ? '' : 'file', subBuilder: $31.SpaceKnowledgeDomainFile.create)
     ..hasRequiredFields = false
   ;
 
@@ -246,26 +246,26 @@ class DownloadRequest extends $pb.GeneratedMessage {
   static DownloadRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $40.SpaceKnowledgeDomainServicesAccessAuthDetails get skdAuth => $_getN(0);
+  $19.SpaceKnowledgeDomainServicesAccessAuthDetails get skdAuth => $_getN(0);
   @$pb.TagNumber(1)
-  set skdAuth($40.SpaceKnowledgeDomainServicesAccessAuthDetails v) { setField(1, v); }
+  set skdAuth($19.SpaceKnowledgeDomainServicesAccessAuthDetails v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSkdAuth() => $_has(0);
   @$pb.TagNumber(1)
   void clearSkdAuth() => clearField(1);
   @$pb.TagNumber(1)
-  $40.SpaceKnowledgeDomainServicesAccessAuthDetails ensureSkdAuth() => $_ensure(0);
+  $19.SpaceKnowledgeDomainServicesAccessAuthDetails ensureSkdAuth() => $_ensure(0);
 
   @$pb.TagNumber(11)
-  $63.SpaceKnowledgeDomainFile get file => $_getN(1);
+  $31.SpaceKnowledgeDomainFile get file => $_getN(1);
   @$pb.TagNumber(11)
-  set file($63.SpaceKnowledgeDomainFile v) { setField(11, v); }
+  set file($31.SpaceKnowledgeDomainFile v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasFile() => $_has(1);
   @$pb.TagNumber(11)
   void clearFile() => clearField(11);
   @$pb.TagNumber(11)
-  $63.SpaceKnowledgeDomainFile ensureFile() => $_ensure(1);
+  $31.SpaceKnowledgeDomainFile ensureFile() => $_ensure(1);
 }
 
 class DownloadResponse extends $pb.GeneratedMessage {

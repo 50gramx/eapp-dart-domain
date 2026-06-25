@@ -14,14 +14,14 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../../../google/protobuf/timestamp.pb.dart' as $85;
-import '../../../../entities/account_assistant.pb.dart' as $23;
-import '../../../../entities/generic.pb.dart' as $7;
+import '../../../../entities/account_assistant.pb.dart' as $40;
+import '../../../../entities/generic.pb.dart' as $9;
 
 /// Message Definitions
 class AccountAssistantAccessTokenResponse extends $pb.GeneratedMessage {
   factory AccountAssistantAccessTokenResponse({
     AccountAssistantServicesAccessAuthDetails? accountAssistantServicesAccessAuthDetails,
-    $7.ResponseMeta? meta,
+    $9.ResponseMeta? meta,
   }) {
     final $result = create();
     if (accountAssistantServicesAccessAuthDetails != null) {
@@ -38,7 +38,7 @@ class AccountAssistantAccessTokenResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccountAssistantAccessTokenResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.account.assistant'), createEmptyInstance: create)
     ..aOM<AccountAssistantServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'accountAssistantServicesAccessAuthDetails', subBuilder: AccountAssistantServicesAccessAuthDetails.create)
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'meta', subBuilder: $7.ResponseMeta.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'meta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -77,21 +77,21 @@ class AccountAssistantAccessTokenResponse extends $pb.GeneratedMessage {
 
   /// Meta
   @$pb.TagNumber(2)
-  $7.ResponseMeta get meta => $_getN(1);
+  $9.ResponseMeta get meta => $_getN(1);
   @$pb.TagNumber(2)
-  set meta($7.ResponseMeta v) { setField(2, v); }
+  set meta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMeta() => $_has(1);
   @$pb.TagNumber(2)
   void clearMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureMeta() => $_ensure(1);
+  $9.ResponseMeta ensureMeta() => $_ensure(1);
 }
 
 class AccountAssistantAccessTokenWithMasterConnectionRequest extends $pb.GeneratedMessage {
   factory AccountAssistantAccessTokenWithMasterConnectionRequest({
     $core.String? accountAssistantId,
-    $23.AccountAssistantConnectedAccount? connectedAccount,
+    $40.AccountAssistantConnectedAccount? connectedAccount,
   }) {
     final $result = create();
     if (accountAssistantId != null) {
@@ -108,7 +108,7 @@ class AccountAssistantAccessTokenWithMasterConnectionRequest extends $pb.Generat
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccountAssistantAccessTokenWithMasterConnectionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.account.assistant'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'accountAssistantId')
-    ..aOM<$23.AccountAssistantConnectedAccount>(2, _omitFieldNames ? '' : 'connectedAccount', subBuilder: $23.AccountAssistantConnectedAccount.create)
+    ..aOM<$40.AccountAssistantConnectedAccount>(2, _omitFieldNames ? '' : 'connectedAccount', subBuilder: $40.AccountAssistantConnectedAccount.create)
     ..hasRequiredFields = false
   ;
 
@@ -143,15 +143,15 @@ class AccountAssistantAccessTokenWithMasterConnectionRequest extends $pb.Generat
   void clearAccountAssistantId() => clearField(1);
 
   @$pb.TagNumber(2)
-  $23.AccountAssistantConnectedAccount get connectedAccount => $_getN(1);
+  $40.AccountAssistantConnectedAccount get connectedAccount => $_getN(1);
   @$pb.TagNumber(2)
-  set connectedAccount($23.AccountAssistantConnectedAccount v) { setField(2, v); }
+  set connectedAccount($40.AccountAssistantConnectedAccount v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasConnectedAccount() => $_has(1);
   @$pb.TagNumber(2)
   void clearConnectedAccount() => clearField(2);
   @$pb.TagNumber(2)
-  $23.AccountAssistantConnectedAccount ensureConnectedAccount() => $_ensure(1);
+  $40.AccountAssistantConnectedAccount ensureConnectedAccount() => $_ensure(1);
 }
 
 /// Meta Message Definitions
@@ -285,8 +285,8 @@ class ValidateAccessMeta extends $pb.GeneratedMessage {
 
 class AccountAssistantServicesAccessAuthDetails extends $pb.GeneratedMessage {
   factory AccountAssistantServicesAccessAuthDetails({
-    $23.AccountAssistant? accountAssistant,
-    $7.PersistentSessionTokenDetails? accountAssistantServicesAccessSessionTokenDetails,
+    $40.AccountAssistant? accountAssistant,
+    $9.PersistentSessionTokenDetails? accountAssistantServicesAccessSessionTokenDetails,
     $85.Timestamp? requestedAt,
   }) {
     final $result = create();
@@ -306,8 +306,8 @@ class AccountAssistantServicesAccessAuthDetails extends $pb.GeneratedMessage {
   factory AccountAssistantServicesAccessAuthDetails.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccountAssistantServicesAccessAuthDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.account.assistant'), createEmptyInstance: create)
-    ..aOM<$23.AccountAssistant>(1, _omitFieldNames ? '' : 'accountAssistant', subBuilder: $23.AccountAssistant.create)
-    ..aOM<$7.PersistentSessionTokenDetails>(2, _omitFieldNames ? '' : 'accountAssistantServicesAccessSessionTokenDetails', subBuilder: $7.PersistentSessionTokenDetails.create)
+    ..aOM<$40.AccountAssistant>(1, _omitFieldNames ? '' : 'accountAssistant', subBuilder: $40.AccountAssistant.create)
+    ..aOM<$9.PersistentSessionTokenDetails>(2, _omitFieldNames ? '' : 'accountAssistantServicesAccessSessionTokenDetails', subBuilder: $9.PersistentSessionTokenDetails.create)
     ..aOM<$85.Timestamp>(3, _omitFieldNames ? '' : 'requestedAt', subBuilder: $85.Timestamp.create)
     ..hasRequiredFields = false
   ;
@@ -335,26 +335,26 @@ class AccountAssistantServicesAccessAuthDetails extends $pb.GeneratedMessage {
 
   /// Auth Properties
   @$pb.TagNumber(1)
-  $23.AccountAssistant get accountAssistant => $_getN(0);
+  $40.AccountAssistant get accountAssistant => $_getN(0);
   @$pb.TagNumber(1)
-  set accountAssistant($23.AccountAssistant v) { setField(1, v); }
+  set accountAssistant($40.AccountAssistant v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAccountAssistant() => $_has(0);
   @$pb.TagNumber(1)
   void clearAccountAssistant() => clearField(1);
   @$pb.TagNumber(1)
-  $23.AccountAssistant ensureAccountAssistant() => $_ensure(0);
+  $40.AccountAssistant ensureAccountAssistant() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $7.PersistentSessionTokenDetails get accountAssistantServicesAccessSessionTokenDetails => $_getN(1);
+  $9.PersistentSessionTokenDetails get accountAssistantServicesAccessSessionTokenDetails => $_getN(1);
   @$pb.TagNumber(2)
-  set accountAssistantServicesAccessSessionTokenDetails($7.PersistentSessionTokenDetails v) { setField(2, v); }
+  set accountAssistantServicesAccessSessionTokenDetails($9.PersistentSessionTokenDetails v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAccountAssistantServicesAccessSessionTokenDetails() => $_has(1);
   @$pb.TagNumber(2)
   void clearAccountAssistantServicesAccessSessionTokenDetails() => clearField(2);
   @$pb.TagNumber(2)
-  $7.PersistentSessionTokenDetails ensureAccountAssistantServicesAccessSessionTokenDetails() => $_ensure(1);
+  $9.PersistentSessionTokenDetails ensureAccountAssistantServicesAccessSessionTokenDetails() => $_ensure(1);
 
   /// Meta Properties
   @$pb.TagNumber(3)

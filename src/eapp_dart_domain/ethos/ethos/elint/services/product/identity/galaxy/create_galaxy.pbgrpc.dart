@@ -15,16 +15,16 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'create_galaxy.pb.dart' as $31;
+import 'create_galaxy.pb.dart' as $61;
 
 export 'create_galaxy.pb.dart';
 
 @$pb.GrpcServiceName('elint.services.product.identity.galaxy.CreateGalaxyService')
 class CreateGalaxyServiceClient extends $grpc.Client {
-  static final _$createGalaxy = $grpc.ClientMethod<$31.CreateGalaxyRequest, $31.CreateGalaxyResponse>(
+  static final _$createGalaxy = $grpc.ClientMethod<$61.CreateGalaxyRequest, $61.CreateGalaxyResponse>(
       '/elint.services.product.identity.galaxy.CreateGalaxyService/CreateGalaxy',
-      ($31.CreateGalaxyRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $31.CreateGalaxyResponse.fromBuffer(value));
+      ($61.CreateGalaxyRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $61.CreateGalaxyResponse.fromBuffer(value));
 
   CreateGalaxyServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -32,7 +32,7 @@ class CreateGalaxyServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$31.CreateGalaxyResponse> createGalaxy($31.CreateGalaxyRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$61.CreateGalaxyResponse> createGalaxy($61.CreateGalaxyRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createGalaxy, request, options: options);
   }
 }
@@ -42,18 +42,18 @@ abstract class CreateGalaxyServiceBase extends $grpc.Service {
   $core.String get $name => 'elint.services.product.identity.galaxy.CreateGalaxyService';
 
   CreateGalaxyServiceBase() {
-    $addMethod($grpc.ServiceMethod<$31.CreateGalaxyRequest, $31.CreateGalaxyResponse>(
+    $addMethod($grpc.ServiceMethod<$61.CreateGalaxyRequest, $61.CreateGalaxyResponse>(
         'CreateGalaxy',
         createGalaxy_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $31.CreateGalaxyRequest.fromBuffer(value),
-        ($31.CreateGalaxyResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $61.CreateGalaxyRequest.fromBuffer(value),
+        ($61.CreateGalaxyResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$31.CreateGalaxyResponse> createGalaxy_Pre($grpc.ServiceCall call, $async.Future<$31.CreateGalaxyRequest> request) async {
+  $async.Future<$61.CreateGalaxyResponse> createGalaxy_Pre($grpc.ServiceCall call, $async.Future<$61.CreateGalaxyRequest> request) async {
     return createGalaxy(call, await request);
   }
 
-  $async.Future<$31.CreateGalaxyResponse> createGalaxy($grpc.ServiceCall call, $31.CreateGalaxyRequest request);
+  $async.Future<$61.CreateGalaxyResponse> createGalaxy($grpc.ServiceCall call, $61.CreateGalaxyRequest request);
 }

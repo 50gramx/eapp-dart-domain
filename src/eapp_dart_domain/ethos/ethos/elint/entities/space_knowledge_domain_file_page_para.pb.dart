@@ -14,12 +14,12 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../google/protobuf/timestamp.pb.dart' as $85;
-import 'space_knowledge_domain_file_page.pb.dart' as $69;
+import 'space_knowledge_domain_file_page.pb.dart' as $22;
 
 class SpaceKnowledgeDomainFilePagePara extends $pb.GeneratedMessage {
   factory SpaceKnowledgeDomainFilePagePara({
     $core.String? spaceKnowledgeDomainFilePageParaId,
-    $69.SpaceKnowledgeDomainFilePage? spaceKnowledgeDomainFilePage,
+    $22.SpaceKnowledgeDomainFilePage? spaceKnowledgeDomainFilePage,
     PageContourDimensions? pageContourDimensions,
     $core.Iterable<ParaTag>? paraTags,
     $85.Timestamp? createdAt,
@@ -56,7 +56,7 @@ class SpaceKnowledgeDomainFilePagePara extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SpaceKnowledgeDomainFilePagePara', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.entity'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'spaceKnowledgeDomainFilePageParaId')
-    ..aOM<$69.SpaceKnowledgeDomainFilePage>(2, _omitFieldNames ? '' : 'spaceKnowledgeDomainFilePage', subBuilder: $69.SpaceKnowledgeDomainFilePage.create)
+    ..aOM<$22.SpaceKnowledgeDomainFilePage>(2, _omitFieldNames ? '' : 'spaceKnowledgeDomainFilePage', subBuilder: $22.SpaceKnowledgeDomainFilePage.create)
     ..aOM<PageContourDimensions>(3, _omitFieldNames ? '' : 'pageContourDimensions', subBuilder: PageContourDimensions.create)
     ..pc<ParaTag>(4, _omitFieldNames ? '' : 'paraTags', $pb.PbFieldType.PM, subBuilder: ParaTag.create)
     ..aOM<$85.Timestamp>(5, _omitFieldNames ? '' : 'createdAt', subBuilder: $85.Timestamp.create)
@@ -96,15 +96,15 @@ class SpaceKnowledgeDomainFilePagePara extends $pb.GeneratedMessage {
   void clearSpaceKnowledgeDomainFilePageParaId() => clearField(1);
 
   @$pb.TagNumber(2)
-  $69.SpaceKnowledgeDomainFilePage get spaceKnowledgeDomainFilePage => $_getN(1);
+  $22.SpaceKnowledgeDomainFilePage get spaceKnowledgeDomainFilePage => $_getN(1);
   @$pb.TagNumber(2)
-  set spaceKnowledgeDomainFilePage($69.SpaceKnowledgeDomainFilePage v) { setField(2, v); }
+  set spaceKnowledgeDomainFilePage($22.SpaceKnowledgeDomainFilePage v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSpaceKnowledgeDomainFilePage() => $_has(1);
   @$pb.TagNumber(2)
   void clearSpaceKnowledgeDomainFilePage() => clearField(2);
   @$pb.TagNumber(2)
-  $69.SpaceKnowledgeDomainFilePage ensureSpaceKnowledgeDomainFilePage() => $_ensure(1);
+  $22.SpaceKnowledgeDomainFilePage ensureSpaceKnowledgeDomainFilePage() => $_ensure(1);
 
   @$pb.TagNumber(3)
   PageContourDimensions get pageContourDimensions => $_getN(2);

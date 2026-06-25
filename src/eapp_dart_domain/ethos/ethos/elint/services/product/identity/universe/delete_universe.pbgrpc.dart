@@ -15,16 +15,16 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'delete_universe.pb.dart' as $34;
+import 'delete_universe.pb.dart' as $65;
 
 export 'delete_universe.pb.dart';
 
 @$pb.GrpcServiceName('elint.services.product.identity.universe.DeleteUniverseService')
 class DeleteUniverseServiceClient extends $grpc.Client {
-  static final _$deleteUniverse = $grpc.ClientMethod<$34.DeleteUniverseRequest, $34.DeleteUniverseResponse>(
+  static final _$deleteUniverse = $grpc.ClientMethod<$65.DeleteUniverseRequest, $65.DeleteUniverseResponse>(
       '/elint.services.product.identity.universe.DeleteUniverseService/DeleteUniverse',
-      ($34.DeleteUniverseRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $34.DeleteUniverseResponse.fromBuffer(value));
+      ($65.DeleteUniverseRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $65.DeleteUniverseResponse.fromBuffer(value));
 
   DeleteUniverseServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -32,7 +32,7 @@ class DeleteUniverseServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$34.DeleteUniverseResponse> deleteUniverse($34.DeleteUniverseRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$65.DeleteUniverseResponse> deleteUniverse($65.DeleteUniverseRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteUniverse, request, options: options);
   }
 }
@@ -42,18 +42,18 @@ abstract class DeleteUniverseServiceBase extends $grpc.Service {
   $core.String get $name => 'elint.services.product.identity.universe.DeleteUniverseService';
 
   DeleteUniverseServiceBase() {
-    $addMethod($grpc.ServiceMethod<$34.DeleteUniverseRequest, $34.DeleteUniverseResponse>(
+    $addMethod($grpc.ServiceMethod<$65.DeleteUniverseRequest, $65.DeleteUniverseResponse>(
         'DeleteUniverse',
         deleteUniverse_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $34.DeleteUniverseRequest.fromBuffer(value),
-        ($34.DeleteUniverseResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $65.DeleteUniverseRequest.fromBuffer(value),
+        ($65.DeleteUniverseResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$34.DeleteUniverseResponse> deleteUniverse_Pre($grpc.ServiceCall call, $async.Future<$34.DeleteUniverseRequest> request) async {
+  $async.Future<$65.DeleteUniverseResponse> deleteUniverse_Pre($grpc.ServiceCall call, $async.Future<$65.DeleteUniverseRequest> request) async {
     return deleteUniverse(call, await request);
   }
 
-  $async.Future<$34.DeleteUniverseResponse> deleteUniverse($grpc.ServiceCall call, $34.DeleteUniverseRequest request);
+  $async.Future<$65.DeleteUniverseResponse> deleteUniverse($grpc.ServiceCall call, $65.DeleteUniverseRequest request);
 }

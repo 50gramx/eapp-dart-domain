@@ -15,7 +15,7 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../../../google/protobuf/timestamp.pb.dart' as $85;
 import '../../identity/space/access_space.pb.dart' as $2;
-import 'access_space_knowledge.pb.dart' as $3;
+import 'access_space_knowledge.pb.dart' as $18;
 
 export '../../../../../../google/protobuf/timestamp.pb.dart';
 
@@ -107,7 +107,7 @@ class CreateAccountSpaceKnowledgeRequest extends $pb.GeneratedMessage {
 
 class CreateAccountSpaceKnowledgeResponse extends $pb.GeneratedMessage {
   factory CreateAccountSpaceKnowledgeResponse({
-    $3.SpaceKnowledgeServicesAccessAuthDetails? spaceKnowledgeServicesAccessAuthDetails,
+    $18.SpaceKnowledgeServicesAccessAuthDetails? spaceKnowledgeServicesAccessAuthDetails,
     $core.bool? createAccountSpaceKnowledgeDone,
     $core.String? createAccountSpaceKnowledgeMessage,
   }) {
@@ -128,7 +128,7 @@ class CreateAccountSpaceKnowledgeResponse extends $pb.GeneratedMessage {
   factory CreateAccountSpaceKnowledgeResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateAccountSpaceKnowledgeResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.knowledge.space'), createEmptyInstance: create)
-    ..aOM<$3.SpaceKnowledgeServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'spaceKnowledgeServicesAccessAuthDetails', subBuilder: $3.SpaceKnowledgeServicesAccessAuthDetails.create)
+    ..aOM<$18.SpaceKnowledgeServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'spaceKnowledgeServicesAccessAuthDetails', subBuilder: $18.SpaceKnowledgeServicesAccessAuthDetails.create)
     ..aOB(2, _omitFieldNames ? '' : 'createAccountSpaceKnowledgeDone')
     ..aOS(3, _omitFieldNames ? '' : 'createAccountSpaceKnowledgeMessage')
     ..hasRequiredFields = false
@@ -157,15 +157,15 @@ class CreateAccountSpaceKnowledgeResponse extends $pb.GeneratedMessage {
 
   /// Service Response Properties
   @$pb.TagNumber(1)
-  $3.SpaceKnowledgeServicesAccessAuthDetails get spaceKnowledgeServicesAccessAuthDetails => $_getN(0);
+  $18.SpaceKnowledgeServicesAccessAuthDetails get spaceKnowledgeServicesAccessAuthDetails => $_getN(0);
   @$pb.TagNumber(1)
-  set spaceKnowledgeServicesAccessAuthDetails($3.SpaceKnowledgeServicesAccessAuthDetails v) { setField(1, v); }
+  set spaceKnowledgeServicesAccessAuthDetails($18.SpaceKnowledgeServicesAccessAuthDetails v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSpaceKnowledgeServicesAccessAuthDetails() => $_has(0);
   @$pb.TagNumber(1)
   void clearSpaceKnowledgeServicesAccessAuthDetails() => clearField(1);
   @$pb.TagNumber(1)
-  $3.SpaceKnowledgeServicesAccessAuthDetails ensureSpaceKnowledgeServicesAccessAuthDetails() => $_ensure(0);
+  $18.SpaceKnowledgeServicesAccessAuthDetails ensureSpaceKnowledgeServicesAccessAuthDetails() => $_ensure(0);
 
   /// Meta Properties
   @$pb.TagNumber(2)

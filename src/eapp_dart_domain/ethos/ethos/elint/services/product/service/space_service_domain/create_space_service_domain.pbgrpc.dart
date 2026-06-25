@@ -15,21 +15,21 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../entities/generic.pb.dart' as $7;
-import 'create_space_service_domain.pb.dart' as $53;
+import '../../../../entities/generic.pb.dart' as $9;
+import 'create_space_service_domain.pb.dart' as $8;
 
 export 'create_space_service_domain.pb.dart';
 
 @$pb.GrpcServiceName('elint.services.product.service.domain.CreateSpaceServiceDomainService')
 class CreateSpaceServiceDomainServiceClient extends $grpc.Client {
-  static final _$createDC499999998 = $grpc.ClientMethod<$53.CreateDC499999998SSDRequest, $7.ResponseMeta>(
+  static final _$createDC499999998 = $grpc.ClientMethod<$8.CreateDC499999998SSDRequest, $9.ResponseMeta>(
       '/elint.services.product.service.domain.CreateSpaceServiceDomainService/CreateDC499999998',
-      ($53.CreateDC499999998SSDRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $7.ResponseMeta.fromBuffer(value));
-  static final _$createDC499999999 = $grpc.ClientMethod<$53.CreateDC499999999SSDRequest, $7.ResponseMeta>(
+      ($8.CreateDC499999998SSDRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $9.ResponseMeta.fromBuffer(value));
+  static final _$createDC499999999 = $grpc.ClientMethod<$8.CreateDC499999999SSDRequest, $9.ResponseMeta>(
       '/elint.services.product.service.domain.CreateSpaceServiceDomainService/CreateDC499999999',
-      ($53.CreateDC499999999SSDRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $7.ResponseMeta.fromBuffer(value));
+      ($8.CreateDC499999999SSDRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $9.ResponseMeta.fromBuffer(value));
 
   CreateSpaceServiceDomainServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -37,11 +37,11 @@ class CreateSpaceServiceDomainServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$7.ResponseMeta> createDC499999998($53.CreateDC499999998SSDRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$9.ResponseMeta> createDC499999998($8.CreateDC499999998SSDRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createDC499999998, request, options: options);
   }
 
-  $grpc.ResponseFuture<$7.ResponseMeta> createDC499999999($53.CreateDC499999999SSDRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$9.ResponseMeta> createDC499999999($8.CreateDC499999999SSDRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createDC499999999, request, options: options);
   }
 }
@@ -51,30 +51,30 @@ abstract class CreateSpaceServiceDomainServiceBase extends $grpc.Service {
   $core.String get $name => 'elint.services.product.service.domain.CreateSpaceServiceDomainService';
 
   CreateSpaceServiceDomainServiceBase() {
-    $addMethod($grpc.ServiceMethod<$53.CreateDC499999998SSDRequest, $7.ResponseMeta>(
+    $addMethod($grpc.ServiceMethod<$8.CreateDC499999998SSDRequest, $9.ResponseMeta>(
         'CreateDC499999998',
         createDC499999998_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $53.CreateDC499999998SSDRequest.fromBuffer(value),
-        ($7.ResponseMeta value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$53.CreateDC499999999SSDRequest, $7.ResponseMeta>(
+        ($core.List<$core.int> value) => $8.CreateDC499999998SSDRequest.fromBuffer(value),
+        ($9.ResponseMeta value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$8.CreateDC499999999SSDRequest, $9.ResponseMeta>(
         'CreateDC499999999',
         createDC499999999_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $53.CreateDC499999999SSDRequest.fromBuffer(value),
-        ($7.ResponseMeta value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $8.CreateDC499999999SSDRequest.fromBuffer(value),
+        ($9.ResponseMeta value) => value.writeToBuffer()));
   }
 
-  $async.Future<$7.ResponseMeta> createDC499999998_Pre($grpc.ServiceCall call, $async.Future<$53.CreateDC499999998SSDRequest> request) async {
+  $async.Future<$9.ResponseMeta> createDC499999998_Pre($grpc.ServiceCall call, $async.Future<$8.CreateDC499999998SSDRequest> request) async {
     return createDC499999998(call, await request);
   }
 
-  $async.Future<$7.ResponseMeta> createDC499999999_Pre($grpc.ServiceCall call, $async.Future<$53.CreateDC499999999SSDRequest> request) async {
+  $async.Future<$9.ResponseMeta> createDC499999999_Pre($grpc.ServiceCall call, $async.Future<$8.CreateDC499999999SSDRequest> request) async {
     return createDC499999999(call, await request);
   }
 
-  $async.Future<$7.ResponseMeta> createDC499999998($grpc.ServiceCall call, $53.CreateDC499999998SSDRequest request);
-  $async.Future<$7.ResponseMeta> createDC499999999($grpc.ServiceCall call, $53.CreateDC499999999SSDRequest request);
+  $async.Future<$9.ResponseMeta> createDC499999998($grpc.ServiceCall call, $8.CreateDC499999998SSDRequest request);
+  $async.Future<$9.ResponseMeta> createDC499999999($grpc.ServiceCall call, $8.CreateDC499999999SSDRequest request);
 }

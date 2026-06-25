@@ -15,17 +15,17 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../entities/generic.pb.dart' as $7;
-import 'create_space_product_domain.pb.dart' as $57;
+import '../../../../entities/generic.pb.dart' as $9;
+import 'create_space_product_domain.pb.dart' as $17;
 
 export 'create_space_product_domain.pb.dart';
 
 @$pb.GrpcServiceName('elint.services.product.product.domain.CreateSpaceProductDomainService')
 class CreateSpaceProductDomainServiceClient extends $grpc.Client {
-  static final _$createDC499999994 = $grpc.ClientMethod<$57.CreateDC499999994SPDRequest, $7.ResponseMeta>(
+  static final _$createDC499999994 = $grpc.ClientMethod<$17.CreateDC499999994SPDRequest, $9.ResponseMeta>(
       '/elint.services.product.product.domain.CreateSpaceProductDomainService/CreateDC499999994',
-      ($57.CreateDC499999994SPDRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $7.ResponseMeta.fromBuffer(value));
+      ($17.CreateDC499999994SPDRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $9.ResponseMeta.fromBuffer(value));
 
   CreateSpaceProductDomainServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -33,7 +33,7 @@ class CreateSpaceProductDomainServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$7.ResponseMeta> createDC499999994($57.CreateDC499999994SPDRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$9.ResponseMeta> createDC499999994($17.CreateDC499999994SPDRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createDC499999994, request, options: options);
   }
 }
@@ -43,18 +43,18 @@ abstract class CreateSpaceProductDomainServiceBase extends $grpc.Service {
   $core.String get $name => 'elint.services.product.product.domain.CreateSpaceProductDomainService';
 
   CreateSpaceProductDomainServiceBase() {
-    $addMethod($grpc.ServiceMethod<$57.CreateDC499999994SPDRequest, $7.ResponseMeta>(
+    $addMethod($grpc.ServiceMethod<$17.CreateDC499999994SPDRequest, $9.ResponseMeta>(
         'CreateDC499999994',
         createDC499999994_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $57.CreateDC499999994SPDRequest.fromBuffer(value),
-        ($7.ResponseMeta value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $17.CreateDC499999994SPDRequest.fromBuffer(value),
+        ($9.ResponseMeta value) => value.writeToBuffer()));
   }
 
-  $async.Future<$7.ResponseMeta> createDC499999994_Pre($grpc.ServiceCall call, $async.Future<$57.CreateDC499999994SPDRequest> request) async {
+  $async.Future<$9.ResponseMeta> createDC499999994_Pre($grpc.ServiceCall call, $async.Future<$17.CreateDC499999994SPDRequest> request) async {
     return createDC499999994(call, await request);
   }
 
-  $async.Future<$7.ResponseMeta> createDC499999994($grpc.ServiceCall call, $57.CreateDC499999994SPDRequest request);
+  $async.Future<$9.ResponseMeta> createDC499999994($grpc.ServiceCall call, $17.CreateDC499999994SPDRequest request);
 }

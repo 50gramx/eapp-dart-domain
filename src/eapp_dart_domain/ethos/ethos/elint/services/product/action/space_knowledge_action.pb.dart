@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../entities/generic.pb.dart' as $7;
-import '../../../entities/space_knowledge_domain.pb.dart' as $76;
+import '../../../entities/generic.pb.dart' as $9;
+import '../../../entities/space_knowledge_domain.pb.dart' as $38;
 import '../identity/account_assistant/access_account_assistant.pb.dart' as $1;
 
 /// Message Definitions
@@ -23,7 +23,7 @@ class AskQuestionRequest extends $pb.GeneratedMessage {
     $1.AccountAssistantServicesAccessAuthDetails? accessAuthDetails,
     $core.String? message,
     $core.bool? askParticularDomain,
-    $76.SpaceKnowledgeDomain? spaceKnowledgeDomain,
+    $38.SpaceKnowledgeDomain? spaceKnowledgeDomain,
   }) {
     final $result = create();
     if (accessAuthDetails != null) {
@@ -48,7 +48,7 @@ class AskQuestionRequest extends $pb.GeneratedMessage {
     ..aOM<$1.AccountAssistantServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'accessAuthDetails', subBuilder: $1.AccountAssistantServicesAccessAuthDetails.create)
     ..aOS(2, _omitFieldNames ? '' : 'message')
     ..aOB(3, _omitFieldNames ? '' : 'askParticularDomain')
-    ..aOM<$76.SpaceKnowledgeDomain>(4, _omitFieldNames ? '' : 'spaceKnowledgeDomain', subBuilder: $76.SpaceKnowledgeDomain.create)
+    ..aOM<$38.SpaceKnowledgeDomain>(4, _omitFieldNames ? '' : 'spaceKnowledgeDomain', subBuilder: $38.SpaceKnowledgeDomain.create)
     ..hasRequiredFields = false
   ;
 
@@ -105,21 +105,21 @@ class AskQuestionRequest extends $pb.GeneratedMessage {
   void clearAskParticularDomain() => clearField(3);
 
   @$pb.TagNumber(4)
-  $76.SpaceKnowledgeDomain get spaceKnowledgeDomain => $_getN(3);
+  $38.SpaceKnowledgeDomain get spaceKnowledgeDomain => $_getN(3);
   @$pb.TagNumber(4)
-  set spaceKnowledgeDomain($76.SpaceKnowledgeDomain v) { setField(4, v); }
+  set spaceKnowledgeDomain($38.SpaceKnowledgeDomain v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasSpaceKnowledgeDomain() => $_has(3);
   @$pb.TagNumber(4)
   void clearSpaceKnowledgeDomain() => clearField(4);
   @$pb.TagNumber(4)
-  $76.SpaceKnowledgeDomain ensureSpaceKnowledgeDomain() => $_ensure(3);
+  $38.SpaceKnowledgeDomain ensureSpaceKnowledgeDomain() => $_ensure(3);
 }
 
 class AskQuestionResponse extends $pb.GeneratedMessage {
   factory AskQuestionResponse({
     $core.Iterable<DomainRankedAnswers>? domainsRankedAnswers,
-    $7.ResponseMeta? responseMeta,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (domainsRankedAnswers != null) {
@@ -136,7 +136,7 @@ class AskQuestionResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AskQuestionResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.action.space.knowledge'), createEmptyInstance: create)
     ..pc<DomainRankedAnswers>(1, _omitFieldNames ? '' : 'domainsRankedAnswers', $pb.PbFieldType.PM, subBuilder: DomainRankedAnswers.create)
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -165,21 +165,21 @@ class AskQuestionResponse extends $pb.GeneratedMessage {
   $core.List<DomainRankedAnswers> get domainsRankedAnswers => $_getList(0);
 
   @$pb.TagNumber(2)
-  $7.ResponseMeta get responseMeta => $_getN(1);
+  $9.ResponseMeta get responseMeta => $_getN(1);
   @$pb.TagNumber(2)
-  set responseMeta($7.ResponseMeta v) { setField(2, v); }
+  set responseMeta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponseMeta() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponseMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(1);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(1);
 }
 
 class DomainRankedAnswers extends $pb.GeneratedMessage {
   factory DomainRankedAnswers({
-    $76.SpaceKnowledgeDomain? spaceKnowledgeDomain,
-    $core.Iterable<$76.RankedAnswer>? rankedAnswers,
+    $38.SpaceKnowledgeDomain? spaceKnowledgeDomain,
+    $core.Iterable<$38.RankedAnswer>? rankedAnswers,
   }) {
     final $result = create();
     if (spaceKnowledgeDomain != null) {
@@ -195,8 +195,8 @@ class DomainRankedAnswers extends $pb.GeneratedMessage {
   factory DomainRankedAnswers.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DomainRankedAnswers', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.action.space.knowledge'), createEmptyInstance: create)
-    ..aOM<$76.SpaceKnowledgeDomain>(1, _omitFieldNames ? '' : 'spaceKnowledgeDomain', subBuilder: $76.SpaceKnowledgeDomain.create)
-    ..pc<$76.RankedAnswer>(2, _omitFieldNames ? '' : 'rankedAnswers', $pb.PbFieldType.PM, subBuilder: $76.RankedAnswer.create)
+    ..aOM<$38.SpaceKnowledgeDomain>(1, _omitFieldNames ? '' : 'spaceKnowledgeDomain', subBuilder: $38.SpaceKnowledgeDomain.create)
+    ..pc<$38.RankedAnswer>(2, _omitFieldNames ? '' : 'rankedAnswers', $pb.PbFieldType.PM, subBuilder: $38.RankedAnswer.create)
     ..hasRequiredFields = false
   ;
 
@@ -222,18 +222,18 @@ class DomainRankedAnswers extends $pb.GeneratedMessage {
   static DomainRankedAnswers? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $76.SpaceKnowledgeDomain get spaceKnowledgeDomain => $_getN(0);
+  $38.SpaceKnowledgeDomain get spaceKnowledgeDomain => $_getN(0);
   @$pb.TagNumber(1)
-  set spaceKnowledgeDomain($76.SpaceKnowledgeDomain v) { setField(1, v); }
+  set spaceKnowledgeDomain($38.SpaceKnowledgeDomain v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSpaceKnowledgeDomain() => $_has(0);
   @$pb.TagNumber(1)
   void clearSpaceKnowledgeDomain() => clearField(1);
   @$pb.TagNumber(1)
-  $76.SpaceKnowledgeDomain ensureSpaceKnowledgeDomain() => $_ensure(0);
+  $38.SpaceKnowledgeDomain ensureSpaceKnowledgeDomain() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $core.List<$76.RankedAnswer> get rankedAnswers => $_getList(1);
+  $core.List<$38.RankedAnswer> get rankedAnswers => $_getList(1);
 }
 
 

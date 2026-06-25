@@ -16,20 +16,20 @@ import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../identity/space/access_space.pb.dart' as $2;
-import 'access_space_product.pb.dart' as $4;
+import 'access_space_product.pb.dart' as $12;
 
 export 'access_space_product.pb.dart';
 
 @$pb.GrpcServiceName('elint.services.product.product.space.AccessSpaceProductService')
 class AccessSpaceProductServiceClient extends $grpc.Client {
-  static final _$spaceProductAccessToken = $grpc.ClientMethod<$2.SpaceServicesAccessAuthDetails, $4.SpaceProductAccessTokenResponse>(
+  static final _$spaceProductAccessToken = $grpc.ClientMethod<$2.SpaceServicesAccessAuthDetails, $12.SpaceProductAccessTokenResponse>(
       '/elint.services.product.product.space.AccessSpaceProductService/SpaceProductAccessToken',
       ($2.SpaceServicesAccessAuthDetails value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $4.SpaceProductAccessTokenResponse.fromBuffer(value));
-  static final _$validateSpaceProductServices = $grpc.ClientMethod<$4.SpaceProductServicesAccessAuthDetails, $4.ValidateSpaceProductServicesResponse>(
+      ($core.List<$core.int> value) => $12.SpaceProductAccessTokenResponse.fromBuffer(value));
+  static final _$validateSpaceProductServices = $grpc.ClientMethod<$12.SpaceProductServicesAccessAuthDetails, $12.ValidateSpaceProductServicesResponse>(
       '/elint.services.product.product.space.AccessSpaceProductService/ValidateSpaceProductServices',
-      ($4.SpaceProductServicesAccessAuthDetails value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $4.ValidateSpaceProductServicesResponse.fromBuffer(value));
+      ($12.SpaceProductServicesAccessAuthDetails value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $12.ValidateSpaceProductServicesResponse.fromBuffer(value));
 
   AccessSpaceProductServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -37,11 +37,11 @@ class AccessSpaceProductServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$4.SpaceProductAccessTokenResponse> spaceProductAccessToken($2.SpaceServicesAccessAuthDetails request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$12.SpaceProductAccessTokenResponse> spaceProductAccessToken($2.SpaceServicesAccessAuthDetails request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$spaceProductAccessToken, request, options: options);
   }
 
-  $grpc.ResponseFuture<$4.ValidateSpaceProductServicesResponse> validateSpaceProductServices($4.SpaceProductServicesAccessAuthDetails request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$12.ValidateSpaceProductServicesResponse> validateSpaceProductServices($12.SpaceProductServicesAccessAuthDetails request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$validateSpaceProductServices, request, options: options);
   }
 }
@@ -51,30 +51,30 @@ abstract class AccessSpaceProductServiceBase extends $grpc.Service {
   $core.String get $name => 'elint.services.product.product.space.AccessSpaceProductService';
 
   AccessSpaceProductServiceBase() {
-    $addMethod($grpc.ServiceMethod<$2.SpaceServicesAccessAuthDetails, $4.SpaceProductAccessTokenResponse>(
+    $addMethod($grpc.ServiceMethod<$2.SpaceServicesAccessAuthDetails, $12.SpaceProductAccessTokenResponse>(
         'SpaceProductAccessToken',
         spaceProductAccessToken_Pre,
         false,
         false,
         ($core.List<$core.int> value) => $2.SpaceServicesAccessAuthDetails.fromBuffer(value),
-        ($4.SpaceProductAccessTokenResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$4.SpaceProductServicesAccessAuthDetails, $4.ValidateSpaceProductServicesResponse>(
+        ($12.SpaceProductAccessTokenResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$12.SpaceProductServicesAccessAuthDetails, $12.ValidateSpaceProductServicesResponse>(
         'ValidateSpaceProductServices',
         validateSpaceProductServices_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $4.SpaceProductServicesAccessAuthDetails.fromBuffer(value),
-        ($4.ValidateSpaceProductServicesResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $12.SpaceProductServicesAccessAuthDetails.fromBuffer(value),
+        ($12.ValidateSpaceProductServicesResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$4.SpaceProductAccessTokenResponse> spaceProductAccessToken_Pre($grpc.ServiceCall call, $async.Future<$2.SpaceServicesAccessAuthDetails> request) async {
+  $async.Future<$12.SpaceProductAccessTokenResponse> spaceProductAccessToken_Pre($grpc.ServiceCall call, $async.Future<$2.SpaceServicesAccessAuthDetails> request) async {
     return spaceProductAccessToken(call, await request);
   }
 
-  $async.Future<$4.ValidateSpaceProductServicesResponse> validateSpaceProductServices_Pre($grpc.ServiceCall call, $async.Future<$4.SpaceProductServicesAccessAuthDetails> request) async {
+  $async.Future<$12.ValidateSpaceProductServicesResponse> validateSpaceProductServices_Pre($grpc.ServiceCall call, $async.Future<$12.SpaceProductServicesAccessAuthDetails> request) async {
     return validateSpaceProductServices(call, await request);
   }
 
-  $async.Future<$4.SpaceProductAccessTokenResponse> spaceProductAccessToken($grpc.ServiceCall call, $2.SpaceServicesAccessAuthDetails request);
-  $async.Future<$4.ValidateSpaceProductServicesResponse> validateSpaceProductServices($grpc.ServiceCall call, $4.SpaceProductServicesAccessAuthDetails request);
+  $async.Future<$12.SpaceProductAccessTokenResponse> spaceProductAccessToken($grpc.ServiceCall call, $2.SpaceServicesAccessAuthDetails request);
+  $async.Future<$12.ValidateSpaceProductServicesResponse> validateSpaceProductServices($grpc.ServiceCall call, $12.SpaceProductServicesAccessAuthDetails request);
 }

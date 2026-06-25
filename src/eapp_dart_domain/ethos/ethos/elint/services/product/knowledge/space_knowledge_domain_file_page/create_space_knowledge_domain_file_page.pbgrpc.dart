@@ -15,22 +15,22 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../entities/space_knowledge_domain_file_page.pb.dart' as $69;
-import '../space_knowledge_domain_file/access_space_knowledge_domain_file.pb.dart' as $64;
-import 'create_space_knowledge_domain_file_page.pb.dart' as $68;
+import '../../../../entities/space_knowledge_domain_file_page.pb.dart' as $22;
+import '../space_knowledge_domain_file/access_space_knowledge_domain_file.pb.dart' as $20;
+import 'create_space_knowledge_domain_file_page.pb.dart' as $21;
 
 export 'create_space_knowledge_domain_file_page.pb.dart';
 
 @$pb.GrpcServiceName('elint.services.product.knowledge.page.CreateSpaceKnowledgeDomainFilePageService')
 class CreateSpaceKnowledgeDomainFilePageServiceClient extends $grpc.Client {
-  static final _$extractPagesFromFile = $grpc.ClientMethod<$64.SpaceKnowledgeDomainFileServicesAccessAuthDetails, $68.ExtractPagesFromFileResponse>(
+  static final _$extractPagesFromFile = $grpc.ClientMethod<$20.SpaceKnowledgeDomainFileServicesAccessAuthDetails, $21.ExtractPagesFromFileResponse>(
       '/elint.services.product.knowledge.page.CreateSpaceKnowledgeDomainFilePageService/ExtractPagesFromFile',
-      ($64.SpaceKnowledgeDomainFileServicesAccessAuthDetails value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $68.ExtractPagesFromFileResponse.fromBuffer(value));
-  static final _$extractTextFromPage = $grpc.ClientMethod<$69.SpaceKnowledgeDomainFilePage, $68.ExtractTextFromPageResponse>(
+      ($20.SpaceKnowledgeDomainFileServicesAccessAuthDetails value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $21.ExtractPagesFromFileResponse.fromBuffer(value));
+  static final _$extractTextFromPage = $grpc.ClientMethod<$22.SpaceKnowledgeDomainFilePage, $21.ExtractTextFromPageResponse>(
       '/elint.services.product.knowledge.page.CreateSpaceKnowledgeDomainFilePageService/ExtractTextFromPage',
-      ($69.SpaceKnowledgeDomainFilePage value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $68.ExtractTextFromPageResponse.fromBuffer(value));
+      ($22.SpaceKnowledgeDomainFilePage value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $21.ExtractTextFromPageResponse.fromBuffer(value));
 
   CreateSpaceKnowledgeDomainFilePageServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -38,11 +38,11 @@ class CreateSpaceKnowledgeDomainFilePageServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseStream<$68.ExtractPagesFromFileResponse> extractPagesFromFile($64.SpaceKnowledgeDomainFileServicesAccessAuthDetails request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseStream<$21.ExtractPagesFromFileResponse> extractPagesFromFile($20.SpaceKnowledgeDomainFileServicesAccessAuthDetails request, {$grpc.CallOptions? options}) {
     return $createStreamingCall(_$extractPagesFromFile, $async.Stream.fromIterable([request]), options: options);
   }
 
-  $grpc.ResponseFuture<$68.ExtractTextFromPageResponse> extractTextFromPage($69.SpaceKnowledgeDomainFilePage request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$21.ExtractTextFromPageResponse> extractTextFromPage($22.SpaceKnowledgeDomainFilePage request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$extractTextFromPage, request, options: options);
   }
 }
@@ -52,30 +52,30 @@ abstract class CreateSpaceKnowledgeDomainFilePageServiceBase extends $grpc.Servi
   $core.String get $name => 'elint.services.product.knowledge.page.CreateSpaceKnowledgeDomainFilePageService';
 
   CreateSpaceKnowledgeDomainFilePageServiceBase() {
-    $addMethod($grpc.ServiceMethod<$64.SpaceKnowledgeDomainFileServicesAccessAuthDetails, $68.ExtractPagesFromFileResponse>(
+    $addMethod($grpc.ServiceMethod<$20.SpaceKnowledgeDomainFileServicesAccessAuthDetails, $21.ExtractPagesFromFileResponse>(
         'ExtractPagesFromFile',
         extractPagesFromFile_Pre,
         false,
         true,
-        ($core.List<$core.int> value) => $64.SpaceKnowledgeDomainFileServicesAccessAuthDetails.fromBuffer(value),
-        ($68.ExtractPagesFromFileResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$69.SpaceKnowledgeDomainFilePage, $68.ExtractTextFromPageResponse>(
+        ($core.List<$core.int> value) => $20.SpaceKnowledgeDomainFileServicesAccessAuthDetails.fromBuffer(value),
+        ($21.ExtractPagesFromFileResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$22.SpaceKnowledgeDomainFilePage, $21.ExtractTextFromPageResponse>(
         'ExtractTextFromPage',
         extractTextFromPage_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $69.SpaceKnowledgeDomainFilePage.fromBuffer(value),
-        ($68.ExtractTextFromPageResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $22.SpaceKnowledgeDomainFilePage.fromBuffer(value),
+        ($21.ExtractTextFromPageResponse value) => value.writeToBuffer()));
   }
 
-  $async.Stream<$68.ExtractPagesFromFileResponse> extractPagesFromFile_Pre($grpc.ServiceCall call, $async.Future<$64.SpaceKnowledgeDomainFileServicesAccessAuthDetails> request) async* {
+  $async.Stream<$21.ExtractPagesFromFileResponse> extractPagesFromFile_Pre($grpc.ServiceCall call, $async.Future<$20.SpaceKnowledgeDomainFileServicesAccessAuthDetails> request) async* {
     yield* extractPagesFromFile(call, await request);
   }
 
-  $async.Future<$68.ExtractTextFromPageResponse> extractTextFromPage_Pre($grpc.ServiceCall call, $async.Future<$69.SpaceKnowledgeDomainFilePage> request) async {
+  $async.Future<$21.ExtractTextFromPageResponse> extractTextFromPage_Pre($grpc.ServiceCall call, $async.Future<$22.SpaceKnowledgeDomainFilePage> request) async {
     return extractTextFromPage(call, await request);
   }
 
-  $async.Stream<$68.ExtractPagesFromFileResponse> extractPagesFromFile($grpc.ServiceCall call, $64.SpaceKnowledgeDomainFileServicesAccessAuthDetails request);
-  $async.Future<$68.ExtractTextFromPageResponse> extractTextFromPage($grpc.ServiceCall call, $69.SpaceKnowledgeDomainFilePage request);
+  $async.Stream<$21.ExtractPagesFromFileResponse> extractPagesFromFile($grpc.ServiceCall call, $20.SpaceKnowledgeDomainFileServicesAccessAuthDetails request);
+  $async.Future<$21.ExtractTextFromPageResponse> extractTextFromPage($grpc.ServiceCall call, $22.SpaceKnowledgeDomainFilePage request);
 }

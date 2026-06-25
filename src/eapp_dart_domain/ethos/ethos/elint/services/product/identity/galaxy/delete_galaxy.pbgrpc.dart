@@ -15,16 +15,16 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'delete_galaxy.pb.dart' as $30;
+import 'delete_galaxy.pb.dart' as $60;
 
 export 'delete_galaxy.pb.dart';
 
 @$pb.GrpcServiceName('elint.services.product.identity.galaxy.DeleteGalaxyService')
 class DeleteGalaxyServiceClient extends $grpc.Client {
-  static final _$deleteGalaxy = $grpc.ClientMethod<$30.DeleteGalaxyRequest, $30.DeleteGalaxyResponse>(
+  static final _$deleteGalaxy = $grpc.ClientMethod<$60.DeleteGalaxyRequest, $60.DeleteGalaxyResponse>(
       '/elint.services.product.identity.galaxy.DeleteGalaxyService/DeleteGalaxy',
-      ($30.DeleteGalaxyRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $30.DeleteGalaxyResponse.fromBuffer(value));
+      ($60.DeleteGalaxyRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $60.DeleteGalaxyResponse.fromBuffer(value));
 
   DeleteGalaxyServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -32,7 +32,7 @@ class DeleteGalaxyServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$30.DeleteGalaxyResponse> deleteGalaxy($30.DeleteGalaxyRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$60.DeleteGalaxyResponse> deleteGalaxy($60.DeleteGalaxyRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteGalaxy, request, options: options);
   }
 }
@@ -42,18 +42,18 @@ abstract class DeleteGalaxyServiceBase extends $grpc.Service {
   $core.String get $name => 'elint.services.product.identity.galaxy.DeleteGalaxyService';
 
   DeleteGalaxyServiceBase() {
-    $addMethod($grpc.ServiceMethod<$30.DeleteGalaxyRequest, $30.DeleteGalaxyResponse>(
+    $addMethod($grpc.ServiceMethod<$60.DeleteGalaxyRequest, $60.DeleteGalaxyResponse>(
         'DeleteGalaxy',
         deleteGalaxy_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $30.DeleteGalaxyRequest.fromBuffer(value),
-        ($30.DeleteGalaxyResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $60.DeleteGalaxyRequest.fromBuffer(value),
+        ($60.DeleteGalaxyResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$30.DeleteGalaxyResponse> deleteGalaxy_Pre($grpc.ServiceCall call, $async.Future<$30.DeleteGalaxyRequest> request) async {
+  $async.Future<$60.DeleteGalaxyResponse> deleteGalaxy_Pre($grpc.ServiceCall call, $async.Future<$60.DeleteGalaxyRequest> request) async {
     return deleteGalaxy(call, await request);
   }
 
-  $async.Future<$30.DeleteGalaxyResponse> deleteGalaxy($grpc.ServiceCall call, $30.DeleteGalaxyRequest request);
+  $async.Future<$60.DeleteGalaxyResponse> deleteGalaxy($grpc.ServiceCall call, $60.DeleteGalaxyRequest request);
 }

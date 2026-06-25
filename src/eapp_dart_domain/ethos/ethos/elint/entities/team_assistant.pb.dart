@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../google/protobuf/timestamp.pb.dart' as $85;
-import 'team.pb.dart' as $99;
+import 'team.pb.dart' as $103;
 
 export '../../../google/protobuf/timestamp.pb.dart';
 
@@ -22,7 +22,7 @@ class TeamAssistant extends $pb.GeneratedMessage {
   factory TeamAssistant({
     $core.String? id,
     $core.String? name,
-    $99.Team? team,
+    $103.Team? team,
     $85.Timestamp? createdAt,
     $85.Timestamp? lastAssistedAt,
   }) {
@@ -51,7 +51,7 @@ class TeamAssistant extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TeamAssistant', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.entity'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'name')
-    ..aOM<$99.Team>(4, _omitFieldNames ? '' : 'team', subBuilder: $99.Team.create)
+    ..aOM<$103.Team>(4, _omitFieldNames ? '' : 'team', subBuilder: $103.Team.create)
     ..aOM<$85.Timestamp>(5, _omitFieldNames ? '' : 'createdAt', subBuilder: $85.Timestamp.create)
     ..aOM<$85.Timestamp>(6, _omitFieldNames ? '' : 'lastAssistedAt', subBuilder: $85.Timestamp.create)
     ..hasRequiredFields = false
@@ -97,15 +97,15 @@ class TeamAssistant extends $pb.GeneratedMessage {
   void clearName() => clearField(2);
 
   @$pb.TagNumber(4)
-  $99.Team get team => $_getN(2);
+  $103.Team get team => $_getN(2);
   @$pb.TagNumber(4)
-  set team($99.Team v) { setField(4, v); }
+  set team($103.Team v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTeam() => $_has(2);
   @$pb.TagNumber(4)
   void clearTeam() => clearField(4);
   @$pb.TagNumber(4)
-  $99.Team ensureTeam() => $_ensure(2);
+  $103.Team ensureTeam() => $_ensure(2);
 
   @$pb.TagNumber(5)
   $85.Timestamp get createdAt => $_getN(3);

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../entities/account.pb.dart' as $22;
+import '../../../../entities/account.pb.dart' as $39;
 import 'access_account.pb.dart' as $0;
 
 /// Message Definitions
@@ -175,8 +175,8 @@ class NewReceivedMessageFromAccountRequest extends $pb.GeneratedMessage {
 
 class AccountConnectedAccountNotificationRequest extends $pb.GeneratedMessage {
   factory AccountConnectedAccountNotificationRequest({
-    $22.Account? account,
-    $22.AccountConnectedAccount? connectingAccountConnectedAccount,
+    $39.Account? account,
+    $39.AccountConnectedAccount? connectingAccountConnectedAccount,
   }) {
     final $result = create();
     if (account != null) {
@@ -192,8 +192,8 @@ class AccountConnectedAccountNotificationRequest extends $pb.GeneratedMessage {
   factory AccountConnectedAccountNotificationRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccountConnectedAccountNotificationRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.account'), createEmptyInstance: create)
-    ..aOM<$22.Account>(1, _omitFieldNames ? '' : 'account', subBuilder: $22.Account.create)
-    ..aOM<$22.AccountConnectedAccount>(2, _omitFieldNames ? '' : 'connectingAccountConnectedAccount', subBuilder: $22.AccountConnectedAccount.create)
+    ..aOM<$39.Account>(1, _omitFieldNames ? '' : 'account', subBuilder: $39.Account.create)
+    ..aOM<$39.AccountConnectedAccount>(2, _omitFieldNames ? '' : 'connectingAccountConnectedAccount', subBuilder: $39.AccountConnectedAccount.create)
     ..hasRequiredFields = false
   ;
 
@@ -219,32 +219,32 @@ class AccountConnectedAccountNotificationRequest extends $pb.GeneratedMessage {
   static AccountConnectedAccountNotificationRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $22.Account get account => $_getN(0);
+  $39.Account get account => $_getN(0);
   @$pb.TagNumber(1)
-  set account($22.Account v) { setField(1, v); }
+  set account($39.Account v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAccount() => $_has(0);
   @$pb.TagNumber(1)
   void clearAccount() => clearField(1);
   @$pb.TagNumber(1)
-  $22.Account ensureAccount() => $_ensure(0);
+  $39.Account ensureAccount() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $22.AccountConnectedAccount get connectingAccountConnectedAccount => $_getN(1);
+  $39.AccountConnectedAccount get connectingAccountConnectedAccount => $_getN(1);
   @$pb.TagNumber(2)
-  set connectingAccountConnectedAccount($22.AccountConnectedAccount v) { setField(2, v); }
+  set connectingAccountConnectedAccount($39.AccountConnectedAccount v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasConnectingAccountConnectedAccount() => $_has(1);
   @$pb.TagNumber(2)
   void clearConnectingAccountConnectedAccount() => clearField(2);
   @$pb.TagNumber(2)
-  $22.AccountConnectedAccount ensureConnectingAccountConnectedAccount() => $_ensure(1);
+  $39.AccountConnectedAccount ensureConnectingAccountConnectedAccount() => $_ensure(1);
 }
 
 class UpdateAccountDeviceDetailsRequest extends $pb.GeneratedMessage {
   factory UpdateAccountDeviceDetailsRequest({
     $0.AccountServicesAccessAuthDetails? accessAuthDetails,
-    $22.AccountDeviceDetails? accountDeviceDetails,
+    $39.AccountDeviceDetails? accountDeviceDetails,
   }) {
     final $result = create();
     if (accessAuthDetails != null) {
@@ -261,7 +261,7 @@ class UpdateAccountDeviceDetailsRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAccountDeviceDetailsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.account'), createEmptyInstance: create)
     ..aOM<$0.AccountServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'accessAuthDetails', subBuilder: $0.AccountServicesAccessAuthDetails.create)
-    ..aOM<$22.AccountDeviceDetails>(2, _omitFieldNames ? '' : 'accountDeviceDetails', subBuilder: $22.AccountDeviceDetails.create)
+    ..aOM<$39.AccountDeviceDetails>(2, _omitFieldNames ? '' : 'accountDeviceDetails', subBuilder: $39.AccountDeviceDetails.create)
     ..hasRequiredFields = false
   ;
 
@@ -298,15 +298,15 @@ class UpdateAccountDeviceDetailsRequest extends $pb.GeneratedMessage {
   $0.AccountServicesAccessAuthDetails ensureAccessAuthDetails() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $22.AccountDeviceDetails get accountDeviceDetails => $_getN(1);
+  $39.AccountDeviceDetails get accountDeviceDetails => $_getN(1);
   @$pb.TagNumber(2)
-  set accountDeviceDetails($22.AccountDeviceDetails v) { setField(2, v); }
+  set accountDeviceDetails($39.AccountDeviceDetails v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAccountDeviceDetails() => $_has(1);
   @$pb.TagNumber(2)
   void clearAccountDeviceDetails() => clearField(2);
   @$pb.TagNumber(2)
-  $22.AccountDeviceDetails ensureAccountDeviceDetails() => $_ensure(1);
+  $39.AccountDeviceDetails ensureAccountDeviceDetails() => $_ensure(1);
 }
 
 

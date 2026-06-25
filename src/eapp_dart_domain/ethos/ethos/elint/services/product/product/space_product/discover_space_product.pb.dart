@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../entities/generic.pb.dart' as $7;
-import '../../../../entities/space_product_domain.pb.dart' as $90;
-import 'access_space_product.pb.dart' as $4;
+import '../../../../entities/generic.pb.dart' as $9;
+import '../../../../entities/space_product_domain.pb.dart' as $93;
+import 'access_space_product.pb.dart' as $12;
 
 class GetSpaceProductDomainsResponse extends $pb.GeneratedMessage {
   factory GetSpaceProductDomainsResponse({
-    $core.Iterable<$90.SpaceProductDomain>? spaceProductDomains,
-    $7.ResponseMeta? responseMeta,
+    $core.Iterable<$93.SpaceProductDomain>? spaceProductDomains,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (spaceProductDomains != null) {
@@ -36,8 +36,8 @@ class GetSpaceProductDomainsResponse extends $pb.GeneratedMessage {
   factory GetSpaceProductDomainsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetSpaceProductDomainsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.product.space'), createEmptyInstance: create)
-    ..pc<$90.SpaceProductDomain>(1, _omitFieldNames ? '' : 'spaceProductDomains', $pb.PbFieldType.PM, subBuilder: $90.SpaceProductDomain.create)
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..pc<$93.SpaceProductDomain>(1, _omitFieldNames ? '' : 'spaceProductDomains', $pb.PbFieldType.PM, subBuilder: $93.SpaceProductDomain.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -64,24 +64,24 @@ class GetSpaceProductDomainsResponse extends $pb.GeneratedMessage {
 
   /// Response Properties
   @$pb.TagNumber(1)
-  $core.List<$90.SpaceProductDomain> get spaceProductDomains => $_getList(0);
+  $core.List<$93.SpaceProductDomain> get spaceProductDomains => $_getList(0);
 
   /// Meta Properties
   @$pb.TagNumber(2)
-  $7.ResponseMeta get responseMeta => $_getN(1);
+  $9.ResponseMeta get responseMeta => $_getN(1);
   @$pb.TagNumber(2)
-  set responseMeta($7.ResponseMeta v) { setField(2, v); }
+  set responseMeta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponseMeta() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponseMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(1);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(1);
 }
 
 class GetSpaceProductDomainByIdRequest extends $pb.GeneratedMessage {
   factory GetSpaceProductDomainByIdRequest({
-    $4.SpaceProductServicesAccessAuthDetails? accessAuth,
+    $12.SpaceProductServicesAccessAuthDetails? accessAuth,
     $core.String? spaceProductDomainId,
   }) {
     final $result = create();
@@ -98,7 +98,7 @@ class GetSpaceProductDomainByIdRequest extends $pb.GeneratedMessage {
   factory GetSpaceProductDomainByIdRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetSpaceProductDomainByIdRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.product.space'), createEmptyInstance: create)
-    ..aOM<$4.SpaceProductServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'accessAuth', subBuilder: $4.SpaceProductServicesAccessAuthDetails.create)
+    ..aOM<$12.SpaceProductServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'accessAuth', subBuilder: $12.SpaceProductServicesAccessAuthDetails.create)
     ..aOS(2, _omitFieldNames ? '' : 'spaceProductDomainId')
     ..hasRequiredFields = false
   ;
@@ -126,15 +126,15 @@ class GetSpaceProductDomainByIdRequest extends $pb.GeneratedMessage {
 
   /// Auth Properties
   @$pb.TagNumber(1)
-  $4.SpaceProductServicesAccessAuthDetails get accessAuth => $_getN(0);
+  $12.SpaceProductServicesAccessAuthDetails get accessAuth => $_getN(0);
   @$pb.TagNumber(1)
-  set accessAuth($4.SpaceProductServicesAccessAuthDetails v) { setField(1, v); }
+  set accessAuth($12.SpaceProductServicesAccessAuthDetails v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAccessAuth() => $_has(0);
   @$pb.TagNumber(1)
   void clearAccessAuth() => clearField(1);
   @$pb.TagNumber(1)
-  $4.SpaceProductServicesAccessAuthDetails ensureAccessAuth() => $_ensure(0);
+  $12.SpaceProductServicesAccessAuthDetails ensureAccessAuth() => $_ensure(0);
 
   /// Request Properties
   @$pb.TagNumber(2)
@@ -149,8 +149,8 @@ class GetSpaceProductDomainByIdRequest extends $pb.GeneratedMessage {
 
 class GetSpaceProductDomainByIdResponse extends $pb.GeneratedMessage {
   factory GetSpaceProductDomainByIdResponse({
-    $90.SpaceProductDomain? spaceProductDomain,
-    $7.ResponseMeta? responseMeta,
+    $93.SpaceProductDomain? spaceProductDomain,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (spaceProductDomain != null) {
@@ -166,8 +166,8 @@ class GetSpaceProductDomainByIdResponse extends $pb.GeneratedMessage {
   factory GetSpaceProductDomainByIdResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetSpaceProductDomainByIdResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.product.space'), createEmptyInstance: create)
-    ..aOM<$90.SpaceProductDomain>(1, _omitFieldNames ? '' : 'spaceProductDomain', subBuilder: $90.SpaceProductDomain.create)
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..aOM<$93.SpaceProductDomain>(1, _omitFieldNames ? '' : 'spaceProductDomain', subBuilder: $93.SpaceProductDomain.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -194,32 +194,32 @@ class GetSpaceProductDomainByIdResponse extends $pb.GeneratedMessage {
 
   /// Response Properties
   @$pb.TagNumber(1)
-  $90.SpaceProductDomain get spaceProductDomain => $_getN(0);
+  $93.SpaceProductDomain get spaceProductDomain => $_getN(0);
   @$pb.TagNumber(1)
-  set spaceProductDomain($90.SpaceProductDomain v) { setField(1, v); }
+  set spaceProductDomain($93.SpaceProductDomain v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSpaceProductDomain() => $_has(0);
   @$pb.TagNumber(1)
   void clearSpaceProductDomain() => clearField(1);
   @$pb.TagNumber(1)
-  $90.SpaceProductDomain ensureSpaceProductDomain() => $_ensure(0);
+  $93.SpaceProductDomain ensureSpaceProductDomain() => $_ensure(0);
 
   /// Meta Properties
   @$pb.TagNumber(2)
-  $7.ResponseMeta get responseMeta => $_getN(1);
+  $9.ResponseMeta get responseMeta => $_getN(1);
   @$pb.TagNumber(2)
-  set responseMeta($7.ResponseMeta v) { setField(2, v); }
+  set responseMeta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponseMeta() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponseMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(1);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(1);
 }
 
 class GetDomainsByCollarCodeRequest extends $pb.GeneratedMessage {
   factory GetDomainsByCollarCodeRequest({
-    $4.SpaceProductServicesAccessAuthDetails? accessAuth,
+    $12.SpaceProductServicesAccessAuthDetails? accessAuth,
     $core.String? collarCode,
   }) {
     final $result = create();
@@ -236,7 +236,7 @@ class GetDomainsByCollarCodeRequest extends $pb.GeneratedMessage {
   factory GetDomainsByCollarCodeRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetDomainsByCollarCodeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.product.space'), createEmptyInstance: create)
-    ..aOM<$4.SpaceProductServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'accessAuth', subBuilder: $4.SpaceProductServicesAccessAuthDetails.create)
+    ..aOM<$12.SpaceProductServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'accessAuth', subBuilder: $12.SpaceProductServicesAccessAuthDetails.create)
     ..aOS(2, _omitFieldNames ? '' : 'collarCode')
     ..hasRequiredFields = false
   ;
@@ -264,15 +264,15 @@ class GetDomainsByCollarCodeRequest extends $pb.GeneratedMessage {
 
   /// Auth Properties
   @$pb.TagNumber(1)
-  $4.SpaceProductServicesAccessAuthDetails get accessAuth => $_getN(0);
+  $12.SpaceProductServicesAccessAuthDetails get accessAuth => $_getN(0);
   @$pb.TagNumber(1)
-  set accessAuth($4.SpaceProductServicesAccessAuthDetails v) { setField(1, v); }
+  set accessAuth($12.SpaceProductServicesAccessAuthDetails v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAccessAuth() => $_has(0);
   @$pb.TagNumber(1)
   void clearAccessAuth() => clearField(1);
   @$pb.TagNumber(1)
-  $4.SpaceProductServicesAccessAuthDetails ensureAccessAuth() => $_ensure(0);
+  $12.SpaceProductServicesAccessAuthDetails ensureAccessAuth() => $_ensure(0);
 
   /// Request Properties
   @$pb.TagNumber(2)
@@ -287,8 +287,8 @@ class GetDomainsByCollarCodeRequest extends $pb.GeneratedMessage {
 
 class GetDomainsByCollarCodeResponse extends $pb.GeneratedMessage {
   factory GetDomainsByCollarCodeResponse({
-    $core.Iterable<$90.SpaceProductDomain>? spaceProductDomains,
-    $7.ResponseMeta? responseMeta,
+    $core.Iterable<$93.SpaceProductDomain>? spaceProductDomains,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (spaceProductDomains != null) {
@@ -304,8 +304,8 @@ class GetDomainsByCollarCodeResponse extends $pb.GeneratedMessage {
   factory GetDomainsByCollarCodeResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetDomainsByCollarCodeResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.product.space'), createEmptyInstance: create)
-    ..pc<$90.SpaceProductDomain>(1, _omitFieldNames ? '' : 'spaceProductDomains', $pb.PbFieldType.PM, subBuilder: $90.SpaceProductDomain.create)
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..pc<$93.SpaceProductDomain>(1, _omitFieldNames ? '' : 'spaceProductDomains', $pb.PbFieldType.PM, subBuilder: $93.SpaceProductDomain.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -332,19 +332,19 @@ class GetDomainsByCollarCodeResponse extends $pb.GeneratedMessage {
 
   /// Response Properties
   @$pb.TagNumber(1)
-  $core.List<$90.SpaceProductDomain> get spaceProductDomains => $_getList(0);
+  $core.List<$93.SpaceProductDomain> get spaceProductDomains => $_getList(0);
 
   /// Meta Properties
   @$pb.TagNumber(2)
-  $7.ResponseMeta get responseMeta => $_getN(1);
+  $9.ResponseMeta get responseMeta => $_getN(1);
   @$pb.TagNumber(2)
-  set responseMeta($7.ResponseMeta v) { setField(2, v); }
+  set responseMeta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponseMeta() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponseMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(1);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(1);
 }
 
 

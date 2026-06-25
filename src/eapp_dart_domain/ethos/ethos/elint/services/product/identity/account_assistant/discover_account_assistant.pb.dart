@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../entities/account_assistant.pb.dart' as $23;
-import '../../../../entities/generic.pb.dart' as $7;
+import '../../../../entities/account_assistant.pb.dart' as $40;
+import '../../../../entities/generic.pb.dart' as $9;
 import '../account/access_account.pb.dart' as $0;
 
 class GetAccountAssistantMetaByAccountIdRequest extends $pb.GeneratedMessage {
@@ -85,8 +85,8 @@ class GetAccountAssistantMetaByAccountIdRequest extends $pb.GeneratedMessage {
 
 class GetAccountAssistantMetaByAccountIdResponse extends $pb.GeneratedMessage {
   factory GetAccountAssistantMetaByAccountIdResponse({
-    $23.AccountAssistantMeta? accountAssistantMeta,
-    $7.ResponseMeta? responseMeta,
+    $40.AccountAssistantMeta? accountAssistantMeta,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (accountAssistantMeta != null) {
@@ -102,8 +102,8 @@ class GetAccountAssistantMetaByAccountIdResponse extends $pb.GeneratedMessage {
   factory GetAccountAssistantMetaByAccountIdResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetAccountAssistantMetaByAccountIdResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.account.assistant'), createEmptyInstance: create)
-    ..aOM<$23.AccountAssistantMeta>(1, _omitFieldNames ? '' : 'accountAssistantMeta', subBuilder: $23.AccountAssistantMeta.create)
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..aOM<$40.AccountAssistantMeta>(1, _omitFieldNames ? '' : 'accountAssistantMeta', subBuilder: $40.AccountAssistantMeta.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -129,26 +129,26 @@ class GetAccountAssistantMetaByAccountIdResponse extends $pb.GeneratedMessage {
   static GetAccountAssistantMetaByAccountIdResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $23.AccountAssistantMeta get accountAssistantMeta => $_getN(0);
+  $40.AccountAssistantMeta get accountAssistantMeta => $_getN(0);
   @$pb.TagNumber(1)
-  set accountAssistantMeta($23.AccountAssistantMeta v) { setField(1, v); }
+  set accountAssistantMeta($40.AccountAssistantMeta v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAccountAssistantMeta() => $_has(0);
   @$pb.TagNumber(1)
   void clearAccountAssistantMeta() => clearField(1);
   @$pb.TagNumber(1)
-  $23.AccountAssistantMeta ensureAccountAssistantMeta() => $_ensure(0);
+  $40.AccountAssistantMeta ensureAccountAssistantMeta() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $7.ResponseMeta get responseMeta => $_getN(1);
+  $9.ResponseMeta get responseMeta => $_getN(1);
   @$pb.TagNumber(2)
-  set responseMeta($7.ResponseMeta v) { setField(2, v); }
+  set responseMeta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponseMeta() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponseMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(1);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(1);
 }
 
 class GetAccountAssistantMetaByAccountAssistantIdRequest extends $pb.GeneratedMessage {
@@ -219,8 +219,8 @@ class GetAccountAssistantMetaByAccountAssistantIdRequest extends $pb.GeneratedMe
 
 class GetAccountAssistantMetaByAccountAssistantIdResponse extends $pb.GeneratedMessage {
   factory GetAccountAssistantMetaByAccountAssistantIdResponse({
-    $23.AccountAssistantMeta? accountAssistantMeta,
-    $7.ResponseMeta? responseMeta,
+    $40.AccountAssistantMeta? accountAssistantMeta,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (accountAssistantMeta != null) {
@@ -236,8 +236,8 @@ class GetAccountAssistantMetaByAccountAssistantIdResponse extends $pb.GeneratedM
   factory GetAccountAssistantMetaByAccountAssistantIdResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetAccountAssistantMetaByAccountAssistantIdResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.account.assistant'), createEmptyInstance: create)
-    ..aOM<$23.AccountAssistantMeta>(1, _omitFieldNames ? '' : 'accountAssistantMeta', subBuilder: $23.AccountAssistantMeta.create)
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..aOM<$40.AccountAssistantMeta>(1, _omitFieldNames ? '' : 'accountAssistantMeta', subBuilder: $40.AccountAssistantMeta.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -263,26 +263,26 @@ class GetAccountAssistantMetaByAccountAssistantIdResponse extends $pb.GeneratedM
   static GetAccountAssistantMetaByAccountAssistantIdResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $23.AccountAssistantMeta get accountAssistantMeta => $_getN(0);
+  $40.AccountAssistantMeta get accountAssistantMeta => $_getN(0);
   @$pb.TagNumber(1)
-  set accountAssistantMeta($23.AccountAssistantMeta v) { setField(1, v); }
+  set accountAssistantMeta($40.AccountAssistantMeta v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAccountAssistantMeta() => $_has(0);
   @$pb.TagNumber(1)
   void clearAccountAssistantMeta() => clearField(1);
   @$pb.TagNumber(1)
-  $23.AccountAssistantMeta ensureAccountAssistantMeta() => $_ensure(0);
+  $40.AccountAssistantMeta ensureAccountAssistantMeta() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $7.ResponseMeta get responseMeta => $_getN(1);
+  $9.ResponseMeta get responseMeta => $_getN(1);
   @$pb.TagNumber(2)
-  set responseMeta($7.ResponseMeta v) { setField(2, v); }
+  set responseMeta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponseMeta() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponseMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(1);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(1);
 }
 
 class GetAccountAssistantByIdRequest extends $pb.GeneratedMessage {
@@ -353,8 +353,8 @@ class GetAccountAssistantByIdRequest extends $pb.GeneratedMessage {
 
 class GetAccountAssistantByIdResponse extends $pb.GeneratedMessage {
   factory GetAccountAssistantByIdResponse({
-    $7.ResponseMeta? responseMeta,
-    $23.AccountAssistant? accountAssistant,
+    $9.ResponseMeta? responseMeta,
+    $40.AccountAssistant? accountAssistant,
   }) {
     final $result = create();
     if (responseMeta != null) {
@@ -370,8 +370,8 @@ class GetAccountAssistantByIdResponse extends $pb.GeneratedMessage {
   factory GetAccountAssistantByIdResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetAccountAssistantByIdResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.account.assistant'), createEmptyInstance: create)
-    ..aOM<$7.ResponseMeta>(1, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
-    ..aOM<$23.AccountAssistant>(2, _omitFieldNames ? '' : 'accountAssistant', subBuilder: $23.AccountAssistant.create)
+    ..aOM<$9.ResponseMeta>(1, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
+    ..aOM<$40.AccountAssistant>(2, _omitFieldNames ? '' : 'accountAssistant', subBuilder: $40.AccountAssistant.create)
     ..hasRequiredFields = false
   ;
 
@@ -397,26 +397,26 @@ class GetAccountAssistantByIdResponse extends $pb.GeneratedMessage {
   static GetAccountAssistantByIdResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $7.ResponseMeta get responseMeta => $_getN(0);
+  $9.ResponseMeta get responseMeta => $_getN(0);
   @$pb.TagNumber(1)
-  set responseMeta($7.ResponseMeta v) { setField(1, v); }
+  set responseMeta($9.ResponseMeta v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasResponseMeta() => $_has(0);
   @$pb.TagNumber(1)
   void clearResponseMeta() => clearField(1);
   @$pb.TagNumber(1)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(0);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $23.AccountAssistant get accountAssistant => $_getN(1);
+  $40.AccountAssistant get accountAssistant => $_getN(1);
   @$pb.TagNumber(2)
-  set accountAssistant($23.AccountAssistant v) { setField(2, v); }
+  set accountAssistant($40.AccountAssistant v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAccountAssistant() => $_has(1);
   @$pb.TagNumber(2)
   void clearAccountAssistant() => clearField(2);
   @$pb.TagNumber(2)
-  $23.AccountAssistant ensureAccountAssistant() => $_ensure(1);
+  $40.AccountAssistant ensureAccountAssistant() => $_ensure(1);
 }
 
 class GetAccountAssistantNameCodeByIdRequest extends $pb.GeneratedMessage {

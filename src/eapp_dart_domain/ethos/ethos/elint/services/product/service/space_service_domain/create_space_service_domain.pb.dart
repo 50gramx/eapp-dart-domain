@@ -13,19 +13,19 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../collars/DC499999998.pb.dart' as $10;
-import '../../../../collars/DC499999999.pb.dart' as $14;
-import '../space_service/access_space_service.pb.dart' as $11;
+import '../../../../collars/DC499999998.pb.dart' as $4;
+import '../../../../collars/DC499999999.pb.dart' as $83;
+import '../space_service/access_space_service.pb.dart' as $3;
 
 export '../../../../../../google/protobuf/timestamp.pb.dart';
 
 class CreateDC499999998SSDRequest extends $pb.GeneratedMessage {
   factory CreateDC499999998SSDRequest({
-    $11.SpaceServiceServicesAccessAuthDetails? auth,
+    $3.SpaceServiceServicesAccessAuthDetails? auth,
     $core.String? name,
     $core.String? description,
     $core.bool? isIsolated,
-    $10.DC499999998? dc499999998,
+    $4.DC499999998? dc499999998,
   }) {
     final $result = create();
     if (auth != null) {
@@ -50,11 +50,11 @@ class CreateDC499999998SSDRequest extends $pb.GeneratedMessage {
   factory CreateDC499999998SSDRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateDC499999998SSDRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.service.domain'), createEmptyInstance: create)
-    ..aOM<$11.SpaceServiceServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'auth', subBuilder: $11.SpaceServiceServicesAccessAuthDetails.create)
+    ..aOM<$3.SpaceServiceServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'auth', subBuilder: $3.SpaceServiceServicesAccessAuthDetails.create)
     ..aOS(2, _omitFieldNames ? '' : 'name')
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..aOB(4, _omitFieldNames ? '' : 'isIsolated')
-    ..aOM<$10.DC499999998>(5, _omitFieldNames ? '' : 'dc499999998', subBuilder: $10.DC499999998.create)
+    ..aOM<$4.DC499999998>(5, _omitFieldNames ? '' : 'dc499999998', subBuilder: $4.DC499999998.create)
     ..hasRequiredFields = false
   ;
 
@@ -81,15 +81,15 @@ class CreateDC499999998SSDRequest extends $pb.GeneratedMessage {
 
   /// Auth Properties
   @$pb.TagNumber(1)
-  $11.SpaceServiceServicesAccessAuthDetails get auth => $_getN(0);
+  $3.SpaceServiceServicesAccessAuthDetails get auth => $_getN(0);
   @$pb.TagNumber(1)
-  set auth($11.SpaceServiceServicesAccessAuthDetails v) { setField(1, v); }
+  set auth($3.SpaceServiceServicesAccessAuthDetails v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAuth() => $_has(0);
   @$pb.TagNumber(1)
   void clearAuth() => clearField(1);
   @$pb.TagNumber(1)
-  $11.SpaceServiceServicesAccessAuthDetails ensureAuth() => $_ensure(0);
+  $3.SpaceServiceServicesAccessAuthDetails ensureAuth() => $_ensure(0);
 
   /// Create Properties
   @$pb.TagNumber(2)
@@ -120,24 +120,24 @@ class CreateDC499999998SSDRequest extends $pb.GeneratedMessage {
   void clearIsIsolated() => clearField(4);
 
   @$pb.TagNumber(5)
-  $10.DC499999998 get dc499999998 => $_getN(4);
+  $4.DC499999998 get dc499999998 => $_getN(4);
   @$pb.TagNumber(5)
-  set dc499999998($10.DC499999998 v) { setField(5, v); }
+  set dc499999998($4.DC499999998 v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDc499999998() => $_has(4);
   @$pb.TagNumber(5)
   void clearDc499999998() => clearField(5);
   @$pb.TagNumber(5)
-  $10.DC499999998 ensureDc499999998() => $_ensure(4);
+  $4.DC499999998 ensureDc499999998() => $_ensure(4);
 }
 
 class CreateDC499999999SSDRequest extends $pb.GeneratedMessage {
   factory CreateDC499999999SSDRequest({
-    $11.SpaceServiceServicesAccessAuthDetails? auth,
+    $3.SpaceServiceServicesAccessAuthDetails? auth,
     $core.String? name,
     $core.String? description,
     $core.bool? isIsolated,
-    $14.DC499999999? dc499999999,
+    $83.DC499999999? dc499999999,
   }) {
     final $result = create();
     if (auth != null) {
@@ -162,11 +162,11 @@ class CreateDC499999999SSDRequest extends $pb.GeneratedMessage {
   factory CreateDC499999999SSDRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateDC499999999SSDRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.service.domain'), createEmptyInstance: create)
-    ..aOM<$11.SpaceServiceServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'auth', subBuilder: $11.SpaceServiceServicesAccessAuthDetails.create)
+    ..aOM<$3.SpaceServiceServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'auth', subBuilder: $3.SpaceServiceServicesAccessAuthDetails.create)
     ..aOS(2, _omitFieldNames ? '' : 'name')
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..aOB(4, _omitFieldNames ? '' : 'isIsolated')
-    ..aOM<$14.DC499999999>(5, _omitFieldNames ? '' : 'dc499999999', subBuilder: $14.DC499999999.create)
+    ..aOM<$83.DC499999999>(5, _omitFieldNames ? '' : 'dc499999999', subBuilder: $83.DC499999999.create)
     ..hasRequiredFields = false
   ;
 
@@ -193,15 +193,15 @@ class CreateDC499999999SSDRequest extends $pb.GeneratedMessage {
 
   /// Auth Properties
   @$pb.TagNumber(1)
-  $11.SpaceServiceServicesAccessAuthDetails get auth => $_getN(0);
+  $3.SpaceServiceServicesAccessAuthDetails get auth => $_getN(0);
   @$pb.TagNumber(1)
-  set auth($11.SpaceServiceServicesAccessAuthDetails v) { setField(1, v); }
+  set auth($3.SpaceServiceServicesAccessAuthDetails v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAuth() => $_has(0);
   @$pb.TagNumber(1)
   void clearAuth() => clearField(1);
   @$pb.TagNumber(1)
-  $11.SpaceServiceServicesAccessAuthDetails ensureAuth() => $_ensure(0);
+  $3.SpaceServiceServicesAccessAuthDetails ensureAuth() => $_ensure(0);
 
   /// Create Properties
   @$pb.TagNumber(2)
@@ -232,15 +232,15 @@ class CreateDC499999999SSDRequest extends $pb.GeneratedMessage {
   void clearIsIsolated() => clearField(4);
 
   @$pb.TagNumber(5)
-  $14.DC499999999 get dc499999999 => $_getN(4);
+  $83.DC499999999 get dc499999999 => $_getN(4);
   @$pb.TagNumber(5)
-  set dc499999999($14.DC499999999 v) { setField(5, v); }
+  set dc499999999($83.DC499999999 v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDc499999999() => $_has(4);
   @$pb.TagNumber(5)
   void clearDc499999999() => clearField(5);
   @$pb.TagNumber(5)
-  $14.DC499999999 ensureDc499999999() => $_ensure(4);
+  $83.DC499999999 ensureDc499999999() => $_ensure(4);
 }
 
 

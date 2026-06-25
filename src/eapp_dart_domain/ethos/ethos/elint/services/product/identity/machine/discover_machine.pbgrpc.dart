@@ -16,16 +16,16 @@ import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../account/access_account.pb.dart' as $0;
-import 'discover_machine.pb.dart' as $28;
+import 'discover_machine.pb.dart' as $64;
 
 export 'discover_machine.pb.dart';
 
 @$pb.GrpcServiceName('elint.services.product.identity.machine.DiscoverMachineService')
 class DiscoverMachineServiceClient extends $grpc.Client {
-  static final _$listAllMachines = $grpc.ClientMethod<$0.AccountServicesAccessAuthDetails, $28.ListAllMachinesResponse>(
+  static final _$listAllMachines = $grpc.ClientMethod<$0.AccountServicesAccessAuthDetails, $64.ListAllMachinesResponse>(
       '/elint.services.product.identity.machine.DiscoverMachineService/ListAllMachines',
       ($0.AccountServicesAccessAuthDetails value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $28.ListAllMachinesResponse.fromBuffer(value));
+      ($core.List<$core.int> value) => $64.ListAllMachinesResponse.fromBuffer(value));
 
   DiscoverMachineServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -33,7 +33,7 @@ class DiscoverMachineServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$28.ListAllMachinesResponse> listAllMachines($0.AccountServicesAccessAuthDetails request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$64.ListAllMachinesResponse> listAllMachines($0.AccountServicesAccessAuthDetails request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listAllMachines, request, options: options);
   }
 }
@@ -43,18 +43,18 @@ abstract class DiscoverMachineServiceBase extends $grpc.Service {
   $core.String get $name => 'elint.services.product.identity.machine.DiscoverMachineService';
 
   DiscoverMachineServiceBase() {
-    $addMethod($grpc.ServiceMethod<$0.AccountServicesAccessAuthDetails, $28.ListAllMachinesResponse>(
+    $addMethod($grpc.ServiceMethod<$0.AccountServicesAccessAuthDetails, $64.ListAllMachinesResponse>(
         'ListAllMachines',
         listAllMachines_Pre,
         false,
         false,
         ($core.List<$core.int> value) => $0.AccountServicesAccessAuthDetails.fromBuffer(value),
-        ($28.ListAllMachinesResponse value) => value.writeToBuffer()));
+        ($64.ListAllMachinesResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$28.ListAllMachinesResponse> listAllMachines_Pre($grpc.ServiceCall call, $async.Future<$0.AccountServicesAccessAuthDetails> request) async {
+  $async.Future<$64.ListAllMachinesResponse> listAllMachines_Pre($grpc.ServiceCall call, $async.Future<$0.AccountServicesAccessAuthDetails> request) async {
     return listAllMachines(call, await request);
   }
 
-  $async.Future<$28.ListAllMachinesResponse> listAllMachines($grpc.ServiceCall call, $0.AccountServicesAccessAuthDetails request);
+  $async.Future<$64.ListAllMachinesResponse> listAllMachines($grpc.ServiceCall call, $0.AccountServicesAccessAuthDetails request);
 }

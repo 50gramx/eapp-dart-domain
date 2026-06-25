@@ -15,16 +15,16 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'read_galaxy.pb.dart' as $29;
+import 'read_galaxy.pb.dart' as $63;
 
 export 'read_galaxy.pb.dart';
 
 @$pb.GrpcServiceName('elint.services.product.identity.galaxy.ReadGalaxyService')
 class ReadGalaxyServiceClient extends $grpc.Client {
-  static final _$readGalaxy = $grpc.ClientMethod<$29.ReadGalaxyRequest, $29.ReadGalaxyResponse>(
+  static final _$readGalaxy = $grpc.ClientMethod<$63.ReadGalaxyRequest, $63.ReadGalaxyResponse>(
       '/elint.services.product.identity.galaxy.ReadGalaxyService/ReadGalaxy',
-      ($29.ReadGalaxyRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $29.ReadGalaxyResponse.fromBuffer(value));
+      ($63.ReadGalaxyRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $63.ReadGalaxyResponse.fromBuffer(value));
 
   ReadGalaxyServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -32,7 +32,7 @@ class ReadGalaxyServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$29.ReadGalaxyResponse> readGalaxy($29.ReadGalaxyRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$63.ReadGalaxyResponse> readGalaxy($63.ReadGalaxyRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$readGalaxy, request, options: options);
   }
 }
@@ -42,18 +42,18 @@ abstract class ReadGalaxyServiceBase extends $grpc.Service {
   $core.String get $name => 'elint.services.product.identity.galaxy.ReadGalaxyService';
 
   ReadGalaxyServiceBase() {
-    $addMethod($grpc.ServiceMethod<$29.ReadGalaxyRequest, $29.ReadGalaxyResponse>(
+    $addMethod($grpc.ServiceMethod<$63.ReadGalaxyRequest, $63.ReadGalaxyResponse>(
         'ReadGalaxy',
         readGalaxy_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $29.ReadGalaxyRequest.fromBuffer(value),
-        ($29.ReadGalaxyResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $63.ReadGalaxyRequest.fromBuffer(value),
+        ($63.ReadGalaxyResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$29.ReadGalaxyResponse> readGalaxy_Pre($grpc.ServiceCall call, $async.Future<$29.ReadGalaxyRequest> request) async {
+  $async.Future<$63.ReadGalaxyResponse> readGalaxy_Pre($grpc.ServiceCall call, $async.Future<$63.ReadGalaxyRequest> request) async {
     return readGalaxy(call, await request);
   }
 
-  $async.Future<$29.ReadGalaxyResponse> readGalaxy($grpc.ServiceCall call, $29.ReadGalaxyRequest request);
+  $async.Future<$63.ReadGalaxyResponse> readGalaxy($grpc.ServiceCall call, $63.ReadGalaxyRequest request);
 }

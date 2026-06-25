@@ -15,16 +15,16 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'DC499999996.pb.dart' as $9;
+import 'DC499999996.pb.dart' as $79;
 
 export 'DC499999996.pb.dart';
 
 @$pb.GrpcServiceName('elint.collars.DC499999996EPME5000Capabilities')
 class DC499999996EPME5000CapabilitiesClient extends $grpc.Client {
-  static final _$launchNotebook = $grpc.ClientMethod<$9.LaunchNotebookRequest, $9.LaunchNotebookResponse>(
+  static final _$launchNotebook = $grpc.ClientMethod<$79.LaunchNotebookRequest, $79.LaunchNotebookResponse>(
       '/elint.collars.DC499999996EPME5000Capabilities/LaunchNotebook',
-      ($9.LaunchNotebookRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $9.LaunchNotebookResponse.fromBuffer(value));
+      ($79.LaunchNotebookRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $79.LaunchNotebookResponse.fromBuffer(value));
 
   DC499999996EPME5000CapabilitiesClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -32,7 +32,7 @@ class DC499999996EPME5000CapabilitiesClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$9.LaunchNotebookResponse> launchNotebook($9.LaunchNotebookRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$79.LaunchNotebookResponse> launchNotebook($79.LaunchNotebookRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$launchNotebook, request, options: options);
   }
 }
@@ -42,18 +42,18 @@ abstract class DC499999996EPME5000CapabilitiesServiceBase extends $grpc.Service 
   $core.String get $name => 'elint.collars.DC499999996EPME5000Capabilities';
 
   DC499999996EPME5000CapabilitiesServiceBase() {
-    $addMethod($grpc.ServiceMethod<$9.LaunchNotebookRequest, $9.LaunchNotebookResponse>(
+    $addMethod($grpc.ServiceMethod<$79.LaunchNotebookRequest, $79.LaunchNotebookResponse>(
         'LaunchNotebook',
         launchNotebook_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $9.LaunchNotebookRequest.fromBuffer(value),
-        ($9.LaunchNotebookResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $79.LaunchNotebookRequest.fromBuffer(value),
+        ($79.LaunchNotebookResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$9.LaunchNotebookResponse> launchNotebook_Pre($grpc.ServiceCall call, $async.Future<$9.LaunchNotebookRequest> request) async {
+  $async.Future<$79.LaunchNotebookResponse> launchNotebook_Pre($grpc.ServiceCall call, $async.Future<$79.LaunchNotebookRequest> request) async {
     return launchNotebook(call, await request);
   }
 
-  $async.Future<$9.LaunchNotebookResponse> launchNotebook($grpc.ServiceCall call, $9.LaunchNotebookRequest request);
+  $async.Future<$79.LaunchNotebookResponse> launchNotebook($grpc.ServiceCall call, $79.LaunchNotebookRequest request);
 }

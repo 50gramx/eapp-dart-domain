@@ -14,15 +14,15 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../../../google/protobuf/timestamp.pb.dart' as $85;
-import '../../../../entities/generic.pb.dart' as $7;
-import '../../../../entities/space_product_domain.pb.dart' as $90;
-import '../space_product/access_space_product.pb.dart' as $4;
+import '../../../../entities/generic.pb.dart' as $9;
+import '../../../../entities/space_product_domain.pb.dart' as $93;
+import '../space_product/access_space_product.pb.dart' as $12;
 
 /// Message Definitions
 class SpaceProductDomainAccessTokenRequest extends $pb.GeneratedMessage {
   factory SpaceProductDomainAccessTokenRequest({
-    $4.SpaceProductServicesAccessAuthDetails? spaceProductServicesAccessAuthDetails,
-    $90.SpaceProductDomain? spaceProductDomain,
+    $12.SpaceProductServicesAccessAuthDetails? spaceProductServicesAccessAuthDetails,
+    $93.SpaceProductDomain? spaceProductDomain,
   }) {
     final $result = create();
     if (spaceProductServicesAccessAuthDetails != null) {
@@ -38,8 +38,8 @@ class SpaceProductDomainAccessTokenRequest extends $pb.GeneratedMessage {
   factory SpaceProductDomainAccessTokenRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SpaceProductDomainAccessTokenRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.product.domain'), createEmptyInstance: create)
-    ..aOM<$4.SpaceProductServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'spaceProductServicesAccessAuthDetails', subBuilder: $4.SpaceProductServicesAccessAuthDetails.create)
-    ..aOM<$90.SpaceProductDomain>(2, _omitFieldNames ? '' : 'spaceProductDomain', subBuilder: $90.SpaceProductDomain.create)
+    ..aOM<$12.SpaceProductServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'spaceProductServicesAccessAuthDetails', subBuilder: $12.SpaceProductServicesAccessAuthDetails.create)
+    ..aOM<$93.SpaceProductDomain>(2, _omitFieldNames ? '' : 'spaceProductDomain', subBuilder: $93.SpaceProductDomain.create)
     ..hasRequiredFields = false
   ;
 
@@ -66,27 +66,27 @@ class SpaceProductDomainAccessTokenRequest extends $pb.GeneratedMessage {
 
   /// Auth Properties
   @$pb.TagNumber(1)
-  $4.SpaceProductServicesAccessAuthDetails get spaceProductServicesAccessAuthDetails => $_getN(0);
+  $12.SpaceProductServicesAccessAuthDetails get spaceProductServicesAccessAuthDetails => $_getN(0);
   @$pb.TagNumber(1)
-  set spaceProductServicesAccessAuthDetails($4.SpaceProductServicesAccessAuthDetails v) { setField(1, v); }
+  set spaceProductServicesAccessAuthDetails($12.SpaceProductServicesAccessAuthDetails v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSpaceProductServicesAccessAuthDetails() => $_has(0);
   @$pb.TagNumber(1)
   void clearSpaceProductServicesAccessAuthDetails() => clearField(1);
   @$pb.TagNumber(1)
-  $4.SpaceProductServicesAccessAuthDetails ensureSpaceProductServicesAccessAuthDetails() => $_ensure(0);
+  $12.SpaceProductServicesAccessAuthDetails ensureSpaceProductServicesAccessAuthDetails() => $_ensure(0);
 
   /// Request Properties
   @$pb.TagNumber(2)
-  $90.SpaceProductDomain get spaceProductDomain => $_getN(1);
+  $93.SpaceProductDomain get spaceProductDomain => $_getN(1);
   @$pb.TagNumber(2)
-  set spaceProductDomain($90.SpaceProductDomain v) { setField(2, v); }
+  set spaceProductDomain($93.SpaceProductDomain v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSpaceProductDomain() => $_has(1);
   @$pb.TagNumber(2)
   void clearSpaceProductDomain() => clearField(2);
   @$pb.TagNumber(2)
-  $90.SpaceProductDomain ensureSpaceProductDomain() => $_ensure(1);
+  $93.SpaceProductDomain ensureSpaceProductDomain() => $_ensure(1);
 }
 
 class SpaceProductDomainAccessTokenResponse extends $pb.GeneratedMessage {
@@ -238,8 +238,8 @@ class ValidateSpaceProductDomainServicesResponse extends $pb.GeneratedMessage {
 /// Meta Message Definitions
 class SpaceProductDomainServicesAccessAuthDetails extends $pb.GeneratedMessage {
   factory SpaceProductDomainServicesAccessAuthDetails({
-    $90.SpaceProductDomain? spaceProductDomain,
-    $7.PersistentSessionTokenDetails? spaceProductDomainServicesAccessSessionTokenDetails,
+    $93.SpaceProductDomain? spaceProductDomain,
+    $9.PersistentSessionTokenDetails? spaceProductDomainServicesAccessSessionTokenDetails,
     $85.Timestamp? requestedAt,
   }) {
     final $result = create();
@@ -259,8 +259,8 @@ class SpaceProductDomainServicesAccessAuthDetails extends $pb.GeneratedMessage {
   factory SpaceProductDomainServicesAccessAuthDetails.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SpaceProductDomainServicesAccessAuthDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.product.domain'), createEmptyInstance: create)
-    ..aOM<$90.SpaceProductDomain>(1, _omitFieldNames ? '' : 'spaceProductDomain', subBuilder: $90.SpaceProductDomain.create)
-    ..aOM<$7.PersistentSessionTokenDetails>(2, _omitFieldNames ? '' : 'spaceProductDomainServicesAccessSessionTokenDetails', subBuilder: $7.PersistentSessionTokenDetails.create)
+    ..aOM<$93.SpaceProductDomain>(1, _omitFieldNames ? '' : 'spaceProductDomain', subBuilder: $93.SpaceProductDomain.create)
+    ..aOM<$9.PersistentSessionTokenDetails>(2, _omitFieldNames ? '' : 'spaceProductDomainServicesAccessSessionTokenDetails', subBuilder: $9.PersistentSessionTokenDetails.create)
     ..aOM<$85.Timestamp>(3, _omitFieldNames ? '' : 'requestedAt', subBuilder: $85.Timestamp.create)
     ..hasRequiredFields = false
   ;
@@ -288,26 +288,26 @@ class SpaceProductDomainServicesAccessAuthDetails extends $pb.GeneratedMessage {
 
   /// Auth Properties
   @$pb.TagNumber(1)
-  $90.SpaceProductDomain get spaceProductDomain => $_getN(0);
+  $93.SpaceProductDomain get spaceProductDomain => $_getN(0);
   @$pb.TagNumber(1)
-  set spaceProductDomain($90.SpaceProductDomain v) { setField(1, v); }
+  set spaceProductDomain($93.SpaceProductDomain v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSpaceProductDomain() => $_has(0);
   @$pb.TagNumber(1)
   void clearSpaceProductDomain() => clearField(1);
   @$pb.TagNumber(1)
-  $90.SpaceProductDomain ensureSpaceProductDomain() => $_ensure(0);
+  $93.SpaceProductDomain ensureSpaceProductDomain() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $7.PersistentSessionTokenDetails get spaceProductDomainServicesAccessSessionTokenDetails => $_getN(1);
+  $9.PersistentSessionTokenDetails get spaceProductDomainServicesAccessSessionTokenDetails => $_getN(1);
   @$pb.TagNumber(2)
-  set spaceProductDomainServicesAccessSessionTokenDetails($7.PersistentSessionTokenDetails v) { setField(2, v); }
+  set spaceProductDomainServicesAccessSessionTokenDetails($9.PersistentSessionTokenDetails v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSpaceProductDomainServicesAccessSessionTokenDetails() => $_has(1);
   @$pb.TagNumber(2)
   void clearSpaceProductDomainServicesAccessSessionTokenDetails() => clearField(2);
   @$pb.TagNumber(2)
-  $7.PersistentSessionTokenDetails ensureSpaceProductDomainServicesAccessSessionTokenDetails() => $_ensure(1);
+  $9.PersistentSessionTokenDetails ensureSpaceProductDomainServicesAccessSessionTokenDetails() => $_ensure(1);
 
   /// Meta Properties
   @$pb.TagNumber(3)

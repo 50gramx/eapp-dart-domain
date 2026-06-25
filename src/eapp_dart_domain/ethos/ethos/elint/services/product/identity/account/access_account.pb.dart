@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../../../google/protobuf/timestamp.pb.dart' as $85;
-import '../../../../entities/account.pb.dart' as $22;
-import '../../../../entities/generic.pb.dart' as $7;
+import '../../../../entities/account.pb.dart' as $39;
+import '../../../../entities/generic.pb.dart' as $9;
 
 /// Step One: Validate Account Created
 class ValidateAccountRequest extends $pb.GeneratedMessage {
@@ -106,7 +106,7 @@ class ValidateAccountResponse extends $pb.GeneratedMessage {
   factory ValidateAccountResponse({
     AccountAccessAuthDetails? accountAccessAuthDetails,
     $core.bool? accountExists,
-    $7.TemporaryTokenDetails? verificationCodeTokenDetails,
+    $9.TemporaryTokenDetails? verificationCodeTokenDetails,
     $85.Timestamp? codeSentAt,
     $core.bool? validateAccountDone,
     $core.String? validateAccountMessage,
@@ -139,7 +139,7 @@ class ValidateAccountResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ValidateAccountResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.account'), createEmptyInstance: create)
     ..aOM<AccountAccessAuthDetails>(1, _omitFieldNames ? '' : 'accountAccessAuthDetails', subBuilder: AccountAccessAuthDetails.create)
     ..aOB(2, _omitFieldNames ? '' : 'accountExists')
-    ..aOM<$7.TemporaryTokenDetails>(3, _omitFieldNames ? '' : 'verificationCodeTokenDetails', subBuilder: $7.TemporaryTokenDetails.create)
+    ..aOM<$9.TemporaryTokenDetails>(3, _omitFieldNames ? '' : 'verificationCodeTokenDetails', subBuilder: $9.TemporaryTokenDetails.create)
     ..aOM<$85.Timestamp>(4, _omitFieldNames ? '' : 'codeSentAt', subBuilder: $85.Timestamp.create)
     ..aOB(5, _omitFieldNames ? '' : 'validateAccountDone')
     ..aOS(6, _omitFieldNames ? '' : 'validateAccountMessage')
@@ -190,15 +190,15 @@ class ValidateAccountResponse extends $pb.GeneratedMessage {
   void clearAccountExists() => clearField(2);
 
   @$pb.TagNumber(3)
-  $7.TemporaryTokenDetails get verificationCodeTokenDetails => $_getN(2);
+  $9.TemporaryTokenDetails get verificationCodeTokenDetails => $_getN(2);
   @$pb.TagNumber(3)
-  set verificationCodeTokenDetails($7.TemporaryTokenDetails v) { setField(3, v); }
+  set verificationCodeTokenDetails($9.TemporaryTokenDetails v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasVerificationCodeTokenDetails() => $_has(2);
   @$pb.TagNumber(3)
   void clearVerificationCodeTokenDetails() => clearField(3);
   @$pb.TagNumber(3)
-  $7.TemporaryTokenDetails ensureVerificationCodeTokenDetails() => $_ensure(2);
+  $9.TemporaryTokenDetails ensureVerificationCodeTokenDetails() => $_ensure(2);
 
   @$pb.TagNumber(4)
   $85.Timestamp get codeSentAt => $_getN(3);
@@ -236,9 +236,9 @@ class VerifyAccountRequest extends $pb.GeneratedMessage {
   factory VerifyAccountRequest({
     AccountAccessAuthDetails? accountAccessAuthDetails,
     $core.bool? resendCode,
-    $7.TemporaryTokenDetails? verificationCodeTokenDetails,
+    $9.TemporaryTokenDetails? verificationCodeTokenDetails,
     $core.String? verificationCode,
-    $22.AccountDeviceDetails? accountDeviceDetails,
+    $39.AccountDeviceDetails? accountDeviceDetails,
     $85.Timestamp? requestedAt,
   }) {
     final $result = create();
@@ -269,9 +269,9 @@ class VerifyAccountRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VerifyAccountRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.account'), createEmptyInstance: create)
     ..aOM<AccountAccessAuthDetails>(1, _omitFieldNames ? '' : 'accountAccessAuthDetails', subBuilder: AccountAccessAuthDetails.create)
     ..aOB(2, _omitFieldNames ? '' : 'resendCode')
-    ..aOM<$7.TemporaryTokenDetails>(3, _omitFieldNames ? '' : 'verificationCodeTokenDetails', subBuilder: $7.TemporaryTokenDetails.create)
+    ..aOM<$9.TemporaryTokenDetails>(3, _omitFieldNames ? '' : 'verificationCodeTokenDetails', subBuilder: $9.TemporaryTokenDetails.create)
     ..aOS(4, _omitFieldNames ? '' : 'verificationCode')
-    ..aOM<$22.AccountDeviceDetails>(5, _omitFieldNames ? '' : 'accountDeviceDetails', subBuilder: $22.AccountDeviceDetails.create)
+    ..aOM<$39.AccountDeviceDetails>(5, _omitFieldNames ? '' : 'accountDeviceDetails', subBuilder: $39.AccountDeviceDetails.create)
     ..aOM<$85.Timestamp>(6, _omitFieldNames ? '' : 'requestedAt', subBuilder: $85.Timestamp.create)
     ..hasRequiredFields = false
   ;
@@ -320,15 +320,15 @@ class VerifyAccountRequest extends $pb.GeneratedMessage {
   void clearResendCode() => clearField(2);
 
   @$pb.TagNumber(3)
-  $7.TemporaryTokenDetails get verificationCodeTokenDetails => $_getN(2);
+  $9.TemporaryTokenDetails get verificationCodeTokenDetails => $_getN(2);
   @$pb.TagNumber(3)
-  set verificationCodeTokenDetails($7.TemporaryTokenDetails v) { setField(3, v); }
+  set verificationCodeTokenDetails($9.TemporaryTokenDetails v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasVerificationCodeTokenDetails() => $_has(2);
   @$pb.TagNumber(3)
   void clearVerificationCodeTokenDetails() => clearField(3);
   @$pb.TagNumber(3)
-  $7.TemporaryTokenDetails ensureVerificationCodeTokenDetails() => $_ensure(2);
+  $9.TemporaryTokenDetails ensureVerificationCodeTokenDetails() => $_ensure(2);
 
   @$pb.TagNumber(4)
   $core.String get verificationCode => $_getSZ(3);
@@ -340,15 +340,15 @@ class VerifyAccountRequest extends $pb.GeneratedMessage {
   void clearVerificationCode() => clearField(4);
 
   @$pb.TagNumber(5)
-  $22.AccountDeviceDetails get accountDeviceDetails => $_getN(4);
+  $39.AccountDeviceDetails get accountDeviceDetails => $_getN(4);
   @$pb.TagNumber(5)
-  set accountDeviceDetails($22.AccountDeviceDetails v) { setField(5, v); }
+  set accountDeviceDetails($39.AccountDeviceDetails v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasAccountDeviceDetails() => $_has(4);
   @$pb.TagNumber(5)
   void clearAccountDeviceDetails() => clearField(5);
   @$pb.TagNumber(5)
-  $22.AccountDeviceDetails ensureAccountDeviceDetails() => $_ensure(4);
+  $39.AccountDeviceDetails ensureAccountDeviceDetails() => $_ensure(4);
 
   /// Meta Properties
   @$pb.TagNumber(6)
@@ -566,7 +566,7 @@ class ReAccountAccessTokenRequest extends $pb.GeneratedMessage {
 class ReAccountAccessTokenResponse extends $pb.GeneratedMessage {
   factory ReAccountAccessTokenResponse({
     AccountServicesAccessAuthDetails? accountServiceAccessAuthDetails,
-    $7.ResponseMeta? responseMeta,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (accountServiceAccessAuthDetails != null) {
@@ -583,7 +583,7 @@ class ReAccountAccessTokenResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReAccountAccessTokenResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.account'), createEmptyInstance: create)
     ..aOM<AccountServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'accountServiceAccessAuthDetails', subBuilder: AccountServicesAccessAuthDetails.create)
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -622,21 +622,21 @@ class ReAccountAccessTokenResponse extends $pb.GeneratedMessage {
 
   /// Response Properties
   @$pb.TagNumber(2)
-  $7.ResponseMeta get responseMeta => $_getN(1);
+  $9.ResponseMeta get responseMeta => $_getN(1);
   @$pb.TagNumber(2)
-  set responseMeta($7.ResponseMeta v) { setField(2, v); }
+  set responseMeta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponseMeta() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponseMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(1);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(1);
 }
 
 class AccountAccessAuthDetails extends $pb.GeneratedMessage {
   factory AccountAccessAuthDetails({
     $core.String? accountMobileNumber,
-    $7.PersistentSessionTokenDetails? accountAccessAuthSessionTokenDetails,
+    $9.PersistentSessionTokenDetails? accountAccessAuthSessionTokenDetails,
   }) {
     final $result = create();
     if (accountMobileNumber != null) {
@@ -653,7 +653,7 @@ class AccountAccessAuthDetails extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccountAccessAuthDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.account'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'accountMobileNumber')
-    ..aOM<$7.PersistentSessionTokenDetails>(2, _omitFieldNames ? '' : 'accountAccessAuthSessionTokenDetails', subBuilder: $7.PersistentSessionTokenDetails.create)
+    ..aOM<$9.PersistentSessionTokenDetails>(2, _omitFieldNames ? '' : 'accountAccessAuthSessionTokenDetails', subBuilder: $9.PersistentSessionTokenDetails.create)
     ..hasRequiredFields = false
   ;
 
@@ -688,21 +688,21 @@ class AccountAccessAuthDetails extends $pb.GeneratedMessage {
   void clearAccountMobileNumber() => clearField(1);
 
   @$pb.TagNumber(2)
-  $7.PersistentSessionTokenDetails get accountAccessAuthSessionTokenDetails => $_getN(1);
+  $9.PersistentSessionTokenDetails get accountAccessAuthSessionTokenDetails => $_getN(1);
   @$pb.TagNumber(2)
-  set accountAccessAuthSessionTokenDetails($7.PersistentSessionTokenDetails v) { setField(2, v); }
+  set accountAccessAuthSessionTokenDetails($9.PersistentSessionTokenDetails v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAccountAccessAuthSessionTokenDetails() => $_has(1);
   @$pb.TagNumber(2)
   void clearAccountAccessAuthSessionTokenDetails() => clearField(2);
   @$pb.TagNumber(2)
-  $7.PersistentSessionTokenDetails ensureAccountAccessAuthSessionTokenDetails() => $_ensure(1);
+  $9.PersistentSessionTokenDetails ensureAccountAccessAuthSessionTokenDetails() => $_ensure(1);
 }
 
 class AccountServicesAccessAuthDetails extends $pb.GeneratedMessage {
   factory AccountServicesAccessAuthDetails({
-    $22.Account? account,
-    $7.PersistentSessionTokenDetails? accountServicesAccessSessionTokenDetails,
+    $39.Account? account,
+    $9.PersistentSessionTokenDetails? accountServicesAccessSessionTokenDetails,
     $85.Timestamp? requestedAt,
   }) {
     final $result = create();
@@ -722,8 +722,8 @@ class AccountServicesAccessAuthDetails extends $pb.GeneratedMessage {
   factory AccountServicesAccessAuthDetails.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccountServicesAccessAuthDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.account'), createEmptyInstance: create)
-    ..aOM<$22.Account>(1, _omitFieldNames ? '' : 'account', subBuilder: $22.Account.create)
-    ..aOM<$7.PersistentSessionTokenDetails>(2, _omitFieldNames ? '' : 'accountServicesAccessSessionTokenDetails', subBuilder: $7.PersistentSessionTokenDetails.create)
+    ..aOM<$39.Account>(1, _omitFieldNames ? '' : 'account', subBuilder: $39.Account.create)
+    ..aOM<$9.PersistentSessionTokenDetails>(2, _omitFieldNames ? '' : 'accountServicesAccessSessionTokenDetails', subBuilder: $9.PersistentSessionTokenDetails.create)
     ..aOM<$85.Timestamp>(3, _omitFieldNames ? '' : 'requestedAt', subBuilder: $85.Timestamp.create)
     ..hasRequiredFields = false
   ;
@@ -751,26 +751,26 @@ class AccountServicesAccessAuthDetails extends $pb.GeneratedMessage {
 
   /// Auth Properties
   @$pb.TagNumber(1)
-  $22.Account get account => $_getN(0);
+  $39.Account get account => $_getN(0);
   @$pb.TagNumber(1)
-  set account($22.Account v) { setField(1, v); }
+  set account($39.Account v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAccount() => $_has(0);
   @$pb.TagNumber(1)
   void clearAccount() => clearField(1);
   @$pb.TagNumber(1)
-  $22.Account ensureAccount() => $_ensure(0);
+  $39.Account ensureAccount() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $7.PersistentSessionTokenDetails get accountServicesAccessSessionTokenDetails => $_getN(1);
+  $9.PersistentSessionTokenDetails get accountServicesAccessSessionTokenDetails => $_getN(1);
   @$pb.TagNumber(2)
-  set accountServicesAccessSessionTokenDetails($7.PersistentSessionTokenDetails v) { setField(2, v); }
+  set accountServicesAccessSessionTokenDetails($9.PersistentSessionTokenDetails v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAccountServicesAccessSessionTokenDetails() => $_has(1);
   @$pb.TagNumber(2)
   void clearAccountServicesAccessSessionTokenDetails() => clearField(2);
   @$pb.TagNumber(2)
-  $7.PersistentSessionTokenDetails ensureAccountServicesAccessSessionTokenDetails() => $_ensure(1);
+  $9.PersistentSessionTokenDetails ensureAccountServicesAccessSessionTokenDetails() => $_ensure(1);
 
   /// Meta Properties
   @$pb.TagNumber(3)

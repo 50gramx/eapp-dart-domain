@@ -14,14 +14,14 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../../../google/protobuf/timestamp.pb.dart' as $85;
-import '../../../../entities/account.pb.dart' as $22;
+import '../../../../entities/account.pb.dart' as $39;
 import '../../../../entities/space.pb.dart' as $87;
 import '../../../../entities/space.pbenum.dart' as $87;
 
 /// Service Messages
 class CreateAccountSpaceRequest extends $pb.GeneratedMessage {
   factory CreateAccountSpaceRequest({
-    $22.Account? account,
+    $39.Account? account,
     $87.SpaceAccessibilityType? spaceAccessibilityType,
     $87.SpaceIsolationType? spaceIsolationType,
     $85.Timestamp? requestedAt,
@@ -46,7 +46,7 @@ class CreateAccountSpaceRequest extends $pb.GeneratedMessage {
   factory CreateAccountSpaceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateAccountSpaceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.space'), createEmptyInstance: create)
-    ..aOM<$22.Account>(1, _omitFieldNames ? '' : 'account', subBuilder: $22.Account.create)
+    ..aOM<$39.Account>(1, _omitFieldNames ? '' : 'account', subBuilder: $39.Account.create)
     ..e<$87.SpaceAccessibilityType>(4, _omitFieldNames ? '' : 'spaceAccessibilityType', $pb.PbFieldType.OE, defaultOrMaker: $87.SpaceAccessibilityType.CLOSED, valueOf: $87.SpaceAccessibilityType.valueOf, enumValues: $87.SpaceAccessibilityType.values)
     ..e<$87.SpaceIsolationType>(5, _omitFieldNames ? '' : 'spaceIsolationType', $pb.PbFieldType.OE, defaultOrMaker: $87.SpaceIsolationType.NOT_ISOLATED, valueOf: $87.SpaceIsolationType.valueOf, enumValues: $87.SpaceIsolationType.values)
     ..aOM<$85.Timestamp>(6, _omitFieldNames ? '' : 'requestedAt', subBuilder: $85.Timestamp.create)
@@ -76,15 +76,15 @@ class CreateAccountSpaceRequest extends $pb.GeneratedMessage {
 
   /// Auth Properties
   @$pb.TagNumber(1)
-  $22.Account get account => $_getN(0);
+  $39.Account get account => $_getN(0);
   @$pb.TagNumber(1)
-  set account($22.Account v) { setField(1, v); }
+  set account($39.Account v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAccount() => $_has(0);
   @$pb.TagNumber(1)
   void clearAccount() => clearField(1);
   @$pb.TagNumber(1)
-  $22.Account ensureAccount() => $_ensure(0);
+  $39.Account ensureAccount() => $_ensure(0);
 
   /// Service Properties
   @$pb.TagNumber(4)

@@ -15,25 +15,25 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../space_knowledge_domain/access_space_knowledge_domain.pb.dart' as $40;
-import 'discover_space_knowledge_domain_file_page.pb.dart' as $67;
+import '../space_knowledge_domain/access_space_knowledge_domain.pb.dart' as $19;
+import 'discover_space_knowledge_domain_file_page.pb.dart' as $23;
 
 export 'discover_space_knowledge_domain_file_page.pb.dart';
 
 @$pb.GrpcServiceName('elint.services.product.knowledge.page.DiscoverSpaceKnowledgeDomainFilePageService')
 class DiscoverSpaceKnowledgeDomainFilePageServiceClient extends $grpc.Client {
-  static final _$getAllPageIds = $grpc.ClientMethod<$40.SpaceKnowledgeDomainServicesAccessAuthDetails, $67.ListOfPageIds>(
+  static final _$getAllPageIds = $grpc.ClientMethod<$19.SpaceKnowledgeDomainServicesAccessAuthDetails, $23.ListOfPageIds>(
       '/elint.services.product.knowledge.page.DiscoverSpaceKnowledgeDomainFilePageService/GetAllPageIds',
-      ($40.SpaceKnowledgeDomainServicesAccessAuthDetails value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $67.ListOfPageIds.fromBuffer(value));
-  static final _$getPageTextById = $grpc.ClientMethod<$67.GetPageTextByIdReq, $67.GetPageTextByIdRes>(
+      ($19.SpaceKnowledgeDomainServicesAccessAuthDetails value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $23.ListOfPageIds.fromBuffer(value));
+  static final _$getPageTextById = $grpc.ClientMethod<$23.GetPageTextByIdReq, $23.GetPageTextByIdRes>(
       '/elint.services.product.knowledge.page.DiscoverSpaceKnowledgeDomainFilePageService/GetPageTextById',
-      ($67.GetPageTextByIdReq value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $67.GetPageTextByIdRes.fromBuffer(value));
-  static final _$getPageById = $grpc.ClientMethod<$67.GetPageByIdRequest, $67.GetPageByIdResponse>(
+      ($23.GetPageTextByIdReq value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $23.GetPageTextByIdRes.fromBuffer(value));
+  static final _$getPageById = $grpc.ClientMethod<$23.GetPageByIdRequest, $23.GetPageByIdResponse>(
       '/elint.services.product.knowledge.page.DiscoverSpaceKnowledgeDomainFilePageService/GetPageById',
-      ($67.GetPageByIdRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $67.GetPageByIdResponse.fromBuffer(value));
+      ($23.GetPageByIdRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $23.GetPageByIdResponse.fromBuffer(value));
 
   DiscoverSpaceKnowledgeDomainFilePageServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -41,15 +41,15 @@ class DiscoverSpaceKnowledgeDomainFilePageServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$67.ListOfPageIds> getAllPageIds($40.SpaceKnowledgeDomainServicesAccessAuthDetails request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$23.ListOfPageIds> getAllPageIds($19.SpaceKnowledgeDomainServicesAccessAuthDetails request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getAllPageIds, request, options: options);
   }
 
-  $grpc.ResponseFuture<$67.GetPageTextByIdRes> getPageTextById($67.GetPageTextByIdReq request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$23.GetPageTextByIdRes> getPageTextById($23.GetPageTextByIdReq request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getPageTextById, request, options: options);
   }
 
-  $grpc.ResponseFuture<$67.GetPageByIdResponse> getPageById($67.GetPageByIdRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$23.GetPageByIdResponse> getPageById($23.GetPageByIdRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getPageById, request, options: options);
   }
 }
@@ -59,42 +59,42 @@ abstract class DiscoverSpaceKnowledgeDomainFilePageServiceBase extends $grpc.Ser
   $core.String get $name => 'elint.services.product.knowledge.page.DiscoverSpaceKnowledgeDomainFilePageService';
 
   DiscoverSpaceKnowledgeDomainFilePageServiceBase() {
-    $addMethod($grpc.ServiceMethod<$40.SpaceKnowledgeDomainServicesAccessAuthDetails, $67.ListOfPageIds>(
+    $addMethod($grpc.ServiceMethod<$19.SpaceKnowledgeDomainServicesAccessAuthDetails, $23.ListOfPageIds>(
         'GetAllPageIds',
         getAllPageIds_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $40.SpaceKnowledgeDomainServicesAccessAuthDetails.fromBuffer(value),
-        ($67.ListOfPageIds value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$67.GetPageTextByIdReq, $67.GetPageTextByIdRes>(
+        ($core.List<$core.int> value) => $19.SpaceKnowledgeDomainServicesAccessAuthDetails.fromBuffer(value),
+        ($23.ListOfPageIds value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$23.GetPageTextByIdReq, $23.GetPageTextByIdRes>(
         'GetPageTextById',
         getPageTextById_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $67.GetPageTextByIdReq.fromBuffer(value),
-        ($67.GetPageTextByIdRes value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$67.GetPageByIdRequest, $67.GetPageByIdResponse>(
+        ($core.List<$core.int> value) => $23.GetPageTextByIdReq.fromBuffer(value),
+        ($23.GetPageTextByIdRes value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$23.GetPageByIdRequest, $23.GetPageByIdResponse>(
         'GetPageById',
         getPageById_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $67.GetPageByIdRequest.fromBuffer(value),
-        ($67.GetPageByIdResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $23.GetPageByIdRequest.fromBuffer(value),
+        ($23.GetPageByIdResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$67.ListOfPageIds> getAllPageIds_Pre($grpc.ServiceCall call, $async.Future<$40.SpaceKnowledgeDomainServicesAccessAuthDetails> request) async {
+  $async.Future<$23.ListOfPageIds> getAllPageIds_Pre($grpc.ServiceCall call, $async.Future<$19.SpaceKnowledgeDomainServicesAccessAuthDetails> request) async {
     return getAllPageIds(call, await request);
   }
 
-  $async.Future<$67.GetPageTextByIdRes> getPageTextById_Pre($grpc.ServiceCall call, $async.Future<$67.GetPageTextByIdReq> request) async {
+  $async.Future<$23.GetPageTextByIdRes> getPageTextById_Pre($grpc.ServiceCall call, $async.Future<$23.GetPageTextByIdReq> request) async {
     return getPageTextById(call, await request);
   }
 
-  $async.Future<$67.GetPageByIdResponse> getPageById_Pre($grpc.ServiceCall call, $async.Future<$67.GetPageByIdRequest> request) async {
+  $async.Future<$23.GetPageByIdResponse> getPageById_Pre($grpc.ServiceCall call, $async.Future<$23.GetPageByIdRequest> request) async {
     return getPageById(call, await request);
   }
 
-  $async.Future<$67.ListOfPageIds> getAllPageIds($grpc.ServiceCall call, $40.SpaceKnowledgeDomainServicesAccessAuthDetails request);
-  $async.Future<$67.GetPageTextByIdRes> getPageTextById($grpc.ServiceCall call, $67.GetPageTextByIdReq request);
-  $async.Future<$67.GetPageByIdResponse> getPageById($grpc.ServiceCall call, $67.GetPageByIdRequest request);
+  $async.Future<$23.ListOfPageIds> getAllPageIds($grpc.ServiceCall call, $19.SpaceKnowledgeDomainServicesAccessAuthDetails request);
+  $async.Future<$23.GetPageTextByIdRes> getPageTextById($grpc.ServiceCall call, $23.GetPageTextByIdReq request);
+  $async.Future<$23.GetPageByIdResponse> getPageById($grpc.ServiceCall call, $23.GetPageByIdRequest request);
 }

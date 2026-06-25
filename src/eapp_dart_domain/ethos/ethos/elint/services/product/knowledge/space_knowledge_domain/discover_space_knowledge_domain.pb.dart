@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../entities/generic.pb.dart' as $7;
-import '../../../../entities/space_knowledge_domain.pb.dart' as $76;
-import '../../../../entities/space_knowledge_domain_file.pb.dart' as $63;
-import 'access_space_knowledge_domain.pb.dart' as $40;
+import '../../../../entities/generic.pb.dart' as $9;
+import '../../../../entities/space_knowledge_domain.pb.dart' as $38;
+import '../../../../entities/space_knowledge_domain_file.pb.dart' as $31;
+import 'access_space_knowledge_domain.pb.dart' as $19;
 
 /// Message Definitions
 class GetAllDomainFilesResponse extends $pb.GeneratedMessage {
   factory GetAllDomainFilesResponse({
-    $core.Iterable<$63.SpaceKnowledgeDomainFile>? files,
+    $core.Iterable<$31.SpaceKnowledgeDomainFile>? files,
   }) {
     final $result = create();
     if (files != null) {
@@ -34,7 +34,7 @@ class GetAllDomainFilesResponse extends $pb.GeneratedMessage {
   factory GetAllDomainFilesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetAllDomainFilesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.knowledge.domain'), createEmptyInstance: create)
-    ..pc<$63.SpaceKnowledgeDomainFile>(1, _omitFieldNames ? '' : 'files', $pb.PbFieldType.PM, subBuilder: $63.SpaceKnowledgeDomainFile.create)
+    ..pc<$31.SpaceKnowledgeDomainFile>(1, _omitFieldNames ? '' : 'files', $pb.PbFieldType.PM, subBuilder: $31.SpaceKnowledgeDomainFile.create)
     ..hasRequiredFields = false
   ;
 
@@ -60,12 +60,12 @@ class GetAllDomainFilesResponse extends $pb.GeneratedMessage {
   static GetAllDomainFilesResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.List<$63.SpaceKnowledgeDomainFile> get files => $_getList(0);
+  $core.List<$31.SpaceKnowledgeDomainFile> get files => $_getList(0);
 }
 
 class GetBestAnswersRequest extends $pb.GeneratedMessage {
   factory GetBestAnswersRequest({
-    $40.SpaceKnowledgeDomainServicesAccessAuthDetails? accessAuthDetails,
+    $19.SpaceKnowledgeDomainServicesAccessAuthDetails? accessAuthDetails,
     $core.int? bestAnswersCount,
     $core.String? question,
   }) {
@@ -86,7 +86,7 @@ class GetBestAnswersRequest extends $pb.GeneratedMessage {
   factory GetBestAnswersRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetBestAnswersRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.knowledge.domain'), createEmptyInstance: create)
-    ..aOM<$40.SpaceKnowledgeDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'accessAuthDetails', subBuilder: $40.SpaceKnowledgeDomainServicesAccessAuthDetails.create)
+    ..aOM<$19.SpaceKnowledgeDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'accessAuthDetails', subBuilder: $19.SpaceKnowledgeDomainServicesAccessAuthDetails.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'bestAnswersCount', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'question')
     ..hasRequiredFields = false
@@ -115,15 +115,15 @@ class GetBestAnswersRequest extends $pb.GeneratedMessage {
 
   /// Auth Properties
   @$pb.TagNumber(1)
-  $40.SpaceKnowledgeDomainServicesAccessAuthDetails get accessAuthDetails => $_getN(0);
+  $19.SpaceKnowledgeDomainServicesAccessAuthDetails get accessAuthDetails => $_getN(0);
   @$pb.TagNumber(1)
-  set accessAuthDetails($40.SpaceKnowledgeDomainServicesAccessAuthDetails v) { setField(1, v); }
+  set accessAuthDetails($19.SpaceKnowledgeDomainServicesAccessAuthDetails v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAccessAuthDetails() => $_has(0);
   @$pb.TagNumber(1)
   void clearAccessAuthDetails() => clearField(1);
   @$pb.TagNumber(1)
-  $40.SpaceKnowledgeDomainServicesAccessAuthDetails ensureAccessAuthDetails() => $_ensure(0);
+  $19.SpaceKnowledgeDomainServicesAccessAuthDetails ensureAccessAuthDetails() => $_ensure(0);
 
   /// Request Properties
   @$pb.TagNumber(2)
@@ -147,8 +147,8 @@ class GetBestAnswersRequest extends $pb.GeneratedMessage {
 
 class GetBestAnswersResponse extends $pb.GeneratedMessage {
   factory GetBestAnswersResponse({
-    $core.Iterable<$76.RankedAnswer>? rankedAnswers,
-    $7.ResponseMeta? responseMeta,
+    $core.Iterable<$38.RankedAnswer>? rankedAnswers,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (rankedAnswers != null) {
@@ -164,8 +164,8 @@ class GetBestAnswersResponse extends $pb.GeneratedMessage {
   factory GetBestAnswersResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetBestAnswersResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.knowledge.domain'), createEmptyInstance: create)
-    ..pc<$76.RankedAnswer>(1, _omitFieldNames ? '' : 'rankedAnswers', $pb.PbFieldType.PM, subBuilder: $76.RankedAnswer.create)
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..pc<$38.RankedAnswer>(1, _omitFieldNames ? '' : 'rankedAnswers', $pb.PbFieldType.PM, subBuilder: $38.RankedAnswer.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -192,24 +192,24 @@ class GetBestAnswersResponse extends $pb.GeneratedMessage {
 
   /// Response Properties
   @$pb.TagNumber(1)
-  $core.List<$76.RankedAnswer> get rankedAnswers => $_getList(0);
+  $core.List<$38.RankedAnswer> get rankedAnswers => $_getList(0);
 
   /// Meta Properties
   @$pb.TagNumber(2)
-  $7.ResponseMeta get responseMeta => $_getN(1);
+  $9.ResponseMeta get responseMeta => $_getN(1);
   @$pb.TagNumber(2)
-  set responseMeta($7.ResponseMeta v) { setField(2, v); }
+  set responseMeta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponseMeta() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponseMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(1);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(1);
 }
 
 class RetrieveMessageContextPagesRequest extends $pb.GeneratedMessage {
   factory RetrieveMessageContextPagesRequest({
-    $40.SpaceKnowledgeDomainServicesAccessAuthDetails? accessAuthDetails,
+    $19.SpaceKnowledgeDomainServicesAccessAuthDetails? accessAuthDetails,
     $core.String? message,
   }) {
     final $result = create();
@@ -226,7 +226,7 @@ class RetrieveMessageContextPagesRequest extends $pb.GeneratedMessage {
   factory RetrieveMessageContextPagesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RetrieveMessageContextPagesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.knowledge.domain'), createEmptyInstance: create)
-    ..aOM<$40.SpaceKnowledgeDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'accessAuthDetails', subBuilder: $40.SpaceKnowledgeDomainServicesAccessAuthDetails.create)
+    ..aOM<$19.SpaceKnowledgeDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'accessAuthDetails', subBuilder: $19.SpaceKnowledgeDomainServicesAccessAuthDetails.create)
     ..aOS(2, _omitFieldNames ? '' : 'message')
     ..hasRequiredFields = false
   ;
@@ -254,15 +254,15 @@ class RetrieveMessageContextPagesRequest extends $pb.GeneratedMessage {
 
   /// Auth Properties
   @$pb.TagNumber(1)
-  $40.SpaceKnowledgeDomainServicesAccessAuthDetails get accessAuthDetails => $_getN(0);
+  $19.SpaceKnowledgeDomainServicesAccessAuthDetails get accessAuthDetails => $_getN(0);
   @$pb.TagNumber(1)
-  set accessAuthDetails($40.SpaceKnowledgeDomainServicesAccessAuthDetails v) { setField(1, v); }
+  set accessAuthDetails($19.SpaceKnowledgeDomainServicesAccessAuthDetails v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAccessAuthDetails() => $_has(0);
   @$pb.TagNumber(1)
   void clearAccessAuthDetails() => clearField(1);
   @$pb.TagNumber(1)
-  $40.SpaceKnowledgeDomainServicesAccessAuthDetails ensureAccessAuthDetails() => $_ensure(0);
+  $19.SpaceKnowledgeDomainServicesAccessAuthDetails ensureAccessAuthDetails() => $_ensure(0);
 
   /// Request Properties
   @$pb.TagNumber(2)
@@ -278,7 +278,7 @@ class RetrieveMessageContextPagesRequest extends $pb.GeneratedMessage {
 class RetrieveMessageContextPagesResponse extends $pb.GeneratedMessage {
   factory RetrieveMessageContextPagesResponse({
     $core.Iterable<ContextPage>? contextPage,
-    $7.ResponseMeta? responseMeta,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (contextPage != null) {
@@ -295,7 +295,7 @@ class RetrieveMessageContextPagesResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RetrieveMessageContextPagesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.knowledge.domain'), createEmptyInstance: create)
     ..pc<ContextPage>(1, _omitFieldNames ? '' : 'contextPage', $pb.PbFieldType.PM, subBuilder: ContextPage.create)
-    ..aOM<$7.ResponseMeta>(3, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..aOM<$9.ResponseMeta>(3, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -326,20 +326,20 @@ class RetrieveMessageContextPagesResponse extends $pb.GeneratedMessage {
 
   /// Meta Properties
   @$pb.TagNumber(3)
-  $7.ResponseMeta get responseMeta => $_getN(1);
+  $9.ResponseMeta get responseMeta => $_getN(1);
   @$pb.TagNumber(3)
-  set responseMeta($7.ResponseMeta v) { setField(3, v); }
+  set responseMeta($9.ResponseMeta v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasResponseMeta() => $_has(1);
   @$pb.TagNumber(3)
   void clearResponseMeta() => clearField(3);
   @$pb.TagNumber(3)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(1);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(1);
 }
 
 class IsMessageContextInDomainRequest extends $pb.GeneratedMessage {
   factory IsMessageContextInDomainRequest({
-    $40.SpaceKnowledgeDomainServicesAccessAuthDetails? accessAuthDetails,
+    $19.SpaceKnowledgeDomainServicesAccessAuthDetails? accessAuthDetails,
     $core.String? message,
   }) {
     final $result = create();
@@ -356,7 +356,7 @@ class IsMessageContextInDomainRequest extends $pb.GeneratedMessage {
   factory IsMessageContextInDomainRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IsMessageContextInDomainRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.knowledge.domain'), createEmptyInstance: create)
-    ..aOM<$40.SpaceKnowledgeDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'accessAuthDetails', subBuilder: $40.SpaceKnowledgeDomainServicesAccessAuthDetails.create)
+    ..aOM<$19.SpaceKnowledgeDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'accessAuthDetails', subBuilder: $19.SpaceKnowledgeDomainServicesAccessAuthDetails.create)
     ..aOS(2, _omitFieldNames ? '' : 'message')
     ..hasRequiredFields = false
   ;
@@ -384,15 +384,15 @@ class IsMessageContextInDomainRequest extends $pb.GeneratedMessage {
 
   /// Auth Properties
   @$pb.TagNumber(1)
-  $40.SpaceKnowledgeDomainServicesAccessAuthDetails get accessAuthDetails => $_getN(0);
+  $19.SpaceKnowledgeDomainServicesAccessAuthDetails get accessAuthDetails => $_getN(0);
   @$pb.TagNumber(1)
-  set accessAuthDetails($40.SpaceKnowledgeDomainServicesAccessAuthDetails v) { setField(1, v); }
+  set accessAuthDetails($19.SpaceKnowledgeDomainServicesAccessAuthDetails v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAccessAuthDetails() => $_has(0);
   @$pb.TagNumber(1)
   void clearAccessAuthDetails() => clearField(1);
   @$pb.TagNumber(1)
-  $40.SpaceKnowledgeDomainServicesAccessAuthDetails ensureAccessAuthDetails() => $_ensure(0);
+  $19.SpaceKnowledgeDomainServicesAccessAuthDetails ensureAccessAuthDetails() => $_ensure(0);
 
   /// Request Properties
   @$pb.TagNumber(2)
@@ -409,7 +409,7 @@ class IsMessageContextInDomainResponse extends $pb.GeneratedMessage {
   factory IsMessageContextInDomainResponse({
     $core.bool? messageContextInDomain,
     $core.int? messageContextScore,
-    $7.ResponseMeta? responseMeta,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (messageContextInDomain != null) {
@@ -430,7 +430,7 @@ class IsMessageContextInDomainResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IsMessageContextInDomainResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.knowledge.domain'), createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'messageContextInDomain')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'messageContextScore', $pb.PbFieldType.O3)
-    ..aOM<$7.ResponseMeta>(3, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..aOM<$9.ResponseMeta>(3, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -476,15 +476,15 @@ class IsMessageContextInDomainResponse extends $pb.GeneratedMessage {
 
   /// Meta Properties
   @$pb.TagNumber(3)
-  $7.ResponseMeta get responseMeta => $_getN(2);
+  $9.ResponseMeta get responseMeta => $_getN(2);
   @$pb.TagNumber(3)
-  set responseMeta($7.ResponseMeta v) { setField(3, v); }
+  set responseMeta($9.ResponseMeta v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasResponseMeta() => $_has(2);
   @$pb.TagNumber(3)
   void clearResponseMeta() => clearField(3);
   @$pb.TagNumber(3)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(2);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(2);
 }
 
 class GetInferredDomainsResponse extends $pb.GeneratedMessage {
@@ -523,7 +523,7 @@ class GetInferredDomainsResponse extends $pb.GeneratedMessage {
 class FileCountResponse extends $pb.GeneratedMessage {
   factory FileCountResponse({
     $core.int? fileCount,
-    $7.ResponseMeta? responseMeta,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (fileCount != null) {
@@ -540,7 +540,7 @@ class FileCountResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FileCountResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.knowledge.domain'), createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'fileCount', $pb.PbFieldType.O3)
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -575,21 +575,21 @@ class FileCountResponse extends $pb.GeneratedMessage {
   void clearFileCount() => clearField(1);
 
   @$pb.TagNumber(2)
-  $7.ResponseMeta get responseMeta => $_getN(1);
+  $9.ResponseMeta get responseMeta => $_getN(1);
   @$pb.TagNumber(2)
-  set responseMeta($7.ResponseMeta v) { setField(2, v); }
+  set responseMeta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponseMeta() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponseMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(1);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(1);
 }
 
 class PageCountResponse extends $pb.GeneratedMessage {
   factory PageCountResponse({
     $core.int? pageCount,
-    $7.ResponseMeta? responseMeta,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (pageCount != null) {
@@ -606,7 +606,7 @@ class PageCountResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PageCountResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.knowledge.domain'), createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'pageCount', $pb.PbFieldType.O3)
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -641,15 +641,15 @@ class PageCountResponse extends $pb.GeneratedMessage {
   void clearPageCount() => clearField(1);
 
   @$pb.TagNumber(2)
-  $7.ResponseMeta get responseMeta => $_getN(1);
+  $9.ResponseMeta get responseMeta => $_getN(1);
   @$pb.TagNumber(2)
-  set responseMeta($7.ResponseMeta v) { setField(2, v); }
+  set responseMeta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponseMeta() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponseMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(1);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(1);
 }
 
 /// Meta Messages Definitions

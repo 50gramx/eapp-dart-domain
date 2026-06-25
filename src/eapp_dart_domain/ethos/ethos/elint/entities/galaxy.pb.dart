@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../google/protobuf/timestamp.pb.dart' as $85;
-import 'universe.pb.dart' as $36;
+import 'universe.pb.dart' as $68;
 
 export 'galaxy.pbenum.dart';
 
@@ -22,7 +22,7 @@ class Galaxy extends $pb.GeneratedMessage {
   factory Galaxy({
     $core.String? galaxyId,
     $core.String? galaxyName,
-    $36.Universe? universe,
+    $68.Universe? universe,
     $85.Timestamp? galaxyCreatedAt,
     $85.Timestamp? galaxyUpdatedAt,
     $core.String? domain,
@@ -59,7 +59,7 @@ class Galaxy extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Galaxy', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.entity'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'galaxyId')
     ..aOS(2, _omitFieldNames ? '' : 'galaxyName')
-    ..aOM<$36.Universe>(3, _omitFieldNames ? '' : 'universe', subBuilder: $36.Universe.create)
+    ..aOM<$68.Universe>(3, _omitFieldNames ? '' : 'universe', subBuilder: $68.Universe.create)
     ..aOM<$85.Timestamp>(4, _omitFieldNames ? '' : 'galaxyCreatedAt', subBuilder: $85.Timestamp.create)
     ..aOM<$85.Timestamp>(5, _omitFieldNames ? '' : 'galaxyUpdatedAt', subBuilder: $85.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'domain')
@@ -107,15 +107,15 @@ class Galaxy extends $pb.GeneratedMessage {
   void clearGalaxyName() => clearField(2);
 
   @$pb.TagNumber(3)
-  $36.Universe get universe => $_getN(2);
+  $68.Universe get universe => $_getN(2);
   @$pb.TagNumber(3)
-  set universe($36.Universe v) { setField(3, v); }
+  set universe($68.Universe v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUniverse() => $_has(2);
   @$pb.TagNumber(3)
   void clearUniverse() => clearField(3);
   @$pb.TagNumber(3)
-  $36.Universe ensureUniverse() => $_ensure(2);
+  $68.Universe ensureUniverse() => $_ensure(2);
 
   @$pb.TagNumber(4)
   $85.Timestamp get galaxyCreatedAt => $_getN(3);

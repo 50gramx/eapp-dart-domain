@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../entities/generic.pb.dart' as $7;
-import '../../../../entities/machine.pb.dart' as $101;
+import '../../../../entities/generic.pb.dart' as $9;
+import '../../../../entities/machine.pb.dart' as $99;
 
 /// Message Definitions
 class ListAllMachinesResponse extends $pb.GeneratedMessage {
   factory ListAllMachinesResponse({
-    $core.Iterable<$101.Machine>? machines,
-    $7.ResponseMeta? responseMeta,
+    $core.Iterable<$99.Machine>? machines,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (machines != null) {
@@ -36,8 +36,8 @@ class ListAllMachinesResponse extends $pb.GeneratedMessage {
   factory ListAllMachinesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListAllMachinesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.machine'), createEmptyInstance: create)
-    ..pc<$101.Machine>(1, _omitFieldNames ? '' : 'machines', $pb.PbFieldType.PM, subBuilder: $101.Machine.create)
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..pc<$99.Machine>(1, _omitFieldNames ? '' : 'machines', $pb.PbFieldType.PM, subBuilder: $99.Machine.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -63,18 +63,18 @@ class ListAllMachinesResponse extends $pb.GeneratedMessage {
   static ListAllMachinesResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.List<$101.Machine> get machines => $_getList(0);
+  $core.List<$99.Machine> get machines => $_getList(0);
 
   @$pb.TagNumber(2)
-  $7.ResponseMeta get responseMeta => $_getN(1);
+  $9.ResponseMeta get responseMeta => $_getN(1);
   @$pb.TagNumber(2)
-  set responseMeta($7.ResponseMeta v) { setField(2, v); }
+  set responseMeta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponseMeta() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponseMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(1);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(1);
 }
 
 

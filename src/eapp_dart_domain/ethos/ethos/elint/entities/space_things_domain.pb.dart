@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../google/protobuf/timestamp.pb.dart' as $85;
-import '../collars/DC499999997.pb.dart' as $95;
-import 'space_things.pb.dart' as $94;
+import '../collars/DC499999997.pb.dart' as $96;
+import 'space_things.pb.dart' as $95;
 
 export '../../../google/protobuf/timestamp.pb.dart';
 
@@ -30,10 +30,10 @@ class SpaceThingsDomain extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? description,
     $core.bool? isIsolated,
-    $94.SpaceThings? spaceThings,
+    $95.SpaceThings? spaceThings,
     $85.Timestamp? createdAt,
     $85.Timestamp? lastUpdatedAt,
-    $95.DC499999997? dc499999997,
+    $96.DC499999997? dc499999997,
   }) {
     final $result = create();
     if (id != null) {
@@ -76,10 +76,10 @@ class SpaceThingsDomain extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'name')
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..aOB(4, _omitFieldNames ? '' : 'isIsolated')
-    ..aOM<$94.SpaceThings>(5, _omitFieldNames ? '' : 'spaceThings', subBuilder: $94.SpaceThings.create)
+    ..aOM<$95.SpaceThings>(5, _omitFieldNames ? '' : 'spaceThings', subBuilder: $95.SpaceThings.create)
     ..aOM<$85.Timestamp>(6, _omitFieldNames ? '' : 'createdAt', subBuilder: $85.Timestamp.create)
     ..aOM<$85.Timestamp>(7, _omitFieldNames ? '' : 'lastUpdatedAt', subBuilder: $85.Timestamp.create)
-    ..aOM<$95.DC499999997>(10, _omitFieldNames ? '' : 'dc499999997', subBuilder: $95.DC499999997.create)
+    ..aOM<$96.DC499999997>(10, _omitFieldNames ? '' : 'dc499999997', subBuilder: $96.DC499999997.create)
     ..hasRequiredFields = false
   ;
 
@@ -144,15 +144,15 @@ class SpaceThingsDomain extends $pb.GeneratedMessage {
   void clearIsIsolated() => clearField(4);
 
   @$pb.TagNumber(5)
-  $94.SpaceThings get spaceThings => $_getN(4);
+  $95.SpaceThings get spaceThings => $_getN(4);
   @$pb.TagNumber(5)
-  set spaceThings($94.SpaceThings v) { setField(5, v); }
+  set spaceThings($95.SpaceThings v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasSpaceThings() => $_has(4);
   @$pb.TagNumber(5)
   void clearSpaceThings() => clearField(5);
   @$pb.TagNumber(5)
-  $94.SpaceThings ensureSpaceThings() => $_ensure(4);
+  $95.SpaceThings ensureSpaceThings() => $_ensure(4);
 
   @$pb.TagNumber(6)
   $85.Timestamp get createdAt => $_getN(5);
@@ -177,15 +177,15 @@ class SpaceThingsDomain extends $pb.GeneratedMessage {
   $85.Timestamp ensureLastUpdatedAt() => $_ensure(6);
 
   @$pb.TagNumber(10)
-  $95.DC499999997 get dc499999997 => $_getN(7);
+  $96.DC499999997 get dc499999997 => $_getN(7);
   @$pb.TagNumber(10)
-  set dc499999997($95.DC499999997 v) { setField(10, v); }
+  set dc499999997($96.DC499999997 v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasDc499999997() => $_has(7);
   @$pb.TagNumber(10)
   void clearDc499999997() => clearField(10);
   @$pb.TagNumber(10)
-  $95.DC499999997 ensureDc499999997() => $_ensure(7);
+  $96.DC499999997 ensureDc499999997() => $_ensure(7);
 }
 
 

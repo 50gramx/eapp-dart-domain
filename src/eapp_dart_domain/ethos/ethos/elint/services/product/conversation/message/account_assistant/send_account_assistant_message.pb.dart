@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../../../../google/protobuf/any.pb.dart' as $83;
+import '../../../../../../../google/protobuf/any.pb.dart' as $98;
 import '../../../../../../../google/protobuf/timestamp.pb.dart' as $85;
-import '../../../../../entities/account_assistant.pb.dart' as $23;
+import '../../../../../entities/account_assistant.pb.dart' as $40;
 import '../../../identity/account_assistant/access_account_assistant.pb.dart' as $1;
 
 export '../../../../../../../google/protobuf/timestamp.pb.dart';
@@ -24,14 +24,14 @@ export '../../../../../../../google/protobuf/timestamp.pb.dart';
 class MessageForAccount extends $pb.GeneratedMessage {
   factory MessageForAccount({
     $1.AccountAssistantServicesAccessAuthDetails? accessAuthDetails,
-    $23.AccountAssistantConnectedAccount? connectedAccount,
+    $40.AccountAssistantConnectedAccount? connectedAccount,
     $core.String? message,
     $core.String? messageSourceSpaceId,
     $core.String? messageSourceSpaceTypeId,
     $core.String? messageSourceSpaceDomainId,
     $core.int? messageSourceSpaceDomainAction,
     $core.String? messageSourceSpaceDomainActionContextId,
-    $core.Iterable<$83.Any>? messageSource,
+    $core.Iterable<$98.Any>? messageSource,
   }) {
     final $result = create();
     if (accessAuthDetails != null) {
@@ -69,14 +69,14 @@ class MessageForAccount extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MessageForAccount', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.conversation.message.account.assistant'), createEmptyInstance: create)
     ..aOM<$1.AccountAssistantServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'accessAuthDetails', subBuilder: $1.AccountAssistantServicesAccessAuthDetails.create)
-    ..aOM<$23.AccountAssistantConnectedAccount>(2, _omitFieldNames ? '' : 'connectedAccount', subBuilder: $23.AccountAssistantConnectedAccount.create)
+    ..aOM<$40.AccountAssistantConnectedAccount>(2, _omitFieldNames ? '' : 'connectedAccount', subBuilder: $40.AccountAssistantConnectedAccount.create)
     ..aOS(3, _omitFieldNames ? '' : 'message')
     ..aOS(4, _omitFieldNames ? '' : 'messageSourceSpaceId')
     ..aOS(5, _omitFieldNames ? '' : 'messageSourceSpaceTypeId')
     ..aOS(6, _omitFieldNames ? '' : 'messageSourceSpaceDomainId')
     ..a<$core.int>(7, _omitFieldNames ? '' : 'messageSourceSpaceDomainAction', $pb.PbFieldType.O3)
     ..aOS(8, _omitFieldNames ? '' : 'messageSourceSpaceDomainActionContextId')
-    ..pc<$83.Any>(9, _omitFieldNames ? '' : 'messageSource', $pb.PbFieldType.PM, subBuilder: $83.Any.create)
+    ..pc<$98.Any>(9, _omitFieldNames ? '' : 'messageSource', $pb.PbFieldType.PM, subBuilder: $98.Any.create)
     ..hasRequiredFields = false
   ;
 
@@ -115,15 +115,15 @@ class MessageForAccount extends $pb.GeneratedMessage {
 
   /// Best Message Params & Sources
   @$pb.TagNumber(2)
-  $23.AccountAssistantConnectedAccount get connectedAccount => $_getN(1);
+  $40.AccountAssistantConnectedAccount get connectedAccount => $_getN(1);
   @$pb.TagNumber(2)
-  set connectedAccount($23.AccountAssistantConnectedAccount v) { setField(2, v); }
+  set connectedAccount($40.AccountAssistantConnectedAccount v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasConnectedAccount() => $_has(1);
   @$pb.TagNumber(2)
   void clearConnectedAccount() => clearField(2);
   @$pb.TagNumber(2)
-  $23.AccountAssistantConnectedAccount ensureConnectedAccount() => $_ensure(1);
+  $40.AccountAssistantConnectedAccount ensureConnectedAccount() => $_ensure(1);
 
   @$pb.TagNumber(3)
   $core.String get message => $_getSZ(2);
@@ -181,7 +181,7 @@ class MessageForAccount extends $pb.GeneratedMessage {
 
   /// All Sources
   @$pb.TagNumber(9)
-  $core.List<$83.Any> get messageSource => $_getList(8);
+  $core.List<$98.Any> get messageSource => $_getList(8);
 }
 
 class MessageForAccountSent extends $pb.GeneratedMessage {

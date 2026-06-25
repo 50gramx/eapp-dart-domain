@@ -15,17 +15,17 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../entities/generic.pb.dart' as $7;
-import '../space_knowledge_domain_file_page/access_space_knowledge_domain_file_page.pb.dart' as $66;
+import '../../../../entities/generic.pb.dart' as $9;
+import '../space_knowledge_domain_file_page/access_space_knowledge_domain_file_page.pb.dart' as $24;
 
 export 'delete_space_knowledge_domain_file_page_para.pb.dart';
 
 @$pb.GrpcServiceName('elint.services.product.knowledge.para.DeleteSpaceKnowledgeDomainFilePageParaService')
 class DeleteSpaceKnowledgeDomainFilePageParaServiceClient extends $grpc.Client {
-  static final _$deleteParasForPage = $grpc.ClientMethod<$66.SpaceKnowledgeDomainFilePageServicesAccessAuthDetails, $7.ResponseMeta>(
+  static final _$deleteParasForPage = $grpc.ClientMethod<$24.SpaceKnowledgeDomainFilePageServicesAccessAuthDetails, $9.ResponseMeta>(
       '/elint.services.product.knowledge.para.DeleteSpaceKnowledgeDomainFilePageParaService/DeleteParasForPage',
-      ($66.SpaceKnowledgeDomainFilePageServicesAccessAuthDetails value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $7.ResponseMeta.fromBuffer(value));
+      ($24.SpaceKnowledgeDomainFilePageServicesAccessAuthDetails value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $9.ResponseMeta.fromBuffer(value));
 
   DeleteSpaceKnowledgeDomainFilePageParaServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -33,7 +33,7 @@ class DeleteSpaceKnowledgeDomainFilePageParaServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$7.ResponseMeta> deleteParasForPage($66.SpaceKnowledgeDomainFilePageServicesAccessAuthDetails request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$9.ResponseMeta> deleteParasForPage($24.SpaceKnowledgeDomainFilePageServicesAccessAuthDetails request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteParasForPage, request, options: options);
   }
 }
@@ -43,18 +43,18 @@ abstract class DeleteSpaceKnowledgeDomainFilePageParaServiceBase extends $grpc.S
   $core.String get $name => 'elint.services.product.knowledge.para.DeleteSpaceKnowledgeDomainFilePageParaService';
 
   DeleteSpaceKnowledgeDomainFilePageParaServiceBase() {
-    $addMethod($grpc.ServiceMethod<$66.SpaceKnowledgeDomainFilePageServicesAccessAuthDetails, $7.ResponseMeta>(
+    $addMethod($grpc.ServiceMethod<$24.SpaceKnowledgeDomainFilePageServicesAccessAuthDetails, $9.ResponseMeta>(
         'DeleteParasForPage',
         deleteParasForPage_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $66.SpaceKnowledgeDomainFilePageServicesAccessAuthDetails.fromBuffer(value),
-        ($7.ResponseMeta value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $24.SpaceKnowledgeDomainFilePageServicesAccessAuthDetails.fromBuffer(value),
+        ($9.ResponseMeta value) => value.writeToBuffer()));
   }
 
-  $async.Future<$7.ResponseMeta> deleteParasForPage_Pre($grpc.ServiceCall call, $async.Future<$66.SpaceKnowledgeDomainFilePageServicesAccessAuthDetails> request) async {
+  $async.Future<$9.ResponseMeta> deleteParasForPage_Pre($grpc.ServiceCall call, $async.Future<$24.SpaceKnowledgeDomainFilePageServicesAccessAuthDetails> request) async {
     return deleteParasForPage(call, await request);
   }
 
-  $async.Future<$7.ResponseMeta> deleteParasForPage($grpc.ServiceCall call, $66.SpaceKnowledgeDomainFilePageServicesAccessAuthDetails request);
+  $async.Future<$9.ResponseMeta> deleteParasForPage($grpc.ServiceCall call, $24.SpaceKnowledgeDomainFilePageServicesAccessAuthDetails request);
 }

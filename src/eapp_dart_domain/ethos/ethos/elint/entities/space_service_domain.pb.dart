@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../google/protobuf/timestamp.pb.dart' as $85;
-import '../collars/DC499999998.pb.dart' as $10;
-import '../collars/DC499999999.pb.dart' as $14;
-import '../collars/DC500000000.pb.dart' as $92;
-import 'space_service.pb.dart' as $91;
+import '../collars/DC499999998.pb.dart' as $4;
+import '../collars/DC499999999.pb.dart' as $83;
+import '../collars/DC500000000.pb.dart' as $89;
+import 'space_service.pb.dart' as $88;
 
 export '../../../google/protobuf/timestamp.pb.dart';
 
@@ -34,12 +34,12 @@ class SpaceServiceDomain extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? description,
     $core.bool? isIsolated,
-    $91.SpaceService? spaceService,
+    $88.SpaceService? spaceService,
     $85.Timestamp? createdAt,
     $85.Timestamp? lastUpdatedAt,
-    $10.DC499999998? dc499999998,
-    $14.DC499999999? dc499999999,
-    $92.DC500000000? dc500000000,
+    $4.DC499999998? dc499999998,
+    $83.DC499999999? dc499999999,
+    $89.DC500000000? dc500000000,
   }) {
     final $result = create();
     if (id != null) {
@@ -90,12 +90,12 @@ class SpaceServiceDomain extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'name')
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..aOB(4, _omitFieldNames ? '' : 'isIsolated')
-    ..aOM<$91.SpaceService>(5, _omitFieldNames ? '' : 'spaceService', subBuilder: $91.SpaceService.create)
+    ..aOM<$88.SpaceService>(5, _omitFieldNames ? '' : 'spaceService', subBuilder: $88.SpaceService.create)
     ..aOM<$85.Timestamp>(6, _omitFieldNames ? '' : 'createdAt', subBuilder: $85.Timestamp.create)
     ..aOM<$85.Timestamp>(7, _omitFieldNames ? '' : 'lastUpdatedAt', subBuilder: $85.Timestamp.create)
-    ..aOM<$10.DC499999998>(499999998, _omitFieldNames ? '' : 'dc499999998', subBuilder: $10.DC499999998.create)
-    ..aOM<$14.DC499999999>(499999999, _omitFieldNames ? '' : 'dc499999999', subBuilder: $14.DC499999999.create)
-    ..aOM<$92.DC500000000>(500000000, _omitFieldNames ? '' : 'dc500000000', subBuilder: $92.DC500000000.create)
+    ..aOM<$4.DC499999998>(499999998, _omitFieldNames ? '' : 'dc499999998', subBuilder: $4.DC499999998.create)
+    ..aOM<$83.DC499999999>(499999999, _omitFieldNames ? '' : 'dc499999999', subBuilder: $83.DC499999999.create)
+    ..aOM<$89.DC500000000>(500000000, _omitFieldNames ? '' : 'dc500000000', subBuilder: $89.DC500000000.create)
     ..hasRequiredFields = false
   ;
 
@@ -160,15 +160,15 @@ class SpaceServiceDomain extends $pb.GeneratedMessage {
   void clearIsIsolated() => clearField(4);
 
   @$pb.TagNumber(5)
-  $91.SpaceService get spaceService => $_getN(4);
+  $88.SpaceService get spaceService => $_getN(4);
   @$pb.TagNumber(5)
-  set spaceService($91.SpaceService v) { setField(5, v); }
+  set spaceService($88.SpaceService v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasSpaceService() => $_has(4);
   @$pb.TagNumber(5)
   void clearSpaceService() => clearField(5);
   @$pb.TagNumber(5)
-  $91.SpaceService ensureSpaceService() => $_ensure(4);
+  $88.SpaceService ensureSpaceService() => $_ensure(4);
 
   @$pb.TagNumber(6)
   $85.Timestamp get createdAt => $_getN(5);
@@ -193,37 +193,37 @@ class SpaceServiceDomain extends $pb.GeneratedMessage {
   $85.Timestamp ensureLastUpdatedAt() => $_ensure(6);
 
   @$pb.TagNumber(499999998)
-  $10.DC499999998 get dc499999998 => $_getN(7);
+  $4.DC499999998 get dc499999998 => $_getN(7);
   @$pb.TagNumber(499999998)
-  set dc499999998($10.DC499999998 v) { setField(499999998, v); }
+  set dc499999998($4.DC499999998 v) { setField(499999998, v); }
   @$pb.TagNumber(499999998)
   $core.bool hasDc499999998() => $_has(7);
   @$pb.TagNumber(499999998)
   void clearDc499999998() => clearField(499999998);
   @$pb.TagNumber(499999998)
-  $10.DC499999998 ensureDc499999998() => $_ensure(7);
+  $4.DC499999998 ensureDc499999998() => $_ensure(7);
 
   @$pb.TagNumber(499999999)
-  $14.DC499999999 get dc499999999 => $_getN(8);
+  $83.DC499999999 get dc499999999 => $_getN(8);
   @$pb.TagNumber(499999999)
-  set dc499999999($14.DC499999999 v) { setField(499999999, v); }
+  set dc499999999($83.DC499999999 v) { setField(499999999, v); }
   @$pb.TagNumber(499999999)
   $core.bool hasDc499999999() => $_has(8);
   @$pb.TagNumber(499999999)
   void clearDc499999999() => clearField(499999999);
   @$pb.TagNumber(499999999)
-  $14.DC499999999 ensureDc499999999() => $_ensure(8);
+  $83.DC499999999 ensureDc499999999() => $_ensure(8);
 
   @$pb.TagNumber(500000000)
-  $92.DC500000000 get dc500000000 => $_getN(9);
+  $89.DC500000000 get dc500000000 => $_getN(9);
   @$pb.TagNumber(500000000)
-  set dc500000000($92.DC500000000 v) { setField(500000000, v); }
+  set dc500000000($89.DC500000000 v) { setField(500000000, v); }
   @$pb.TagNumber(500000000)
   $core.bool hasDc500000000() => $_has(9);
   @$pb.TagNumber(500000000)
   void clearDc500000000() => clearField(500000000);
   @$pb.TagNumber(500000000)
-  $92.DC500000000 ensureDc500000000() => $_ensure(9);
+  $89.DC500000000 ensureDc500000000() => $_ensure(9);
 }
 
 

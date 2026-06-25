@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../google/protobuf/timestamp.pb.dart' as $85;
-import '../entities/space_knowledge_domain.pb.dart' as $76;
+import '../entities/space_knowledge_domain.pb.dart' as $38;
 
 class DC499999994 extends $pb.GeneratedMessage {
   factory DC499999994({
@@ -23,7 +23,7 @@ class DC499999994 extends $pb.GeneratedMessage {
     $core.String? description,
     $85.Timestamp? createdAt,
     $85.Timestamp? updatedAt,
-    $76.SpaceKnowledgeDomain? productImagesDomain,
+    $38.SpaceKnowledgeDomain? productImagesDomain,
     SkincareProduct? skincareProduct,
   }) {
     final $result = create();
@@ -60,7 +60,7 @@ class DC499999994 extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..aOM<$85.Timestamp>(5, _omitFieldNames ? '' : 'createdAt', subBuilder: $85.Timestamp.create)
     ..aOM<$85.Timestamp>(6, _omitFieldNames ? '' : 'updatedAt', subBuilder: $85.Timestamp.create)
-    ..aOM<$76.SpaceKnowledgeDomain>(20, _omitFieldNames ? '' : 'productImagesDomain', subBuilder: $76.SpaceKnowledgeDomain.create)
+    ..aOM<$38.SpaceKnowledgeDomain>(20, _omitFieldNames ? '' : 'productImagesDomain', subBuilder: $38.SpaceKnowledgeDomain.create)
     ..aOM<SkincareProduct>(5000, _omitFieldNames ? '' : 'skincareProduct', subBuilder: SkincareProduct.create)
     ..hasRequiredFields = false
   ;
@@ -136,15 +136,15 @@ class DC499999994 extends $pb.GeneratedMessage {
   $85.Timestamp ensureUpdatedAt() => $_ensure(4);
 
   @$pb.TagNumber(20)
-  $76.SpaceKnowledgeDomain get productImagesDomain => $_getN(5);
+  $38.SpaceKnowledgeDomain get productImagesDomain => $_getN(5);
   @$pb.TagNumber(20)
-  set productImagesDomain($76.SpaceKnowledgeDomain v) { setField(20, v); }
+  set productImagesDomain($38.SpaceKnowledgeDomain v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasProductImagesDomain() => $_has(5);
   @$pb.TagNumber(20)
   void clearProductImagesDomain() => clearField(20);
   @$pb.TagNumber(20)
-  $76.SpaceKnowledgeDomain ensureProductImagesDomain() => $_ensure(5);
+  $38.SpaceKnowledgeDomain ensureProductImagesDomain() => $_ensure(5);
 
   @$pb.TagNumber(5000)
   SkincareProduct get skincareProduct => $_getN(6);

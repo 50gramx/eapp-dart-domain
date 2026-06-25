@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../entities/generic.pb.dart' as $7;
-import '../services/product/service/space_service_domain/access_space_service_domain.pb.dart' as $12;
-import 'DC499999999.pb.dart' as $14;
+import '../entities/generic.pb.dart' as $9;
+import '../services/product/service/space_service_domain/access_space_service_domain.pb.dart' as $10;
+import 'DC499999999.pb.dart' as $83;
 
 class AuthWithDeployment extends $pb.GeneratedMessage {
   factory AuthWithDeployment({
-    $12.SpaceServiceDomainServicesAccessAuthDetails? auth,
-    $14.Deployment? deployment,
+    $10.SpaceServiceDomainServicesAccessAuthDetails? auth,
+    $83.Deployment? deployment,
   }) {
     final $result = create();
     if (auth != null) {
@@ -36,8 +36,8 @@ class AuthWithDeployment extends $pb.GeneratedMessage {
   factory AuthWithDeployment.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AuthWithDeployment', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.collars'), createEmptyInstance: create)
-    ..aOM<$12.SpaceServiceDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'auth', subBuilder: $12.SpaceServiceDomainServicesAccessAuthDetails.create)
-    ..aOM<$14.Deployment>(2, _omitFieldNames ? '' : 'deployment', subBuilder: $14.Deployment.create)
+    ..aOM<$10.SpaceServiceDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'auth', subBuilder: $10.SpaceServiceDomainServicesAccessAuthDetails.create)
+    ..aOM<$83.Deployment>(2, _omitFieldNames ? '' : 'deployment', subBuilder: $83.Deployment.create)
     ..hasRequiredFields = false
   ;
 
@@ -63,32 +63,32 @@ class AuthWithDeployment extends $pb.GeneratedMessage {
   static AuthWithDeployment? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $12.SpaceServiceDomainServicesAccessAuthDetails get auth => $_getN(0);
+  $10.SpaceServiceDomainServicesAccessAuthDetails get auth => $_getN(0);
   @$pb.TagNumber(1)
-  set auth($12.SpaceServiceDomainServicesAccessAuthDetails v) { setField(1, v); }
+  set auth($10.SpaceServiceDomainServicesAccessAuthDetails v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAuth() => $_has(0);
   @$pb.TagNumber(1)
   void clearAuth() => clearField(1);
   @$pb.TagNumber(1)
-  $12.SpaceServiceDomainServicesAccessAuthDetails ensureAuth() => $_ensure(0);
+  $10.SpaceServiceDomainServicesAccessAuthDetails ensureAuth() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $14.Deployment get deployment => $_getN(1);
+  $83.Deployment get deployment => $_getN(1);
   @$pb.TagNumber(2)
-  set deployment($14.Deployment v) { setField(2, v); }
+  set deployment($83.Deployment v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDeployment() => $_has(1);
   @$pb.TagNumber(2)
   void clearDeployment() => clearField(2);
   @$pb.TagNumber(2)
-  $14.Deployment ensureDeployment() => $_ensure(1);
+  $83.Deployment ensureDeployment() => $_ensure(1);
 }
 
 class RepeatedDC499999999 extends $pb.GeneratedMessage {
   factory RepeatedDC499999999({
-    $7.ResponseMeta? meta,
-    $core.Iterable<$14.DC499999999>? collars,
+    $9.ResponseMeta? meta,
+    $core.Iterable<$83.DC499999999>? collars,
   }) {
     final $result = create();
     if (meta != null) {
@@ -104,8 +104,8 @@ class RepeatedDC499999999 extends $pb.GeneratedMessage {
   factory RepeatedDC499999999.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RepeatedDC499999999', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.collars'), createEmptyInstance: create)
-    ..aOM<$7.ResponseMeta>(1, _omitFieldNames ? '' : 'meta', subBuilder: $7.ResponseMeta.create)
-    ..pc<$14.DC499999999>(2, _omitFieldNames ? '' : 'collars', $pb.PbFieldType.PM, subBuilder: $14.DC499999999.create)
+    ..aOM<$9.ResponseMeta>(1, _omitFieldNames ? '' : 'meta', subBuilder: $9.ResponseMeta.create)
+    ..pc<$83.DC499999999>(2, _omitFieldNames ? '' : 'collars', $pb.PbFieldType.PM, subBuilder: $83.DC499999999.create)
     ..hasRequiredFields = false
   ;
 
@@ -131,23 +131,23 @@ class RepeatedDC499999999 extends $pb.GeneratedMessage {
   static RepeatedDC499999999? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $7.ResponseMeta get meta => $_getN(0);
+  $9.ResponseMeta get meta => $_getN(0);
   @$pb.TagNumber(1)
-  set meta($7.ResponseMeta v) { setField(1, v); }
+  set meta($9.ResponseMeta v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMeta() => $_has(0);
   @$pb.TagNumber(1)
   void clearMeta() => clearField(1);
   @$pb.TagNumber(1)
-  $7.ResponseMeta ensureMeta() => $_ensure(0);
+  $9.ResponseMeta ensureMeta() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $core.List<$14.DC499999999> get collars => $_getList(1);
+  $core.List<$83.DC499999999> get collars => $_getList(1);
 }
 
 class SSDAuthWithCollarID extends $pb.GeneratedMessage {
   factory SSDAuthWithCollarID({
-    $12.SpaceServiceDomainServicesAccessAuthDetails? auth,
+    $10.SpaceServiceDomainServicesAccessAuthDetails? auth,
     $core.String? collarId,
   }) {
     final $result = create();
@@ -164,7 +164,7 @@ class SSDAuthWithCollarID extends $pb.GeneratedMessage {
   factory SSDAuthWithCollarID.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SSDAuthWithCollarID', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.collars'), createEmptyInstance: create)
-    ..aOM<$12.SpaceServiceDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'auth', subBuilder: $12.SpaceServiceDomainServicesAccessAuthDetails.create)
+    ..aOM<$10.SpaceServiceDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'auth', subBuilder: $10.SpaceServiceDomainServicesAccessAuthDetails.create)
     ..aOS(2, _omitFieldNames ? '' : 'collarId')
     ..hasRequiredFields = false
   ;
@@ -191,15 +191,15 @@ class SSDAuthWithCollarID extends $pb.GeneratedMessage {
   static SSDAuthWithCollarID? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $12.SpaceServiceDomainServicesAccessAuthDetails get auth => $_getN(0);
+  $10.SpaceServiceDomainServicesAccessAuthDetails get auth => $_getN(0);
   @$pb.TagNumber(1)
-  set auth($12.SpaceServiceDomainServicesAccessAuthDetails v) { setField(1, v); }
+  set auth($10.SpaceServiceDomainServicesAccessAuthDetails v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAuth() => $_has(0);
   @$pb.TagNumber(1)
   void clearAuth() => clearField(1);
   @$pb.TagNumber(1)
-  $12.SpaceServiceDomainServicesAccessAuthDetails ensureAuth() => $_ensure(0);
+  $10.SpaceServiceDomainServicesAccessAuthDetails ensureAuth() => $_ensure(0);
 
   @$pb.TagNumber(2)
   $core.String get collarId => $_getSZ(1);

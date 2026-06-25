@@ -15,16 +15,16 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'DC499999995.pb.dart' as $15;
+import 'DC499999995.pb.dart' as $78;
 
 export 'DC499999995.pb.dart';
 
 @$pb.GrpcServiceName('elint.collars.DC499999995EPME5000Capabilities')
 class DC499999995EPME5000CapabilitiesClient extends $grpc.Client {
-  static final _$deployMonthly = $grpc.ClientMethod<$15.DeployMonthlyRequest, $15.DeployMonthlyResponse>(
+  static final _$deployMonthly = $grpc.ClientMethod<$78.DeployMonthlyRequest, $78.DeployMonthlyResponse>(
       '/elint.collars.DC499999995EPME5000Capabilities/DeployMonthly',
-      ($15.DeployMonthlyRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $15.DeployMonthlyResponse.fromBuffer(value));
+      ($78.DeployMonthlyRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $78.DeployMonthlyResponse.fromBuffer(value));
 
   DC499999995EPME5000CapabilitiesClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -32,7 +32,7 @@ class DC499999995EPME5000CapabilitiesClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$15.DeployMonthlyResponse> deployMonthly($15.DeployMonthlyRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$78.DeployMonthlyResponse> deployMonthly($78.DeployMonthlyRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deployMonthly, request, options: options);
   }
 }
@@ -42,18 +42,18 @@ abstract class DC499999995EPME5000CapabilitiesServiceBase extends $grpc.Service 
   $core.String get $name => 'elint.collars.DC499999995EPME5000Capabilities';
 
   DC499999995EPME5000CapabilitiesServiceBase() {
-    $addMethod($grpc.ServiceMethod<$15.DeployMonthlyRequest, $15.DeployMonthlyResponse>(
+    $addMethod($grpc.ServiceMethod<$78.DeployMonthlyRequest, $78.DeployMonthlyResponse>(
         'DeployMonthly',
         deployMonthly_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $15.DeployMonthlyRequest.fromBuffer(value),
-        ($15.DeployMonthlyResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $78.DeployMonthlyRequest.fromBuffer(value),
+        ($78.DeployMonthlyResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$15.DeployMonthlyResponse> deployMonthly_Pre($grpc.ServiceCall call, $async.Future<$15.DeployMonthlyRequest> request) async {
+  $async.Future<$78.DeployMonthlyResponse> deployMonthly_Pre($grpc.ServiceCall call, $async.Future<$78.DeployMonthlyRequest> request) async {
     return deployMonthly(call, await request);
   }
 
-  $async.Future<$15.DeployMonthlyResponse> deployMonthly($grpc.ServiceCall call, $15.DeployMonthlyRequest request);
+  $async.Future<$78.DeployMonthlyResponse> deployMonthly($grpc.ServiceCall call, $78.DeployMonthlyRequest request);
 }

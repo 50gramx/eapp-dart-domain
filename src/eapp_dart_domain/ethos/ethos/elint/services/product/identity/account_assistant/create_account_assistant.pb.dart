@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../entities/generic.pb.dart' as $7;
+import '../../../../entities/generic.pb.dart' as $9;
 import '../account/access_account.pb.dart' as $0;
 import 'access_account_assistant.pb.dart' as $1;
 
@@ -87,7 +87,7 @@ class CreateAccountAssistantRequest extends $pb.GeneratedMessage {
 class CreateAccountAssistantResponse extends $pb.GeneratedMessage {
   factory CreateAccountAssistantResponse({
     $1.AccountAssistantServicesAccessAuthDetails? accountAssistantServicesAccessAuthDetails,
-    $7.ResponseMeta? responseMeta,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (accountAssistantServicesAccessAuthDetails != null) {
@@ -104,7 +104,7 @@ class CreateAccountAssistantResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateAccountAssistantResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.account.assistant'), createEmptyInstance: create)
     ..aOM<$1.AccountAssistantServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'accountAssistantServicesAccessAuthDetails', subBuilder: $1.AccountAssistantServicesAccessAuthDetails.create)
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -141,15 +141,15 @@ class CreateAccountAssistantResponse extends $pb.GeneratedMessage {
   $1.AccountAssistantServicesAccessAuthDetails ensureAccountAssistantServicesAccessAuthDetails() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $7.ResponseMeta get responseMeta => $_getN(1);
+  $9.ResponseMeta get responseMeta => $_getN(1);
   @$pb.TagNumber(2)
-  set responseMeta($7.ResponseMeta v) { setField(2, v); }
+  set responseMeta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponseMeta() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponseMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(1);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(1);
 }
 
 class GetAccountAssistantNameCodeRequest extends $pb.GeneratedMessage {
@@ -221,7 +221,7 @@ class GetAccountAssistantNameCodeRequest extends $pb.GeneratedMessage {
 class GetAccountAssistantNameCodeResponse extends $pb.GeneratedMessage {
   factory GetAccountAssistantNameCodeResponse({
     $core.int? accountAssistantNameCode,
-    $7.ResponseMeta? responseMeta,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (accountAssistantNameCode != null) {
@@ -238,7 +238,7 @@ class GetAccountAssistantNameCodeResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetAccountAssistantNameCodeResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.account.assistant'), createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'accountAssistantNameCode', $pb.PbFieldType.O3)
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -273,15 +273,15 @@ class GetAccountAssistantNameCodeResponse extends $pb.GeneratedMessage {
   void clearAccountAssistantNameCode() => clearField(1);
 
   @$pb.TagNumber(2)
-  $7.ResponseMeta get responseMeta => $_getN(1);
+  $9.ResponseMeta get responseMeta => $_getN(1);
   @$pb.TagNumber(2)
-  set responseMeta($7.ResponseMeta v) { setField(2, v); }
+  set responseMeta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponseMeta() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponseMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(1);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(1);
 }
 
 

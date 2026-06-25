@@ -14,13 +14,13 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../entities/galaxy.pb.dart' as $86;
-import '../../../../entities/universe.pb.dart' as $36;
+import '../../../../entities/universe.pb.dart' as $68;
 
 /// Message Definitions
 class CreateGalaxyRequest extends $pb.GeneratedMessage {
   factory CreateGalaxyRequest({
     $core.String? galaxyName,
-    $36.Universe? universe,
+    $68.Universe? universe,
     $core.String? domain,
     $core.String? galaxyDescription,
   }) {
@@ -45,7 +45,7 @@ class CreateGalaxyRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateGalaxyRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.galaxy'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'galaxyName')
-    ..aOM<$36.Universe>(2, _omitFieldNames ? '' : 'universe', subBuilder: $36.Universe.create)
+    ..aOM<$68.Universe>(2, _omitFieldNames ? '' : 'universe', subBuilder: $68.Universe.create)
     ..aOS(3, _omitFieldNames ? '' : 'domain')
     ..aOS(4, _omitFieldNames ? '' : 'galaxyDescription')
     ..hasRequiredFields = false
@@ -82,15 +82,15 @@ class CreateGalaxyRequest extends $pb.GeneratedMessage {
   void clearGalaxyName() => clearField(1);
 
   @$pb.TagNumber(2)
-  $36.Universe get universe => $_getN(1);
+  $68.Universe get universe => $_getN(1);
   @$pb.TagNumber(2)
-  set universe($36.Universe v) { setField(2, v); }
+  set universe($68.Universe v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUniverse() => $_has(1);
   @$pb.TagNumber(2)
   void clearUniverse() => clearField(2);
   @$pb.TagNumber(2)
-  $36.Universe ensureUniverse() => $_ensure(1);
+  $68.Universe ensureUniverse() => $_ensure(1);
 
   @$pb.TagNumber(3)
   $core.String get domain => $_getSZ(2);

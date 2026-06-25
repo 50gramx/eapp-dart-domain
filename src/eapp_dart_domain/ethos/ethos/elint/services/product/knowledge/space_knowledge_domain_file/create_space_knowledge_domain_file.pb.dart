@@ -13,19 +13,19 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../entities/space_knowledge_domain_file.pb.dart' as $63;
-import '../../../../entities/space_knowledge_domain_file.pbenum.dart' as $63;
-import '../space_knowledge_domain/access_space_knowledge_domain.pb.dart' as $40;
-import 'access_space_knowledge_domain_file.pb.dart' as $64;
+import '../../../../entities/space_knowledge_domain_file.pb.dart' as $31;
+import '../../../../entities/space_knowledge_domain_file.pbenum.dart' as $31;
+import '../space_knowledge_domain/access_space_knowledge_domain.pb.dart' as $19;
+import 'access_space_knowledge_domain_file.pb.dart' as $20;
 
 /// Message Definitions
 class UploadSpaceKnowledgeDomainFileRequest extends $pb.GeneratedMessage {
   factory UploadSpaceKnowledgeDomainFileRequest({
-    $40.SpaceKnowledgeDomainServicesAccessAuthDetails? spaceKnowledgeDomainServicesAccessAuthDetails,
+    $19.SpaceKnowledgeDomainServicesAccessAuthDetails? spaceKnowledgeDomainServicesAccessAuthDetails,
     $core.String? spaceKnowledgeDomainFileName,
     $core.int? spaceKnowledgeDomainFileSize,
-    $63.ExtentionType? spaceKnowledgeDomainFileExtensionType,
-    $core.Iterable<$63.FileTag>? spaceKnowledgeDomainFileTags,
+    $31.ExtentionType? spaceKnowledgeDomainFileExtensionType,
+    $core.Iterable<$31.FileTag>? spaceKnowledgeDomainFileTags,
     $core.List<$core.int>? fileBuffer,
   }) {
     final $result = create();
@@ -54,11 +54,11 @@ class UploadSpaceKnowledgeDomainFileRequest extends $pb.GeneratedMessage {
   factory UploadSpaceKnowledgeDomainFileRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UploadSpaceKnowledgeDomainFileRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.knowledge.file'), createEmptyInstance: create)
-    ..aOM<$40.SpaceKnowledgeDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'spaceKnowledgeDomainServicesAccessAuthDetails', subBuilder: $40.SpaceKnowledgeDomainServicesAccessAuthDetails.create)
+    ..aOM<$19.SpaceKnowledgeDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'spaceKnowledgeDomainServicesAccessAuthDetails', subBuilder: $19.SpaceKnowledgeDomainServicesAccessAuthDetails.create)
     ..aOS(2, _omitFieldNames ? '' : 'spaceKnowledgeDomainFileName')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'spaceKnowledgeDomainFileSize', $pb.PbFieldType.O3)
-    ..e<$63.ExtentionType>(4, _omitFieldNames ? '' : 'spaceKnowledgeDomainFileExtensionType', $pb.PbFieldType.OE, defaultOrMaker: $63.ExtentionType.PNG, valueOf: $63.ExtentionType.valueOf, enumValues: $63.ExtentionType.values)
-    ..pc<$63.FileTag>(5, _omitFieldNames ? '' : 'spaceKnowledgeDomainFileTags', $pb.PbFieldType.PM, subBuilder: $63.FileTag.create)
+    ..e<$31.ExtentionType>(4, _omitFieldNames ? '' : 'spaceKnowledgeDomainFileExtensionType', $pb.PbFieldType.OE, defaultOrMaker: $31.ExtentionType.PNG, valueOf: $31.ExtentionType.valueOf, enumValues: $31.ExtentionType.values)
+    ..pc<$31.FileTag>(5, _omitFieldNames ? '' : 'spaceKnowledgeDomainFileTags', $pb.PbFieldType.PM, subBuilder: $31.FileTag.create)
     ..a<$core.List<$core.int>>(6, _omitFieldNames ? '' : 'fileBuffer', $pb.PbFieldType.OY)
     ..hasRequiredFields = false
   ;
@@ -86,15 +86,15 @@ class UploadSpaceKnowledgeDomainFileRequest extends $pb.GeneratedMessage {
 
   /// Auth Properties
   @$pb.TagNumber(1)
-  $40.SpaceKnowledgeDomainServicesAccessAuthDetails get spaceKnowledgeDomainServicesAccessAuthDetails => $_getN(0);
+  $19.SpaceKnowledgeDomainServicesAccessAuthDetails get spaceKnowledgeDomainServicesAccessAuthDetails => $_getN(0);
   @$pb.TagNumber(1)
-  set spaceKnowledgeDomainServicesAccessAuthDetails($40.SpaceKnowledgeDomainServicesAccessAuthDetails v) { setField(1, v); }
+  set spaceKnowledgeDomainServicesAccessAuthDetails($19.SpaceKnowledgeDomainServicesAccessAuthDetails v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSpaceKnowledgeDomainServicesAccessAuthDetails() => $_has(0);
   @$pb.TagNumber(1)
   void clearSpaceKnowledgeDomainServicesAccessAuthDetails() => clearField(1);
   @$pb.TagNumber(1)
-  $40.SpaceKnowledgeDomainServicesAccessAuthDetails ensureSpaceKnowledgeDomainServicesAccessAuthDetails() => $_ensure(0);
+  $19.SpaceKnowledgeDomainServicesAccessAuthDetails ensureSpaceKnowledgeDomainServicesAccessAuthDetails() => $_ensure(0);
 
   /// Upload Properties
   @$pb.TagNumber(2)
@@ -116,16 +116,16 @@ class UploadSpaceKnowledgeDomainFileRequest extends $pb.GeneratedMessage {
   void clearSpaceKnowledgeDomainFileSize() => clearField(3);
 
   @$pb.TagNumber(4)
-  $63.ExtentionType get spaceKnowledgeDomainFileExtensionType => $_getN(3);
+  $31.ExtentionType get spaceKnowledgeDomainFileExtensionType => $_getN(3);
   @$pb.TagNumber(4)
-  set spaceKnowledgeDomainFileExtensionType($63.ExtentionType v) { setField(4, v); }
+  set spaceKnowledgeDomainFileExtensionType($31.ExtentionType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasSpaceKnowledgeDomainFileExtensionType() => $_has(3);
   @$pb.TagNumber(4)
   void clearSpaceKnowledgeDomainFileExtensionType() => clearField(4);
 
   @$pb.TagNumber(5)
-  $core.List<$63.FileTag> get spaceKnowledgeDomainFileTags => $_getList(4);
+  $core.List<$31.FileTag> get spaceKnowledgeDomainFileTags => $_getList(4);
 
   @$pb.TagNumber(6)
   $core.List<$core.int> get fileBuffer => $_getN(5);
@@ -139,7 +139,7 @@ class UploadSpaceKnowledgeDomainFileRequest extends $pb.GeneratedMessage {
 
 class UploadSpaceKnowledgeDomainFileResponse extends $pb.GeneratedMessage {
   factory UploadSpaceKnowledgeDomainFileResponse({
-    $64.SpaceKnowledgeDomainFileServicesAccessAuthDetails? spaceKnowledgeDomainFileServiceAccessAuthDetails,
+    $20.SpaceKnowledgeDomainFileServicesAccessAuthDetails? spaceKnowledgeDomainFileServiceAccessAuthDetails,
     $core.int? length,
     $core.bool? spaceKnowledgeDomainFileUploadDone,
     $core.String? spaceKnowledgeDomainFileUploadMessage,
@@ -164,7 +164,7 @@ class UploadSpaceKnowledgeDomainFileResponse extends $pb.GeneratedMessage {
   factory UploadSpaceKnowledgeDomainFileResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UploadSpaceKnowledgeDomainFileResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.knowledge.file'), createEmptyInstance: create)
-    ..aOM<$64.SpaceKnowledgeDomainFileServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'spaceKnowledgeDomainFileServiceAccessAuthDetails', subBuilder: $64.SpaceKnowledgeDomainFileServicesAccessAuthDetails.create)
+    ..aOM<$20.SpaceKnowledgeDomainFileServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'spaceKnowledgeDomainFileServiceAccessAuthDetails', subBuilder: $20.SpaceKnowledgeDomainFileServicesAccessAuthDetails.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'length', $pb.PbFieldType.O3)
     ..aOB(3, _omitFieldNames ? '' : 'spaceKnowledgeDomainFileUploadDone')
     ..aOS(4, _omitFieldNames ? '' : 'spaceKnowledgeDomainFileUploadMessage')
@@ -194,15 +194,15 @@ class UploadSpaceKnowledgeDomainFileResponse extends $pb.GeneratedMessage {
 
   /// Auth Properties
   @$pb.TagNumber(1)
-  $64.SpaceKnowledgeDomainFileServicesAccessAuthDetails get spaceKnowledgeDomainFileServiceAccessAuthDetails => $_getN(0);
+  $20.SpaceKnowledgeDomainFileServicesAccessAuthDetails get spaceKnowledgeDomainFileServiceAccessAuthDetails => $_getN(0);
   @$pb.TagNumber(1)
-  set spaceKnowledgeDomainFileServiceAccessAuthDetails($64.SpaceKnowledgeDomainFileServicesAccessAuthDetails v) { setField(1, v); }
+  set spaceKnowledgeDomainFileServiceAccessAuthDetails($20.SpaceKnowledgeDomainFileServicesAccessAuthDetails v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSpaceKnowledgeDomainFileServiceAccessAuthDetails() => $_has(0);
   @$pb.TagNumber(1)
   void clearSpaceKnowledgeDomainFileServiceAccessAuthDetails() => clearField(1);
   @$pb.TagNumber(1)
-  $64.SpaceKnowledgeDomainFileServicesAccessAuthDetails ensureSpaceKnowledgeDomainFileServiceAccessAuthDetails() => $_ensure(0);
+  $20.SpaceKnowledgeDomainFileServicesAccessAuthDetails ensureSpaceKnowledgeDomainFileServiceAccessAuthDetails() => $_ensure(0);
 
   /// Upload Properties
   @$pb.TagNumber(2)

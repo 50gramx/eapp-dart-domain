@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../google/protobuf/timestamp.pb.dart' as $85;
-import 'space_knowledge.pb.dart' as $88;
+import 'space_knowledge.pb.dart' as $91;
 import 'space_knowledge_domain.pbenum.dart';
 
 export '../../../google/protobuf/timestamp.pb.dart';
@@ -27,7 +27,7 @@ class SpaceKnowledgeDomain extends $pb.GeneratedMessage {
     $core.String? spaceKnowledgeDomainDescription,
     SpaceKnowledgeDomainCollarEnum? spaceKnowledgeDomainCollarEnum,
     $core.bool? spaceKnowledgeDomainIsolated,
-    $88.SpaceKnowledge? spaceKnowledge,
+    $91.SpaceKnowledge? spaceKnowledge,
     $85.Timestamp? createdAt,
     $85.Timestamp? lastUpdatedAt,
   }) {
@@ -68,7 +68,7 @@ class SpaceKnowledgeDomain extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'spaceKnowledgeDomainDescription')
     ..e<SpaceKnowledgeDomainCollarEnum>(4, _omitFieldNames ? '' : 'spaceKnowledgeDomainCollarEnum', $pb.PbFieldType.OE, defaultOrMaker: SpaceKnowledgeDomainCollarEnum.WHITE_COLLAR, valueOf: SpaceKnowledgeDomainCollarEnum.valueOf, enumValues: SpaceKnowledgeDomainCollarEnum.values)
     ..aOB(5, _omitFieldNames ? '' : 'spaceKnowledgeDomainIsolated')
-    ..aOM<$88.SpaceKnowledge>(6, _omitFieldNames ? '' : 'spaceKnowledge', subBuilder: $88.SpaceKnowledge.create)
+    ..aOM<$91.SpaceKnowledge>(6, _omitFieldNames ? '' : 'spaceKnowledge', subBuilder: $91.SpaceKnowledge.create)
     ..aOM<$85.Timestamp>(7, _omitFieldNames ? '' : 'createdAt', subBuilder: $85.Timestamp.create)
     ..aOM<$85.Timestamp>(8, _omitFieldNames ? '' : 'lastUpdatedAt', subBuilder: $85.Timestamp.create)
     ..hasRequiredFields = false
@@ -141,15 +141,15 @@ class SpaceKnowledgeDomain extends $pb.GeneratedMessage {
   void clearSpaceKnowledgeDomainIsolated() => clearField(5);
 
   @$pb.TagNumber(6)
-  $88.SpaceKnowledge get spaceKnowledge => $_getN(5);
+  $91.SpaceKnowledge get spaceKnowledge => $_getN(5);
   @$pb.TagNumber(6)
-  set spaceKnowledge($88.SpaceKnowledge v) { setField(6, v); }
+  set spaceKnowledge($91.SpaceKnowledge v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasSpaceKnowledge() => $_has(5);
   @$pb.TagNumber(6)
   void clearSpaceKnowledge() => clearField(6);
   @$pb.TagNumber(6)
-  $88.SpaceKnowledge ensureSpaceKnowledge() => $_ensure(5);
+  $91.SpaceKnowledge ensureSpaceKnowledge() => $_ensure(5);
 
   @$pb.TagNumber(7)
   $85.Timestamp get createdAt => $_getN(6);

@@ -13,16 +13,16 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../entities/generic.pb.dart' as $7;
-import '../../../../entities/space_knowledge.pb.dart' as $88;
-import '../../../../entities/space_knowledge_domain.pb.dart' as $76;
-import 'access_space_knowledge.pb.dart' as $3;
+import '../../../../entities/generic.pb.dart' as $9;
+import '../../../../entities/space_knowledge.pb.dart' as $91;
+import '../../../../entities/space_knowledge_domain.pb.dart' as $38;
+import 'access_space_knowledge.pb.dart' as $18;
 
 /// Message Definitions
 class GetInferredSpaceKnowledgeDomainsResponse extends $pb.GeneratedMessage {
   factory GetInferredSpaceKnowledgeDomainsResponse({
-    $core.Iterable<$88.SpaceKnowledgeInferredDomain>? spaceKnowledgeInferredDomain,
-    $7.ResponseMeta? responseMeta,
+    $core.Iterable<$91.SpaceKnowledgeInferredDomain>? spaceKnowledgeInferredDomain,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (spaceKnowledgeInferredDomain != null) {
@@ -38,8 +38,8 @@ class GetInferredSpaceKnowledgeDomainsResponse extends $pb.GeneratedMessage {
   factory GetInferredSpaceKnowledgeDomainsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetInferredSpaceKnowledgeDomainsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.knowledge.space'), createEmptyInstance: create)
-    ..pc<$88.SpaceKnowledgeInferredDomain>(1, _omitFieldNames ? '' : 'spaceKnowledgeInferredDomain', $pb.PbFieldType.PM, subBuilder: $88.SpaceKnowledgeInferredDomain.create)
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..pc<$91.SpaceKnowledgeInferredDomain>(1, _omitFieldNames ? '' : 'spaceKnowledgeInferredDomain', $pb.PbFieldType.PM, subBuilder: $91.SpaceKnowledgeInferredDomain.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -66,25 +66,25 @@ class GetInferredSpaceKnowledgeDomainsResponse extends $pb.GeneratedMessage {
 
   /// Response Properties
   @$pb.TagNumber(1)
-  $core.List<$88.SpaceKnowledgeInferredDomain> get spaceKnowledgeInferredDomain => $_getList(0);
+  $core.List<$91.SpaceKnowledgeInferredDomain> get spaceKnowledgeInferredDomain => $_getList(0);
 
   /// Meta Properties
   @$pb.TagNumber(2)
-  $7.ResponseMeta get responseMeta => $_getN(1);
+  $9.ResponseMeta get responseMeta => $_getN(1);
   @$pb.TagNumber(2)
-  set responseMeta($7.ResponseMeta v) { setField(2, v); }
+  set responseMeta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponseMeta() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponseMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(1);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(1);
 }
 
 class GetSpaceKnowledgeDomainsResponse extends $pb.GeneratedMessage {
   factory GetSpaceKnowledgeDomainsResponse({
-    $core.Iterable<$76.SpaceKnowledgeDomain>? spaceKnowledgeDomains,
-    $7.ResponseMeta? responseMeta,
+    $core.Iterable<$38.SpaceKnowledgeDomain>? spaceKnowledgeDomains,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (spaceKnowledgeDomains != null) {
@@ -100,8 +100,8 @@ class GetSpaceKnowledgeDomainsResponse extends $pb.GeneratedMessage {
   factory GetSpaceKnowledgeDomainsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetSpaceKnowledgeDomainsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.knowledge.space'), createEmptyInstance: create)
-    ..pc<$76.SpaceKnowledgeDomain>(1, _omitFieldNames ? '' : 'spaceKnowledgeDomains', $pb.PbFieldType.PM, subBuilder: $76.SpaceKnowledgeDomain.create)
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..pc<$38.SpaceKnowledgeDomain>(1, _omitFieldNames ? '' : 'spaceKnowledgeDomains', $pb.PbFieldType.PM, subBuilder: $38.SpaceKnowledgeDomain.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -128,24 +128,24 @@ class GetSpaceKnowledgeDomainsResponse extends $pb.GeneratedMessage {
 
   /// Response Properties
   @$pb.TagNumber(1)
-  $core.List<$76.SpaceKnowledgeDomain> get spaceKnowledgeDomains => $_getList(0);
+  $core.List<$38.SpaceKnowledgeDomain> get spaceKnowledgeDomains => $_getList(0);
 
   /// Meta Properties
   @$pb.TagNumber(2)
-  $7.ResponseMeta get responseMeta => $_getN(1);
+  $9.ResponseMeta get responseMeta => $_getN(1);
   @$pb.TagNumber(2)
-  set responseMeta($7.ResponseMeta v) { setField(2, v); }
+  set responseMeta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponseMeta() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponseMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(1);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(1);
 }
 
 class GetSpaceKnowledgeDomainByIdRequest extends $pb.GeneratedMessage {
   factory GetSpaceKnowledgeDomainByIdRequest({
-    $3.SpaceKnowledgeServicesAccessAuthDetails? accessAuth,
+    $18.SpaceKnowledgeServicesAccessAuthDetails? accessAuth,
     $core.String? spaceKnowledgeDomainId,
   }) {
     final $result = create();
@@ -162,7 +162,7 @@ class GetSpaceKnowledgeDomainByIdRequest extends $pb.GeneratedMessage {
   factory GetSpaceKnowledgeDomainByIdRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetSpaceKnowledgeDomainByIdRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.knowledge.space'), createEmptyInstance: create)
-    ..aOM<$3.SpaceKnowledgeServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'accessAuth', subBuilder: $3.SpaceKnowledgeServicesAccessAuthDetails.create)
+    ..aOM<$18.SpaceKnowledgeServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'accessAuth', subBuilder: $18.SpaceKnowledgeServicesAccessAuthDetails.create)
     ..aOS(2, _omitFieldNames ? '' : 'spaceKnowledgeDomainId')
     ..hasRequiredFields = false
   ;
@@ -190,15 +190,15 @@ class GetSpaceKnowledgeDomainByIdRequest extends $pb.GeneratedMessage {
 
   /// Auth Properties
   @$pb.TagNumber(1)
-  $3.SpaceKnowledgeServicesAccessAuthDetails get accessAuth => $_getN(0);
+  $18.SpaceKnowledgeServicesAccessAuthDetails get accessAuth => $_getN(0);
   @$pb.TagNumber(1)
-  set accessAuth($3.SpaceKnowledgeServicesAccessAuthDetails v) { setField(1, v); }
+  set accessAuth($18.SpaceKnowledgeServicesAccessAuthDetails v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAccessAuth() => $_has(0);
   @$pb.TagNumber(1)
   void clearAccessAuth() => clearField(1);
   @$pb.TagNumber(1)
-  $3.SpaceKnowledgeServicesAccessAuthDetails ensureAccessAuth() => $_ensure(0);
+  $18.SpaceKnowledgeServicesAccessAuthDetails ensureAccessAuth() => $_ensure(0);
 
   /// Request Properties
   @$pb.TagNumber(2)
@@ -213,8 +213,8 @@ class GetSpaceKnowledgeDomainByIdRequest extends $pb.GeneratedMessage {
 
 class GetSpaceKnowledgeDomainByIdResponse extends $pb.GeneratedMessage {
   factory GetSpaceKnowledgeDomainByIdResponse({
-    $76.SpaceKnowledgeDomain? spaceKnowledgeDomain,
-    $7.ResponseMeta? responseMeta,
+    $38.SpaceKnowledgeDomain? spaceKnowledgeDomain,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (spaceKnowledgeDomain != null) {
@@ -230,8 +230,8 @@ class GetSpaceKnowledgeDomainByIdResponse extends $pb.GeneratedMessage {
   factory GetSpaceKnowledgeDomainByIdResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetSpaceKnowledgeDomainByIdResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.knowledge.space'), createEmptyInstance: create)
-    ..aOM<$76.SpaceKnowledgeDomain>(1, _omitFieldNames ? '' : 'spaceKnowledgeDomain', subBuilder: $76.SpaceKnowledgeDomain.create)
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..aOM<$38.SpaceKnowledgeDomain>(1, _omitFieldNames ? '' : 'spaceKnowledgeDomain', subBuilder: $38.SpaceKnowledgeDomain.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -258,27 +258,27 @@ class GetSpaceKnowledgeDomainByIdResponse extends $pb.GeneratedMessage {
 
   /// Response Properties
   @$pb.TagNumber(1)
-  $76.SpaceKnowledgeDomain get spaceKnowledgeDomain => $_getN(0);
+  $38.SpaceKnowledgeDomain get spaceKnowledgeDomain => $_getN(0);
   @$pb.TagNumber(1)
-  set spaceKnowledgeDomain($76.SpaceKnowledgeDomain v) { setField(1, v); }
+  set spaceKnowledgeDomain($38.SpaceKnowledgeDomain v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSpaceKnowledgeDomain() => $_has(0);
   @$pb.TagNumber(1)
   void clearSpaceKnowledgeDomain() => clearField(1);
   @$pb.TagNumber(1)
-  $76.SpaceKnowledgeDomain ensureSpaceKnowledgeDomain() => $_ensure(0);
+  $38.SpaceKnowledgeDomain ensureSpaceKnowledgeDomain() => $_ensure(0);
 
   /// Meta Properties
   @$pb.TagNumber(2)
-  $7.ResponseMeta get responseMeta => $_getN(1);
+  $9.ResponseMeta get responseMeta => $_getN(1);
   @$pb.TagNumber(2)
-  set responseMeta($7.ResponseMeta v) { setField(2, v); }
+  set responseMeta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponseMeta() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponseMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(1);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(1);
 }
 
 

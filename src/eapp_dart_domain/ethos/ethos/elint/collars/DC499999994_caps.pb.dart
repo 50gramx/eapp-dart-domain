@@ -13,16 +13,16 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../entities/generic.pb.dart' as $7;
-import '../services/product/knowledge/space_knowledge/access_space_knowledge.pb.dart' as $3;
-import '../services/product/product/space_product_domain/access_space_product_domain.pb.dart' as $5;
-import 'DC499999994.pb.dart' as $8;
+import '../entities/generic.pb.dart' as $9;
+import '../services/product/knowledge/space_knowledge/access_space_knowledge.pb.dart' as $18;
+import '../services/product/product/space_product_domain/access_space_product_domain.pb.dart' as $16;
+import 'DC499999994.pb.dart' as $81;
 
 class AuthWithSkincareProduct extends $pb.GeneratedMessage {
   factory AuthWithSkincareProduct({
-    $5.SpaceProductDomainServicesAccessAuthDetails? spdAuth,
-    $3.SpaceKnowledgeServicesAccessAuthDetails? skAuth,
-    $8.SkincareProduct? skincareProduct,
+    $16.SpaceProductDomainServicesAccessAuthDetails? spdAuth,
+    $18.SpaceKnowledgeServicesAccessAuthDetails? skAuth,
+    $81.SkincareProduct? skincareProduct,
   }) {
     final $result = create();
     if (spdAuth != null) {
@@ -41,9 +41,9 @@ class AuthWithSkincareProduct extends $pb.GeneratedMessage {
   factory AuthWithSkincareProduct.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AuthWithSkincareProduct', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.collars'), createEmptyInstance: create)
-    ..aOM<$5.SpaceProductDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'spdAuth', subBuilder: $5.SpaceProductDomainServicesAccessAuthDetails.create)
-    ..aOM<$3.SpaceKnowledgeServicesAccessAuthDetails>(2, _omitFieldNames ? '' : 'skAuth', subBuilder: $3.SpaceKnowledgeServicesAccessAuthDetails.create)
-    ..aOM<$8.SkincareProduct>(11, _omitFieldNames ? '' : 'skincareProduct', subBuilder: $8.SkincareProduct.create)
+    ..aOM<$16.SpaceProductDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'spdAuth', subBuilder: $16.SpaceProductDomainServicesAccessAuthDetails.create)
+    ..aOM<$18.SpaceKnowledgeServicesAccessAuthDetails>(2, _omitFieldNames ? '' : 'skAuth', subBuilder: $18.SpaceKnowledgeServicesAccessAuthDetails.create)
+    ..aOM<$81.SkincareProduct>(11, _omitFieldNames ? '' : 'skincareProduct', subBuilder: $81.SkincareProduct.create)
     ..hasRequiredFields = false
   ;
 
@@ -69,43 +69,43 @@ class AuthWithSkincareProduct extends $pb.GeneratedMessage {
   static AuthWithSkincareProduct? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $5.SpaceProductDomainServicesAccessAuthDetails get spdAuth => $_getN(0);
+  $16.SpaceProductDomainServicesAccessAuthDetails get spdAuth => $_getN(0);
   @$pb.TagNumber(1)
-  set spdAuth($5.SpaceProductDomainServicesAccessAuthDetails v) { setField(1, v); }
+  set spdAuth($16.SpaceProductDomainServicesAccessAuthDetails v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSpdAuth() => $_has(0);
   @$pb.TagNumber(1)
   void clearSpdAuth() => clearField(1);
   @$pb.TagNumber(1)
-  $5.SpaceProductDomainServicesAccessAuthDetails ensureSpdAuth() => $_ensure(0);
+  $16.SpaceProductDomainServicesAccessAuthDetails ensureSpdAuth() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $3.SpaceKnowledgeServicesAccessAuthDetails get skAuth => $_getN(1);
+  $18.SpaceKnowledgeServicesAccessAuthDetails get skAuth => $_getN(1);
   @$pb.TagNumber(2)
-  set skAuth($3.SpaceKnowledgeServicesAccessAuthDetails v) { setField(2, v); }
+  set skAuth($18.SpaceKnowledgeServicesAccessAuthDetails v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSkAuth() => $_has(1);
   @$pb.TagNumber(2)
   void clearSkAuth() => clearField(2);
   @$pb.TagNumber(2)
-  $3.SpaceKnowledgeServicesAccessAuthDetails ensureSkAuth() => $_ensure(1);
+  $18.SpaceKnowledgeServicesAccessAuthDetails ensureSkAuth() => $_ensure(1);
 
   @$pb.TagNumber(11)
-  $8.SkincareProduct get skincareProduct => $_getN(2);
+  $81.SkincareProduct get skincareProduct => $_getN(2);
   @$pb.TagNumber(11)
-  set skincareProduct($8.SkincareProduct v) { setField(11, v); }
+  set skincareProduct($81.SkincareProduct v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasSkincareProduct() => $_has(2);
   @$pb.TagNumber(11)
   void clearSkincareProduct() => clearField(11);
   @$pb.TagNumber(11)
-  $8.SkincareProduct ensureSkincareProduct() => $_ensure(2);
+  $81.SkincareProduct ensureSkincareProduct() => $_ensure(2);
 }
 
 class RepeatedDC499999994 extends $pb.GeneratedMessage {
   factory RepeatedDC499999994({
-    $7.ResponseMeta? meta,
-    $core.Iterable<$8.DC499999994>? collars,
+    $9.ResponseMeta? meta,
+    $core.Iterable<$81.DC499999994>? collars,
   }) {
     final $result = create();
     if (meta != null) {
@@ -121,8 +121,8 @@ class RepeatedDC499999994 extends $pb.GeneratedMessage {
   factory RepeatedDC499999994.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RepeatedDC499999994', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.collars'), createEmptyInstance: create)
-    ..aOM<$7.ResponseMeta>(1, _omitFieldNames ? '' : 'meta', subBuilder: $7.ResponseMeta.create)
-    ..pc<$8.DC499999994>(2, _omitFieldNames ? '' : 'collars', $pb.PbFieldType.PM, subBuilder: $8.DC499999994.create)
+    ..aOM<$9.ResponseMeta>(1, _omitFieldNames ? '' : 'meta', subBuilder: $9.ResponseMeta.create)
+    ..pc<$81.DC499999994>(2, _omitFieldNames ? '' : 'collars', $pb.PbFieldType.PM, subBuilder: $81.DC499999994.create)
     ..hasRequiredFields = false
   ;
 
@@ -148,24 +148,24 @@ class RepeatedDC499999994 extends $pb.GeneratedMessage {
   static RepeatedDC499999994? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $7.ResponseMeta get meta => $_getN(0);
+  $9.ResponseMeta get meta => $_getN(0);
   @$pb.TagNumber(1)
-  set meta($7.ResponseMeta v) { setField(1, v); }
+  set meta($9.ResponseMeta v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMeta() => $_has(0);
   @$pb.TagNumber(1)
   void clearMeta() => clearField(1);
   @$pb.TagNumber(1)
-  $7.ResponseMeta ensureMeta() => $_ensure(0);
+  $9.ResponseMeta ensureMeta() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $core.List<$8.DC499999994> get collars => $_getList(1);
+  $core.List<$81.DC499999994> get collars => $_getList(1);
 }
 
 class SPDAuthWithCollarID extends $pb.GeneratedMessage {
   factory SPDAuthWithCollarID({
-    $5.SpaceProductDomainServicesAccessAuthDetails? auth,
-    $3.SpaceKnowledgeServicesAccessAuthDetails? skAuth,
+    $16.SpaceProductDomainServicesAccessAuthDetails? auth,
+    $18.SpaceKnowledgeServicesAccessAuthDetails? skAuth,
     $core.String? collarId,
   }) {
     final $result = create();
@@ -185,8 +185,8 @@ class SPDAuthWithCollarID extends $pb.GeneratedMessage {
   factory SPDAuthWithCollarID.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SPDAuthWithCollarID', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.collars'), createEmptyInstance: create)
-    ..aOM<$5.SpaceProductDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'auth', subBuilder: $5.SpaceProductDomainServicesAccessAuthDetails.create)
-    ..aOM<$3.SpaceKnowledgeServicesAccessAuthDetails>(2, _omitFieldNames ? '' : 'skAuth', subBuilder: $3.SpaceKnowledgeServicesAccessAuthDetails.create)
+    ..aOM<$16.SpaceProductDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'auth', subBuilder: $16.SpaceProductDomainServicesAccessAuthDetails.create)
+    ..aOM<$18.SpaceKnowledgeServicesAccessAuthDetails>(2, _omitFieldNames ? '' : 'skAuth', subBuilder: $18.SpaceKnowledgeServicesAccessAuthDetails.create)
     ..aOS(11, _omitFieldNames ? '' : 'collarId')
     ..hasRequiredFields = false
   ;
@@ -213,26 +213,26 @@ class SPDAuthWithCollarID extends $pb.GeneratedMessage {
   static SPDAuthWithCollarID? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $5.SpaceProductDomainServicesAccessAuthDetails get auth => $_getN(0);
+  $16.SpaceProductDomainServicesAccessAuthDetails get auth => $_getN(0);
   @$pb.TagNumber(1)
-  set auth($5.SpaceProductDomainServicesAccessAuthDetails v) { setField(1, v); }
+  set auth($16.SpaceProductDomainServicesAccessAuthDetails v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAuth() => $_has(0);
   @$pb.TagNumber(1)
   void clearAuth() => clearField(1);
   @$pb.TagNumber(1)
-  $5.SpaceProductDomainServicesAccessAuthDetails ensureAuth() => $_ensure(0);
+  $16.SpaceProductDomainServicesAccessAuthDetails ensureAuth() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $3.SpaceKnowledgeServicesAccessAuthDetails get skAuth => $_getN(1);
+  $18.SpaceKnowledgeServicesAccessAuthDetails get skAuth => $_getN(1);
   @$pb.TagNumber(2)
-  set skAuth($3.SpaceKnowledgeServicesAccessAuthDetails v) { setField(2, v); }
+  set skAuth($18.SpaceKnowledgeServicesAccessAuthDetails v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSkAuth() => $_has(1);
   @$pb.TagNumber(2)
   void clearSkAuth() => clearField(2);
   @$pb.TagNumber(2)
-  $3.SpaceKnowledgeServicesAccessAuthDetails ensureSkAuth() => $_ensure(1);
+  $18.SpaceKnowledgeServicesAccessAuthDetails ensureSkAuth() => $_ensure(1);
 
   @$pb.TagNumber(11)
   $core.String get collarId => $_getSZ(2);

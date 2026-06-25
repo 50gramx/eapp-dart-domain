@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../google/protobuf/timestamp.pb.dart' as $85;
-import 'space_knowledge_domain_file.pb.dart' as $63;
+import 'space_knowledge_domain_file.pb.dart' as $31;
 
 export '../../../google/protobuf/timestamp.pb.dart';
 
@@ -22,7 +22,7 @@ class SpaceKnowledgeDomainFilePage extends $pb.GeneratedMessage {
   factory SpaceKnowledgeDomainFilePage({
     $core.String? spaceKnowledgeDomainFilePageId,
     $core.int? spaceKnowledgeDomainFilePageCount,
-    $63.SpaceKnowledgeDomainFile? spaceKnowledgeDomainFile,
+    $31.SpaceKnowledgeDomainFile? spaceKnowledgeDomainFile,
     $core.Iterable<PageTag>? pageTags,
     $85.Timestamp? createdAt,
     $85.Timestamp? lastUpdatedAt,
@@ -59,7 +59,7 @@ class SpaceKnowledgeDomainFilePage extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SpaceKnowledgeDomainFilePage', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.entity'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'spaceKnowledgeDomainFilePageId')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'spaceKnowledgeDomainFilePageCount', $pb.PbFieldType.O3)
-    ..aOM<$63.SpaceKnowledgeDomainFile>(3, _omitFieldNames ? '' : 'spaceKnowledgeDomainFile', subBuilder: $63.SpaceKnowledgeDomainFile.create)
+    ..aOM<$31.SpaceKnowledgeDomainFile>(3, _omitFieldNames ? '' : 'spaceKnowledgeDomainFile', subBuilder: $31.SpaceKnowledgeDomainFile.create)
     ..pc<PageTag>(4, _omitFieldNames ? '' : 'pageTags', $pb.PbFieldType.PM, subBuilder: PageTag.create)
     ..aOM<$85.Timestamp>(5, _omitFieldNames ? '' : 'createdAt', subBuilder: $85.Timestamp.create)
     ..aOM<$85.Timestamp>(6, _omitFieldNames ? '' : 'lastUpdatedAt', subBuilder: $85.Timestamp.create)
@@ -107,15 +107,15 @@ class SpaceKnowledgeDomainFilePage extends $pb.GeneratedMessage {
   void clearSpaceKnowledgeDomainFilePageCount() => clearField(2);
 
   @$pb.TagNumber(3)
-  $63.SpaceKnowledgeDomainFile get spaceKnowledgeDomainFile => $_getN(2);
+  $31.SpaceKnowledgeDomainFile get spaceKnowledgeDomainFile => $_getN(2);
   @$pb.TagNumber(3)
-  set spaceKnowledgeDomainFile($63.SpaceKnowledgeDomainFile v) { setField(3, v); }
+  set spaceKnowledgeDomainFile($31.SpaceKnowledgeDomainFile v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSpaceKnowledgeDomainFile() => $_has(2);
   @$pb.TagNumber(3)
   void clearSpaceKnowledgeDomainFile() => clearField(3);
   @$pb.TagNumber(3)
-  $63.SpaceKnowledgeDomainFile ensureSpaceKnowledgeDomainFile() => $_ensure(2);
+  $31.SpaceKnowledgeDomainFile ensureSpaceKnowledgeDomainFile() => $_ensure(2);
 
   @$pb.TagNumber(4)
   $core.List<PageTag> get pageTags => $_getList(3);

@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../entities/account_assistant.pb.dart' as $23;
-import '../../../../entities/generic.pb.dart' as $7;
+import '../../../../entities/account_assistant.pb.dart' as $40;
+import '../../../../entities/generic.pb.dart' as $9;
 import 'access_account_assistant.pb.dart' as $1;
 
 class IsAccountConnectedRequest extends $pb.GeneratedMessage {
   factory IsAccountConnectedRequest({
     $core.String? accountAssistantId,
-    $23.AccountAssistantConnectedAccount? connectedAccount,
+    $40.AccountAssistantConnectedAccount? connectedAccount,
   }) {
     final $result = create();
     if (accountAssistantId != null) {
@@ -37,7 +37,7 @@ class IsAccountConnectedRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IsAccountConnectedRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.account.assistant'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'accountAssistantId')
-    ..aOM<$23.AccountAssistantConnectedAccount>(2, _omitFieldNames ? '' : 'connectedAccount', subBuilder: $23.AccountAssistantConnectedAccount.create)
+    ..aOM<$40.AccountAssistantConnectedAccount>(2, _omitFieldNames ? '' : 'connectedAccount', subBuilder: $40.AccountAssistantConnectedAccount.create)
     ..hasRequiredFields = false
   ;
 
@@ -72,15 +72,15 @@ class IsAccountConnectedRequest extends $pb.GeneratedMessage {
   void clearAccountAssistantId() => clearField(1);
 
   @$pb.TagNumber(2)
-  $23.AccountAssistantConnectedAccount get connectedAccount => $_getN(1);
+  $40.AccountAssistantConnectedAccount get connectedAccount => $_getN(1);
   @$pb.TagNumber(2)
-  set connectedAccount($23.AccountAssistantConnectedAccount v) { setField(2, v); }
+  set connectedAccount($40.AccountAssistantConnectedAccount v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasConnectedAccount() => $_has(1);
   @$pb.TagNumber(2)
   void clearConnectedAccount() => clearField(2);
   @$pb.TagNumber(2)
-  $23.AccountAssistantConnectedAccount ensureConnectedAccount() => $_ensure(1);
+  $40.AccountAssistantConnectedAccount ensureConnectedAccount() => $_ensure(1);
 }
 
 class ConnectAccountRequest extends $pb.GeneratedMessage {
@@ -151,8 +151,8 @@ class ConnectAccountRequest extends $pb.GeneratedMessage {
 
 class ConnectAccountResponse extends $pb.GeneratedMessage {
   factory ConnectAccountResponse({
-    $23.AccountAssistantConnectedAccount? connectedAccount,
-    $7.ResponseMeta? responseMeta,
+    $40.AccountAssistantConnectedAccount? connectedAccount,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (connectedAccount != null) {
@@ -168,8 +168,8 @@ class ConnectAccountResponse extends $pb.GeneratedMessage {
   factory ConnectAccountResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConnectAccountResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.account.assistant'), createEmptyInstance: create)
-    ..aOM<$23.AccountAssistantConnectedAccount>(1, _omitFieldNames ? '' : 'connectedAccount', subBuilder: $23.AccountAssistantConnectedAccount.create)
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..aOM<$40.AccountAssistantConnectedAccount>(1, _omitFieldNames ? '' : 'connectedAccount', subBuilder: $40.AccountAssistantConnectedAccount.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -195,26 +195,26 @@ class ConnectAccountResponse extends $pb.GeneratedMessage {
   static ConnectAccountResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $23.AccountAssistantConnectedAccount get connectedAccount => $_getN(0);
+  $40.AccountAssistantConnectedAccount get connectedAccount => $_getN(0);
   @$pb.TagNumber(1)
-  set connectedAccount($23.AccountAssistantConnectedAccount v) { setField(1, v); }
+  set connectedAccount($40.AccountAssistantConnectedAccount v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasConnectedAccount() => $_has(0);
   @$pb.TagNumber(1)
   void clearConnectedAccount() => clearField(1);
   @$pb.TagNumber(1)
-  $23.AccountAssistantConnectedAccount ensureConnectedAccount() => $_ensure(0);
+  $40.AccountAssistantConnectedAccount ensureConnectedAccount() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $7.ResponseMeta get responseMeta => $_getN(1);
+  $9.ResponseMeta get responseMeta => $_getN(1);
   @$pb.TagNumber(2)
-  set responseMeta($7.ResponseMeta v) { setField(2, v); }
+  set responseMeta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponseMeta() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponseMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(1);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(1);
 }
 
 

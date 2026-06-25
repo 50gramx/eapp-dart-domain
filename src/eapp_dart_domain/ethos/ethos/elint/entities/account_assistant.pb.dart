@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../google/protobuf/timestamp.pb.dart' as $85;
-import 'account.pb.dart' as $22;
+import 'account.pb.dart' as $39;
 
 export '../../../google/protobuf/timestamp.pb.dart';
 
@@ -23,7 +23,7 @@ class AccountAssistant extends $pb.GeneratedMessage {
     $core.String? accountAssistantId,
     $core.int? accountAssistantNameCode,
     $core.String? accountAssistantName,
-    $22.Account? account,
+    $39.Account? account,
     $85.Timestamp? createdAt,
     $85.Timestamp? lastAssistedAt,
   }) {
@@ -56,7 +56,7 @@ class AccountAssistant extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'accountAssistantId')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'accountAssistantNameCode', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'accountAssistantName')
-    ..aOM<$22.Account>(4, _omitFieldNames ? '' : 'account', subBuilder: $22.Account.create)
+    ..aOM<$39.Account>(4, _omitFieldNames ? '' : 'account', subBuilder: $39.Account.create)
     ..aOM<$85.Timestamp>(5, _omitFieldNames ? '' : 'createdAt', subBuilder: $85.Timestamp.create)
     ..aOM<$85.Timestamp>(6, _omitFieldNames ? '' : 'lastAssistedAt', subBuilder: $85.Timestamp.create)
     ..hasRequiredFields = false
@@ -111,15 +111,15 @@ class AccountAssistant extends $pb.GeneratedMessage {
   void clearAccountAssistantName() => clearField(3);
 
   @$pb.TagNumber(4)
-  $22.Account get account => $_getN(3);
+  $39.Account get account => $_getN(3);
   @$pb.TagNumber(4)
-  set account($22.Account v) { setField(4, v); }
+  set account($39.Account v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasAccount() => $_has(3);
   @$pb.TagNumber(4)
   void clearAccount() => clearField(4);
   @$pb.TagNumber(4)
-  $22.Account ensureAccount() => $_ensure(3);
+  $39.Account ensureAccount() => $_ensure(3);
 
   @$pb.TagNumber(5)
   $85.Timestamp get createdAt => $_getN(4);

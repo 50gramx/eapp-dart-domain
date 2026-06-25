@@ -15,25 +15,25 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'access_space_knowledge.pb.dart' as $3;
-import 'discover_space_knowledge.pb.dart' as $73;
+import 'access_space_knowledge.pb.dart' as $18;
+import 'discover_space_knowledge.pb.dart' as $27;
 
 export 'discover_space_knowledge.pb.dart';
 
 @$pb.GrpcServiceName('elint.services.product.knowledge.space.DiscoverSpaceKnowledgeService')
 class DiscoverSpaceKnowledgeServiceClient extends $grpc.Client {
-  static final _$getInferredSpaceKnowledgeDomains = $grpc.ClientMethod<$3.SpaceKnowledgeServicesAccessAuthDetails, $73.GetInferredSpaceKnowledgeDomainsResponse>(
+  static final _$getInferredSpaceKnowledgeDomains = $grpc.ClientMethod<$18.SpaceKnowledgeServicesAccessAuthDetails, $27.GetInferredSpaceKnowledgeDomainsResponse>(
       '/elint.services.product.knowledge.space.DiscoverSpaceKnowledgeService/GetInferredSpaceKnowledgeDomains',
-      ($3.SpaceKnowledgeServicesAccessAuthDetails value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $73.GetInferredSpaceKnowledgeDomainsResponse.fromBuffer(value));
-  static final _$getSpaceKnowledgeDomains = $grpc.ClientMethod<$3.SpaceKnowledgeServicesAccessAuthDetails, $73.GetSpaceKnowledgeDomainsResponse>(
+      ($18.SpaceKnowledgeServicesAccessAuthDetails value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $27.GetInferredSpaceKnowledgeDomainsResponse.fromBuffer(value));
+  static final _$getSpaceKnowledgeDomains = $grpc.ClientMethod<$18.SpaceKnowledgeServicesAccessAuthDetails, $27.GetSpaceKnowledgeDomainsResponse>(
       '/elint.services.product.knowledge.space.DiscoverSpaceKnowledgeService/GetSpaceKnowledgeDomains',
-      ($3.SpaceKnowledgeServicesAccessAuthDetails value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $73.GetSpaceKnowledgeDomainsResponse.fromBuffer(value));
-  static final _$getSpaceKnowledgeDomainById = $grpc.ClientMethod<$73.GetSpaceKnowledgeDomainByIdRequest, $73.GetSpaceKnowledgeDomainByIdResponse>(
+      ($18.SpaceKnowledgeServicesAccessAuthDetails value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $27.GetSpaceKnowledgeDomainsResponse.fromBuffer(value));
+  static final _$getSpaceKnowledgeDomainById = $grpc.ClientMethod<$27.GetSpaceKnowledgeDomainByIdRequest, $27.GetSpaceKnowledgeDomainByIdResponse>(
       '/elint.services.product.knowledge.space.DiscoverSpaceKnowledgeService/GetSpaceKnowledgeDomainById',
-      ($73.GetSpaceKnowledgeDomainByIdRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $73.GetSpaceKnowledgeDomainByIdResponse.fromBuffer(value));
+      ($27.GetSpaceKnowledgeDomainByIdRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $27.GetSpaceKnowledgeDomainByIdResponse.fromBuffer(value));
 
   DiscoverSpaceKnowledgeServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -41,15 +41,15 @@ class DiscoverSpaceKnowledgeServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$73.GetInferredSpaceKnowledgeDomainsResponse> getInferredSpaceKnowledgeDomains($3.SpaceKnowledgeServicesAccessAuthDetails request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$27.GetInferredSpaceKnowledgeDomainsResponse> getInferredSpaceKnowledgeDomains($18.SpaceKnowledgeServicesAccessAuthDetails request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getInferredSpaceKnowledgeDomains, request, options: options);
   }
 
-  $grpc.ResponseFuture<$73.GetSpaceKnowledgeDomainsResponse> getSpaceKnowledgeDomains($3.SpaceKnowledgeServicesAccessAuthDetails request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$27.GetSpaceKnowledgeDomainsResponse> getSpaceKnowledgeDomains($18.SpaceKnowledgeServicesAccessAuthDetails request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getSpaceKnowledgeDomains, request, options: options);
   }
 
-  $grpc.ResponseFuture<$73.GetSpaceKnowledgeDomainByIdResponse> getSpaceKnowledgeDomainById($73.GetSpaceKnowledgeDomainByIdRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$27.GetSpaceKnowledgeDomainByIdResponse> getSpaceKnowledgeDomainById($27.GetSpaceKnowledgeDomainByIdRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getSpaceKnowledgeDomainById, request, options: options);
   }
 }
@@ -59,42 +59,42 @@ abstract class DiscoverSpaceKnowledgeServiceBase extends $grpc.Service {
   $core.String get $name => 'elint.services.product.knowledge.space.DiscoverSpaceKnowledgeService';
 
   DiscoverSpaceKnowledgeServiceBase() {
-    $addMethod($grpc.ServiceMethod<$3.SpaceKnowledgeServicesAccessAuthDetails, $73.GetInferredSpaceKnowledgeDomainsResponse>(
+    $addMethod($grpc.ServiceMethod<$18.SpaceKnowledgeServicesAccessAuthDetails, $27.GetInferredSpaceKnowledgeDomainsResponse>(
         'GetInferredSpaceKnowledgeDomains',
         getInferredSpaceKnowledgeDomains_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $3.SpaceKnowledgeServicesAccessAuthDetails.fromBuffer(value),
-        ($73.GetInferredSpaceKnowledgeDomainsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$3.SpaceKnowledgeServicesAccessAuthDetails, $73.GetSpaceKnowledgeDomainsResponse>(
+        ($core.List<$core.int> value) => $18.SpaceKnowledgeServicesAccessAuthDetails.fromBuffer(value),
+        ($27.GetInferredSpaceKnowledgeDomainsResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$18.SpaceKnowledgeServicesAccessAuthDetails, $27.GetSpaceKnowledgeDomainsResponse>(
         'GetSpaceKnowledgeDomains',
         getSpaceKnowledgeDomains_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $3.SpaceKnowledgeServicesAccessAuthDetails.fromBuffer(value),
-        ($73.GetSpaceKnowledgeDomainsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$73.GetSpaceKnowledgeDomainByIdRequest, $73.GetSpaceKnowledgeDomainByIdResponse>(
+        ($core.List<$core.int> value) => $18.SpaceKnowledgeServicesAccessAuthDetails.fromBuffer(value),
+        ($27.GetSpaceKnowledgeDomainsResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$27.GetSpaceKnowledgeDomainByIdRequest, $27.GetSpaceKnowledgeDomainByIdResponse>(
         'GetSpaceKnowledgeDomainById',
         getSpaceKnowledgeDomainById_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $73.GetSpaceKnowledgeDomainByIdRequest.fromBuffer(value),
-        ($73.GetSpaceKnowledgeDomainByIdResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $27.GetSpaceKnowledgeDomainByIdRequest.fromBuffer(value),
+        ($27.GetSpaceKnowledgeDomainByIdResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$73.GetInferredSpaceKnowledgeDomainsResponse> getInferredSpaceKnowledgeDomains_Pre($grpc.ServiceCall call, $async.Future<$3.SpaceKnowledgeServicesAccessAuthDetails> request) async {
+  $async.Future<$27.GetInferredSpaceKnowledgeDomainsResponse> getInferredSpaceKnowledgeDomains_Pre($grpc.ServiceCall call, $async.Future<$18.SpaceKnowledgeServicesAccessAuthDetails> request) async {
     return getInferredSpaceKnowledgeDomains(call, await request);
   }
 
-  $async.Future<$73.GetSpaceKnowledgeDomainsResponse> getSpaceKnowledgeDomains_Pre($grpc.ServiceCall call, $async.Future<$3.SpaceKnowledgeServicesAccessAuthDetails> request) async {
+  $async.Future<$27.GetSpaceKnowledgeDomainsResponse> getSpaceKnowledgeDomains_Pre($grpc.ServiceCall call, $async.Future<$18.SpaceKnowledgeServicesAccessAuthDetails> request) async {
     return getSpaceKnowledgeDomains(call, await request);
   }
 
-  $async.Future<$73.GetSpaceKnowledgeDomainByIdResponse> getSpaceKnowledgeDomainById_Pre($grpc.ServiceCall call, $async.Future<$73.GetSpaceKnowledgeDomainByIdRequest> request) async {
+  $async.Future<$27.GetSpaceKnowledgeDomainByIdResponse> getSpaceKnowledgeDomainById_Pre($grpc.ServiceCall call, $async.Future<$27.GetSpaceKnowledgeDomainByIdRequest> request) async {
     return getSpaceKnowledgeDomainById(call, await request);
   }
 
-  $async.Future<$73.GetInferredSpaceKnowledgeDomainsResponse> getInferredSpaceKnowledgeDomains($grpc.ServiceCall call, $3.SpaceKnowledgeServicesAccessAuthDetails request);
-  $async.Future<$73.GetSpaceKnowledgeDomainsResponse> getSpaceKnowledgeDomains($grpc.ServiceCall call, $3.SpaceKnowledgeServicesAccessAuthDetails request);
-  $async.Future<$73.GetSpaceKnowledgeDomainByIdResponse> getSpaceKnowledgeDomainById($grpc.ServiceCall call, $73.GetSpaceKnowledgeDomainByIdRequest request);
+  $async.Future<$27.GetInferredSpaceKnowledgeDomainsResponse> getInferredSpaceKnowledgeDomains($grpc.ServiceCall call, $18.SpaceKnowledgeServicesAccessAuthDetails request);
+  $async.Future<$27.GetSpaceKnowledgeDomainsResponse> getSpaceKnowledgeDomains($grpc.ServiceCall call, $18.SpaceKnowledgeServicesAccessAuthDetails request);
+  $async.Future<$27.GetSpaceKnowledgeDomainByIdResponse> getSpaceKnowledgeDomainById($grpc.ServiceCall call, $27.GetSpaceKnowledgeDomainByIdRequest request);
 }

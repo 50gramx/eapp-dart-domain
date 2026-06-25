@@ -15,25 +15,25 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'access_space_service.pb.dart' as $11;
-import 'discover_space_service.pb.dart' as $54;
+import 'access_space_service.pb.dart' as $3;
+import 'discover_space_service.pb.dart' as $5;
 
 export 'discover_space_service.pb.dart';
 
 @$pb.GrpcServiceName('elint.services.product.service.space.DiscoverSpaceServiceService')
 class DiscoverSpaceServiceServiceClient extends $grpc.Client {
-  static final _$getSpaceServiceDomains = $grpc.ClientMethod<$11.SpaceServiceServicesAccessAuthDetails, $54.GetSpaceServiceDomainsResponse>(
+  static final _$getSpaceServiceDomains = $grpc.ClientMethod<$3.SpaceServiceServicesAccessAuthDetails, $5.GetSpaceServiceDomainsResponse>(
       '/elint.services.product.service.space.DiscoverSpaceServiceService/GetSpaceServiceDomains',
-      ($11.SpaceServiceServicesAccessAuthDetails value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $54.GetSpaceServiceDomainsResponse.fromBuffer(value));
-  static final _$getSpaceServiceDomainById = $grpc.ClientMethod<$54.GetSpaceServiceDomainByIdRequest, $54.GetSpaceServiceDomainByIdResponse>(
+      ($3.SpaceServiceServicesAccessAuthDetails value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $5.GetSpaceServiceDomainsResponse.fromBuffer(value));
+  static final _$getSpaceServiceDomainById = $grpc.ClientMethod<$5.GetSpaceServiceDomainByIdRequest, $5.GetSpaceServiceDomainByIdResponse>(
       '/elint.services.product.service.space.DiscoverSpaceServiceService/GetSpaceServiceDomainById',
-      ($54.GetSpaceServiceDomainByIdRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $54.GetSpaceServiceDomainByIdResponse.fromBuffer(value));
-  static final _$getDomainsByCollarCode = $grpc.ClientMethod<$54.GetDomainsByCollarCodeRequest, $54.GetDomainsByCollarCodeResponse>(
+      ($5.GetSpaceServiceDomainByIdRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $5.GetSpaceServiceDomainByIdResponse.fromBuffer(value));
+  static final _$getDomainsByCollarCode = $grpc.ClientMethod<$5.GetDomainsByCollarCodeRequest, $5.GetDomainsByCollarCodeResponse>(
       '/elint.services.product.service.space.DiscoverSpaceServiceService/GetDomainsByCollarCode',
-      ($54.GetDomainsByCollarCodeRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $54.GetDomainsByCollarCodeResponse.fromBuffer(value));
+      ($5.GetDomainsByCollarCodeRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $5.GetDomainsByCollarCodeResponse.fromBuffer(value));
 
   DiscoverSpaceServiceServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -41,15 +41,15 @@ class DiscoverSpaceServiceServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$54.GetSpaceServiceDomainsResponse> getSpaceServiceDomains($11.SpaceServiceServicesAccessAuthDetails request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$5.GetSpaceServiceDomainsResponse> getSpaceServiceDomains($3.SpaceServiceServicesAccessAuthDetails request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getSpaceServiceDomains, request, options: options);
   }
 
-  $grpc.ResponseFuture<$54.GetSpaceServiceDomainByIdResponse> getSpaceServiceDomainById($54.GetSpaceServiceDomainByIdRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$5.GetSpaceServiceDomainByIdResponse> getSpaceServiceDomainById($5.GetSpaceServiceDomainByIdRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getSpaceServiceDomainById, request, options: options);
   }
 
-  $grpc.ResponseFuture<$54.GetDomainsByCollarCodeResponse> getDomainsByCollarCode($54.GetDomainsByCollarCodeRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$5.GetDomainsByCollarCodeResponse> getDomainsByCollarCode($5.GetDomainsByCollarCodeRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getDomainsByCollarCode, request, options: options);
   }
 }
@@ -59,42 +59,42 @@ abstract class DiscoverSpaceServiceServiceBase extends $grpc.Service {
   $core.String get $name => 'elint.services.product.service.space.DiscoverSpaceServiceService';
 
   DiscoverSpaceServiceServiceBase() {
-    $addMethod($grpc.ServiceMethod<$11.SpaceServiceServicesAccessAuthDetails, $54.GetSpaceServiceDomainsResponse>(
+    $addMethod($grpc.ServiceMethod<$3.SpaceServiceServicesAccessAuthDetails, $5.GetSpaceServiceDomainsResponse>(
         'GetSpaceServiceDomains',
         getSpaceServiceDomains_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $11.SpaceServiceServicesAccessAuthDetails.fromBuffer(value),
-        ($54.GetSpaceServiceDomainsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$54.GetSpaceServiceDomainByIdRequest, $54.GetSpaceServiceDomainByIdResponse>(
+        ($core.List<$core.int> value) => $3.SpaceServiceServicesAccessAuthDetails.fromBuffer(value),
+        ($5.GetSpaceServiceDomainsResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$5.GetSpaceServiceDomainByIdRequest, $5.GetSpaceServiceDomainByIdResponse>(
         'GetSpaceServiceDomainById',
         getSpaceServiceDomainById_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $54.GetSpaceServiceDomainByIdRequest.fromBuffer(value),
-        ($54.GetSpaceServiceDomainByIdResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$54.GetDomainsByCollarCodeRequest, $54.GetDomainsByCollarCodeResponse>(
+        ($core.List<$core.int> value) => $5.GetSpaceServiceDomainByIdRequest.fromBuffer(value),
+        ($5.GetSpaceServiceDomainByIdResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$5.GetDomainsByCollarCodeRequest, $5.GetDomainsByCollarCodeResponse>(
         'GetDomainsByCollarCode',
         getDomainsByCollarCode_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $54.GetDomainsByCollarCodeRequest.fromBuffer(value),
-        ($54.GetDomainsByCollarCodeResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $5.GetDomainsByCollarCodeRequest.fromBuffer(value),
+        ($5.GetDomainsByCollarCodeResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$54.GetSpaceServiceDomainsResponse> getSpaceServiceDomains_Pre($grpc.ServiceCall call, $async.Future<$11.SpaceServiceServicesAccessAuthDetails> request) async {
+  $async.Future<$5.GetSpaceServiceDomainsResponse> getSpaceServiceDomains_Pre($grpc.ServiceCall call, $async.Future<$3.SpaceServiceServicesAccessAuthDetails> request) async {
     return getSpaceServiceDomains(call, await request);
   }
 
-  $async.Future<$54.GetSpaceServiceDomainByIdResponse> getSpaceServiceDomainById_Pre($grpc.ServiceCall call, $async.Future<$54.GetSpaceServiceDomainByIdRequest> request) async {
+  $async.Future<$5.GetSpaceServiceDomainByIdResponse> getSpaceServiceDomainById_Pre($grpc.ServiceCall call, $async.Future<$5.GetSpaceServiceDomainByIdRequest> request) async {
     return getSpaceServiceDomainById(call, await request);
   }
 
-  $async.Future<$54.GetDomainsByCollarCodeResponse> getDomainsByCollarCode_Pre($grpc.ServiceCall call, $async.Future<$54.GetDomainsByCollarCodeRequest> request) async {
+  $async.Future<$5.GetDomainsByCollarCodeResponse> getDomainsByCollarCode_Pre($grpc.ServiceCall call, $async.Future<$5.GetDomainsByCollarCodeRequest> request) async {
     return getDomainsByCollarCode(call, await request);
   }
 
-  $async.Future<$54.GetSpaceServiceDomainsResponse> getSpaceServiceDomains($grpc.ServiceCall call, $11.SpaceServiceServicesAccessAuthDetails request);
-  $async.Future<$54.GetSpaceServiceDomainByIdResponse> getSpaceServiceDomainById($grpc.ServiceCall call, $54.GetSpaceServiceDomainByIdRequest request);
-  $async.Future<$54.GetDomainsByCollarCodeResponse> getDomainsByCollarCode($grpc.ServiceCall call, $54.GetDomainsByCollarCodeRequest request);
+  $async.Future<$5.GetSpaceServiceDomainsResponse> getSpaceServiceDomains($grpc.ServiceCall call, $3.SpaceServiceServicesAccessAuthDetails request);
+  $async.Future<$5.GetSpaceServiceDomainByIdResponse> getSpaceServiceDomainById($grpc.ServiceCall call, $5.GetSpaceServiceDomainByIdRequest request);
+  $async.Future<$5.GetDomainsByCollarCodeResponse> getDomainsByCollarCode($grpc.ServiceCall call, $5.GetDomainsByCollarCodeRequest request);
 }

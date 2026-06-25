@@ -15,20 +15,20 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'access_space_knowledge_domain.pb.dart' as $40;
+import 'access_space_knowledge_domain.pb.dart' as $19;
 
 export 'access_space_knowledge_domain.pb.dart';
 
 @$pb.GrpcServiceName('elint.services.product.knowledge.domain.AccessSpaceKnowledgeDomainService')
 class AccessSpaceKnowledgeDomainServiceClient extends $grpc.Client {
-  static final _$spaceKnowledgeDomainAccessToken = $grpc.ClientMethod<$40.SpaceKnowledgeDomainAccessTokenRequest, $40.SpaceKnowledgeDomainAccessTokenResponse>(
+  static final _$spaceKnowledgeDomainAccessToken = $grpc.ClientMethod<$19.SpaceKnowledgeDomainAccessTokenRequest, $19.SpaceKnowledgeDomainAccessTokenResponse>(
       '/elint.services.product.knowledge.domain.AccessSpaceKnowledgeDomainService/SpaceKnowledgeDomainAccessToken',
-      ($40.SpaceKnowledgeDomainAccessTokenRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $40.SpaceKnowledgeDomainAccessTokenResponse.fromBuffer(value));
-  static final _$validateSpaceKnowledgeDomainServices = $grpc.ClientMethod<$40.SpaceKnowledgeDomainServicesAccessAuthDetails, $40.ValidateSpaceKnowledgeDomainServicesResponse>(
+      ($19.SpaceKnowledgeDomainAccessTokenRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $19.SpaceKnowledgeDomainAccessTokenResponse.fromBuffer(value));
+  static final _$validateSpaceKnowledgeDomainServices = $grpc.ClientMethod<$19.SpaceKnowledgeDomainServicesAccessAuthDetails, $19.ValidateSpaceKnowledgeDomainServicesResponse>(
       '/elint.services.product.knowledge.domain.AccessSpaceKnowledgeDomainService/ValidateSpaceKnowledgeDomainServices',
-      ($40.SpaceKnowledgeDomainServicesAccessAuthDetails value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $40.ValidateSpaceKnowledgeDomainServicesResponse.fromBuffer(value));
+      ($19.SpaceKnowledgeDomainServicesAccessAuthDetails value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $19.ValidateSpaceKnowledgeDomainServicesResponse.fromBuffer(value));
 
   AccessSpaceKnowledgeDomainServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -36,11 +36,11 @@ class AccessSpaceKnowledgeDomainServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$40.SpaceKnowledgeDomainAccessTokenResponse> spaceKnowledgeDomainAccessToken($40.SpaceKnowledgeDomainAccessTokenRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$19.SpaceKnowledgeDomainAccessTokenResponse> spaceKnowledgeDomainAccessToken($19.SpaceKnowledgeDomainAccessTokenRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$spaceKnowledgeDomainAccessToken, request, options: options);
   }
 
-  $grpc.ResponseFuture<$40.ValidateSpaceKnowledgeDomainServicesResponse> validateSpaceKnowledgeDomainServices($40.SpaceKnowledgeDomainServicesAccessAuthDetails request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$19.ValidateSpaceKnowledgeDomainServicesResponse> validateSpaceKnowledgeDomainServices($19.SpaceKnowledgeDomainServicesAccessAuthDetails request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$validateSpaceKnowledgeDomainServices, request, options: options);
   }
 }
@@ -50,30 +50,30 @@ abstract class AccessSpaceKnowledgeDomainServiceBase extends $grpc.Service {
   $core.String get $name => 'elint.services.product.knowledge.domain.AccessSpaceKnowledgeDomainService';
 
   AccessSpaceKnowledgeDomainServiceBase() {
-    $addMethod($grpc.ServiceMethod<$40.SpaceKnowledgeDomainAccessTokenRequest, $40.SpaceKnowledgeDomainAccessTokenResponse>(
+    $addMethod($grpc.ServiceMethod<$19.SpaceKnowledgeDomainAccessTokenRequest, $19.SpaceKnowledgeDomainAccessTokenResponse>(
         'SpaceKnowledgeDomainAccessToken',
         spaceKnowledgeDomainAccessToken_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $40.SpaceKnowledgeDomainAccessTokenRequest.fromBuffer(value),
-        ($40.SpaceKnowledgeDomainAccessTokenResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$40.SpaceKnowledgeDomainServicesAccessAuthDetails, $40.ValidateSpaceKnowledgeDomainServicesResponse>(
+        ($core.List<$core.int> value) => $19.SpaceKnowledgeDomainAccessTokenRequest.fromBuffer(value),
+        ($19.SpaceKnowledgeDomainAccessTokenResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$19.SpaceKnowledgeDomainServicesAccessAuthDetails, $19.ValidateSpaceKnowledgeDomainServicesResponse>(
         'ValidateSpaceKnowledgeDomainServices',
         validateSpaceKnowledgeDomainServices_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $40.SpaceKnowledgeDomainServicesAccessAuthDetails.fromBuffer(value),
-        ($40.ValidateSpaceKnowledgeDomainServicesResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $19.SpaceKnowledgeDomainServicesAccessAuthDetails.fromBuffer(value),
+        ($19.ValidateSpaceKnowledgeDomainServicesResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$40.SpaceKnowledgeDomainAccessTokenResponse> spaceKnowledgeDomainAccessToken_Pre($grpc.ServiceCall call, $async.Future<$40.SpaceKnowledgeDomainAccessTokenRequest> request) async {
+  $async.Future<$19.SpaceKnowledgeDomainAccessTokenResponse> spaceKnowledgeDomainAccessToken_Pre($grpc.ServiceCall call, $async.Future<$19.SpaceKnowledgeDomainAccessTokenRequest> request) async {
     return spaceKnowledgeDomainAccessToken(call, await request);
   }
 
-  $async.Future<$40.ValidateSpaceKnowledgeDomainServicesResponse> validateSpaceKnowledgeDomainServices_Pre($grpc.ServiceCall call, $async.Future<$40.SpaceKnowledgeDomainServicesAccessAuthDetails> request) async {
+  $async.Future<$19.ValidateSpaceKnowledgeDomainServicesResponse> validateSpaceKnowledgeDomainServices_Pre($grpc.ServiceCall call, $async.Future<$19.SpaceKnowledgeDomainServicesAccessAuthDetails> request) async {
     return validateSpaceKnowledgeDomainServices(call, await request);
   }
 
-  $async.Future<$40.SpaceKnowledgeDomainAccessTokenResponse> spaceKnowledgeDomainAccessToken($grpc.ServiceCall call, $40.SpaceKnowledgeDomainAccessTokenRequest request);
-  $async.Future<$40.ValidateSpaceKnowledgeDomainServicesResponse> validateSpaceKnowledgeDomainServices($grpc.ServiceCall call, $40.SpaceKnowledgeDomainServicesAccessAuthDetails request);
+  $async.Future<$19.SpaceKnowledgeDomainAccessTokenResponse> spaceKnowledgeDomainAccessToken($grpc.ServiceCall call, $19.SpaceKnowledgeDomainAccessTokenRequest request);
+  $async.Future<$19.ValidateSpaceKnowledgeDomainServicesResponse> validateSpaceKnowledgeDomainServices($grpc.ServiceCall call, $19.SpaceKnowledgeDomainServicesAccessAuthDetails request);
 }

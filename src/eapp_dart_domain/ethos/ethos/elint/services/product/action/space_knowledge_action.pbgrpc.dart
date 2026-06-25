@@ -15,16 +15,16 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'space_knowledge_action.pb.dart' as $52;
+import 'space_knowledge_action.pb.dart' as $11;
 
 export 'space_knowledge_action.pb.dart';
 
 @$pb.GrpcServiceName('elint.services.product.action.space.knowledge.SpaceKnowledgeActionService')
 class SpaceKnowledgeActionServiceClient extends $grpc.Client {
-  static final _$askQuestion = $grpc.ClientMethod<$52.AskQuestionRequest, $52.AskQuestionResponse>(
+  static final _$askQuestion = $grpc.ClientMethod<$11.AskQuestionRequest, $11.AskQuestionResponse>(
       '/elint.services.product.action.space.knowledge.SpaceKnowledgeActionService/AskQuestion',
-      ($52.AskQuestionRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $52.AskQuestionResponse.fromBuffer(value));
+      ($11.AskQuestionRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $11.AskQuestionResponse.fromBuffer(value));
 
   SpaceKnowledgeActionServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -32,7 +32,7 @@ class SpaceKnowledgeActionServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$52.AskQuestionResponse> askQuestion($52.AskQuestionRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$11.AskQuestionResponse> askQuestion($11.AskQuestionRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$askQuestion, request, options: options);
   }
 }
@@ -42,18 +42,18 @@ abstract class SpaceKnowledgeActionServiceBase extends $grpc.Service {
   $core.String get $name => 'elint.services.product.action.space.knowledge.SpaceKnowledgeActionService';
 
   SpaceKnowledgeActionServiceBase() {
-    $addMethod($grpc.ServiceMethod<$52.AskQuestionRequest, $52.AskQuestionResponse>(
+    $addMethod($grpc.ServiceMethod<$11.AskQuestionRequest, $11.AskQuestionResponse>(
         'AskQuestion',
         askQuestion_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $52.AskQuestionRequest.fromBuffer(value),
-        ($52.AskQuestionResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $11.AskQuestionRequest.fromBuffer(value),
+        ($11.AskQuestionResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$52.AskQuestionResponse> askQuestion_Pre($grpc.ServiceCall call, $async.Future<$52.AskQuestionRequest> request) async {
+  $async.Future<$11.AskQuestionResponse> askQuestion_Pre($grpc.ServiceCall call, $async.Future<$11.AskQuestionRequest> request) async {
     return askQuestion(call, await request);
   }
 
-  $async.Future<$52.AskQuestionResponse> askQuestion($grpc.ServiceCall call, $52.AskQuestionRequest request);
+  $async.Future<$11.AskQuestionResponse> askQuestion($grpc.ServiceCall call, $11.AskQuestionRequest request);
 }

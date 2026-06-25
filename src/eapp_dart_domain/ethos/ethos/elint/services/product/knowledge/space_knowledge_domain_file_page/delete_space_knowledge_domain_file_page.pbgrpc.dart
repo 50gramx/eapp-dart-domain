@@ -15,17 +15,17 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../entities/generic.pb.dart' as $7;
-import '../space_knowledge_domain_file/access_space_knowledge_domain_file.pb.dart' as $64;
+import '../../../../entities/generic.pb.dart' as $9;
+import '../space_knowledge_domain_file/access_space_knowledge_domain_file.pb.dart' as $20;
 
 export 'delete_space_knowledge_domain_file_page.pb.dart';
 
 @$pb.GrpcServiceName('elint.services.product.knowledge.page.DeleteSpaceKnowledgeDomainFilePageService')
 class DeleteSpaceKnowledgeDomainFilePageServiceClient extends $grpc.Client {
-  static final _$deletePagesForFile = $grpc.ClientMethod<$64.SpaceKnowledgeDomainFileServicesAccessAuthDetails, $7.ResponseMeta>(
+  static final _$deletePagesForFile = $grpc.ClientMethod<$20.SpaceKnowledgeDomainFileServicesAccessAuthDetails, $9.ResponseMeta>(
       '/elint.services.product.knowledge.page.DeleteSpaceKnowledgeDomainFilePageService/DeletePagesForFile',
-      ($64.SpaceKnowledgeDomainFileServicesAccessAuthDetails value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $7.ResponseMeta.fromBuffer(value));
+      ($20.SpaceKnowledgeDomainFileServicesAccessAuthDetails value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $9.ResponseMeta.fromBuffer(value));
 
   DeleteSpaceKnowledgeDomainFilePageServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -33,7 +33,7 @@ class DeleteSpaceKnowledgeDomainFilePageServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$7.ResponseMeta> deletePagesForFile($64.SpaceKnowledgeDomainFileServicesAccessAuthDetails request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$9.ResponseMeta> deletePagesForFile($20.SpaceKnowledgeDomainFileServicesAccessAuthDetails request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deletePagesForFile, request, options: options);
   }
 }
@@ -43,18 +43,18 @@ abstract class DeleteSpaceKnowledgeDomainFilePageServiceBase extends $grpc.Servi
   $core.String get $name => 'elint.services.product.knowledge.page.DeleteSpaceKnowledgeDomainFilePageService';
 
   DeleteSpaceKnowledgeDomainFilePageServiceBase() {
-    $addMethod($grpc.ServiceMethod<$64.SpaceKnowledgeDomainFileServicesAccessAuthDetails, $7.ResponseMeta>(
+    $addMethod($grpc.ServiceMethod<$20.SpaceKnowledgeDomainFileServicesAccessAuthDetails, $9.ResponseMeta>(
         'DeletePagesForFile',
         deletePagesForFile_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $64.SpaceKnowledgeDomainFileServicesAccessAuthDetails.fromBuffer(value),
-        ($7.ResponseMeta value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $20.SpaceKnowledgeDomainFileServicesAccessAuthDetails.fromBuffer(value),
+        ($9.ResponseMeta value) => value.writeToBuffer()));
   }
 
-  $async.Future<$7.ResponseMeta> deletePagesForFile_Pre($grpc.ServiceCall call, $async.Future<$64.SpaceKnowledgeDomainFileServicesAccessAuthDetails> request) async {
+  $async.Future<$9.ResponseMeta> deletePagesForFile_Pre($grpc.ServiceCall call, $async.Future<$20.SpaceKnowledgeDomainFileServicesAccessAuthDetails> request) async {
     return deletePagesForFile(call, await request);
   }
 
-  $async.Future<$7.ResponseMeta> deletePagesForFile($grpc.ServiceCall call, $64.SpaceKnowledgeDomainFileServicesAccessAuthDetails request);
+  $async.Future<$9.ResponseMeta> deletePagesForFile($grpc.ServiceCall call, $20.SpaceKnowledgeDomainFileServicesAccessAuthDetails request);
 }

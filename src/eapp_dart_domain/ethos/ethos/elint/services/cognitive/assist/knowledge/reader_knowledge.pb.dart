@@ -13,16 +13,16 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../entities/generic.pb.dart' as $7;
-import '../../../../entities/space_knowledge_domain_file_page.pb.dart' as $69;
-import '../../../../entities/space_knowledge_domain_file_page_para.pb.dart' as $102;
-import '../../../product/knowledge/space_knowledge_domain/access_space_knowledge_domain.pb.dart' as $40;
+import '../../../../entities/generic.pb.dart' as $9;
+import '../../../../entities/space_knowledge_domain_file_page.pb.dart' as $22;
+import '../../../../entities/space_knowledge_domain_file_page_para.pb.dart' as $94;
+import '../../../product/knowledge/space_knowledge_domain/access_space_knowledge_domain.pb.dart' as $19;
 
 /// Message Definitions
 class ReadPageQuestionRequest extends $pb.GeneratedMessage {
   factory ReadPageQuestionRequest({
-    $40.SpaceKnowledgeDomainServicesAccessAuthDetails? accessAuthDetails,
-    $69.SpaceKnowledgeDomainFilePage? page,
+    $19.SpaceKnowledgeDomainServicesAccessAuthDetails? accessAuthDetails,
+    $22.SpaceKnowledgeDomainFilePage? page,
     $core.String? question,
   }) {
     final $result = create();
@@ -42,8 +42,8 @@ class ReadPageQuestionRequest extends $pb.GeneratedMessage {
   factory ReadPageQuestionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReadPageQuestionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.cognitive.assist.knowledge.reader'), createEmptyInstance: create)
-    ..aOM<$40.SpaceKnowledgeDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'accessAuthDetails', subBuilder: $40.SpaceKnowledgeDomainServicesAccessAuthDetails.create)
-    ..aOM<$69.SpaceKnowledgeDomainFilePage>(2, _omitFieldNames ? '' : 'page', subBuilder: $69.SpaceKnowledgeDomainFilePage.create)
+    ..aOM<$19.SpaceKnowledgeDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'accessAuthDetails', subBuilder: $19.SpaceKnowledgeDomainServicesAccessAuthDetails.create)
+    ..aOM<$22.SpaceKnowledgeDomainFilePage>(2, _omitFieldNames ? '' : 'page', subBuilder: $22.SpaceKnowledgeDomainFilePage.create)
     ..aOS(3, _omitFieldNames ? '' : 'question')
     ..hasRequiredFields = false
   ;
@@ -71,27 +71,27 @@ class ReadPageQuestionRequest extends $pb.GeneratedMessage {
 
   /// Auth Properties
   @$pb.TagNumber(1)
-  $40.SpaceKnowledgeDomainServicesAccessAuthDetails get accessAuthDetails => $_getN(0);
+  $19.SpaceKnowledgeDomainServicesAccessAuthDetails get accessAuthDetails => $_getN(0);
   @$pb.TagNumber(1)
-  set accessAuthDetails($40.SpaceKnowledgeDomainServicesAccessAuthDetails v) { setField(1, v); }
+  set accessAuthDetails($19.SpaceKnowledgeDomainServicesAccessAuthDetails v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAccessAuthDetails() => $_has(0);
   @$pb.TagNumber(1)
   void clearAccessAuthDetails() => clearField(1);
   @$pb.TagNumber(1)
-  $40.SpaceKnowledgeDomainServicesAccessAuthDetails ensureAccessAuthDetails() => $_ensure(0);
+  $19.SpaceKnowledgeDomainServicesAccessAuthDetails ensureAccessAuthDetails() => $_ensure(0);
 
   /// Request Properties
   @$pb.TagNumber(2)
-  $69.SpaceKnowledgeDomainFilePage get page => $_getN(1);
+  $22.SpaceKnowledgeDomainFilePage get page => $_getN(1);
   @$pb.TagNumber(2)
-  set page($69.SpaceKnowledgeDomainFilePage v) { setField(2, v); }
+  set page($22.SpaceKnowledgeDomainFilePage v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPage() => $_has(1);
   @$pb.TagNumber(2)
   void clearPage() => clearField(2);
   @$pb.TagNumber(2)
-  $69.SpaceKnowledgeDomainFilePage ensurePage() => $_ensure(1);
+  $22.SpaceKnowledgeDomainFilePage ensurePage() => $_ensure(1);
 
   @$pb.TagNumber(3)
   $core.String get question => $_getSZ(2);
@@ -106,7 +106,7 @@ class ReadPageQuestionRequest extends $pb.GeneratedMessage {
 class ReadPageQuestionResponse extends $pb.GeneratedMessage {
   factory ReadPageQuestionResponse({
     PageAnswer? pageAnswer,
-    $7.ResponseMeta? responseMeta,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (pageAnswer != null) {
@@ -123,7 +123,7 @@ class ReadPageQuestionResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReadPageQuestionResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.cognitive.assist.knowledge.reader'), createEmptyInstance: create)
     ..aOM<PageAnswer>(1, _omitFieldNames ? '' : 'pageAnswer', subBuilder: PageAnswer.create)
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -160,21 +160,21 @@ class ReadPageQuestionResponse extends $pb.GeneratedMessage {
   PageAnswer ensurePageAnswer() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $7.ResponseMeta get responseMeta => $_getN(1);
+  $9.ResponseMeta get responseMeta => $_getN(1);
   @$pb.TagNumber(2)
-  set responseMeta($7.ResponseMeta v) { setField(2, v); }
+  set responseMeta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponseMeta() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponseMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(1);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(1);
 }
 
 class ReadParaQuestionRequest extends $pb.GeneratedMessage {
   factory ReadParaQuestionRequest({
-    $40.SpaceKnowledgeDomainServicesAccessAuthDetails? accessAuthDetails,
-    $102.SpaceKnowledgeDomainFilePagePara? para,
+    $19.SpaceKnowledgeDomainServicesAccessAuthDetails? accessAuthDetails,
+    $94.SpaceKnowledgeDomainFilePagePara? para,
     $core.String? question,
   }) {
     final $result = create();
@@ -194,8 +194,8 @@ class ReadParaQuestionRequest extends $pb.GeneratedMessage {
   factory ReadParaQuestionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReadParaQuestionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.cognitive.assist.knowledge.reader'), createEmptyInstance: create)
-    ..aOM<$40.SpaceKnowledgeDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'accessAuthDetails', subBuilder: $40.SpaceKnowledgeDomainServicesAccessAuthDetails.create)
-    ..aOM<$102.SpaceKnowledgeDomainFilePagePara>(2, _omitFieldNames ? '' : 'para', subBuilder: $102.SpaceKnowledgeDomainFilePagePara.create)
+    ..aOM<$19.SpaceKnowledgeDomainServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'accessAuthDetails', subBuilder: $19.SpaceKnowledgeDomainServicesAccessAuthDetails.create)
+    ..aOM<$94.SpaceKnowledgeDomainFilePagePara>(2, _omitFieldNames ? '' : 'para', subBuilder: $94.SpaceKnowledgeDomainFilePagePara.create)
     ..aOS(3, _omitFieldNames ? '' : 'question')
     ..hasRequiredFields = false
   ;
@@ -223,27 +223,27 @@ class ReadParaQuestionRequest extends $pb.GeneratedMessage {
 
   /// Auth Properties
   @$pb.TagNumber(1)
-  $40.SpaceKnowledgeDomainServicesAccessAuthDetails get accessAuthDetails => $_getN(0);
+  $19.SpaceKnowledgeDomainServicesAccessAuthDetails get accessAuthDetails => $_getN(0);
   @$pb.TagNumber(1)
-  set accessAuthDetails($40.SpaceKnowledgeDomainServicesAccessAuthDetails v) { setField(1, v); }
+  set accessAuthDetails($19.SpaceKnowledgeDomainServicesAccessAuthDetails v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAccessAuthDetails() => $_has(0);
   @$pb.TagNumber(1)
   void clearAccessAuthDetails() => clearField(1);
   @$pb.TagNumber(1)
-  $40.SpaceKnowledgeDomainServicesAccessAuthDetails ensureAccessAuthDetails() => $_ensure(0);
+  $19.SpaceKnowledgeDomainServicesAccessAuthDetails ensureAccessAuthDetails() => $_ensure(0);
 
   /// Request Properties
   @$pb.TagNumber(2)
-  $102.SpaceKnowledgeDomainFilePagePara get para => $_getN(1);
+  $94.SpaceKnowledgeDomainFilePagePara get para => $_getN(1);
   @$pb.TagNumber(2)
-  set para($102.SpaceKnowledgeDomainFilePagePara v) { setField(2, v); }
+  set para($94.SpaceKnowledgeDomainFilePagePara v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPara() => $_has(1);
   @$pb.TagNumber(2)
   void clearPara() => clearField(2);
   @$pb.TagNumber(2)
-  $102.SpaceKnowledgeDomainFilePagePara ensurePara() => $_ensure(1);
+  $94.SpaceKnowledgeDomainFilePagePara ensurePara() => $_ensure(1);
 
   @$pb.TagNumber(3)
   $core.String get question => $_getSZ(2);
@@ -258,7 +258,7 @@ class ReadParaQuestionRequest extends $pb.GeneratedMessage {
 class ReadParaQuestionResponse extends $pb.GeneratedMessage {
   factory ReadParaQuestionResponse({
     ParaAnswer? paraAnswer,
-    $7.ResponseMeta? responseMeta,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (paraAnswer != null) {
@@ -275,7 +275,7 @@ class ReadParaQuestionResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReadParaQuestionResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.cognitive.assist.knowledge.reader'), createEmptyInstance: create)
     ..aOM<ParaAnswer>(1, _omitFieldNames ? '' : 'paraAnswer', subBuilder: ParaAnswer.create)
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -312,15 +312,15 @@ class ReadParaQuestionResponse extends $pb.GeneratedMessage {
   ParaAnswer ensureParaAnswer() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $7.ResponseMeta get responseMeta => $_getN(1);
+  $9.ResponseMeta get responseMeta => $_getN(1);
   @$pb.TagNumber(2)
-  set responseMeta($7.ResponseMeta v) { setField(2, v); }
+  set responseMeta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponseMeta() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponseMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(1);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(1);
 }
 
 /// Meta Message Definitions

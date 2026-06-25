@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../google/protobuf/timestamp.pb.dart' as $85;
-import '../collars/DC499999994.pb.dart' as $8;
-import 'space_product.pb.dart' as $89;
+import '../collars/DC499999994.pb.dart' as $81;
+import 'space_product.pb.dart' as $92;
 
 export '../../../google/protobuf/timestamp.pb.dart';
 
@@ -30,10 +30,10 @@ class SpaceProductDomain extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? description,
     $core.bool? isIsolated,
-    $89.SpaceProduct? spaceProduct,
+    $92.SpaceProduct? spaceProduct,
     $85.Timestamp? createdAt,
     $85.Timestamp? lastUpdatedAt,
-    $8.DC499999994? dc499999994,
+    $81.DC499999994? dc499999994,
   }) {
     final $result = create();
     if (id != null) {
@@ -76,10 +76,10 @@ class SpaceProductDomain extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'name')
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..aOB(4, _omitFieldNames ? '' : 'isIsolated')
-    ..aOM<$89.SpaceProduct>(5, _omitFieldNames ? '' : 'spaceProduct', subBuilder: $89.SpaceProduct.create)
+    ..aOM<$92.SpaceProduct>(5, _omitFieldNames ? '' : 'spaceProduct', subBuilder: $92.SpaceProduct.create)
     ..aOM<$85.Timestamp>(6, _omitFieldNames ? '' : 'createdAt', subBuilder: $85.Timestamp.create)
     ..aOM<$85.Timestamp>(7, _omitFieldNames ? '' : 'lastUpdatedAt', subBuilder: $85.Timestamp.create)
-    ..aOM<$8.DC499999994>(499999994, _omitFieldNames ? '' : 'dc499999994', subBuilder: $8.DC499999994.create)
+    ..aOM<$81.DC499999994>(499999994, _omitFieldNames ? '' : 'dc499999994', subBuilder: $81.DC499999994.create)
     ..hasRequiredFields = false
   ;
 
@@ -144,15 +144,15 @@ class SpaceProductDomain extends $pb.GeneratedMessage {
   void clearIsIsolated() => clearField(4);
 
   @$pb.TagNumber(5)
-  $89.SpaceProduct get spaceProduct => $_getN(4);
+  $92.SpaceProduct get spaceProduct => $_getN(4);
   @$pb.TagNumber(5)
-  set spaceProduct($89.SpaceProduct v) { setField(5, v); }
+  set spaceProduct($92.SpaceProduct v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasSpaceProduct() => $_has(4);
   @$pb.TagNumber(5)
   void clearSpaceProduct() => clearField(5);
   @$pb.TagNumber(5)
-  $89.SpaceProduct ensureSpaceProduct() => $_ensure(4);
+  $92.SpaceProduct ensureSpaceProduct() => $_ensure(4);
 
   @$pb.TagNumber(6)
   $85.Timestamp get createdAt => $_getN(5);
@@ -177,15 +177,15 @@ class SpaceProductDomain extends $pb.GeneratedMessage {
   $85.Timestamp ensureLastUpdatedAt() => $_ensure(6);
 
   @$pb.TagNumber(499999994)
-  $8.DC499999994 get dc499999994 => $_getN(7);
+  $81.DC499999994 get dc499999994 => $_getN(7);
   @$pb.TagNumber(499999994)
-  set dc499999994($8.DC499999994 v) { setField(499999994, v); }
+  set dc499999994($81.DC499999994 v) { setField(499999994, v); }
   @$pb.TagNumber(499999994)
   $core.bool hasDc499999994() => $_has(7);
   @$pb.TagNumber(499999994)
   void clearDc499999994() => clearField(499999994);
   @$pb.TagNumber(499999994)
-  $8.DC499999994 ensureDc499999994() => $_ensure(7);
+  $81.DC499999994 ensureDc499999994() => $_ensure(7);
 }
 
 

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../entities/generic.pb.dart' as $7;
-import '../../../../entities/space_knowledge.pbenum.dart' as $88;
+import '../../../../entities/generic.pb.dart' as $9;
+import '../../../../entities/space_knowledge.pbenum.dart' as $91;
 import '../../../product/identity/account_assistant/access_account_assistant.pb.dart' as $1;
 
 /// Message Definitions
@@ -89,7 +89,7 @@ class AccountMessage extends $pb.GeneratedMessage {
 class AccountMessageContext extends $pb.GeneratedMessage {
   factory AccountMessageContext({
     $core.Iterable<KnowledgeContextualAction>? knowledgeContextualActions,
-    $7.ResponseMeta? responseMeta,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (knowledgeContextualActions != null) {
@@ -106,7 +106,7 @@ class AccountMessageContext extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccountMessageContext', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.cognitive.assist.context.account'), createEmptyInstance: create)
     ..pc<KnowledgeContextualAction>(1, _omitFieldNames ? '' : 'knowledgeContextualActions', $pb.PbFieldType.PM, subBuilder: KnowledgeContextualAction.create)
-    ..aOM<$7.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..aOM<$9.ResponseMeta>(2, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -137,22 +137,22 @@ class AccountMessageContext extends $pb.GeneratedMessage {
 
   /// Meta Parameters
   @$pb.TagNumber(2)
-  $7.ResponseMeta get responseMeta => $_getN(1);
+  $9.ResponseMeta get responseMeta => $_getN(1);
   @$pb.TagNumber(2)
-  set responseMeta($7.ResponseMeta v) { setField(2, v); }
+  set responseMeta($9.ResponseMeta v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponseMeta() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponseMeta() => clearField(2);
   @$pb.TagNumber(2)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(1);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(1);
 }
 
 /// Meta Messages
 class KnowledgeContextualAction extends $pb.GeneratedMessage {
   factory KnowledgeContextualAction({
     $core.String? knowledgeContextActionId,
-    $88.SpaceKnowledgeAction? knowledgeSpaceAction,
+    $91.SpaceKnowledgeAction? knowledgeSpaceAction,
     $core.double? knowledgeContextConfidence,
   }) {
     final $result = create();
@@ -173,7 +173,7 @@ class KnowledgeContextualAction extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'KnowledgeContextualAction', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.cognitive.assist.context.account'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'knowledgeContextActionId')
-    ..e<$88.SpaceKnowledgeAction>(2, _omitFieldNames ? '' : 'knowledgeSpaceAction', $pb.PbFieldType.OE, defaultOrMaker: $88.SpaceKnowledgeAction.ASK_QUESTION, valueOf: $88.SpaceKnowledgeAction.valueOf, enumValues: $88.SpaceKnowledgeAction.values)
+    ..e<$91.SpaceKnowledgeAction>(2, _omitFieldNames ? '' : 'knowledgeSpaceAction', $pb.PbFieldType.OE, defaultOrMaker: $91.SpaceKnowledgeAction.ASK_QUESTION, valueOf: $91.SpaceKnowledgeAction.valueOf, enumValues: $91.SpaceKnowledgeAction.values)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'knowledgeContextConfidence', $pb.PbFieldType.OF)
     ..hasRequiredFields = false
   ;
@@ -209,9 +209,9 @@ class KnowledgeContextualAction extends $pb.GeneratedMessage {
   void clearKnowledgeContextActionId() => clearField(1);
 
   @$pb.TagNumber(2)
-  $88.SpaceKnowledgeAction get knowledgeSpaceAction => $_getN(1);
+  $91.SpaceKnowledgeAction get knowledgeSpaceAction => $_getN(1);
   @$pb.TagNumber(2)
-  set knowledgeSpaceAction($88.SpaceKnowledgeAction v) { setField(2, v); }
+  set knowledgeSpaceAction($91.SpaceKnowledgeAction v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasKnowledgeSpaceAction() => $_has(1);
   @$pb.TagNumber(2)

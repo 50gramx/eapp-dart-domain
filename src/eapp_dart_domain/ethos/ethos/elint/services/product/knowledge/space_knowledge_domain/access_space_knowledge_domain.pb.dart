@@ -14,15 +14,15 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../../../google/protobuf/timestamp.pb.dart' as $85;
-import '../../../../entities/generic.pb.dart' as $7;
-import '../../../../entities/space_knowledge_domain.pb.dart' as $76;
-import '../space_knowledge/access_space_knowledge.pb.dart' as $3;
+import '../../../../entities/generic.pb.dart' as $9;
+import '../../../../entities/space_knowledge_domain.pb.dart' as $38;
+import '../space_knowledge/access_space_knowledge.pb.dart' as $18;
 
 /// Message Definitions
 class SpaceKnowledgeDomainAccessTokenRequest extends $pb.GeneratedMessage {
   factory SpaceKnowledgeDomainAccessTokenRequest({
-    $3.SpaceKnowledgeServicesAccessAuthDetails? spaceKnowledgeServicesAccessAuthDetails,
-    $76.SpaceKnowledgeDomain? spaceKnowledgeDomain,
+    $18.SpaceKnowledgeServicesAccessAuthDetails? spaceKnowledgeServicesAccessAuthDetails,
+    $38.SpaceKnowledgeDomain? spaceKnowledgeDomain,
   }) {
     final $result = create();
     if (spaceKnowledgeServicesAccessAuthDetails != null) {
@@ -38,8 +38,8 @@ class SpaceKnowledgeDomainAccessTokenRequest extends $pb.GeneratedMessage {
   factory SpaceKnowledgeDomainAccessTokenRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SpaceKnowledgeDomainAccessTokenRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.knowledge.domain'), createEmptyInstance: create)
-    ..aOM<$3.SpaceKnowledgeServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'spaceKnowledgeServicesAccessAuthDetails', subBuilder: $3.SpaceKnowledgeServicesAccessAuthDetails.create)
-    ..aOM<$76.SpaceKnowledgeDomain>(2, _omitFieldNames ? '' : 'spaceKnowledgeDomain', subBuilder: $76.SpaceKnowledgeDomain.create)
+    ..aOM<$18.SpaceKnowledgeServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'spaceKnowledgeServicesAccessAuthDetails', subBuilder: $18.SpaceKnowledgeServicesAccessAuthDetails.create)
+    ..aOM<$38.SpaceKnowledgeDomain>(2, _omitFieldNames ? '' : 'spaceKnowledgeDomain', subBuilder: $38.SpaceKnowledgeDomain.create)
     ..hasRequiredFields = false
   ;
 
@@ -66,27 +66,27 @@ class SpaceKnowledgeDomainAccessTokenRequest extends $pb.GeneratedMessage {
 
   /// Auth Properties
   @$pb.TagNumber(1)
-  $3.SpaceKnowledgeServicesAccessAuthDetails get spaceKnowledgeServicesAccessAuthDetails => $_getN(0);
+  $18.SpaceKnowledgeServicesAccessAuthDetails get spaceKnowledgeServicesAccessAuthDetails => $_getN(0);
   @$pb.TagNumber(1)
-  set spaceKnowledgeServicesAccessAuthDetails($3.SpaceKnowledgeServicesAccessAuthDetails v) { setField(1, v); }
+  set spaceKnowledgeServicesAccessAuthDetails($18.SpaceKnowledgeServicesAccessAuthDetails v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSpaceKnowledgeServicesAccessAuthDetails() => $_has(0);
   @$pb.TagNumber(1)
   void clearSpaceKnowledgeServicesAccessAuthDetails() => clearField(1);
   @$pb.TagNumber(1)
-  $3.SpaceKnowledgeServicesAccessAuthDetails ensureSpaceKnowledgeServicesAccessAuthDetails() => $_ensure(0);
+  $18.SpaceKnowledgeServicesAccessAuthDetails ensureSpaceKnowledgeServicesAccessAuthDetails() => $_ensure(0);
 
   /// Request Properties
   @$pb.TagNumber(2)
-  $76.SpaceKnowledgeDomain get spaceKnowledgeDomain => $_getN(1);
+  $38.SpaceKnowledgeDomain get spaceKnowledgeDomain => $_getN(1);
   @$pb.TagNumber(2)
-  set spaceKnowledgeDomain($76.SpaceKnowledgeDomain v) { setField(2, v); }
+  set spaceKnowledgeDomain($38.SpaceKnowledgeDomain v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSpaceKnowledgeDomain() => $_has(1);
   @$pb.TagNumber(2)
   void clearSpaceKnowledgeDomain() => clearField(2);
   @$pb.TagNumber(2)
-  $76.SpaceKnowledgeDomain ensureSpaceKnowledgeDomain() => $_ensure(1);
+  $38.SpaceKnowledgeDomain ensureSpaceKnowledgeDomain() => $_ensure(1);
 }
 
 class SpaceKnowledgeDomainAccessTokenResponse extends $pb.GeneratedMessage {
@@ -238,8 +238,8 @@ class ValidateSpaceKnowledgeDomainServicesResponse extends $pb.GeneratedMessage 
 /// Meta Message Definitions
 class SpaceKnowledgeDomainServicesAccessAuthDetails extends $pb.GeneratedMessage {
   factory SpaceKnowledgeDomainServicesAccessAuthDetails({
-    $76.SpaceKnowledgeDomain? spaceKnowledgeDomain,
-    $7.PersistentSessionTokenDetails? spaceKnowledgeDomainServicesAccessSessionTokenDetails,
+    $38.SpaceKnowledgeDomain? spaceKnowledgeDomain,
+    $9.PersistentSessionTokenDetails? spaceKnowledgeDomainServicesAccessSessionTokenDetails,
     $85.Timestamp? requestedAt,
   }) {
     final $result = create();
@@ -259,8 +259,8 @@ class SpaceKnowledgeDomainServicesAccessAuthDetails extends $pb.GeneratedMessage
   factory SpaceKnowledgeDomainServicesAccessAuthDetails.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SpaceKnowledgeDomainServicesAccessAuthDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.knowledge.domain'), createEmptyInstance: create)
-    ..aOM<$76.SpaceKnowledgeDomain>(1, _omitFieldNames ? '' : 'spaceKnowledgeDomain', subBuilder: $76.SpaceKnowledgeDomain.create)
-    ..aOM<$7.PersistentSessionTokenDetails>(2, _omitFieldNames ? '' : 'spaceKnowledgeDomainServicesAccessSessionTokenDetails', subBuilder: $7.PersistentSessionTokenDetails.create)
+    ..aOM<$38.SpaceKnowledgeDomain>(1, _omitFieldNames ? '' : 'spaceKnowledgeDomain', subBuilder: $38.SpaceKnowledgeDomain.create)
+    ..aOM<$9.PersistentSessionTokenDetails>(2, _omitFieldNames ? '' : 'spaceKnowledgeDomainServicesAccessSessionTokenDetails', subBuilder: $9.PersistentSessionTokenDetails.create)
     ..aOM<$85.Timestamp>(3, _omitFieldNames ? '' : 'requestedAt', subBuilder: $85.Timestamp.create)
     ..hasRequiredFields = false
   ;
@@ -288,26 +288,26 @@ class SpaceKnowledgeDomainServicesAccessAuthDetails extends $pb.GeneratedMessage
 
   /// Auth Properties
   @$pb.TagNumber(1)
-  $76.SpaceKnowledgeDomain get spaceKnowledgeDomain => $_getN(0);
+  $38.SpaceKnowledgeDomain get spaceKnowledgeDomain => $_getN(0);
   @$pb.TagNumber(1)
-  set spaceKnowledgeDomain($76.SpaceKnowledgeDomain v) { setField(1, v); }
+  set spaceKnowledgeDomain($38.SpaceKnowledgeDomain v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSpaceKnowledgeDomain() => $_has(0);
   @$pb.TagNumber(1)
   void clearSpaceKnowledgeDomain() => clearField(1);
   @$pb.TagNumber(1)
-  $76.SpaceKnowledgeDomain ensureSpaceKnowledgeDomain() => $_ensure(0);
+  $38.SpaceKnowledgeDomain ensureSpaceKnowledgeDomain() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $7.PersistentSessionTokenDetails get spaceKnowledgeDomainServicesAccessSessionTokenDetails => $_getN(1);
+  $9.PersistentSessionTokenDetails get spaceKnowledgeDomainServicesAccessSessionTokenDetails => $_getN(1);
   @$pb.TagNumber(2)
-  set spaceKnowledgeDomainServicesAccessSessionTokenDetails($7.PersistentSessionTokenDetails v) { setField(2, v); }
+  set spaceKnowledgeDomainServicesAccessSessionTokenDetails($9.PersistentSessionTokenDetails v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSpaceKnowledgeDomainServicesAccessSessionTokenDetails() => $_has(1);
   @$pb.TagNumber(2)
   void clearSpaceKnowledgeDomainServicesAccessSessionTokenDetails() => clearField(2);
   @$pb.TagNumber(2)
-  $7.PersistentSessionTokenDetails ensureSpaceKnowledgeDomainServicesAccessSessionTokenDetails() => $_ensure(1);
+  $9.PersistentSessionTokenDetails ensureSpaceKnowledgeDomainServicesAccessSessionTokenDetails() => $_ensure(1);
 
   /// Meta Properties
   @$pb.TagNumber(3)

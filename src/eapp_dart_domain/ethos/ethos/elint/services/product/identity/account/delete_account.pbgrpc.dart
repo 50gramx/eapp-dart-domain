@@ -15,16 +15,16 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'delete_account.pb.dart' as $43;
+import 'delete_account.pb.dart' as $55;
 
 export 'delete_account.pb.dart';
 
 @$pb.GrpcServiceName('elint.services.product.identity.account.DeleteAccountService')
 class DeleteAccountServiceClient extends $grpc.Client {
-  static final _$deleteAccount = $grpc.ClientMethod<$43.DeleteAccountRequest, $43.DeleteAccountResponse>(
+  static final _$deleteAccount = $grpc.ClientMethod<$55.DeleteAccountRequest, $55.DeleteAccountResponse>(
       '/elint.services.product.identity.account.DeleteAccountService/DeleteAccount',
-      ($43.DeleteAccountRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $43.DeleteAccountResponse.fromBuffer(value));
+      ($55.DeleteAccountRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $55.DeleteAccountResponse.fromBuffer(value));
 
   DeleteAccountServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -32,7 +32,7 @@ class DeleteAccountServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$43.DeleteAccountResponse> deleteAccount($43.DeleteAccountRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$55.DeleteAccountResponse> deleteAccount($55.DeleteAccountRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteAccount, request, options: options);
   }
 }
@@ -42,18 +42,18 @@ abstract class DeleteAccountServiceBase extends $grpc.Service {
   $core.String get $name => 'elint.services.product.identity.account.DeleteAccountService';
 
   DeleteAccountServiceBase() {
-    $addMethod($grpc.ServiceMethod<$43.DeleteAccountRequest, $43.DeleteAccountResponse>(
+    $addMethod($grpc.ServiceMethod<$55.DeleteAccountRequest, $55.DeleteAccountResponse>(
         'DeleteAccount',
         deleteAccount_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $43.DeleteAccountRequest.fromBuffer(value),
-        ($43.DeleteAccountResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $55.DeleteAccountRequest.fromBuffer(value),
+        ($55.DeleteAccountResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$43.DeleteAccountResponse> deleteAccount_Pre($grpc.ServiceCall call, $async.Future<$43.DeleteAccountRequest> request) async {
+  $async.Future<$55.DeleteAccountResponse> deleteAccount_Pre($grpc.ServiceCall call, $async.Future<$55.DeleteAccountRequest> request) async {
     return deleteAccount(call, await request);
   }
 
-  $async.Future<$43.DeleteAccountResponse> deleteAccount($grpc.ServiceCall call, $43.DeleteAccountRequest request);
+  $async.Future<$55.DeleteAccountResponse> deleteAccount($grpc.ServiceCall call, $55.DeleteAccountRequest request);
 }

@@ -15,16 +15,16 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'create_space_knowledge.pb.dart' as $72;
+import 'create_space_knowledge.pb.dart' as $26;
 
 export 'create_space_knowledge.pb.dart';
 
 @$pb.GrpcServiceName('elint.services.product.knowledge.space.CreateSpaceKnowledgeService')
 class CreateSpaceKnowledgeServiceClient extends $grpc.Client {
-  static final _$createAccountSpaceKnowledge = $grpc.ClientMethod<$72.CreateAccountSpaceKnowledgeRequest, $72.CreateAccountSpaceKnowledgeResponse>(
+  static final _$createAccountSpaceKnowledge = $grpc.ClientMethod<$26.CreateAccountSpaceKnowledgeRequest, $26.CreateAccountSpaceKnowledgeResponse>(
       '/elint.services.product.knowledge.space.CreateSpaceKnowledgeService/CreateAccountSpaceKnowledge',
-      ($72.CreateAccountSpaceKnowledgeRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $72.CreateAccountSpaceKnowledgeResponse.fromBuffer(value));
+      ($26.CreateAccountSpaceKnowledgeRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $26.CreateAccountSpaceKnowledgeResponse.fromBuffer(value));
 
   CreateSpaceKnowledgeServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -32,7 +32,7 @@ class CreateSpaceKnowledgeServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$72.CreateAccountSpaceKnowledgeResponse> createAccountSpaceKnowledge($72.CreateAccountSpaceKnowledgeRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$26.CreateAccountSpaceKnowledgeResponse> createAccountSpaceKnowledge($26.CreateAccountSpaceKnowledgeRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createAccountSpaceKnowledge, request, options: options);
   }
 }
@@ -42,18 +42,18 @@ abstract class CreateSpaceKnowledgeServiceBase extends $grpc.Service {
   $core.String get $name => 'elint.services.product.knowledge.space.CreateSpaceKnowledgeService';
 
   CreateSpaceKnowledgeServiceBase() {
-    $addMethod($grpc.ServiceMethod<$72.CreateAccountSpaceKnowledgeRequest, $72.CreateAccountSpaceKnowledgeResponse>(
+    $addMethod($grpc.ServiceMethod<$26.CreateAccountSpaceKnowledgeRequest, $26.CreateAccountSpaceKnowledgeResponse>(
         'CreateAccountSpaceKnowledge',
         createAccountSpaceKnowledge_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $72.CreateAccountSpaceKnowledgeRequest.fromBuffer(value),
-        ($72.CreateAccountSpaceKnowledgeResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $26.CreateAccountSpaceKnowledgeRequest.fromBuffer(value),
+        ($26.CreateAccountSpaceKnowledgeResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$72.CreateAccountSpaceKnowledgeResponse> createAccountSpaceKnowledge_Pre($grpc.ServiceCall call, $async.Future<$72.CreateAccountSpaceKnowledgeRequest> request) async {
+  $async.Future<$26.CreateAccountSpaceKnowledgeResponse> createAccountSpaceKnowledge_Pre($grpc.ServiceCall call, $async.Future<$26.CreateAccountSpaceKnowledgeRequest> request) async {
     return createAccountSpaceKnowledge(call, await request);
   }
 
-  $async.Future<$72.CreateAccountSpaceKnowledgeResponse> createAccountSpaceKnowledge($grpc.ServiceCall call, $72.CreateAccountSpaceKnowledgeRequest request);
+  $async.Future<$26.CreateAccountSpaceKnowledgeResponse> createAccountSpaceKnowledge($grpc.ServiceCall call, $26.CreateAccountSpaceKnowledgeRequest request);
 }

@@ -15,7 +15,7 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../google/protobuf/timestamp.pb.dart' as $85;
-import 'space_things_domain.pb.dart' as $100;
+import 'space_things_domain.pb.dart' as $97;
 import 'space_things_domain_device.pbenum.dart';
 
 export 'space_things_domain_device.pbenum.dart';
@@ -24,7 +24,7 @@ class SpaceThingsDomainDevice extends $pb.GeneratedMessage {
   factory SpaceThingsDomainDevice({
     $core.String? id,
     $core.String? name,
-    $100.SpaceThingsDomain? domain,
+    $97.SpaceThingsDomain? domain,
     $85.Timestamp? createdAt,
     $85.Timestamp? lastUpdatedAt,
     $85.Timestamp? lastAccessedAt,
@@ -93,7 +93,7 @@ class SpaceThingsDomainDevice extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SpaceThingsDomainDevice', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.entity'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'name')
-    ..aOM<$100.SpaceThingsDomain>(3, _omitFieldNames ? '' : 'domain', subBuilder: $100.SpaceThingsDomain.create)
+    ..aOM<$97.SpaceThingsDomain>(3, _omitFieldNames ? '' : 'domain', subBuilder: $97.SpaceThingsDomain.create)
     ..aOM<$85.Timestamp>(4, _omitFieldNames ? '' : 'createdAt', subBuilder: $85.Timestamp.create)
     ..aOM<$85.Timestamp>(5, _omitFieldNames ? '' : 'lastUpdatedAt', subBuilder: $85.Timestamp.create)
     ..aOM<$85.Timestamp>(6, _omitFieldNames ? '' : 'lastAccessedAt', subBuilder: $85.Timestamp.create)
@@ -149,15 +149,15 @@ class SpaceThingsDomainDevice extends $pb.GeneratedMessage {
   void clearName() => clearField(2);
 
   @$pb.TagNumber(3)
-  $100.SpaceThingsDomain get domain => $_getN(2);
+  $97.SpaceThingsDomain get domain => $_getN(2);
   @$pb.TagNumber(3)
-  set domain($100.SpaceThingsDomain v) { setField(3, v); }
+  set domain($97.SpaceThingsDomain v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDomain() => $_has(2);
   @$pb.TagNumber(3)
   void clearDomain() => clearField(3);
   @$pb.TagNumber(3)
-  $100.SpaceThingsDomain ensureDomain() => $_ensure(2);
+  $97.SpaceThingsDomain ensureDomain() => $_ensure(2);
 
   @$pb.TagNumber(4)
   $85.Timestamp get createdAt => $_getN(3);

@@ -13,20 +13,20 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../entities/account_assistant.pb.dart' as $23;
-import '../../../../entities/space_knowledge.pbenum.dart' as $88;
-import '../../../../entities/space_knowledge_domain.pb.dart' as $76;
+import '../../../../entities/account_assistant.pb.dart' as $40;
+import '../../../../entities/space_knowledge.pbenum.dart' as $91;
+import '../../../../entities/space_knowledge_domain.pb.dart' as $38;
 import 'access_account_assistant.pb.dart' as $1;
 
 /// Message Definitions
 class ActOnAccountMessageRequest extends $pb.GeneratedMessage {
   factory ActOnAccountMessageRequest({
     $1.AccountAssistantServicesAccessAuthDetails? accessAuthDetails,
-    $23.AccountAssistantConnectedAccount? connectedAccount,
-    $88.SpaceKnowledgeAction? spaceKnowledgeAction,
+    $40.AccountAssistantConnectedAccount? connectedAccount,
+    $91.SpaceKnowledgeAction? spaceKnowledgeAction,
     $core.String? message,
     $core.bool? actOnParticularDomain,
-    $76.SpaceKnowledgeDomain? spaceKnowledgeDomain,
+    $38.SpaceKnowledgeDomain? spaceKnowledgeDomain,
   }) {
     final $result = create();
     if (accessAuthDetails != null) {
@@ -55,11 +55,11 @@ class ActOnAccountMessageRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ActOnAccountMessageRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.account.assistant'), createEmptyInstance: create)
     ..aOM<$1.AccountAssistantServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'accessAuthDetails', subBuilder: $1.AccountAssistantServicesAccessAuthDetails.create)
-    ..aOM<$23.AccountAssistantConnectedAccount>(2, _omitFieldNames ? '' : 'connectedAccount', subBuilder: $23.AccountAssistantConnectedAccount.create)
-    ..e<$88.SpaceKnowledgeAction>(3, _omitFieldNames ? '' : 'spaceKnowledgeAction', $pb.PbFieldType.OE, defaultOrMaker: $88.SpaceKnowledgeAction.ASK_QUESTION, valueOf: $88.SpaceKnowledgeAction.valueOf, enumValues: $88.SpaceKnowledgeAction.values)
+    ..aOM<$40.AccountAssistantConnectedAccount>(2, _omitFieldNames ? '' : 'connectedAccount', subBuilder: $40.AccountAssistantConnectedAccount.create)
+    ..e<$91.SpaceKnowledgeAction>(3, _omitFieldNames ? '' : 'spaceKnowledgeAction', $pb.PbFieldType.OE, defaultOrMaker: $91.SpaceKnowledgeAction.ASK_QUESTION, valueOf: $91.SpaceKnowledgeAction.valueOf, enumValues: $91.SpaceKnowledgeAction.values)
     ..aOS(4, _omitFieldNames ? '' : 'message')
     ..aOB(5, _omitFieldNames ? '' : 'actOnParticularDomain')
-    ..aOM<$76.SpaceKnowledgeDomain>(6, _omitFieldNames ? '' : 'spaceKnowledgeDomain', subBuilder: $76.SpaceKnowledgeDomain.create)
+    ..aOM<$38.SpaceKnowledgeDomain>(6, _omitFieldNames ? '' : 'spaceKnowledgeDomain', subBuilder: $38.SpaceKnowledgeDomain.create)
     ..hasRequiredFields = false
   ;
 
@@ -96,20 +96,20 @@ class ActOnAccountMessageRequest extends $pb.GeneratedMessage {
   $1.AccountAssistantServicesAccessAuthDetails ensureAccessAuthDetails() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $23.AccountAssistantConnectedAccount get connectedAccount => $_getN(1);
+  $40.AccountAssistantConnectedAccount get connectedAccount => $_getN(1);
   @$pb.TagNumber(2)
-  set connectedAccount($23.AccountAssistantConnectedAccount v) { setField(2, v); }
+  set connectedAccount($40.AccountAssistantConnectedAccount v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasConnectedAccount() => $_has(1);
   @$pb.TagNumber(2)
   void clearConnectedAccount() => clearField(2);
   @$pb.TagNumber(2)
-  $23.AccountAssistantConnectedAccount ensureConnectedAccount() => $_ensure(1);
+  $40.AccountAssistantConnectedAccount ensureConnectedAccount() => $_ensure(1);
 
   @$pb.TagNumber(3)
-  $88.SpaceKnowledgeAction get spaceKnowledgeAction => $_getN(2);
+  $91.SpaceKnowledgeAction get spaceKnowledgeAction => $_getN(2);
   @$pb.TagNumber(3)
-  set spaceKnowledgeAction($88.SpaceKnowledgeAction v) { setField(3, v); }
+  set spaceKnowledgeAction($91.SpaceKnowledgeAction v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSpaceKnowledgeAction() => $_has(2);
   @$pb.TagNumber(3)
@@ -134,15 +134,15 @@ class ActOnAccountMessageRequest extends $pb.GeneratedMessage {
   void clearActOnParticularDomain() => clearField(5);
 
   @$pb.TagNumber(6)
-  $76.SpaceKnowledgeDomain get spaceKnowledgeDomain => $_getN(5);
+  $38.SpaceKnowledgeDomain get spaceKnowledgeDomain => $_getN(5);
   @$pb.TagNumber(6)
-  set spaceKnowledgeDomain($76.SpaceKnowledgeDomain v) { setField(6, v); }
+  set spaceKnowledgeDomain($38.SpaceKnowledgeDomain v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasSpaceKnowledgeDomain() => $_has(5);
   @$pb.TagNumber(6)
   void clearSpaceKnowledgeDomain() => clearField(6);
   @$pb.TagNumber(6)
-  $76.SpaceKnowledgeDomain ensureSpaceKnowledgeDomain() => $_ensure(5);
+  $38.SpaceKnowledgeDomain ensureSpaceKnowledgeDomain() => $_ensure(5);
 }
 
 

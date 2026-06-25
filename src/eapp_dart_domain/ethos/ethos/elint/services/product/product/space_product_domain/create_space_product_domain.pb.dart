@@ -13,18 +13,18 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../collars/DC499999994.pb.dart' as $8;
-import '../space_product/access_space_product.pb.dart' as $4;
+import '../../../../collars/DC499999994.pb.dart' as $81;
+import '../space_product/access_space_product.pb.dart' as $12;
 
 export '../../../../../../google/protobuf/timestamp.pb.dart';
 
 class CreateDC499999994SPDRequest extends $pb.GeneratedMessage {
   factory CreateDC499999994SPDRequest({
-    $4.SpaceProductServicesAccessAuthDetails? auth,
+    $12.SpaceProductServicesAccessAuthDetails? auth,
     $core.String? name,
     $core.String? description,
     $core.bool? isIsolated,
-    $8.DC499999994? dc499999994,
+    $81.DC499999994? dc499999994,
   }) {
     final $result = create();
     if (auth != null) {
@@ -49,11 +49,11 @@ class CreateDC499999994SPDRequest extends $pb.GeneratedMessage {
   factory CreateDC499999994SPDRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateDC499999994SPDRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.product.domain'), createEmptyInstance: create)
-    ..aOM<$4.SpaceProductServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'auth', subBuilder: $4.SpaceProductServicesAccessAuthDetails.create)
+    ..aOM<$12.SpaceProductServicesAccessAuthDetails>(1, _omitFieldNames ? '' : 'auth', subBuilder: $12.SpaceProductServicesAccessAuthDetails.create)
     ..aOS(11, _omitFieldNames ? '' : 'name')
     ..aOS(12, _omitFieldNames ? '' : 'description')
     ..aOB(13, _omitFieldNames ? '' : 'isIsolated')
-    ..aOM<$8.DC499999994>(14, _omitFieldNames ? '' : 'dc499999994', subBuilder: $8.DC499999994.create)
+    ..aOM<$81.DC499999994>(14, _omitFieldNames ? '' : 'dc499999994', subBuilder: $81.DC499999994.create)
     ..hasRequiredFields = false
   ;
 
@@ -80,15 +80,15 @@ class CreateDC499999994SPDRequest extends $pb.GeneratedMessage {
 
   /// Auth Properties
   @$pb.TagNumber(1)
-  $4.SpaceProductServicesAccessAuthDetails get auth => $_getN(0);
+  $12.SpaceProductServicesAccessAuthDetails get auth => $_getN(0);
   @$pb.TagNumber(1)
-  set auth($4.SpaceProductServicesAccessAuthDetails v) { setField(1, v); }
+  set auth($12.SpaceProductServicesAccessAuthDetails v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAuth() => $_has(0);
   @$pb.TagNumber(1)
   void clearAuth() => clearField(1);
   @$pb.TagNumber(1)
-  $4.SpaceProductServicesAccessAuthDetails ensureAuth() => $_ensure(0);
+  $12.SpaceProductServicesAccessAuthDetails ensureAuth() => $_ensure(0);
 
   /// Create Properties
   @$pb.TagNumber(11)
@@ -119,15 +119,15 @@ class CreateDC499999994SPDRequest extends $pb.GeneratedMessage {
   void clearIsIsolated() => clearField(13);
 
   @$pb.TagNumber(14)
-  $8.DC499999994 get dc499999994 => $_getN(4);
+  $81.DC499999994 get dc499999994 => $_getN(4);
   @$pb.TagNumber(14)
-  set dc499999994($8.DC499999994 v) { setField(14, v); }
+  set dc499999994($81.DC499999994 v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasDc499999994() => $_has(4);
   @$pb.TagNumber(14)
   void clearDc499999994() => clearField(14);
   @$pb.TagNumber(14)
-  $8.DC499999994 ensureDc499999994() => $_ensure(4);
+  $81.DC499999994 ensureDc499999994() => $_ensure(4);
 }
 
 

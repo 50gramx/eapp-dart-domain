@@ -14,17 +14,17 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../google/protobuf/timestamp.pb.dart' as $85;
-import 'account.pb.dart' as $22;
+import 'account.pb.dart' as $39;
 import 'associate.pbenum.dart';
-import 'organisation.pb.dart' as $97;
+import 'organisation.pb.dart' as $101;
 
 export '../../../google/protobuf/timestamp.pb.dart';
 export 'associate.pbenum.dart';
 
 class Associate extends $pb.GeneratedMessage {
   factory Associate({
-    $22.Account? associatedAccount,
-    $97.Organisation? associatedOrganisation,
+    $39.Account? associatedAccount,
+    $101.Organisation? associatedOrganisation,
     $core.int? associateId,
     AssociateLevel? associateLevel,
     AssociateDepartment? associateDepartment,
@@ -64,8 +64,8 @@ class Associate extends $pb.GeneratedMessage {
   factory Associate.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Associate', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.entity'), createEmptyInstance: create)
-    ..aOM<$22.Account>(1, _omitFieldNames ? '' : 'associatedAccount', subBuilder: $22.Account.create)
-    ..aOM<$97.Organisation>(2, _omitFieldNames ? '' : 'associatedOrganisation', subBuilder: $97.Organisation.create)
+    ..aOM<$39.Account>(1, _omitFieldNames ? '' : 'associatedAccount', subBuilder: $39.Account.create)
+    ..aOM<$101.Organisation>(2, _omitFieldNames ? '' : 'associatedOrganisation', subBuilder: $101.Organisation.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'associateId', $pb.PbFieldType.O3)
     ..e<AssociateLevel>(4, _omitFieldNames ? '' : 'associateLevel', $pb.PbFieldType.OE, defaultOrMaker: AssociateLevel.LEVEL_0, valueOf: AssociateLevel.valueOf, enumValues: AssociateLevel.values)
     ..e<AssociateDepartment>(5, _omitFieldNames ? '' : 'associateDepartment', $pb.PbFieldType.OE, defaultOrMaker: AssociateDepartment.ACCOUNTING, valueOf: AssociateDepartment.valueOf, enumValues: AssociateDepartment.values)
@@ -97,26 +97,26 @@ class Associate extends $pb.GeneratedMessage {
   static Associate? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $22.Account get associatedAccount => $_getN(0);
+  $39.Account get associatedAccount => $_getN(0);
   @$pb.TagNumber(1)
-  set associatedAccount($22.Account v) { setField(1, v); }
+  set associatedAccount($39.Account v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAssociatedAccount() => $_has(0);
   @$pb.TagNumber(1)
   void clearAssociatedAccount() => clearField(1);
   @$pb.TagNumber(1)
-  $22.Account ensureAssociatedAccount() => $_ensure(0);
+  $39.Account ensureAssociatedAccount() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $97.Organisation get associatedOrganisation => $_getN(1);
+  $101.Organisation get associatedOrganisation => $_getN(1);
   @$pb.TagNumber(2)
-  set associatedOrganisation($97.Organisation v) { setField(2, v); }
+  set associatedOrganisation($101.Organisation v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAssociatedOrganisation() => $_has(1);
   @$pb.TagNumber(2)
   void clearAssociatedOrganisation() => clearField(2);
   @$pb.TagNumber(2)
-  $97.Organisation ensureAssociatedOrganisation() => $_ensure(1);
+  $101.Organisation ensureAssociatedOrganisation() => $_ensure(1);
 
   @$pb.TagNumber(3)
   $core.int get associateId => $_getIZ(2);

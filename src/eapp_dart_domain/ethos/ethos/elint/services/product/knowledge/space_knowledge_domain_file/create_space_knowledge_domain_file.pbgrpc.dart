@@ -15,16 +15,16 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'create_space_knowledge_domain_file.pb.dart' as $65;
+import 'create_space_knowledge_domain_file.pb.dart' as $29;
 
 export 'create_space_knowledge_domain_file.pb.dart';
 
 @$pb.GrpcServiceName('elint.services.product.knowledge.file.CreateSpaceKnowledgeDomainFileService')
 class CreateSpaceKnowledgeDomainFileServiceClient extends $grpc.Client {
-  static final _$uploadSpaceKnowledgeDomainFile = $grpc.ClientMethod<$65.UploadSpaceKnowledgeDomainFileRequest, $65.UploadSpaceKnowledgeDomainFileResponse>(
+  static final _$uploadSpaceKnowledgeDomainFile = $grpc.ClientMethod<$29.UploadSpaceKnowledgeDomainFileRequest, $29.UploadSpaceKnowledgeDomainFileResponse>(
       '/elint.services.product.knowledge.file.CreateSpaceKnowledgeDomainFileService/UploadSpaceKnowledgeDomainFile',
-      ($65.UploadSpaceKnowledgeDomainFileRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $65.UploadSpaceKnowledgeDomainFileResponse.fromBuffer(value));
+      ($29.UploadSpaceKnowledgeDomainFileRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $29.UploadSpaceKnowledgeDomainFileResponse.fromBuffer(value));
 
   CreateSpaceKnowledgeDomainFileServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -32,7 +32,7 @@ class CreateSpaceKnowledgeDomainFileServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseStream<$65.UploadSpaceKnowledgeDomainFileResponse> uploadSpaceKnowledgeDomainFile($async.Stream<$65.UploadSpaceKnowledgeDomainFileRequest> request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseStream<$29.UploadSpaceKnowledgeDomainFileResponse> uploadSpaceKnowledgeDomainFile($async.Stream<$29.UploadSpaceKnowledgeDomainFileRequest> request, {$grpc.CallOptions? options}) {
     return $createStreamingCall(_$uploadSpaceKnowledgeDomainFile, request, options: options);
   }
 }
@@ -42,14 +42,14 @@ abstract class CreateSpaceKnowledgeDomainFileServiceBase extends $grpc.Service {
   $core.String get $name => 'elint.services.product.knowledge.file.CreateSpaceKnowledgeDomainFileService';
 
   CreateSpaceKnowledgeDomainFileServiceBase() {
-    $addMethod($grpc.ServiceMethod<$65.UploadSpaceKnowledgeDomainFileRequest, $65.UploadSpaceKnowledgeDomainFileResponse>(
+    $addMethod($grpc.ServiceMethod<$29.UploadSpaceKnowledgeDomainFileRequest, $29.UploadSpaceKnowledgeDomainFileResponse>(
         'UploadSpaceKnowledgeDomainFile',
         uploadSpaceKnowledgeDomainFile,
         true,
         true,
-        ($core.List<$core.int> value) => $65.UploadSpaceKnowledgeDomainFileRequest.fromBuffer(value),
-        ($65.UploadSpaceKnowledgeDomainFileResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $29.UploadSpaceKnowledgeDomainFileRequest.fromBuffer(value),
+        ($29.UploadSpaceKnowledgeDomainFileResponse value) => value.writeToBuffer()));
   }
 
-  $async.Stream<$65.UploadSpaceKnowledgeDomainFileResponse> uploadSpaceKnowledgeDomainFile($grpc.ServiceCall call, $async.Stream<$65.UploadSpaceKnowledgeDomainFileRequest> request);
+  $async.Stream<$29.UploadSpaceKnowledgeDomainFileResponse> uploadSpaceKnowledgeDomainFile($grpc.ServiceCall call, $async.Stream<$29.UploadSpaceKnowledgeDomainFileRequest> request);
 }

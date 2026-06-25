@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../collars/DC499999997.pb.dart' as $95;
-import '../../../../entities/space_things_domain.pb.dart' as $100;
+import '../../../../collars/DC499999997.pb.dart' as $96;
+import '../../../../entities/space_things_domain.pb.dart' as $97;
 
 /// ------------------------------------
 /// Message Definitions
@@ -93,7 +93,7 @@ class UpdateThingsSpaceDomainRequest extends $pb.GeneratedMessage {
 
 class UpdateThingsSpaceDomainResponse extends $pb.GeneratedMessage {
   factory UpdateThingsSpaceDomainResponse({
-    $100.SpaceThingsDomain? domain,
+    $97.SpaceThingsDomain? domain,
   }) {
     final $result = create();
     if (domain != null) {
@@ -106,7 +106,7 @@ class UpdateThingsSpaceDomainResponse extends $pb.GeneratedMessage {
   factory UpdateThingsSpaceDomainResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateThingsSpaceDomainResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.space'), createEmptyInstance: create)
-    ..aOM<$100.SpaceThingsDomain>(1, _omitFieldNames ? '' : 'domain', subBuilder: $100.SpaceThingsDomain.create)
+    ..aOM<$97.SpaceThingsDomain>(1, _omitFieldNames ? '' : 'domain', subBuilder: $97.SpaceThingsDomain.create)
     ..hasRequiredFields = false
   ;
 
@@ -132,15 +132,15 @@ class UpdateThingsSpaceDomainResponse extends $pb.GeneratedMessage {
   static UpdateThingsSpaceDomainResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $100.SpaceThingsDomain get domain => $_getN(0);
+  $97.SpaceThingsDomain get domain => $_getN(0);
   @$pb.TagNumber(1)
-  set domain($100.SpaceThingsDomain v) { setField(1, v); }
+  set domain($97.SpaceThingsDomain v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDomain() => $_has(0);
   @$pb.TagNumber(1)
   void clearDomain() => clearField(1);
   @$pb.TagNumber(1)
-  $100.SpaceThingsDomain ensureDomain() => $_ensure(0);
+  $97.SpaceThingsDomain ensureDomain() => $_ensure(0);
 }
 
 class UpdateNodesCollarRequest extends $pb.GeneratedMessage {
@@ -223,7 +223,7 @@ class UpdateNodesCollarRequest extends $pb.GeneratedMessage {
 
 class UpdateNodesCollarResponse extends $pb.GeneratedMessage {
   factory UpdateNodesCollarResponse({
-    $95.DC499999997? collar,
+    $96.DC499999997? collar,
   }) {
     final $result = create();
     if (collar != null) {
@@ -236,7 +236,7 @@ class UpdateNodesCollarResponse extends $pb.GeneratedMessage {
   factory UpdateNodesCollarResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateNodesCollarResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.space'), createEmptyInstance: create)
-    ..aOM<$95.DC499999997>(1, _omitFieldNames ? '' : 'collar', subBuilder: $95.DC499999997.create)
+    ..aOM<$96.DC499999997>(1, _omitFieldNames ? '' : 'collar', subBuilder: $96.DC499999997.create)
     ..hasRequiredFields = false
   ;
 
@@ -262,15 +262,15 @@ class UpdateNodesCollarResponse extends $pb.GeneratedMessage {
   static UpdateNodesCollarResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $95.DC499999997 get collar => $_getN(0);
+  $96.DC499999997 get collar => $_getN(0);
   @$pb.TagNumber(1)
-  set collar($95.DC499999997 v) { setField(1, v); }
+  set collar($96.DC499999997 v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCollar() => $_has(0);
   @$pb.TagNumber(1)
   void clearCollar() => clearField(1);
   @$pb.TagNumber(1)
-  $95.DC499999997 ensureCollar() => $_ensure(0);
+  $96.DC499999997 ensureCollar() => $_ensure(0);
 }
 
 

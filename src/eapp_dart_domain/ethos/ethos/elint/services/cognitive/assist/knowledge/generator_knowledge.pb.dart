@@ -13,11 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../entities/space_knowledge_domain_file_page.pb.dart' as $69;
+import '../../../../entities/space_knowledge_domain_file_page.pb.dart' as $22;
 
 class GeneratePageQuestionRequest extends $pb.GeneratedMessage {
   factory GeneratePageQuestionRequest({
-    $69.SpaceKnowledgeDomainFilePage? page,
+    $22.SpaceKnowledgeDomainFilePage? page,
   }) {
     final $result = create();
     if (page != null) {
@@ -30,7 +30,7 @@ class GeneratePageQuestionRequest extends $pb.GeneratedMessage {
   factory GeneratePageQuestionRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GeneratePageQuestionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.cognitive.assist.knowledge.generator'), createEmptyInstance: create)
-    ..aOM<$69.SpaceKnowledgeDomainFilePage>(1, _omitFieldNames ? '' : 'page', subBuilder: $69.SpaceKnowledgeDomainFilePage.create)
+    ..aOM<$22.SpaceKnowledgeDomainFilePage>(1, _omitFieldNames ? '' : 'page', subBuilder: $22.SpaceKnowledgeDomainFilePage.create)
     ..hasRequiredFields = false
   ;
 
@@ -56,15 +56,15 @@ class GeneratePageQuestionRequest extends $pb.GeneratedMessage {
   static GeneratePageQuestionRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $69.SpaceKnowledgeDomainFilePage get page => $_getN(0);
+  $22.SpaceKnowledgeDomainFilePage get page => $_getN(0);
   @$pb.TagNumber(1)
-  set page($69.SpaceKnowledgeDomainFilePage v) { setField(1, v); }
+  set page($22.SpaceKnowledgeDomainFilePage v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPage() => $_has(0);
   @$pb.TagNumber(1)
   void clearPage() => clearField(1);
   @$pb.TagNumber(1)
-  $69.SpaceKnowledgeDomainFilePage ensurePage() => $_ensure(0);
+  $22.SpaceKnowledgeDomainFilePage ensurePage() => $_ensure(0);
 }
 
 class GeneratePageQuestionResponse extends $pb.GeneratedMessage {

@@ -15,17 +15,17 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../entities/generic.pb.dart' as $7;
-import 'delete_space_knowledge_domain_file.pb.dart' as $61;
+import '../../../../entities/generic.pb.dart' as $9;
+import 'delete_space_knowledge_domain_file.pb.dart' as $28;
 
 export 'delete_space_knowledge_domain_file.pb.dart';
 
 @$pb.GrpcServiceName('elint.services.product.knowledge.file.DeleteSpaceKnowledgeDomainFileService')
 class DeleteSpaceKnowledgeDomainFileServiceClient extends $grpc.Client {
-  static final _$deleteSpaceKnowledgeDomainFile = $grpc.ClientMethod<$61.DeleteSpaceKnowledgeDomainFileRequest, $7.ResponseMeta>(
+  static final _$deleteSpaceKnowledgeDomainFile = $grpc.ClientMethod<$28.DeleteSpaceKnowledgeDomainFileRequest, $9.ResponseMeta>(
       '/elint.services.product.knowledge.file.DeleteSpaceKnowledgeDomainFileService/DeleteSpaceKnowledgeDomainFile',
-      ($61.DeleteSpaceKnowledgeDomainFileRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $7.ResponseMeta.fromBuffer(value));
+      ($28.DeleteSpaceKnowledgeDomainFileRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $9.ResponseMeta.fromBuffer(value));
 
   DeleteSpaceKnowledgeDomainFileServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -33,7 +33,7 @@ class DeleteSpaceKnowledgeDomainFileServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$7.ResponseMeta> deleteSpaceKnowledgeDomainFile($61.DeleteSpaceKnowledgeDomainFileRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$9.ResponseMeta> deleteSpaceKnowledgeDomainFile($28.DeleteSpaceKnowledgeDomainFileRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteSpaceKnowledgeDomainFile, request, options: options);
   }
 }
@@ -43,18 +43,18 @@ abstract class DeleteSpaceKnowledgeDomainFileServiceBase extends $grpc.Service {
   $core.String get $name => 'elint.services.product.knowledge.file.DeleteSpaceKnowledgeDomainFileService';
 
   DeleteSpaceKnowledgeDomainFileServiceBase() {
-    $addMethod($grpc.ServiceMethod<$61.DeleteSpaceKnowledgeDomainFileRequest, $7.ResponseMeta>(
+    $addMethod($grpc.ServiceMethod<$28.DeleteSpaceKnowledgeDomainFileRequest, $9.ResponseMeta>(
         'DeleteSpaceKnowledgeDomainFile',
         deleteSpaceKnowledgeDomainFile_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $61.DeleteSpaceKnowledgeDomainFileRequest.fromBuffer(value),
-        ($7.ResponseMeta value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $28.DeleteSpaceKnowledgeDomainFileRequest.fromBuffer(value),
+        ($9.ResponseMeta value) => value.writeToBuffer()));
   }
 
-  $async.Future<$7.ResponseMeta> deleteSpaceKnowledgeDomainFile_Pre($grpc.ServiceCall call, $async.Future<$61.DeleteSpaceKnowledgeDomainFileRequest> request) async {
+  $async.Future<$9.ResponseMeta> deleteSpaceKnowledgeDomainFile_Pre($grpc.ServiceCall call, $async.Future<$28.DeleteSpaceKnowledgeDomainFileRequest> request) async {
     return deleteSpaceKnowledgeDomainFile(call, await request);
   }
 
-  $async.Future<$7.ResponseMeta> deleteSpaceKnowledgeDomainFile($grpc.ServiceCall call, $61.DeleteSpaceKnowledgeDomainFileRequest request);
+  $async.Future<$9.ResponseMeta> deleteSpaceKnowledgeDomainFile($grpc.ServiceCall call, $28.DeleteSpaceKnowledgeDomainFileRequest request);
 }

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../entities/generic.pb.dart' as $7;
+import '../../../../entities/generic.pb.dart' as $9;
 import 'access_account.pb.dart' as $0;
 
 /// Message Definitions
@@ -79,7 +79,7 @@ class UpdateAccountProfilePictureRequest extends $pb.GeneratedMessage {
 
 class UpdateAccountProfilePictureResponse extends $pb.GeneratedMessage {
   factory UpdateAccountProfilePictureResponse({
-    $7.ResponseMeta? responseMeta,
+    $9.ResponseMeta? responseMeta,
   }) {
     final $result = create();
     if (responseMeta != null) {
@@ -92,7 +92,7 @@ class UpdateAccountProfilePictureResponse extends $pb.GeneratedMessage {
   factory UpdateAccountProfilePictureResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAccountProfilePictureResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'elint.services.product.identity.account'), createEmptyInstance: create)
-    ..aOM<$7.ResponseMeta>(1, _omitFieldNames ? '' : 'responseMeta', subBuilder: $7.ResponseMeta.create)
+    ..aOM<$9.ResponseMeta>(1, _omitFieldNames ? '' : 'responseMeta', subBuilder: $9.ResponseMeta.create)
     ..hasRequiredFields = false
   ;
 
@@ -118,15 +118,15 @@ class UpdateAccountProfilePictureResponse extends $pb.GeneratedMessage {
   static UpdateAccountProfilePictureResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $7.ResponseMeta get responseMeta => $_getN(0);
+  $9.ResponseMeta get responseMeta => $_getN(0);
   @$pb.TagNumber(1)
-  set responseMeta($7.ResponseMeta v) { setField(1, v); }
+  set responseMeta($9.ResponseMeta v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasResponseMeta() => $_has(0);
   @$pb.TagNumber(1)
   void clearResponseMeta() => clearField(1);
   @$pb.TagNumber(1)
-  $7.ResponseMeta ensureResponseMeta() => $_ensure(0);
+  $9.ResponseMeta ensureResponseMeta() => $_ensure(0);
 }
 
 

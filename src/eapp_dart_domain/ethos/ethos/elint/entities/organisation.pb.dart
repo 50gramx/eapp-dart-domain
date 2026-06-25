@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../google/protobuf/timestamp.pb.dart' as $85;
-import 'account.pb.dart' as $22;
-import 'community.pb.dart' as $96;
+import 'account.pb.dart' as $39;
+import 'community.pb.dart' as $100;
 import 'galaxy.pb.dart' as $86;
 
 export '../../../google/protobuf/timestamp.pb.dart';
@@ -26,8 +26,8 @@ class Organisation extends $pb.GeneratedMessage {
     $core.String? id,
     OrganisationName? name,
     $86.Galaxy? galaxy,
-    $22.Account? admin,
-    $96.Community? associatedCommunity,
+    $39.Account? admin,
+    $100.Community? associatedCommunity,
     OrganisationPostalAddress? postalAddress,
     $85.Timestamp? incorporatedAt,
     $core.bool? isActive,
@@ -79,8 +79,8 @@ class Organisation extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'id')
     ..aOM<OrganisationName>(3, _omitFieldNames ? '' : 'name', subBuilder: OrganisationName.create)
     ..aOM<$86.Galaxy>(4, _omitFieldNames ? '' : 'galaxy', subBuilder: $86.Galaxy.create)
-    ..aOM<$22.Account>(5, _omitFieldNames ? '' : 'admin', subBuilder: $22.Account.create)
-    ..aOM<$96.Community>(6, _omitFieldNames ? '' : 'associatedCommunity', subBuilder: $96.Community.create)
+    ..aOM<$39.Account>(5, _omitFieldNames ? '' : 'admin', subBuilder: $39.Account.create)
+    ..aOM<$100.Community>(6, _omitFieldNames ? '' : 'associatedCommunity', subBuilder: $100.Community.create)
     ..aOM<OrganisationPostalAddress>(7, _omitFieldNames ? '' : 'postalAddress', subBuilder: OrganisationPostalAddress.create)
     ..aOM<$85.Timestamp>(8, _omitFieldNames ? '' : 'incorporatedAt', subBuilder: $85.Timestamp.create)
     ..aOB(9, _omitFieldNames ? '' : 'isActive')
@@ -153,26 +153,26 @@ class Organisation extends $pb.GeneratedMessage {
   /// id of the account who creates the organisation
   /// is also the first associate of the organisation
   @$pb.TagNumber(5)
-  $22.Account get admin => $_getN(4);
+  $39.Account get admin => $_getN(4);
   @$pb.TagNumber(5)
-  set admin($22.Account v) { setField(5, v); }
+  set admin($39.Account v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasAdmin() => $_has(4);
   @$pb.TagNumber(5)
   void clearAdmin() => clearField(5);
   @$pb.TagNumber(5)
-  $22.Account ensureAdmin() => $_ensure(4);
+  $39.Account ensureAdmin() => $_ensure(4);
 
   @$pb.TagNumber(6)
-  $96.Community get associatedCommunity => $_getN(5);
+  $100.Community get associatedCommunity => $_getN(5);
   @$pb.TagNumber(6)
-  set associatedCommunity($96.Community v) { setField(6, v); }
+  set associatedCommunity($100.Community v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasAssociatedCommunity() => $_has(5);
   @$pb.TagNumber(6)
   void clearAssociatedCommunity() => clearField(6);
   @$pb.TagNumber(6)
-  $96.Community ensureAssociatedCommunity() => $_ensure(5);
+  $100.Community ensureAssociatedCommunity() => $_ensure(5);
 
   @$pb.TagNumber(7)
   OrganisationPostalAddress get postalAddress => $_getN(6);

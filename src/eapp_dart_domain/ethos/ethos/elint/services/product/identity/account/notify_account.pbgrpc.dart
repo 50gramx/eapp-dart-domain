@@ -15,29 +15,29 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../entities/generic.pb.dart' as $7;
-import 'notify_account.pb.dart' as $45;
+import '../../../../entities/generic.pb.dart' as $9;
+import 'notify_account.pb.dart' as $56;
 
 export 'notify_account.pb.dart';
 
 @$pb.GrpcServiceName('elint.services.product.identity.account.NotifyAccountService')
 class NotifyAccountServiceClient extends $grpc.Client {
-  static final _$newReceivedMessageFromAccountAssistant = $grpc.ClientMethod<$45.NewReceivedMessageFromAccountAssistantRequest, $7.ResponseMeta>(
+  static final _$newReceivedMessageFromAccountAssistant = $grpc.ClientMethod<$56.NewReceivedMessageFromAccountAssistantRequest, $9.ResponseMeta>(
       '/elint.services.product.identity.account.NotifyAccountService/NewReceivedMessageFromAccountAssistant',
-      ($45.NewReceivedMessageFromAccountAssistantRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $7.ResponseMeta.fromBuffer(value));
-  static final _$newReceivedMessageFromAccount = $grpc.ClientMethod<$45.NewReceivedMessageFromAccountRequest, $7.ResponseMeta>(
+      ($56.NewReceivedMessageFromAccountAssistantRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $9.ResponseMeta.fromBuffer(value));
+  static final _$newReceivedMessageFromAccount = $grpc.ClientMethod<$56.NewReceivedMessageFromAccountRequest, $9.ResponseMeta>(
       '/elint.services.product.identity.account.NotifyAccountService/NewReceivedMessageFromAccount',
-      ($45.NewReceivedMessageFromAccountRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $7.ResponseMeta.fromBuffer(value));
-  static final _$accountConnectedAccountNotification = $grpc.ClientMethod<$45.AccountConnectedAccountNotificationRequest, $7.ResponseMeta>(
+      ($56.NewReceivedMessageFromAccountRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $9.ResponseMeta.fromBuffer(value));
+  static final _$accountConnectedAccountNotification = $grpc.ClientMethod<$56.AccountConnectedAccountNotificationRequest, $9.ResponseMeta>(
       '/elint.services.product.identity.account.NotifyAccountService/AccountConnectedAccountNotification',
-      ($45.AccountConnectedAccountNotificationRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $7.ResponseMeta.fromBuffer(value));
-  static final _$updateAccountDeviceDetails = $grpc.ClientMethod<$45.UpdateAccountDeviceDetailsRequest, $7.ResponseMeta>(
+      ($56.AccountConnectedAccountNotificationRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $9.ResponseMeta.fromBuffer(value));
+  static final _$updateAccountDeviceDetails = $grpc.ClientMethod<$56.UpdateAccountDeviceDetailsRequest, $9.ResponseMeta>(
       '/elint.services.product.identity.account.NotifyAccountService/UpdateAccountDeviceDetails',
-      ($45.UpdateAccountDeviceDetailsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $7.ResponseMeta.fromBuffer(value));
+      ($56.UpdateAccountDeviceDetailsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $9.ResponseMeta.fromBuffer(value));
 
   NotifyAccountServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -45,19 +45,19 @@ class NotifyAccountServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$7.ResponseMeta> newReceivedMessageFromAccountAssistant($45.NewReceivedMessageFromAccountAssistantRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$9.ResponseMeta> newReceivedMessageFromAccountAssistant($56.NewReceivedMessageFromAccountAssistantRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$newReceivedMessageFromAccountAssistant, request, options: options);
   }
 
-  $grpc.ResponseFuture<$7.ResponseMeta> newReceivedMessageFromAccount($45.NewReceivedMessageFromAccountRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$9.ResponseMeta> newReceivedMessageFromAccount($56.NewReceivedMessageFromAccountRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$newReceivedMessageFromAccount, request, options: options);
   }
 
-  $grpc.ResponseFuture<$7.ResponseMeta> accountConnectedAccountNotification($45.AccountConnectedAccountNotificationRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$9.ResponseMeta> accountConnectedAccountNotification($56.AccountConnectedAccountNotificationRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$accountConnectedAccountNotification, request, options: options);
   }
 
-  $grpc.ResponseFuture<$7.ResponseMeta> updateAccountDeviceDetails($45.UpdateAccountDeviceDetailsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$9.ResponseMeta> updateAccountDeviceDetails($56.UpdateAccountDeviceDetailsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateAccountDeviceDetails, request, options: options);
   }
 }
@@ -67,54 +67,54 @@ abstract class NotifyAccountServiceBase extends $grpc.Service {
   $core.String get $name => 'elint.services.product.identity.account.NotifyAccountService';
 
   NotifyAccountServiceBase() {
-    $addMethod($grpc.ServiceMethod<$45.NewReceivedMessageFromAccountAssistantRequest, $7.ResponseMeta>(
+    $addMethod($grpc.ServiceMethod<$56.NewReceivedMessageFromAccountAssistantRequest, $9.ResponseMeta>(
         'NewReceivedMessageFromAccountAssistant',
         newReceivedMessageFromAccountAssistant_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $45.NewReceivedMessageFromAccountAssistantRequest.fromBuffer(value),
-        ($7.ResponseMeta value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$45.NewReceivedMessageFromAccountRequest, $7.ResponseMeta>(
+        ($core.List<$core.int> value) => $56.NewReceivedMessageFromAccountAssistantRequest.fromBuffer(value),
+        ($9.ResponseMeta value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$56.NewReceivedMessageFromAccountRequest, $9.ResponseMeta>(
         'NewReceivedMessageFromAccount',
         newReceivedMessageFromAccount_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $45.NewReceivedMessageFromAccountRequest.fromBuffer(value),
-        ($7.ResponseMeta value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$45.AccountConnectedAccountNotificationRequest, $7.ResponseMeta>(
+        ($core.List<$core.int> value) => $56.NewReceivedMessageFromAccountRequest.fromBuffer(value),
+        ($9.ResponseMeta value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$56.AccountConnectedAccountNotificationRequest, $9.ResponseMeta>(
         'AccountConnectedAccountNotification',
         accountConnectedAccountNotification_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $45.AccountConnectedAccountNotificationRequest.fromBuffer(value),
-        ($7.ResponseMeta value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$45.UpdateAccountDeviceDetailsRequest, $7.ResponseMeta>(
+        ($core.List<$core.int> value) => $56.AccountConnectedAccountNotificationRequest.fromBuffer(value),
+        ($9.ResponseMeta value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$56.UpdateAccountDeviceDetailsRequest, $9.ResponseMeta>(
         'UpdateAccountDeviceDetails',
         updateAccountDeviceDetails_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $45.UpdateAccountDeviceDetailsRequest.fromBuffer(value),
-        ($7.ResponseMeta value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $56.UpdateAccountDeviceDetailsRequest.fromBuffer(value),
+        ($9.ResponseMeta value) => value.writeToBuffer()));
   }
 
-  $async.Future<$7.ResponseMeta> newReceivedMessageFromAccountAssistant_Pre($grpc.ServiceCall call, $async.Future<$45.NewReceivedMessageFromAccountAssistantRequest> request) async {
+  $async.Future<$9.ResponseMeta> newReceivedMessageFromAccountAssistant_Pre($grpc.ServiceCall call, $async.Future<$56.NewReceivedMessageFromAccountAssistantRequest> request) async {
     return newReceivedMessageFromAccountAssistant(call, await request);
   }
 
-  $async.Future<$7.ResponseMeta> newReceivedMessageFromAccount_Pre($grpc.ServiceCall call, $async.Future<$45.NewReceivedMessageFromAccountRequest> request) async {
+  $async.Future<$9.ResponseMeta> newReceivedMessageFromAccount_Pre($grpc.ServiceCall call, $async.Future<$56.NewReceivedMessageFromAccountRequest> request) async {
     return newReceivedMessageFromAccount(call, await request);
   }
 
-  $async.Future<$7.ResponseMeta> accountConnectedAccountNotification_Pre($grpc.ServiceCall call, $async.Future<$45.AccountConnectedAccountNotificationRequest> request) async {
+  $async.Future<$9.ResponseMeta> accountConnectedAccountNotification_Pre($grpc.ServiceCall call, $async.Future<$56.AccountConnectedAccountNotificationRequest> request) async {
     return accountConnectedAccountNotification(call, await request);
   }
 
-  $async.Future<$7.ResponseMeta> updateAccountDeviceDetails_Pre($grpc.ServiceCall call, $async.Future<$45.UpdateAccountDeviceDetailsRequest> request) async {
+  $async.Future<$9.ResponseMeta> updateAccountDeviceDetails_Pre($grpc.ServiceCall call, $async.Future<$56.UpdateAccountDeviceDetailsRequest> request) async {
     return updateAccountDeviceDetails(call, await request);
   }
 
-  $async.Future<$7.ResponseMeta> newReceivedMessageFromAccountAssistant($grpc.ServiceCall call, $45.NewReceivedMessageFromAccountAssistantRequest request);
-  $async.Future<$7.ResponseMeta> newReceivedMessageFromAccount($grpc.ServiceCall call, $45.NewReceivedMessageFromAccountRequest request);
-  $async.Future<$7.ResponseMeta> accountConnectedAccountNotification($grpc.ServiceCall call, $45.AccountConnectedAccountNotificationRequest request);
-  $async.Future<$7.ResponseMeta> updateAccountDeviceDetails($grpc.ServiceCall call, $45.UpdateAccountDeviceDetailsRequest request);
+  $async.Future<$9.ResponseMeta> newReceivedMessageFromAccountAssistant($grpc.ServiceCall call, $56.NewReceivedMessageFromAccountAssistantRequest request);
+  $async.Future<$9.ResponseMeta> newReceivedMessageFromAccount($grpc.ServiceCall call, $56.NewReceivedMessageFromAccountRequest request);
+  $async.Future<$9.ResponseMeta> accountConnectedAccountNotification($grpc.ServiceCall call, $56.AccountConnectedAccountNotificationRequest request);
+  $async.Future<$9.ResponseMeta> updateAccountDeviceDetails($grpc.ServiceCall call, $56.UpdateAccountDeviceDetailsRequest request);
 }

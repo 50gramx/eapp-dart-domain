@@ -15,21 +15,21 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../entities/generic.pb.dart' as $7;
-import 'connect_account_assistant.pb.dart' as $21;
+import '../../../../entities/generic.pb.dart' as $9;
+import 'connect_account_assistant.pb.dart' as $45;
 
 export 'connect_account_assistant.pb.dart';
 
 @$pb.GrpcServiceName('elint.services.product.identity.account.assistant.ConnectAccountAssistantService')
 class ConnectAccountAssistantServiceClient extends $grpc.Client {
-  static final _$isAccountConnected = $grpc.ClientMethod<$21.IsAccountConnectedRequest, $7.ResponseMeta>(
+  static final _$isAccountConnected = $grpc.ClientMethod<$45.IsAccountConnectedRequest, $9.ResponseMeta>(
       '/elint.services.product.identity.account.assistant.ConnectAccountAssistantService/IsAccountConnected',
-      ($21.IsAccountConnectedRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $7.ResponseMeta.fromBuffer(value));
-  static final _$connectAccount = $grpc.ClientMethod<$21.ConnectAccountRequest, $21.ConnectAccountResponse>(
+      ($45.IsAccountConnectedRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $9.ResponseMeta.fromBuffer(value));
+  static final _$connectAccount = $grpc.ClientMethod<$45.ConnectAccountRequest, $45.ConnectAccountResponse>(
       '/elint.services.product.identity.account.assistant.ConnectAccountAssistantService/ConnectAccount',
-      ($21.ConnectAccountRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $21.ConnectAccountResponse.fromBuffer(value));
+      ($45.ConnectAccountRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $45.ConnectAccountResponse.fromBuffer(value));
 
   ConnectAccountAssistantServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -37,11 +37,11 @@ class ConnectAccountAssistantServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$7.ResponseMeta> isAccountConnected($21.IsAccountConnectedRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$9.ResponseMeta> isAccountConnected($45.IsAccountConnectedRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$isAccountConnected, request, options: options);
   }
 
-  $grpc.ResponseFuture<$21.ConnectAccountResponse> connectAccount($21.ConnectAccountRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$45.ConnectAccountResponse> connectAccount($45.ConnectAccountRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$connectAccount, request, options: options);
   }
 }
@@ -51,30 +51,30 @@ abstract class ConnectAccountAssistantServiceBase extends $grpc.Service {
   $core.String get $name => 'elint.services.product.identity.account.assistant.ConnectAccountAssistantService';
 
   ConnectAccountAssistantServiceBase() {
-    $addMethod($grpc.ServiceMethod<$21.IsAccountConnectedRequest, $7.ResponseMeta>(
+    $addMethod($grpc.ServiceMethod<$45.IsAccountConnectedRequest, $9.ResponseMeta>(
         'IsAccountConnected',
         isAccountConnected_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $21.IsAccountConnectedRequest.fromBuffer(value),
-        ($7.ResponseMeta value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$21.ConnectAccountRequest, $21.ConnectAccountResponse>(
+        ($core.List<$core.int> value) => $45.IsAccountConnectedRequest.fromBuffer(value),
+        ($9.ResponseMeta value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$45.ConnectAccountRequest, $45.ConnectAccountResponse>(
         'ConnectAccount',
         connectAccount_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $21.ConnectAccountRequest.fromBuffer(value),
-        ($21.ConnectAccountResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $45.ConnectAccountRequest.fromBuffer(value),
+        ($45.ConnectAccountResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$7.ResponseMeta> isAccountConnected_Pre($grpc.ServiceCall call, $async.Future<$21.IsAccountConnectedRequest> request) async {
+  $async.Future<$9.ResponseMeta> isAccountConnected_Pre($grpc.ServiceCall call, $async.Future<$45.IsAccountConnectedRequest> request) async {
     return isAccountConnected(call, await request);
   }
 
-  $async.Future<$21.ConnectAccountResponse> connectAccount_Pre($grpc.ServiceCall call, $async.Future<$21.ConnectAccountRequest> request) async {
+  $async.Future<$45.ConnectAccountResponse> connectAccount_Pre($grpc.ServiceCall call, $async.Future<$45.ConnectAccountRequest> request) async {
     return connectAccount(call, await request);
   }
 
-  $async.Future<$7.ResponseMeta> isAccountConnected($grpc.ServiceCall call, $21.IsAccountConnectedRequest request);
-  $async.Future<$21.ConnectAccountResponse> connectAccount($grpc.ServiceCall call, $21.ConnectAccountRequest request);
+  $async.Future<$9.ResponseMeta> isAccountConnected($grpc.ServiceCall call, $45.IsAccountConnectedRequest request);
+  $async.Future<$45.ConnectAccountResponse> connectAccount($grpc.ServiceCall call, $45.ConnectAccountRequest request);
 }
