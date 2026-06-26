@@ -159,3 +159,18 @@ const EAMV8003$json = {
 final $typed_data.Uint8List eAMV8003Descriptor = $convert.base64Decode(
     'CghFQU1WODAwMxIcCgllYW12dDgwMDUYASABKAlSCWVhbXZ0ODAwNRIcCgllYW12dDgwMzIYAi'
     'ABKAFSCWVhbXZ0ODAzMg==');
+
+@$core.Deprecated('Use eAMV8004Descriptor instead')
+const EAMV8004$json = {
+  '1': 'EAMV8004',
+  '2': [
+    {'1': 'eamvt8033', '3': 1, '4': 1, '5': 9, '10': 'eamvt8033'},
+    {'1': 'eamvt8034', '3': 2, '4': 1, '5': 8, '10': 'eamvt8034'},
+    {'1': 'eamvt8035', '3': 3, '4': 1, '5': 5, '10': 'eamvt8035'},
+  ],
+};
+
+/// Descriptor for `EAMV8004`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List eAMV8004Descriptor = $convert.base64Decode(
+    'CghFQU1WODAwNBIcCgllYW12dDgwMzMYASABKAlSCWVhbXZ0ODAzMxIcCgllYW12dDgwMzQYAi'
+    'ABKAhSCWVhbXZ0ODAzNBIcCgllYW12dDgwMzUYAyABKAVSCWVhbXZ0ODAzNQ==');

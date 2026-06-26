@@ -540,6 +540,85 @@ class EAMV8003 extends $pb.GeneratedMessage {
   void clearEamvt8032() => $_clearField(2);
 }
 
+class EAMV8004 extends $pb.GeneratedMessage {
+  factory EAMV8004({
+    $core.String? eamvt8033,
+    $core.bool? eamvt8034,
+    $core.int? eamvt8035,
+  }) {
+    final result = create();
+    if (eamvt8033 != null) result.eamvt8033 = eamvt8033;
+    if (eamvt8034 != null) result.eamvt8034 = eamvt8034;
+    if (eamvt8035 != null) result.eamvt8035 = eamvt8035;
+    return result;
+  }
+
+  EAMV8004._();
+
+  factory EAMV8004.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory EAMV8004.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EAMV8004',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'community.apps.gramx.fifty.zero.ethos.mesh_demo'),
+      createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'eamvt8033')
+    ..aOB(2, _omitFieldNames ? '' : 'eamvt8034')
+    ..aI(3, _omitFieldNames ? '' : 'eamvt8035')
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  EAMV8004 clone() => deepCopy();
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  EAMV8004 copyWith(void Function(EAMV8004) updates) =>
+      super.copyWith((message) => updates(message as EAMV8004)) as EAMV8004;
+
+  @$core.override
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static EAMV8004 create() => EAMV8004._();
+  @$core.override
+  EAMV8004 createEmptyInstance() => create();
+  @$core.pragma('dart2js:noInline')
+  static EAMV8004 getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EAMV8004>(create);
+  static EAMV8004? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $core.String get eamvt8033 => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set eamvt8033($core.String value) => $_setString(0, value);
+  @$pb.TagNumber(1)
+  $core.bool hasEamvt8033() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearEamvt8033() => $_clearField(1);
+
+  @$pb.TagNumber(2)
+  $core.bool get eamvt8034 => $_getBF(1);
+  @$pb.TagNumber(2)
+  set eamvt8034($core.bool value) => $_setBool(1, value);
+  @$pb.TagNumber(2)
+  $core.bool hasEamvt8034() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearEamvt8034() => $_clearField(2);
+
+  @$pb.TagNumber(3)
+  $core.int get eamvt8035 => $_getIZ(2);
+  @$pb.TagNumber(3)
+  set eamvt8035($core.int value) => $_setSignedInt32(2, value);
+  @$pb.TagNumber(3)
+  $core.bool hasEamvt8035() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearEamvt8035() => $_clearField(3);
+}
+
 const $core.bool _omitFieldNames =
     $core.bool.fromEnvironment('protobuf.omit_field_names');
 const $core.bool _omitMessageNames =
