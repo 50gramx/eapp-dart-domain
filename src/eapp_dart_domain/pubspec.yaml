@@ -5,13 +5,13 @@ version: 2026.06.28257722705
 publish_to: https://dart.pkg.jetbrains.space/50gramx/p/main/dart-delivery/
 
 environment:
-  sdk: ^3.1.2
+  sdk: ">=3.12.2 <4.0.0"
 
 # Add regular dependencies here.
 dependencies:
   # path: ^1.8.0
-  grpc: ^3.0.0
-  protobuf: ^3.0.0
+  grpc: ^5.1.0
+  protobuf: ^6.0.0
 
 dev_dependencies:
   lints: ^2.1.0
