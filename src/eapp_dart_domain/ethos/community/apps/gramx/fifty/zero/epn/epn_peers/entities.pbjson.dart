@@ -1,13 +1,15 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: community/apps/gramx/fifty/zero/epn/epn_peers/entities.proto
-//
-// @dart = 2.12
+// Generated from community/apps/gramx/fifty/zero/epn/epn_peers/entities.proto.
+
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names, prefer_relative_imports
+// ignore_for_file: unused_import
 
 import 'dart:convert' as $convert;
 import 'dart:core' as $core;
@@ -22,8 +24,8 @@ const EAMV7100$json = {
 };
 
 /// Descriptor for `EAMV7100`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List eAMV7100Descriptor = $convert.base64Decode(
-    'CghFQU1WNzEwMBIcCgllYW12dDcxMDAYASABKAlSCWVhbXZ0NzEwMA==');
+final $typed_data.Uint8List eAMV7100Descriptor = $convert
+    .base64Decode('CghFQU1WNzEwMBIcCgllYW12dDcxMDAYASABKAlSCWVhbXZ0NzEwMA==');
 
 @$core.Deprecated('Use eAMV7101Descriptor instead')
 const EAMV7101$json = {
@@ -47,7 +49,14 @@ final $typed_data.Uint8List eAMV7101Descriptor = $convert.base64Decode(
 const EAMV7103$json = {
   '1': 'EAMV7103',
   '2': [
-    {'1': 'eamvt7111', '3': 1, '4': 3, '5': 11, '6': '.community.apps.gramx.fifty.zero.epn.epn_peers.EAMV7102', '10': 'eamvt7111'},
+    {
+      '1': 'eamvt7111',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.community.apps.gramx.fifty.zero.epn.epn_peers.EAMV7102',
+      '10': 'eamvt7111'
+    },
   ],
 };
 
@@ -64,7 +73,14 @@ const EAMV7102$json = {
     {'1': 'eamvt7107', '3': 2, '4': 1, '5': 9, '10': 'eamvt7107'},
     {'1': 'eamvt7108', '3': 3, '4': 3, '5': 9, '10': 'eamvt7108'},
     {'1': 'eamvt7109', '3': 4, '4': 3, '5': 9, '10': 'eamvt7109'},
-    {'1': 'eamvt7110', '3': 5, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'eamvt7110'},
+    {
+      '1': 'eamvt7110',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'eamvt7110'
+    },
   ],
 };
 
@@ -84,8 +100,8 @@ const EAMV7104$json = {
 };
 
 /// Descriptor for `EAMV7104`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List eAMV7104Descriptor = $convert.base64Decode(
-    'CghFQU1WNzEwNBIcCgllYW12dDcxMTIYASABKAlSCWVhbXZ0NzExMg==');
+final $typed_data.Uint8List eAMV7104Descriptor = $convert
+    .base64Decode('CghFQU1WNzEwNBIcCgllYW12dDcxMTIYASABKAlSCWVhbXZ0NzExMg==');
 
 @$core.Deprecated('Use eAMV7105Descriptor instead')
 const EAMV7105$json = {
@@ -111,8 +127,8 @@ const EAMV7106$json = {
 };
 
 /// Descriptor for `EAMV7106`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List eAMV7106Descriptor = $convert.base64Decode(
-    'CghFQU1WNzEwNhIcCgllYW12dDcxMTYYASABKAlSCWVhbXZ0NzExNg==');
+final $typed_data.Uint8List eAMV7106Descriptor = $convert
+    .base64Decode('CghFQU1WNzEwNhIcCgllYW12dDcxMTYYASABKAlSCWVhbXZ0NzExNg==');
 
 @$core.Deprecated('Use eAMV7107Descriptor instead')
 const EAMV7107$json = {
@@ -131,4 +147,3 @@ final $typed_data.Uint8List eAMV7107Descriptor = $convert.base64Decode(
     'CghFQU1WNzEwNxIcCgllYW12dDcxMTcYASABKAlSCWVhbXZ0NzExNxIcCgllYW12dDcxMTgYAi'
     'ABKAlSCWVhbXZ0NzExOBIcCgllYW12dDcxMTkYAyABKAlSCWVhbXZ0NzExORIcCgllYW12dDcx'
     'MjAYBCABKAlSCWVhbXZ0NzEyMBIcCgllYW12dDcxMjEYBSABKAlSCWVhbXZ0NzEyMQ==');
-

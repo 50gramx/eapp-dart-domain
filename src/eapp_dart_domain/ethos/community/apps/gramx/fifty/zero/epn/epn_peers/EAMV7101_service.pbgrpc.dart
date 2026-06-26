@@ -1,13 +1,14 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: community/apps/gramx/fifty/zero/epn/epn_peers/EAMV7101_service.proto
-//
-// @dart = 2.12
+// Generated from community/apps/gramx/fifty/zero/epn/epn_peers/EAMV7101_service.proto.
+
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names, prefer_relative_imports
 
 import 'dart:async' as $async;
 import 'dart:core' as $core;
@@ -19,27 +20,40 @@ import 'entities.pb.dart' as $0;
 
 export 'EAMV7101_service.pb.dart';
 
-@$pb.GrpcServiceName('community.apps.gramx.fifty.zero.epn.epn_peers.EAMV7101DiscoverService')
+@$pb.GrpcServiceName(
+    'community.apps.gramx.fifty.zero.epn.epn_peers.EAMV7101DiscoverService')
 class EAMV7101DiscoverServiceClient extends $grpc.Client {
+  /// The hostname for this service.
+  static const $core.String defaultHost = '';
+
+  /// OAuth scopes needed for the client.
+  static const $core.List<$core.String> oauthScopes = [
+    '',
+  ];
+
+  EAMV7101DiscoverServiceClient(super.channel,
+      {super.options, super.interceptors});
+
+  $grpc.ResponseFuture<$0.EAMV7101> eAMC7101(
+    $async.Stream<$0.EAMV7100> request, {
+    $grpc.CallOptions? options,
+  }) {
+    return $createStreamingCall(_$eAMC7101, request, options: options).single;
+  }
+
+  // method descriptors
+
   static final _$eAMC7101 = $grpc.ClientMethod<$0.EAMV7100, $0.EAMV7101>(
       '/community.apps.gramx.fifty.zero.epn.epn_peers.EAMV7101DiscoverService/EAMC7101',
       ($0.EAMV7100 value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $0.EAMV7101.fromBuffer(value));
-
-  EAMV7101DiscoverServiceClient($grpc.ClientChannel channel,
-      {$grpc.CallOptions? options,
-      $core.Iterable<$grpc.ClientInterceptor>? interceptors})
-      : super(channel, options: options,
-        interceptors: interceptors);
-
-  $grpc.ResponseFuture<$0.EAMV7101> eAMC7101($async.Stream<$0.EAMV7100> request, {$grpc.CallOptions? options}) {
-    return $createStreamingCall(_$eAMC7101, request, options: options).single;
-  }
+      $0.EAMV7101.fromBuffer);
 }
 
-@$pb.GrpcServiceName('community.apps.gramx.fifty.zero.epn.epn_peers.EAMV7101DiscoverService')
+@$pb.GrpcServiceName(
+    'community.apps.gramx.fifty.zero.epn.epn_peers.EAMV7101DiscoverService')
 abstract class EAMV7101DiscoverServiceBase extends $grpc.Service {
-  $core.String get $name => 'community.apps.gramx.fifty.zero.epn.epn_peers.EAMV7101DiscoverService';
+  $core.String get $name =>
+      'community.apps.gramx.fifty.zero.epn.epn_peers.EAMV7101DiscoverService';
 
   EAMV7101DiscoverServiceBase() {
     $addMethod($grpc.ServiceMethod<$0.EAMV7100, $0.EAMV7101>(
@@ -51,5 +65,6 @@ abstract class EAMV7101DiscoverServiceBase extends $grpc.Service {
         ($0.EAMV7101 value) => value.writeToBuffer()));
   }
 
-  $async.Future<$0.EAMV7101> eAMC7101($grpc.ServiceCall call, $async.Stream<$0.EAMV7100> request);
+  $async.Future<$0.EAMV7101> eAMC7101(
+      $grpc.ServiceCall call, $async.Stream<$0.EAMV7100> request);
 }

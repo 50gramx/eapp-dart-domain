@@ -1,13 +1,15 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: community/apps/gramx/fifty/zero/ethos/mesh_demo/entities.proto
-//
-// @dart = 2.12
+// Generated from community/apps/gramx/fifty/zero/ethos/mesh_demo/entities.proto.
+
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names, prefer_relative_imports
+// ignore_for_file: unused_import
 
 import 'dart:convert' as $convert;
 import 'dart:core' as $core;
@@ -22,8 +24,8 @@ const EAMV8002$json = {
 };
 
 /// Descriptor for `EAMV8002`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List eAMV8002Descriptor = $convert.base64Decode(
-    'CghFQU1WODAwMhIcCgllYW12dDgwMDQYASABKAlSCWVhbXZ0ODAwNA==');
+final $typed_data.Uint8List eAMV8002Descriptor = $convert
+    .base64Decode('CghFQU1WODAwMhIcCgllYW12dDgwMDQYASABKAlSCWVhbXZ0ODAwNA==');
 
 @$core.Deprecated('Use eAMV8001Descriptor instead')
 const EAMV8001$json = {
@@ -37,7 +39,14 @@ const EAMV8001$json = {
     {'1': 'eamvt8007', '3': 6, '4': 1, '5': 3, '10': 'eamvt8007'},
     {'1': 'eamvt8008', '3': 7, '4': 1, '5': 8, '10': 'eamvt8008'},
     {'1': 'eamvt8009', '3': 8, '4': 1, '5': 12, '10': 'eamvt8009'},
-    {'1': 'eamvt8010', '3': 9, '4': 1, '5': 11, '6': '.community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8003', '10': 'eamvt8010'},
+    {
+      '1': 'eamvt8010',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8003',
+      '10': 'eamvt8010'
+    },
     {'1': 'eamvt8011', '3': 10, '4': 1, '5': 5, '10': 'eamvt8011'},
     {'1': 'eamvt8012', '3': 11, '4': 1, '5': 13, '10': 'eamvt8012'},
     {'1': 'eamvt8013', '3': 12, '4': 1, '5': 4, '10': 'eamvt8013'},
@@ -47,14 +56,70 @@ const EAMV8001$json = {
     {'1': 'eamvt8017', '3': 16, '4': 1, '5': 6, '10': 'eamvt8017'},
     {'1': 'eamvt8018', '3': 17, '4': 1, '5': 15, '10': 'eamvt8018'},
     {'1': 'eamvt8019', '3': 18, '4': 1, '5': 16, '10': 'eamvt8019'},
-    {'1': 'eamvt8020', '3': 19, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'eamvt8020'},
-    {'1': 'eamvt8021', '3': 20, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'eamvt8021'},
-    {'1': 'eamvt8022', '3': 21, '4': 1, '5': 11, '6': '.google.protobuf.Empty', '10': 'eamvt8022'},
-    {'1': 'eamvt8023', '3': 22, '4': 1, '5': 11, '6': '.google.protobuf.Struct', '10': 'eamvt8023'},
-    {'1': 'eamvt8024', '3': 23, '4': 1, '5': 11, '6': '.google.protobuf.Any', '10': 'eamvt8024'},
-    {'1': 'eamvt8025', '3': 24, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'eamvt8025'},
-    {'1': 'eamvt8030', '3': 25, '4': 1, '5': 11, '6': '.google.protobuf.ListValue', '10': 'eamvt8030'},
-    {'1': 'eamvt8031', '3': 26, '4': 1, '5': 11, '6': '.community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8002', '10': 'eamvt8031'},
+    {
+      '1': 'eamvt8020',
+      '3': 19,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Timestamp',
+      '10': 'eamvt8020'
+    },
+    {
+      '1': 'eamvt8021',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Duration',
+      '10': 'eamvt8021'
+    },
+    {
+      '1': 'eamvt8022',
+      '3': 21,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Empty',
+      '10': 'eamvt8022'
+    },
+    {
+      '1': 'eamvt8023',
+      '3': 22,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Struct',
+      '10': 'eamvt8023'
+    },
+    {
+      '1': 'eamvt8024',
+      '3': 23,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.Any',
+      '10': 'eamvt8024'
+    },
+    {
+      '1': 'eamvt8025',
+      '3': 24,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FieldMask',
+      '10': 'eamvt8025'
+    },
+    {
+      '1': 'eamvt8030',
+      '3': 25,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'eamvt8030'
+    },
+    {
+      '1': 'eamvt8031',
+      '3': 26,
+      '4': 1,
+      '5': 11,
+      '6': '.community.apps.gramx.fifty.zero.ethos.mesh_demo.EAMV8002',
+      '10': 'eamvt8031'
+    },
   ],
 };
 
@@ -94,4 +159,3 @@ const EAMV8003$json = {
 final $typed_data.Uint8List eAMV8003Descriptor = $convert.base64Decode(
     'CghFQU1WODAwMxIcCgllYW12dDgwMDUYASABKAlSCWVhbXZ0ODAwNRIcCgllYW12dDgwMzIYAi'
     'ABKAFSCWVhbXZ0ODAzMg==');
-
