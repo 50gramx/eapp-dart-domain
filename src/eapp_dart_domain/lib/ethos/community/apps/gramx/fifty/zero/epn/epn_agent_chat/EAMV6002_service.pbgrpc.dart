@@ -34,13 +34,11 @@ class EAMV6002DiscoverServiceClient extends $grpc.Client {
   EAMV6002DiscoverServiceClient(super.channel,
       {super.options, super.interceptors});
 
-  $grpc.ResponseStream<$0.EAMV6002> eAMC6002(
+  $grpc.ResponseFuture<$0.EAMV6002> eAMC6002(
     $0.EAMV6001 request, {
     $grpc.CallOptions? options,
   }) {
-    return $createStreamingCall(
-        _$eAMC6002, $async.Stream.fromIterable([request]),
-        options: options);
+    return $createUnaryCall(_$eAMC6002, request, options: options);
   }
 
   // method descriptors
@@ -62,16 +60,16 @@ abstract class EAMV6002DiscoverServiceBase extends $grpc.Service {
         'EAMC6002',
         eAMC6002_Pre,
         false,
-        true,
+        false,
         ($core.List<$core.int> value) => $0.EAMV6001.fromBuffer(value),
         ($0.EAMV6002 value) => value.writeToBuffer()));
   }
 
-  $async.Stream<$0.EAMV6002> eAMC6002_Pre(
-      $grpc.ServiceCall $call, $async.Future<$0.EAMV6001> $request) async* {
-    yield* eAMC6002($call, await $request);
+  $async.Future<$0.EAMV6002> eAMC6002_Pre(
+      $grpc.ServiceCall $call, $async.Future<$0.EAMV6001> $request) async {
+    return eAMC6002($call, await $request);
   }
 
-  $async.Stream<$0.EAMV6002> eAMC6002(
+  $async.Future<$0.EAMV6002> eAMC6002(
       $grpc.ServiceCall call, $0.EAMV6001 request);
 }
