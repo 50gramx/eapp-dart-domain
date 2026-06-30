@@ -65,6 +65,11 @@ const EAMV6002$json = {
       '10': 'eamvt6015'
     },
     {'1': 'eamvt6016', '3': 10, '4': 1, '5': 9, '10': 'eamvt6016'},
+    {'1': 'eamvt6017', '3': 11, '4': 1, '5': 9, '10': 'eamvt6017'},
+    {'1': 'eamvt6018', '3': 12, '4': 1, '5': 9, '10': 'eamvt6018'},
+    {'1': 'eamvt6019', '3': 13, '4': 1, '5': 9, '10': 'eamvt6019'},
+    {'1': 'eamvt6020', '3': 14, '4': 1, '5': 9, '10': 'eamvt6020'},
+    {'1': 'eamvt6021', '3': 15, '4': 1, '5': 9, '10': 'eamvt6021'},
   ],
 };
 
@@ -77,4 +82,6 @@ final $typed_data.Uint8List eAMV6002Descriptor = $convert.base64Decode(
     'dG9idWYuTGlzdFZhbHVlUgllYW12dDYwMTMSOAoJZWFtdnQ2MDE0GAggASgLMhouZ29vZ2xlLn'
     'Byb3RvYnVmLkxpc3RWYWx1ZVIJZWFtdnQ2MDE0EjgKCWVhbXZ0NjAxNRgJIAEoCzIaLmdvb2ds'
     'ZS5wcm90b2J1Zi5MaXN0VmFsdWVSCWVhbXZ0NjAxNRIcCgllYW12dDYwMTYYCiABKAlSCWVhbX'
-    'Z0NjAxNg==');
+    'Z0NjAxNhIcCgllYW12dDYwMTcYCyABKAlSCWVhbXZ0NjAxNxIcCgllYW12dDYwMTgYDCABKAlS'
+    'CWVhbXZ0NjAxOBIcCgllYW12dDYwMTkYDSABKAlSCWVhbXZ0NjAxORIcCgllYW12dDYwMjAYDi'
+    'ABKAlSCWVhbXZ0NjAyMBIcCgllYW12dDYwMjEYDyABKAlSCWVhbXZ0NjAyMQ==');
