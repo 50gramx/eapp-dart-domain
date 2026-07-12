@@ -113,6 +113,7 @@ class EAMV6002 extends $pb.GeneratedMessage {
     $core.String? eamvt6019,
     $core.String? eamvt6020,
     $core.String? eamvt6021,
+    $0.ListValue? eamvt6022,
   }) {
     final result = create();
     if (eamvt6004 != null) result.eamvt6004 = eamvt6004;
@@ -130,6 +131,7 @@ class EAMV6002 extends $pb.GeneratedMessage {
     if (eamvt6019 != null) result.eamvt6019 = eamvt6019;
     if (eamvt6020 != null) result.eamvt6020 = eamvt6020;
     if (eamvt6021 != null) result.eamvt6021 = eamvt6021;
+    if (eamvt6022 != null) result.eamvt6022 = eamvt6022;
     return result;
   }
 
@@ -166,6 +168,8 @@ class EAMV6002 extends $pb.GeneratedMessage {
     ..aOS(13, _omitFieldNames ? '' : 'eamvt6019')
     ..aOS(14, _omitFieldNames ? '' : 'eamvt6020')
     ..aOS(15, _omitFieldNames ? '' : 'eamvt6021')
+    ..aOM<$0.ListValue>(16, _omitFieldNames ? '' : 'eamvt6022',
+        subBuilder: $0.ListValue.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
@@ -326,6 +330,17 @@ class EAMV6002 extends $pb.GeneratedMessage {
   $core.bool hasEamvt6021() => $_has(14);
   @$pb.TagNumber(15)
   void clearEamvt6021() => $_clearField(15);
+
+  @$pb.TagNumber(16)
+  $0.ListValue get eamvt6022 => $_getN(15);
+  @$pb.TagNumber(16)
+  set eamvt6022($0.ListValue value) => $_setField(16, value);
+  @$pb.TagNumber(16)
+  $core.bool hasEamvt6022() => $_has(15);
+  @$pb.TagNumber(16)
+  void clearEamvt6022() => $_clearField(16);
+  @$pb.TagNumber(16)
+  $0.ListValue ensureEamvt6022() => $_ensure(15);
 }
 
 const $core.bool _omitFieldNames =
