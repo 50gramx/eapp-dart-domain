@@ -22,7 +22,7 @@ class EAMV7100 extends $pb.GeneratedMessage {
   factory EAMV7100({
     $core.String? eamvt7100,
   }) {
-    final result = create();
+    final result = EAMV7100._();
     if (eamvt7100 != null) result.eamvt7100 = eamvt7100;
     return result;
   }
@@ -31,17 +31,17 @@ class EAMV7100 extends $pb.GeneratedMessage {
 
   factory EAMV7100.fromBuffer($core.List<$core.int> data,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
+      EAMV7100()..mergeFromBuffer(data, registry);
   factory EAMV7100.fromJson($core.String json,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+      EAMV7100()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'EAMV7100',
       package: const $pb.PackageName(_omitMessageNames
           ? ''
           : 'community.apps.gramx.fifty.zero.epn.epn_peers'),
-      createEmptyInstance: create)
+      createEmptyInstance: EAMV7100.$_createMessage)
     ..aOS(1, _omitFieldNames ? '' : 'eamvt7100')
     ..hasRequiredFields = false;
 
@@ -55,12 +55,14 @@ class EAMV7100 extends $pb.GeneratedMessage {
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
+  @$core.Deprecated('Use EAMV7100() / EAMV7100.new instead')
   static EAMV7100 create() => EAMV7100._();
+  static $pb.GeneratedMessage $_createMessage() => EAMV7100._();
   @$core.override
-  EAMV7100 createEmptyInstance() => create();
+  EAMV7100 createEmptyInstance() => EAMV7100._();
   @$core.pragma('dart2js:noInline')
-  static EAMV7100 getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EAMV7100>(create);
+  static EAMV7100 getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EAMV7100>(EAMV7100.$_createMessage);
   static EAMV7100? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -81,7 +83,7 @@ class EAMV7101 extends $pb.GeneratedMessage {
     $core.String? eamvt7104,
     $core.bool? eamvt7105,
   }) {
-    final result = create();
+    final result = EAMV7101._();
     if (eamvt7101 != null) result.eamvt7101 = eamvt7101;
     if (eamvt7102 != null) result.eamvt7102 = eamvt7102;
     if (eamvt7103 != null) result.eamvt7103.addAll(eamvt7103);
@@ -94,17 +96,17 @@ class EAMV7101 extends $pb.GeneratedMessage {
 
   factory EAMV7101.fromBuffer($core.List<$core.int> data,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
+      EAMV7101()..mergeFromBuffer(data, registry);
   factory EAMV7101.fromJson($core.String json,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+      EAMV7101()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'EAMV7101',
       package: const $pb.PackageName(_omitMessageNames
           ? ''
           : 'community.apps.gramx.fifty.zero.epn.epn_peers'),
-      createEmptyInstance: create)
+      createEmptyInstance: EAMV7101.$_createMessage)
     ..aOS(1, _omitFieldNames ? '' : 'eamvt7101')
     ..aOS(2, _omitFieldNames ? '' : 'eamvt7102')
     ..pPS(3, _omitFieldNames ? '' : 'eamvt7103')
@@ -122,12 +124,14 @@ class EAMV7101 extends $pb.GeneratedMessage {
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
+  @$core.Deprecated('Use EAMV7101() / EAMV7101.new instead')
   static EAMV7101 create() => EAMV7101._();
+  static $pb.GeneratedMessage $_createMessage() => EAMV7101._();
   @$core.override
-  EAMV7101 createEmptyInstance() => create();
+  EAMV7101 createEmptyInstance() => EAMV7101._();
   @$core.pragma('dart2js:noInline')
-  static EAMV7101 getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EAMV7101>(create);
+  static EAMV7101 getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EAMV7101>(EAMV7101.$_createMessage);
   static EAMV7101? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -174,7 +178,7 @@ class EAMV7103 extends $pb.GeneratedMessage {
   factory EAMV7103({
     $core.Iterable<EAMV7102>? eamvt7111,
   }) {
-    final result = create();
+    final result = EAMV7103._();
     if (eamvt7111 != null) result.eamvt7111.addAll(eamvt7111);
     return result;
   }
@@ -183,19 +187,19 @@ class EAMV7103 extends $pb.GeneratedMessage {
 
   factory EAMV7103.fromBuffer($core.List<$core.int> data,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
+      EAMV7103()..mergeFromBuffer(data, registry);
   factory EAMV7103.fromJson($core.String json,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+      EAMV7103()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'EAMV7103',
       package: const $pb.PackageName(_omitMessageNames
           ? ''
           : 'community.apps.gramx.fifty.zero.epn.epn_peers'),
-      createEmptyInstance: create)
+      createEmptyInstance: EAMV7103.$_createMessage)
     ..pPM<EAMV7102>(1, _omitFieldNames ? '' : 'eamvt7111',
-        subBuilder: EAMV7102.create)
+        subBuilder: EAMV7102.$_createMessage)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
@@ -208,12 +212,14 @@ class EAMV7103 extends $pb.GeneratedMessage {
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
+  @$core.Deprecated('Use EAMV7103() / EAMV7103.new instead')
   static EAMV7103 create() => EAMV7103._();
+  static $pb.GeneratedMessage $_createMessage() => EAMV7103._();
   @$core.override
-  EAMV7103 createEmptyInstance() => create();
+  EAMV7103 createEmptyInstance() => EAMV7103._();
   @$core.pragma('dart2js:noInline')
-  static EAMV7103 getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EAMV7103>(create);
+  static EAMV7103 getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EAMV7103>(EAMV7103.$_createMessage);
   static EAMV7103? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -228,7 +234,7 @@ class EAMV7102 extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? eamvt7109,
     $0.Timestamp? eamvt7110,
   }) {
-    final result = create();
+    final result = EAMV7102._();
     if (eamvt7106 != null) result.eamvt7106 = eamvt7106;
     if (eamvt7107 != null) result.eamvt7107 = eamvt7107;
     if (eamvt7108 != null) result.eamvt7108.addAll(eamvt7108);
@@ -241,23 +247,23 @@ class EAMV7102 extends $pb.GeneratedMessage {
 
   factory EAMV7102.fromBuffer($core.List<$core.int> data,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
+      EAMV7102()..mergeFromBuffer(data, registry);
   factory EAMV7102.fromJson($core.String json,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+      EAMV7102()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'EAMV7102',
       package: const $pb.PackageName(_omitMessageNames
           ? ''
           : 'community.apps.gramx.fifty.zero.epn.epn_peers'),
-      createEmptyInstance: create)
+      createEmptyInstance: EAMV7102.$_createMessage)
     ..aOS(1, _omitFieldNames ? '' : 'eamvt7106')
     ..aOS(2, _omitFieldNames ? '' : 'eamvt7107')
     ..pPS(3, _omitFieldNames ? '' : 'eamvt7108')
     ..pPS(4, _omitFieldNames ? '' : 'eamvt7109')
     ..aOM<$0.Timestamp>(5, _omitFieldNames ? '' : 'eamvt7110',
-        subBuilder: $0.Timestamp.create)
+        subBuilder: $0.Timestamp.$_createMessage)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
@@ -270,12 +276,14 @@ class EAMV7102 extends $pb.GeneratedMessage {
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
+  @$core.Deprecated('Use EAMV7102() / EAMV7102.new instead')
   static EAMV7102 create() => EAMV7102._();
+  static $pb.GeneratedMessage $_createMessage() => EAMV7102._();
   @$core.override
-  EAMV7102 createEmptyInstance() => create();
+  EAMV7102 createEmptyInstance() => EAMV7102._();
   @$core.pragma('dart2js:noInline')
-  static EAMV7102 getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EAMV7102>(create);
+  static EAMV7102 getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EAMV7102>(EAMV7102.$_createMessage);
   static EAMV7102? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -318,7 +326,7 @@ class EAMV7104 extends $pb.GeneratedMessage {
   factory EAMV7104({
     $core.String? eamvt7112,
   }) {
-    final result = create();
+    final result = EAMV7104._();
     if (eamvt7112 != null) result.eamvt7112 = eamvt7112;
     return result;
   }
@@ -327,17 +335,17 @@ class EAMV7104 extends $pb.GeneratedMessage {
 
   factory EAMV7104.fromBuffer($core.List<$core.int> data,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
+      EAMV7104()..mergeFromBuffer(data, registry);
   factory EAMV7104.fromJson($core.String json,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+      EAMV7104()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'EAMV7104',
       package: const $pb.PackageName(_omitMessageNames
           ? ''
           : 'community.apps.gramx.fifty.zero.epn.epn_peers'),
-      createEmptyInstance: create)
+      createEmptyInstance: EAMV7104.$_createMessage)
     ..aOS(1, _omitFieldNames ? '' : 'eamvt7112')
     ..hasRequiredFields = false;
 
@@ -351,12 +359,14 @@ class EAMV7104 extends $pb.GeneratedMessage {
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
+  @$core.Deprecated('Use EAMV7104() / EAMV7104.new instead')
   static EAMV7104 create() => EAMV7104._();
+  static $pb.GeneratedMessage $_createMessage() => EAMV7104._();
   @$core.override
-  EAMV7104 createEmptyInstance() => create();
+  EAMV7104 createEmptyInstance() => EAMV7104._();
   @$core.pragma('dart2js:noInline')
-  static EAMV7104 getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EAMV7104>(create);
+  static EAMV7104 getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EAMV7104>(EAMV7104.$_createMessage);
   static EAMV7104? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -375,7 +385,7 @@ class EAMV7105 extends $pb.GeneratedMessage {
     $core.String? eamvt7114,
     $core.bool? eamvt7115,
   }) {
-    final result = create();
+    final result = EAMV7105._();
     if (eamvt7113 != null) result.eamvt7113 = eamvt7113;
     if (eamvt7114 != null) result.eamvt7114 = eamvt7114;
     if (eamvt7115 != null) result.eamvt7115 = eamvt7115;
@@ -386,17 +396,17 @@ class EAMV7105 extends $pb.GeneratedMessage {
 
   factory EAMV7105.fromBuffer($core.List<$core.int> data,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
+      EAMV7105()..mergeFromBuffer(data, registry);
   factory EAMV7105.fromJson($core.String json,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+      EAMV7105()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'EAMV7105',
       package: const $pb.PackageName(_omitMessageNames
           ? ''
           : 'community.apps.gramx.fifty.zero.epn.epn_peers'),
-      createEmptyInstance: create)
+      createEmptyInstance: EAMV7105.$_createMessage)
     ..aOS(1, _omitFieldNames ? '' : 'eamvt7113')
     ..aOS(2, _omitFieldNames ? '' : 'eamvt7114')
     ..aOB(3, _omitFieldNames ? '' : 'eamvt7115')
@@ -412,12 +422,14 @@ class EAMV7105 extends $pb.GeneratedMessage {
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
+  @$core.Deprecated('Use EAMV7105() / EAMV7105.new instead')
   static EAMV7105 create() => EAMV7105._();
+  static $pb.GeneratedMessage $_createMessage() => EAMV7105._();
   @$core.override
-  EAMV7105 createEmptyInstance() => create();
+  EAMV7105 createEmptyInstance() => EAMV7105._();
   @$core.pragma('dart2js:noInline')
-  static EAMV7105 getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EAMV7105>(create);
+  static EAMV7105 getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EAMV7105>(EAMV7105.$_createMessage);
   static EAMV7105? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -452,7 +464,7 @@ class EAMV7106 extends $pb.GeneratedMessage {
   factory EAMV7106({
     $core.String? eamvt7116,
   }) {
-    final result = create();
+    final result = EAMV7106._();
     if (eamvt7116 != null) result.eamvt7116 = eamvt7116;
     return result;
   }
@@ -461,17 +473,17 @@ class EAMV7106 extends $pb.GeneratedMessage {
 
   factory EAMV7106.fromBuffer($core.List<$core.int> data,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
+      EAMV7106()..mergeFromBuffer(data, registry);
   factory EAMV7106.fromJson($core.String json,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+      EAMV7106()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'EAMV7106',
       package: const $pb.PackageName(_omitMessageNames
           ? ''
           : 'community.apps.gramx.fifty.zero.epn.epn_peers'),
-      createEmptyInstance: create)
+      createEmptyInstance: EAMV7106.$_createMessage)
     ..aOS(1, _omitFieldNames ? '' : 'eamvt7116')
     ..hasRequiredFields = false;
 
@@ -485,12 +497,14 @@ class EAMV7106 extends $pb.GeneratedMessage {
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
+  @$core.Deprecated('Use EAMV7106() / EAMV7106.new instead')
   static EAMV7106 create() => EAMV7106._();
+  static $pb.GeneratedMessage $_createMessage() => EAMV7106._();
   @$core.override
-  EAMV7106 createEmptyInstance() => create();
+  EAMV7106 createEmptyInstance() => EAMV7106._();
   @$core.pragma('dart2js:noInline')
-  static EAMV7106 getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EAMV7106>(create);
+  static EAMV7106 getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EAMV7106>(EAMV7106.$_createMessage);
   static EAMV7106? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -511,7 +525,7 @@ class EAMV7107 extends $pb.GeneratedMessage {
     $core.String? eamvt7120,
     $core.String? eamvt7121,
   }) {
-    final result = create();
+    final result = EAMV7107._();
     if (eamvt7117 != null) result.eamvt7117 = eamvt7117;
     if (eamvt7118 != null) result.eamvt7118 = eamvt7118;
     if (eamvt7119 != null) result.eamvt7119 = eamvt7119;
@@ -524,17 +538,17 @@ class EAMV7107 extends $pb.GeneratedMessage {
 
   factory EAMV7107.fromBuffer($core.List<$core.int> data,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
+      EAMV7107()..mergeFromBuffer(data, registry);
   factory EAMV7107.fromJson($core.String json,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+      EAMV7107()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'EAMV7107',
       package: const $pb.PackageName(_omitMessageNames
           ? ''
           : 'community.apps.gramx.fifty.zero.epn.epn_peers'),
-      createEmptyInstance: create)
+      createEmptyInstance: EAMV7107.$_createMessage)
     ..aOS(1, _omitFieldNames ? '' : 'eamvt7117')
     ..aOS(2, _omitFieldNames ? '' : 'eamvt7118')
     ..aOS(3, _omitFieldNames ? '' : 'eamvt7119')
@@ -552,12 +566,14 @@ class EAMV7107 extends $pb.GeneratedMessage {
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
+  @$core.Deprecated('Use EAMV7107() / EAMV7107.new instead')
   static EAMV7107 create() => EAMV7107._();
+  static $pb.GeneratedMessage $_createMessage() => EAMV7107._();
   @$core.override
-  EAMV7107 createEmptyInstance() => create();
+  EAMV7107 createEmptyInstance() => EAMV7107._();
   @$core.pragma('dart2js:noInline')
-  static EAMV7107 getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EAMV7107>(create);
+  static EAMV7107 getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EAMV7107>(EAMV7107.$_createMessage);
   static EAMV7107? _defaultInstance;
 
   @$pb.TagNumber(1)

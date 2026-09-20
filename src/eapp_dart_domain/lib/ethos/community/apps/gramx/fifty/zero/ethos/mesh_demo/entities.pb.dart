@@ -30,7 +30,7 @@ class EAMV8002 extends $pb.GeneratedMessage {
   factory EAMV8002({
     $core.String? eamvt8004,
   }) {
-    final result = create();
+    final result = EAMV8002._();
     if (eamvt8004 != null) result.eamvt8004 = eamvt8004;
     return result;
   }
@@ -39,17 +39,17 @@ class EAMV8002 extends $pb.GeneratedMessage {
 
   factory EAMV8002.fromBuffer($core.List<$core.int> data,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
+      EAMV8002()..mergeFromBuffer(data, registry);
   factory EAMV8002.fromJson($core.String json,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+      EAMV8002()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'EAMV8002',
       package: const $pb.PackageName(_omitMessageNames
           ? ''
           : 'community.apps.gramx.fifty.zero.ethos.mesh_demo'),
-      createEmptyInstance: create)
+      createEmptyInstance: EAMV8002.$_createMessage)
     ..aOS(1, _omitFieldNames ? '' : 'eamvt8004')
     ..hasRequiredFields = false;
 
@@ -63,12 +63,14 @@ class EAMV8002 extends $pb.GeneratedMessage {
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
+  @$core.Deprecated('Use EAMV8002() / EAMV8002.new instead')
   static EAMV8002 create() => EAMV8002._();
+  static $pb.GeneratedMessage $_createMessage() => EAMV8002._();
   @$core.override
-  EAMV8002 createEmptyInstance() => create();
+  EAMV8002 createEmptyInstance() => EAMV8002._();
   @$core.pragma('dart2js:noInline')
-  static EAMV8002 getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EAMV8002>(create);
+  static EAMV8002 getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EAMV8002>(EAMV8002.$_createMessage);
   static EAMV8002? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -110,7 +112,7 @@ class EAMV8001 extends $pb.GeneratedMessage {
     $3.ListValue? eamvt8030,
     EAMV8002? eamvt8031,
   }) {
-    final result = create();
+    final result = EAMV8001._();
     if (eamvt8001 != null) result.eamvt8001 = eamvt8001;
     if (eamvt8002 != null) result.eamvt8002 = eamvt8002;
     if (eamvt8003 != null) result.eamvt8003 = eamvt8003;
@@ -144,17 +146,17 @@ class EAMV8001 extends $pb.GeneratedMessage {
 
   factory EAMV8001.fromBuffer($core.List<$core.int> data,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
+      EAMV8001()..mergeFromBuffer(data, registry);
   factory EAMV8001.fromJson($core.String json,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+      EAMV8001()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'EAMV8001',
       package: const $pb.PackageName(_omitMessageNames
           ? ''
           : 'community.apps.gramx.fifty.zero.ethos.mesh_demo'),
-      createEmptyInstance: create)
+      createEmptyInstance: EAMV8001.$_createMessage)
     ..aOS(1, _omitFieldNames ? '' : 'eamvt8001')
     ..aOS(2, _omitFieldNames ? '' : 'eamvt8002')
     ..aOS(3, _omitFieldNames ? '' : 'eamvt8003')
@@ -165,7 +167,7 @@ class EAMV8001 extends $pb.GeneratedMessage {
     ..a<$core.List<$core.int>>(
         8, _omitFieldNames ? '' : 'eamvt8009', $pb.PbFieldType.OY)
     ..aOM<EAMV8003>(9, _omitFieldNames ? '' : 'eamvt8010',
-        subBuilder: EAMV8003.create)
+        subBuilder: EAMV8003.$_createMessage)
     ..aI(10, _omitFieldNames ? '' : 'eamvt8011')
     ..aI(11, _omitFieldNames ? '' : 'eamvt8012', fieldType: $pb.PbFieldType.OU3)
     ..a<$fixnum.Int64>(
@@ -185,21 +187,21 @@ class EAMV8001 extends $pb.GeneratedMessage {
         18, _omitFieldNames ? '' : 'eamvt8019', $pb.PbFieldType.OSF6,
         defaultOrMaker: $fixnum.Int64.ZERO)
     ..aOM<$0.Timestamp>(19, _omitFieldNames ? '' : 'eamvt8020',
-        subBuilder: $0.Timestamp.create)
+        subBuilder: $0.Timestamp.$_createMessage)
     ..aOM<$1.Duration>(20, _omitFieldNames ? '' : 'eamvt8021',
-        subBuilder: $1.Duration.create)
+        subBuilder: $1.Duration.$_createMessage)
     ..aOM<$2.Empty>(21, _omitFieldNames ? '' : 'eamvt8022',
-        subBuilder: $2.Empty.create)
+        subBuilder: $2.Empty.$_createMessage)
     ..aOM<$3.Struct>(22, _omitFieldNames ? '' : 'eamvt8023',
-        subBuilder: $3.Struct.create)
+        subBuilder: $3.Struct.$_createMessage)
     ..aOM<$4.Any>(23, _omitFieldNames ? '' : 'eamvt8024',
-        subBuilder: $4.Any.create)
+        subBuilder: $4.Any.$_createMessage)
     ..aOM<$5.FieldMask>(24, _omitFieldNames ? '' : 'eamvt8025',
-        subBuilder: $5.FieldMask.create)
+        subBuilder: $5.FieldMask.$_createMessage)
     ..aOM<$3.ListValue>(25, _omitFieldNames ? '' : 'eamvt8030',
-        subBuilder: $3.ListValue.create)
+        subBuilder: $3.ListValue.$_createMessage)
     ..aOM<EAMV8002>(26, _omitFieldNames ? '' : 'eamvt8031',
-        subBuilder: EAMV8002.create)
+        subBuilder: EAMV8002.$_createMessage)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
@@ -212,12 +214,14 @@ class EAMV8001 extends $pb.GeneratedMessage {
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
+  @$core.Deprecated('Use EAMV8001() / EAMV8001.new instead')
   static EAMV8001 create() => EAMV8001._();
+  static $pb.GeneratedMessage $_createMessage() => EAMV8001._();
   @$core.override
-  EAMV8001 createEmptyInstance() => create();
+  EAMV8001 createEmptyInstance() => EAMV8001._();
   @$core.pragma('dart2js:noInline')
-  static EAMV8001 getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EAMV8001>(create);
+  static EAMV8001 getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EAMV8001>(EAMV8001.$_createMessage);
   static EAMV8001? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -478,7 +482,7 @@ class EAMV8003 extends $pb.GeneratedMessage {
     $core.String? eamvt8005,
     $core.double? eamvt8032,
   }) {
-    final result = create();
+    final result = EAMV8003._();
     if (eamvt8005 != null) result.eamvt8005 = eamvt8005;
     if (eamvt8032 != null) result.eamvt8032 = eamvt8032;
     return result;
@@ -488,17 +492,17 @@ class EAMV8003 extends $pb.GeneratedMessage {
 
   factory EAMV8003.fromBuffer($core.List<$core.int> data,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
+      EAMV8003()..mergeFromBuffer(data, registry);
   factory EAMV8003.fromJson($core.String json,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+      EAMV8003()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'EAMV8003',
       package: const $pb.PackageName(_omitMessageNames
           ? ''
           : 'community.apps.gramx.fifty.zero.ethos.mesh_demo'),
-      createEmptyInstance: create)
+      createEmptyInstance: EAMV8003.$_createMessage)
     ..aOS(1, _omitFieldNames ? '' : 'eamvt8005')
     ..aD(2, _omitFieldNames ? '' : 'eamvt8032')
     ..hasRequiredFields = false;
@@ -513,12 +517,14 @@ class EAMV8003 extends $pb.GeneratedMessage {
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
+  @$core.Deprecated('Use EAMV8003() / EAMV8003.new instead')
   static EAMV8003 create() => EAMV8003._();
+  static $pb.GeneratedMessage $_createMessage() => EAMV8003._();
   @$core.override
-  EAMV8003 createEmptyInstance() => create();
+  EAMV8003 createEmptyInstance() => EAMV8003._();
   @$core.pragma('dart2js:noInline')
-  static EAMV8003 getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EAMV8003>(create);
+  static EAMV8003 getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EAMV8003>(EAMV8003.$_createMessage);
   static EAMV8003? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -546,7 +552,7 @@ class EAMV8004 extends $pb.GeneratedMessage {
     $core.bool? eamvt8034,
     $core.int? eamvt8035,
   }) {
-    final result = create();
+    final result = EAMV8004._();
     if (eamvt8033 != null) result.eamvt8033 = eamvt8033;
     if (eamvt8034 != null) result.eamvt8034 = eamvt8034;
     if (eamvt8035 != null) result.eamvt8035 = eamvt8035;
@@ -557,17 +563,17 @@ class EAMV8004 extends $pb.GeneratedMessage {
 
   factory EAMV8004.fromBuffer($core.List<$core.int> data,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
+      EAMV8004()..mergeFromBuffer(data, registry);
   factory EAMV8004.fromJson($core.String json,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+      EAMV8004()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'EAMV8004',
       package: const $pb.PackageName(_omitMessageNames
           ? ''
           : 'community.apps.gramx.fifty.zero.ethos.mesh_demo'),
-      createEmptyInstance: create)
+      createEmptyInstance: EAMV8004.$_createMessage)
     ..aOS(1, _omitFieldNames ? '' : 'eamvt8033')
     ..aOB(2, _omitFieldNames ? '' : 'eamvt8034')
     ..aI(3, _omitFieldNames ? '' : 'eamvt8035')
@@ -583,12 +589,14 @@ class EAMV8004 extends $pb.GeneratedMessage {
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
+  @$core.Deprecated('Use EAMV8004() / EAMV8004.new instead')
   static EAMV8004 create() => EAMV8004._();
+  static $pb.GeneratedMessage $_createMessage() => EAMV8004._();
   @$core.override
-  EAMV8004 createEmptyInstance() => create();
+  EAMV8004 createEmptyInstance() => EAMV8004._();
   @$core.pragma('dart2js:noInline')
-  static EAMV8004 getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EAMV8004>(create);
+  static EAMV8004 getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EAMV8004>(EAMV8004.$_createMessage);
   static EAMV8004? _defaultInstance;
 
   @$pb.TagNumber(1)

@@ -23,7 +23,7 @@ class EAMV6001 extends $pb.GeneratedMessage {
     $core.String? eamvt6002,
     $core.String? eamvt6003,
   }) {
-    final result = create();
+    final result = EAMV6001._();
     if (eamvt6001 != null) result.eamvt6001 = eamvt6001;
     if (eamvt6002 != null) result.eamvt6002 = eamvt6002;
     if (eamvt6003 != null) result.eamvt6003 = eamvt6003;
@@ -34,17 +34,17 @@ class EAMV6001 extends $pb.GeneratedMessage {
 
   factory EAMV6001.fromBuffer($core.List<$core.int> data,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
+      EAMV6001()..mergeFromBuffer(data, registry);
   factory EAMV6001.fromJson($core.String json,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+      EAMV6001()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'EAMV6001',
       package: const $pb.PackageName(_omitMessageNames
           ? ''
           : 'community.apps.gramx.fifty.zero.epn.epn_agent_chat'),
-      createEmptyInstance: create)
+      createEmptyInstance: EAMV6001.$_createMessage)
     ..aOS(1, _omitFieldNames ? '' : 'eamvt6001')
     ..aOS(2, _omitFieldNames ? '' : 'eamvt6002')
     ..aOS(3, _omitFieldNames ? '' : 'eamvt6003')
@@ -60,12 +60,14 @@ class EAMV6001 extends $pb.GeneratedMessage {
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
+  @$core.Deprecated('Use EAMV6001() / EAMV6001.new instead')
   static EAMV6001 create() => EAMV6001._();
+  static $pb.GeneratedMessage $_createMessage() => EAMV6001._();
   @$core.override
-  EAMV6001 createEmptyInstance() => create();
+  EAMV6001 createEmptyInstance() => EAMV6001._();
   @$core.pragma('dart2js:noInline')
-  static EAMV6001 getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EAMV6001>(create);
+  static EAMV6001 getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EAMV6001>(EAMV6001.$_createMessage);
   static EAMV6001? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -115,7 +117,7 @@ class EAMV6002 extends $pb.GeneratedMessage {
     $core.String? eamvt6021,
     $0.ListValue? eamvt6022,
   }) {
-    final result = create();
+    final result = EAMV6002._();
     if (eamvt6004 != null) result.eamvt6004 = eamvt6004;
     if (eamvt6008 != null) result.eamvt6008 = eamvt6008;
     if (eamvt6009 != null) result.eamvt6009 = eamvt6009;
@@ -139,17 +141,17 @@ class EAMV6002 extends $pb.GeneratedMessage {
 
   factory EAMV6002.fromBuffer($core.List<$core.int> data,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
+      EAMV6002()..mergeFromBuffer(data, registry);
   factory EAMV6002.fromJson($core.String json,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+      EAMV6002()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'EAMV6002',
       package: const $pb.PackageName(_omitMessageNames
           ? ''
           : 'community.apps.gramx.fifty.zero.epn.epn_agent_chat'),
-      createEmptyInstance: create)
+      createEmptyInstance: EAMV6002.$_createMessage)
     ..aOS(1, _omitFieldNames ? '' : 'eamvt6004')
     ..aOS(2, _omitFieldNames ? '' : 'eamvt6008')
     ..aOB(3, _omitFieldNames ? '' : 'eamvt6009')
@@ -157,11 +159,11 @@ class EAMV6002 extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'eamvt6011')
     ..aOS(6, _omitFieldNames ? '' : 'eamvt6012')
     ..aOM<$0.ListValue>(7, _omitFieldNames ? '' : 'eamvt6013',
-        subBuilder: $0.ListValue.create)
+        subBuilder: $0.ListValue.$_createMessage)
     ..aOM<$0.ListValue>(8, _omitFieldNames ? '' : 'eamvt6014',
-        subBuilder: $0.ListValue.create)
+        subBuilder: $0.ListValue.$_createMessage)
     ..aOM<$0.ListValue>(9, _omitFieldNames ? '' : 'eamvt6015',
-        subBuilder: $0.ListValue.create)
+        subBuilder: $0.ListValue.$_createMessage)
     ..aOS(10, _omitFieldNames ? '' : 'eamvt6016')
     ..aOS(11, _omitFieldNames ? '' : 'eamvt6017')
     ..aOS(12, _omitFieldNames ? '' : 'eamvt6018')
@@ -169,7 +171,7 @@ class EAMV6002 extends $pb.GeneratedMessage {
     ..aOS(14, _omitFieldNames ? '' : 'eamvt6020')
     ..aOS(15, _omitFieldNames ? '' : 'eamvt6021')
     ..aOM<$0.ListValue>(16, _omitFieldNames ? '' : 'eamvt6022',
-        subBuilder: $0.ListValue.create)
+        subBuilder: $0.ListValue.$_createMessage)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
@@ -182,12 +184,14 @@ class EAMV6002 extends $pb.GeneratedMessage {
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
+  @$core.Deprecated('Use EAMV6002() / EAMV6002.new instead')
   static EAMV6002 create() => EAMV6002._();
+  static $pb.GeneratedMessage $_createMessage() => EAMV6002._();
   @$core.override
-  EAMV6002 createEmptyInstance() => create();
+  EAMV6002 createEmptyInstance() => EAMV6002._();
   @$core.pragma('dart2js:noInline')
-  static EAMV6002 getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EAMV6002>(create);
+  static EAMV6002 getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EAMV6002>(EAMV6002.$_createMessage);
   static EAMV6002? _defaultInstance;
 
   @$pb.TagNumber(1)
