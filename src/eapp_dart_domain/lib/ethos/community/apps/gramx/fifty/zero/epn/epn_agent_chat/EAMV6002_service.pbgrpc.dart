@@ -41,10 +41,23 @@ class EAMV6002DiscoverServiceClient extends $grpc.Client {
     return $createUnaryCall(_$eAMC6002, request, options: options);
   }
 
+  $grpc.ResponseStream<$0.EAMV6002> eAMC6003(
+    $0.EAMV6001 request, {
+    $grpc.CallOptions? options,
+  }) {
+    return $createStreamingCall(
+        _$eAMC6003, $async.Stream.fromIterable([request]),
+        options: options);
+  }
+
   // method descriptors
 
   static final _$eAMC6002 = $grpc.ClientMethod<$0.EAMV6001, $0.EAMV6002>(
       '/community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002DiscoverService/EAMC6002',
+      ($0.EAMV6001 value) => value.writeToBuffer(),
+      $0.EAMV6002.fromBuffer);
+  static final _$eAMC6003 = $grpc.ClientMethod<$0.EAMV6001, $0.EAMV6002>(
+      '/community.apps.gramx.fifty.zero.epn.epn_agent_chat.EAMV6002DiscoverService/EAMC6003',
       ($0.EAMV6001 value) => value.writeToBuffer(),
       $0.EAMV6002.fromBuffer);
 }
@@ -63,6 +76,13 @@ abstract class EAMV6002DiscoverServiceBase extends $grpc.Service {
         false,
         ($core.List<$core.int> value) => $0.EAMV6001.fromBuffer(value),
         ($0.EAMV6002 value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$0.EAMV6001, $0.EAMV6002>(
+        'EAMC6003',
+        eAMC6003_Pre,
+        false,
+        true,
+        ($core.List<$core.int> value) => $0.EAMV6001.fromBuffer(value),
+        ($0.EAMV6002 value) => value.writeToBuffer()));
   }
 
   $async.Future<$0.EAMV6002> eAMC6002_Pre(
@@ -71,5 +91,13 @@ abstract class EAMV6002DiscoverServiceBase extends $grpc.Service {
   }
 
   $async.Future<$0.EAMV6002> eAMC6002(
+      $grpc.ServiceCall call, $0.EAMV6001 request);
+
+  $async.Stream<$0.EAMV6002> eAMC6003_Pre(
+      $grpc.ServiceCall $call, $async.Future<$0.EAMV6001> $request) async* {
+    yield* eAMC6003($call, await $request);
+  }
+
+  $async.Stream<$0.EAMV6002> eAMC6003(
       $grpc.ServiceCall call, $0.EAMV6001 request);
 }
