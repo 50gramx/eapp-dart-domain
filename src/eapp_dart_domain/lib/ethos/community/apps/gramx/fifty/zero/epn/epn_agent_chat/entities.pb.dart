@@ -116,6 +116,8 @@ class EAMV6002 extends $pb.GeneratedMessage {
     $core.String? eamvt6020,
     $core.String? eamvt6021,
     $0.ListValue? eamvt6022,
+    $0.ListValue? eamvt6023,
+    $core.String? eamvt6024,
   }) {
     final result = EAMV6002._();
     if (eamvt6004 != null) result.eamvt6004 = eamvt6004;
@@ -134,6 +136,8 @@ class EAMV6002 extends $pb.GeneratedMessage {
     if (eamvt6020 != null) result.eamvt6020 = eamvt6020;
     if (eamvt6021 != null) result.eamvt6021 = eamvt6021;
     if (eamvt6022 != null) result.eamvt6022 = eamvt6022;
+    if (eamvt6023 != null) result.eamvt6023 = eamvt6023;
+    if (eamvt6024 != null) result.eamvt6024 = eamvt6024;
     return result;
   }
 
@@ -172,6 +176,9 @@ class EAMV6002 extends $pb.GeneratedMessage {
     ..aOS(15, _omitFieldNames ? '' : 'eamvt6021')
     ..aOM<$0.ListValue>(16, _omitFieldNames ? '' : 'eamvt6022',
         subBuilder: $0.ListValue.$_createMessage)
+    ..aOM<$0.ListValue>(17, _omitFieldNames ? '' : 'eamvt6023',
+        subBuilder: $0.ListValue.$_createMessage)
+    ..aOS(18, _omitFieldNames ? '' : 'eamvt6024')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
@@ -345,6 +352,191 @@ class EAMV6002 extends $pb.GeneratedMessage {
   void clearEamvt6022() => $_clearField(16);
   @$pb.TagNumber(16)
   $0.ListValue ensureEamvt6022() => $_ensure(15);
+
+  @$pb.TagNumber(17)
+  $0.ListValue get eamvt6023 => $_getN(16);
+  @$pb.TagNumber(17)
+  set eamvt6023($0.ListValue value) => $_setField(17, value);
+  @$pb.TagNumber(17)
+  $core.bool hasEamvt6023() => $_has(16);
+  @$pb.TagNumber(17)
+  void clearEamvt6023() => $_clearField(17);
+  @$pb.TagNumber(17)
+  $0.ListValue ensureEamvt6023() => $_ensure(16);
+
+  @$pb.TagNumber(18)
+  $core.String get eamvt6024 => $_getSZ(17);
+  @$pb.TagNumber(18)
+  set eamvt6024($core.String value) => $_setString(17, value);
+  @$pb.TagNumber(18)
+  $core.bool hasEamvt6024() => $_has(17);
+  @$pb.TagNumber(18)
+  void clearEamvt6024() => $_clearField(18);
+}
+
+class EAMV6007 extends $pb.GeneratedMessage {
+  factory EAMV6007({
+    $core.String? eamvt6030,
+  }) {
+    final result = EAMV6007._();
+    if (eamvt6030 != null) result.eamvt6030 = eamvt6030;
+    return result;
+  }
+
+  EAMV6007._();
+
+  factory EAMV6007.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      EAMV6007()..mergeFromBuffer(data, registry);
+  factory EAMV6007.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      EAMV6007()..mergeFromJson(json, registry);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EAMV6007',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'community.apps.gramx.fifty.zero.epn.epn_agent_chat'),
+      createEmptyInstance: EAMV6007.$_createMessage)
+    ..aOS(1, _omitFieldNames ? '' : 'eamvt6030')
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  EAMV6007 clone() => deepCopy();
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  EAMV6007 copyWith(void Function(EAMV6007) updates) =>
+      super.copyWith((message) => updates(message as EAMV6007)) as EAMV6007;
+
+  @$core.override
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  @$core.Deprecated('Use EAMV6007() / EAMV6007.new instead')
+  static EAMV6007 create() => EAMV6007._();
+  static $pb.GeneratedMessage $_createMessage() => EAMV6007._();
+  @$core.override
+  EAMV6007 createEmptyInstance() => EAMV6007._();
+  @$core.pragma('dart2js:noInline')
+  static EAMV6007 getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EAMV6007>(EAMV6007.$_createMessage);
+  static EAMV6007? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $core.String get eamvt6030 => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set eamvt6030($core.String value) => $_setString(0, value);
+  @$pb.TagNumber(1)
+  $core.bool hasEamvt6030() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearEamvt6030() => $_clearField(1);
+}
+
+class EAMV6008 extends $pb.GeneratedMessage {
+  factory EAMV6008({
+    $core.String? eamvt6031,
+    $core.String? eamvt6032,
+    $0.ListValue? eamvt6033,
+    $core.bool? eamvt6034,
+    $core.String? eamvt6035,
+  }) {
+    final result = EAMV6008._();
+    if (eamvt6031 != null) result.eamvt6031 = eamvt6031;
+    if (eamvt6032 != null) result.eamvt6032 = eamvt6032;
+    if (eamvt6033 != null) result.eamvt6033 = eamvt6033;
+    if (eamvt6034 != null) result.eamvt6034 = eamvt6034;
+    if (eamvt6035 != null) result.eamvt6035 = eamvt6035;
+    return result;
+  }
+
+  EAMV6008._();
+
+  factory EAMV6008.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      EAMV6008()..mergeFromBuffer(data, registry);
+  factory EAMV6008.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      EAMV6008()..mergeFromJson(json, registry);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EAMV6008',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'community.apps.gramx.fifty.zero.epn.epn_agent_chat'),
+      createEmptyInstance: EAMV6008.$_createMessage)
+    ..aOS(1, _omitFieldNames ? '' : 'eamvt6031')
+    ..aOS(2, _omitFieldNames ? '' : 'eamvt6032')
+    ..aOM<$0.ListValue>(3, _omitFieldNames ? '' : 'eamvt6033',
+        subBuilder: $0.ListValue.$_createMessage)
+    ..aOB(4, _omitFieldNames ? '' : 'eamvt6034')
+    ..aOS(5, _omitFieldNames ? '' : 'eamvt6035')
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  EAMV6008 clone() => deepCopy();
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  EAMV6008 copyWith(void Function(EAMV6008) updates) =>
+      super.copyWith((message) => updates(message as EAMV6008)) as EAMV6008;
+
+  @$core.override
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  @$core.Deprecated('Use EAMV6008() / EAMV6008.new instead')
+  static EAMV6008 create() => EAMV6008._();
+  static $pb.GeneratedMessage $_createMessage() => EAMV6008._();
+  @$core.override
+  EAMV6008 createEmptyInstance() => EAMV6008._();
+  @$core.pragma('dart2js:noInline')
+  static EAMV6008 getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EAMV6008>(EAMV6008.$_createMessage);
+  static EAMV6008? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $core.String get eamvt6031 => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set eamvt6031($core.String value) => $_setString(0, value);
+  @$pb.TagNumber(1)
+  $core.bool hasEamvt6031() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearEamvt6031() => $_clearField(1);
+
+  @$pb.TagNumber(2)
+  $core.String get eamvt6032 => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set eamvt6032($core.String value) => $_setString(1, value);
+  @$pb.TagNumber(2)
+  $core.bool hasEamvt6032() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearEamvt6032() => $_clearField(2);
+
+  @$pb.TagNumber(3)
+  $0.ListValue get eamvt6033 => $_getN(2);
+  @$pb.TagNumber(3)
+  set eamvt6033($0.ListValue value) => $_setField(3, value);
+  @$pb.TagNumber(3)
+  $core.bool hasEamvt6033() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearEamvt6033() => $_clearField(3);
+  @$pb.TagNumber(3)
+  $0.ListValue ensureEamvt6033() => $_ensure(2);
+
+  @$pb.TagNumber(4)
+  $core.bool get eamvt6034 => $_getBF(3);
+  @$pb.TagNumber(4)
+  set eamvt6034($core.bool value) => $_setBool(3, value);
+  @$pb.TagNumber(4)
+  $core.bool hasEamvt6034() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearEamvt6034() => $_clearField(4);
+
+  @$pb.TagNumber(5)
+  $core.String get eamvt6035 => $_getSZ(4);
+  @$pb.TagNumber(5)
+  set eamvt6035($core.String value) => $_setString(4, value);
+  @$pb.TagNumber(5)
+  $core.bool hasEamvt6035() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearEamvt6035() => $_clearField(5);
 }
 
 const $core.bool _omitFieldNames =

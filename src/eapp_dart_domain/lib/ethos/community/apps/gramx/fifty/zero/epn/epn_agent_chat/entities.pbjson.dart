@@ -78,6 +78,15 @@ const EAMV6002$json = {
       '6': '.google.protobuf.ListValue',
       '10': 'eamvt6022'
     },
+    {
+      '1': 'eamvt6023',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'eamvt6023'
+    },
+    {'1': 'eamvt6024', '3': 18, '4': 1, '5': 9, '10': 'eamvt6024'},
   ],
 };
 
@@ -93,4 +102,44 @@ final $typed_data.Uint8List eAMV6002Descriptor = $convert.base64Decode(
     'Z0NjAxNhIcCgllYW12dDYwMTcYCyABKAlSCWVhbXZ0NjAxNxIcCgllYW12dDYwMTgYDCABKAlS'
     'CWVhbXZ0NjAxOBIcCgllYW12dDYwMTkYDSABKAlSCWVhbXZ0NjAxORIcCgllYW12dDYwMjAYDi'
     'ABKAlSCWVhbXZ0NjAyMBIcCgllYW12dDYwMjEYDyABKAlSCWVhbXZ0NjAyMRI4CgllYW12dDYw'
-    'MjIYECABKAsyGi5nb29nbGUucHJvdG9idWYuTGlzdFZhbHVlUgllYW12dDYwMjI=');
+    'MjIYECABKAsyGi5nb29nbGUucHJvdG9idWYuTGlzdFZhbHVlUgllYW12dDYwMjISOAoJZWFtdn'
+    'Q2MDIzGBEgASgLMhouZ29vZ2xlLnByb3RvYnVmLkxpc3RWYWx1ZVIJZWFtdnQ2MDIzEhwKCWVh'
+    'bXZ0NjAyNBgSIAEoCVIJZWFtdnQ2MDI0');
+
+@$core.Deprecated('Use eAMV6007Descriptor instead')
+const EAMV6007$json = {
+  '1': 'EAMV6007',
+  '2': [
+    {'1': 'eamvt6030', '3': 1, '4': 1, '5': 9, '10': 'eamvt6030'},
+  ],
+};
+
+/// Descriptor for `EAMV6007`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List eAMV6007Descriptor = $convert
+    .base64Decode('CghFQU1WNjAwNxIcCgllYW12dDYwMzAYASABKAlSCWVhbXZ0NjAzMA==');
+
+@$core.Deprecated('Use eAMV6008Descriptor instead')
+const EAMV6008$json = {
+  '1': 'EAMV6008',
+  '2': [
+    {'1': 'eamvt6031', '3': 1, '4': 1, '5': 9, '10': 'eamvt6031'},
+    {'1': 'eamvt6032', '3': 2, '4': 1, '5': 9, '10': 'eamvt6032'},
+    {
+      '1': 'eamvt6033',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'eamvt6033'
+    },
+    {'1': 'eamvt6034', '3': 4, '4': 1, '5': 8, '10': 'eamvt6034'},
+    {'1': 'eamvt6035', '3': 5, '4': 1, '5': 9, '10': 'eamvt6035'},
+  ],
+};
+
+/// Descriptor for `EAMV6008`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List eAMV6008Descriptor = $convert.base64Decode(
+    'CghFQU1WNjAwOBIcCgllYW12dDYwMzEYASABKAlSCWVhbXZ0NjAzMRIcCgllYW12dDYwMzIYAi'
+    'ABKAlSCWVhbXZ0NjAzMhI4CgllYW12dDYwMzMYAyABKAsyGi5nb29nbGUucHJvdG9idWYuTGlz'
+    'dFZhbHVlUgllYW12dDYwMzMSHAoJZWFtdnQ2MDM0GAQgASgIUgllYW12dDYwMzQSHAoJZWFtdn'
+    'Q2MDM1GAUgASgJUgllYW12dDYwMzU=');
