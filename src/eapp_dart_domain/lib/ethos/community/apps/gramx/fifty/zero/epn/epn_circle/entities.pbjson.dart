@@ -66,3 +66,70 @@ final $typed_data.Uint8List eAMV15002Descriptor = $convert.base64Decode(
     'aXN0VmFsdWVSCmVhbXZ0MTUwMDMSHgoKZWFtdnQxNTAwNBgDIAEoCVIKZWFtdnQxNTAwNBI6Cg'
     'plYW12dDE1MDA1GAQgASgLMhouZ29vZ2xlLnByb3RvYnVmLkxpc3RWYWx1ZVIKZWFtdnQxNTAw'
     'NQ==');
+
+@$core.Deprecated('Use eAMV15003Descriptor instead')
+const EAMV15003$json = {
+  '1': 'EAMV15003',
+  '2': [
+    {'1': 'eamvt15006', '3': 1, '4': 1, '5': 9, '10': 'eamvt15006'},
+  ],
+};
+
+/// Descriptor for `EAMV15003`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List eAMV15003Descriptor = $convert.base64Decode(
+    'CglFQU1WMTUwMDMSHgoKZWFtdnQxNTAwNhgBIAEoCVIKZWFtdnQxNTAwNg==');
+
+@$core.Deprecated('Use eAMV15004Descriptor instead')
+const EAMV15004$json = {
+  '1': 'EAMV15004',
+  '2': [
+    {'1': 'eamvt15007', '3': 1, '4': 1, '5': 9, '10': 'eamvt15007'},
+    {'1': 'eamvt15008', '3': 2, '4': 1, '5': 9, '10': 'eamvt15008'},
+    {
+      '1': 'eamvt15009',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'eamvt15009'
+    },
+    {
+      '1': 'eamvt15010',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'eamvt15010'
+    },
+    {
+      '1': 'eamvt15011',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'eamvt15011'
+    },
+  ],
+};
+
+/// Descriptor for `EAMV15004`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List eAMV15004Descriptor = $convert.base64Decode(
+    'CglFQU1WMTUwMDQSHgoKZWFtdnQxNTAwNxgBIAEoCVIKZWFtdnQxNTAwNxIeCgplYW12dDE1MD'
+    'A4GAIgASgJUgplYW12dDE1MDA4EjoKCmVhbXZ0MTUwMDkYAyABKAsyGi5nb29nbGUucHJvdG9i'
+    'dWYuTGlzdFZhbHVlUgplYW12dDE1MDA5EjoKCmVhbXZ0MTUwMTAYBCABKAsyGi5nb29nbGUucH'
+    'JvdG9idWYuTGlzdFZhbHVlUgplYW12dDE1MDEwEjoKCmVhbXZ0MTUwMTEYBSABKAsyGi5nb29n'
+    'bGUucHJvdG9idWYuTGlzdFZhbHVlUgplYW12dDE1MDEx');
+
+@$core.Deprecated('Use eAMV15005Descriptor instead')
+const EAMV15005$json = {
+  '1': 'EAMV15005',
+  '2': [
+    {'1': 'eamvt15012', '3': 1, '4': 1, '5': 9, '10': 'eamvt15012'},
+    {'1': 'eamvt15013', '3': 2, '4': 1, '5': 9, '10': 'eamvt15013'},
+  ],
+};
+
+/// Descriptor for `EAMV15005`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List eAMV15005Descriptor = $convert.base64Decode(
+    'CglFQU1WMTUwMDUSHgoKZWFtdnQxNTAxMhgBIAEoCVIKZWFtdnQxNTAxMhIeCgplYW12dDE1MD'
+    'EzGAIgASgJUgplYW12dDE1MDEz');
