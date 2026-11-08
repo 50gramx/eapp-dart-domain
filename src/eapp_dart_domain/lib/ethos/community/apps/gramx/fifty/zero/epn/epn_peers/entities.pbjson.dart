@@ -222,3 +222,45 @@ const EAMV7111$json = {
 final $typed_data.Uint8List eAMV7111Descriptor = $convert.base64Decode(
     'CghFQU1WNzExMRI4CgllYW12dDcxMjcYASABKAsyGi5nb29nbGUucHJvdG9idWYuTGlzdFZhbH'
     'VlUgllYW12dDcxMjcSHAoJZWFtdnQ3MTI4GAIgASgJUgllYW12dDcxMjg=');
+
+@$core.Deprecated('Use eAMV7112Descriptor instead')
+const EAMV7112$json = {
+  '1': 'EAMV7112',
+  '2': [
+    {'1': 'eamvt7129', '3': 1, '4': 1, '5': 9, '10': 'eamvt7129'},
+  ],
+};
+
+/// Descriptor for `EAMV7112`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List eAMV7112Descriptor = $convert
+    .base64Decode('CghFQU1WNzExMhIcCgllYW12dDcxMjkYASABKAlSCWVhbXZ0NzEyOQ==');
+
+@$core.Deprecated('Use eAMV7113Descriptor instead')
+const EAMV7113$json = {
+  '1': 'EAMV7113',
+  '2': [
+    {
+      '1': 'eamvt7130',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'eamvt7130'
+    },
+    {'1': 'eamvt7131', '3': 2, '4': 1, '5': 9, '10': 'eamvt7131'},
+    {
+      '1': 'eamvt7132',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'eamvt7132'
+    },
+  ],
+};
+
+/// Descriptor for `EAMV7113`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List eAMV7113Descriptor = $convert.base64Decode(
+    'CghFQU1WNzExMxI4CgllYW12dDcxMzAYASABKAsyGi5nb29nbGUucHJvdG9idWYuTGlzdFZhbH'
+    'VlUgllYW12dDcxMzASHAoJZWFtdnQ3MTMxGAIgASgJUgllYW12dDcxMzESOAoJZWFtdnQ3MTMy'
+    'GAMgASgLMhouZ29vZ2xlLnByb3RvYnVmLkxpc3RWYWx1ZVIJZWFtdnQ3MTMy');

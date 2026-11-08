@@ -896,6 +896,150 @@ class EAMV7111 extends $pb.GeneratedMessage {
   void clearEamvt7128() => $_clearField(2);
 }
 
+class EAMV7112 extends $pb.GeneratedMessage {
+  factory EAMV7112({
+    $core.String? eamvt7129,
+  }) {
+    final result = EAMV7112._();
+    if (eamvt7129 != null) result.eamvt7129 = eamvt7129;
+    return result;
+  }
+
+  EAMV7112._();
+
+  factory EAMV7112.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      EAMV7112()..mergeFromBuffer(data, registry);
+  factory EAMV7112.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      EAMV7112()..mergeFromJson(json, registry);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EAMV7112',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'community.apps.gramx.fifty.zero.epn.epn_peers'),
+      createEmptyInstance: EAMV7112.$_createMessage)
+    ..aOS(1, _omitFieldNames ? '' : 'eamvt7129')
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  EAMV7112 clone() => deepCopy();
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  EAMV7112 copyWith(void Function(EAMV7112) updates) =>
+      super.copyWith((message) => updates(message as EAMV7112)) as EAMV7112;
+
+  @$core.override
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  @$core.Deprecated('Use EAMV7112() / EAMV7112.new instead')
+  static EAMV7112 create() => EAMV7112._();
+  static $pb.GeneratedMessage $_createMessage() => EAMV7112._();
+  @$core.override
+  EAMV7112 createEmptyInstance() => EAMV7112._();
+  @$core.pragma('dart2js:noInline')
+  static EAMV7112 getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EAMV7112>(EAMV7112.$_createMessage);
+  static EAMV7112? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $core.String get eamvt7129 => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set eamvt7129($core.String value) => $_setString(0, value);
+  @$pb.TagNumber(1)
+  $core.bool hasEamvt7129() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearEamvt7129() => $_clearField(1);
+}
+
+class EAMV7113 extends $pb.GeneratedMessage {
+  factory EAMV7113({
+    $1.ListValue? eamvt7130,
+    $core.String? eamvt7131,
+    $1.ListValue? eamvt7132,
+  }) {
+    final result = EAMV7113._();
+    if (eamvt7130 != null) result.eamvt7130 = eamvt7130;
+    if (eamvt7131 != null) result.eamvt7131 = eamvt7131;
+    if (eamvt7132 != null) result.eamvt7132 = eamvt7132;
+    return result;
+  }
+
+  EAMV7113._();
+
+  factory EAMV7113.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      EAMV7113()..mergeFromBuffer(data, registry);
+  factory EAMV7113.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      EAMV7113()..mergeFromJson(json, registry);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EAMV7113',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'community.apps.gramx.fifty.zero.epn.epn_peers'),
+      createEmptyInstance: EAMV7113.$_createMessage)
+    ..aOM<$1.ListValue>(1, _omitFieldNames ? '' : 'eamvt7130',
+        subBuilder: $1.ListValue.$_createMessage)
+    ..aOS(2, _omitFieldNames ? '' : 'eamvt7131')
+    ..aOM<$1.ListValue>(3, _omitFieldNames ? '' : 'eamvt7132',
+        subBuilder: $1.ListValue.$_createMessage)
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  EAMV7113 clone() => deepCopy();
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  EAMV7113 copyWith(void Function(EAMV7113) updates) =>
+      super.copyWith((message) => updates(message as EAMV7113)) as EAMV7113;
+
+  @$core.override
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  @$core.Deprecated('Use EAMV7113() / EAMV7113.new instead')
+  static EAMV7113 create() => EAMV7113._();
+  static $pb.GeneratedMessage $_createMessage() => EAMV7113._();
+  @$core.override
+  EAMV7113 createEmptyInstance() => EAMV7113._();
+  @$core.pragma('dart2js:noInline')
+  static EAMV7113 getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EAMV7113>(EAMV7113.$_createMessage);
+  static EAMV7113? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $1.ListValue get eamvt7130 => $_getN(0);
+  @$pb.TagNumber(1)
+  set eamvt7130($1.ListValue value) => $_setField(1, value);
+  @$pb.TagNumber(1)
+  $core.bool hasEamvt7130() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearEamvt7130() => $_clearField(1);
+  @$pb.TagNumber(1)
+  $1.ListValue ensureEamvt7130() => $_ensure(0);
+
+  @$pb.TagNumber(2)
+  $core.String get eamvt7131 => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set eamvt7131($core.String value) => $_setString(1, value);
+  @$pb.TagNumber(2)
+  $core.bool hasEamvt7131() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearEamvt7131() => $_clearField(2);
+
+  @$pb.TagNumber(3)
+  $1.ListValue get eamvt7132 => $_getN(2);
+  @$pb.TagNumber(3)
+  set eamvt7132($1.ListValue value) => $_setField(3, value);
+  @$pb.TagNumber(3)
+  $core.bool hasEamvt7132() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearEamvt7132() => $_clearField(3);
+  @$pb.TagNumber(3)
+  $1.ListValue ensureEamvt7132() => $_ensure(2);
+}
+
 const $core.bool _omitFieldNames =
     $core.bool.fromEnvironment('protobuf.omit_field_names');
 const $core.bool _omitMessageNames =
