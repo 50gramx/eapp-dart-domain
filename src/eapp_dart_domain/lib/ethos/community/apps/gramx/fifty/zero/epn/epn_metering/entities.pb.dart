@@ -78,10 +78,16 @@ class EAMV11002 extends $pb.GeneratedMessage {
   factory EAMV11002({
     $0.ListValue? eamvt11002,
     $core.String? eamvt11003,
+    $0.ListValue? eamvt11008,
+    $0.ListValue? eamvt11009,
+    $0.ListValue? eamvt11010,
   }) {
     final result = EAMV11002._();
     if (eamvt11002 != null) result.eamvt11002 = eamvt11002;
     if (eamvt11003 != null) result.eamvt11003 = eamvt11003;
+    if (eamvt11008 != null) result.eamvt11008 = eamvt11008;
+    if (eamvt11009 != null) result.eamvt11009 = eamvt11009;
+    if (eamvt11010 != null) result.eamvt11010 = eamvt11010;
     return result;
   }
 
@@ -103,6 +109,12 @@ class EAMV11002 extends $pb.GeneratedMessage {
     ..aOM<$0.ListValue>(1, _omitFieldNames ? '' : 'eamvt11002',
         subBuilder: $0.ListValue.$_createMessage)
     ..aOS(2, _omitFieldNames ? '' : 'eamvt11003')
+    ..aOM<$0.ListValue>(3, _omitFieldNames ? '' : 'eamvt11008',
+        subBuilder: $0.ListValue.$_createMessage)
+    ..aOM<$0.ListValue>(4, _omitFieldNames ? '' : 'eamvt11009',
+        subBuilder: $0.ListValue.$_createMessage)
+    ..aOM<$0.ListValue>(5, _omitFieldNames ? '' : 'eamvt11010',
+        subBuilder: $0.ListValue.$_createMessage)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
@@ -144,6 +156,39 @@ class EAMV11002 extends $pb.GeneratedMessage {
   $core.bool hasEamvt11003() => $_has(1);
   @$pb.TagNumber(2)
   void clearEamvt11003() => $_clearField(2);
+
+  @$pb.TagNumber(3)
+  $0.ListValue get eamvt11008 => $_getN(2);
+  @$pb.TagNumber(3)
+  set eamvt11008($0.ListValue value) => $_setField(3, value);
+  @$pb.TagNumber(3)
+  $core.bool hasEamvt11008() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearEamvt11008() => $_clearField(3);
+  @$pb.TagNumber(3)
+  $0.ListValue ensureEamvt11008() => $_ensure(2);
+
+  @$pb.TagNumber(4)
+  $0.ListValue get eamvt11009 => $_getN(3);
+  @$pb.TagNumber(4)
+  set eamvt11009($0.ListValue value) => $_setField(4, value);
+  @$pb.TagNumber(4)
+  $core.bool hasEamvt11009() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearEamvt11009() => $_clearField(4);
+  @$pb.TagNumber(4)
+  $0.ListValue ensureEamvt11009() => $_ensure(3);
+
+  @$pb.TagNumber(5)
+  $0.ListValue get eamvt11010 => $_getN(4);
+  @$pb.TagNumber(5)
+  set eamvt11010($0.ListValue value) => $_setField(5, value);
+  @$pb.TagNumber(5)
+  $core.bool hasEamvt11010() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearEamvt11010() => $_clearField(5);
+  @$pb.TagNumber(5)
+  $0.ListValue ensureEamvt11010() => $_ensure(4);
 }
 
 class EAMV11003 extends $pb.GeneratedMessage {
