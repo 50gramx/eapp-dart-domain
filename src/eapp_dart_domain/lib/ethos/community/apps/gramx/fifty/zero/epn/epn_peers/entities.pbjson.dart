@@ -147,3 +147,78 @@ final $typed_data.Uint8List eAMV7107Descriptor = $convert.base64Decode(
     'CghFQU1WNzEwNxIcCgllYW12dDcxMTcYASABKAlSCWVhbXZ0NzExNxIcCgllYW12dDcxMTgYAi'
     'ABKAlSCWVhbXZ0NzExOBIcCgllYW12dDcxMTkYAyABKAlSCWVhbXZ0NzExORIcCgllYW12dDcx'
     'MjAYBCABKAlSCWVhbXZ0NzEyMBIcCgllYW12dDcxMjEYBSABKAlSCWVhbXZ0NzEyMQ==');
+
+@$core.Deprecated('Use eAMV7108Descriptor instead')
+const EAMV7108$json = {
+  '1': 'EAMV7108',
+  '2': [
+    {'1': 'eamvt7122', '3': 1, '4': 1, '5': 9, '10': 'eamvt7122'},
+  ],
+};
+
+/// Descriptor for `EAMV7108`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List eAMV7108Descriptor = $convert
+    .base64Decode('CghFQU1WNzEwOBIcCgllYW12dDcxMjIYASABKAlSCWVhbXZ0NzEyMg==');
+
+@$core.Deprecated('Use eAMV7109Descriptor instead')
+const EAMV7109$json = {
+  '1': 'EAMV7109',
+  '2': [
+    {
+      '1': 'eamvt7123',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'eamvt7123'
+    },
+    {'1': 'eamvt7124', '3': 2, '4': 1, '5': 9, '10': 'eamvt7124'},
+    {
+      '1': 'eamvt7125',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'eamvt7125'
+    },
+  ],
+};
+
+/// Descriptor for `EAMV7109`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List eAMV7109Descriptor = $convert.base64Decode(
+    'CghFQU1WNzEwORI4CgllYW12dDcxMjMYASABKAsyGi5nb29nbGUucHJvdG9idWYuTGlzdFZhbH'
+    'VlUgllYW12dDcxMjMSHAoJZWFtdnQ3MTI0GAIgASgJUgllYW12dDcxMjQSOAoJZWFtdnQ3MTI1'
+    'GAMgASgLMhouZ29vZ2xlLnByb3RvYnVmLkxpc3RWYWx1ZVIJZWFtdnQ3MTI1');
+
+@$core.Deprecated('Use eAMV7110Descriptor instead')
+const EAMV7110$json = {
+  '1': 'EAMV7110',
+  '2': [
+    {'1': 'eamvt7126', '3': 1, '4': 1, '5': 9, '10': 'eamvt7126'},
+  ],
+};
+
+/// Descriptor for `EAMV7110`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List eAMV7110Descriptor = $convert
+    .base64Decode('CghFQU1WNzExMBIcCgllYW12dDcxMjYYASABKAlSCWVhbXZ0NzEyNg==');
+
+@$core.Deprecated('Use eAMV7111Descriptor instead')
+const EAMV7111$json = {
+  '1': 'EAMV7111',
+  '2': [
+    {
+      '1': 'eamvt7127',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'eamvt7127'
+    },
+    {'1': 'eamvt7128', '3': 2, '4': 1, '5': 9, '10': 'eamvt7128'},
+  ],
+};
+
+/// Descriptor for `EAMV7111`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List eAMV7111Descriptor = $convert.base64Decode(
+    'CghFQU1WNzExMRI4CgllYW12dDcxMjcYASABKAsyGi5nb29nbGUucHJvdG9idWYuTGlzdFZhbH'
+    'VlUgllYW12dDcxMjcSHAoJZWFtdnQ3MTI4GAIgASgJUgllYW12dDcxMjg=');

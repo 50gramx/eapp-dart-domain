@@ -64,6 +64,14 @@ const EAMV11002$json = {
       '6': '.google.protobuf.ListValue',
       '10': 'eamvt11010'
     },
+    {
+      '1': 'eamvt11011',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'eamvt11011'
+    },
   ],
 };
 
@@ -74,7 +82,8 @@ final $typed_data.Uint8List eAMV11002Descriptor = $convert.base64Decode(
     'dDExMDA4GAMgASgLMhouZ29vZ2xlLnByb3RvYnVmLkxpc3RWYWx1ZVIKZWFtdnQxMTAwOBI6Cg'
     'plYW12dDExMDA5GAQgASgLMhouZ29vZ2xlLnByb3RvYnVmLkxpc3RWYWx1ZVIKZWFtdnQxMTAw'
     'ORI6CgplYW12dDExMDEwGAUgASgLMhouZ29vZ2xlLnByb3RvYnVmLkxpc3RWYWx1ZVIKZWFtdn'
-    'QxMTAxMA==');
+    'QxMTAxMBI6CgplYW12dDExMDExGAYgASgLMhouZ29vZ2xlLnByb3RvYnVmLkxpc3RWYWx1ZVIK'
+    'ZWFtdnQxMTAxMQ==');
 
 @$core.Deprecated('Use eAMV11003Descriptor instead')
 const EAMV11003$json = {

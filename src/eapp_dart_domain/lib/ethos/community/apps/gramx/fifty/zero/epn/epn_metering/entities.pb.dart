@@ -81,6 +81,7 @@ class EAMV11002 extends $pb.GeneratedMessage {
     $0.ListValue? eamvt11008,
     $0.ListValue? eamvt11009,
     $0.ListValue? eamvt11010,
+    $0.ListValue? eamvt11011,
   }) {
     final result = EAMV11002._();
     if (eamvt11002 != null) result.eamvt11002 = eamvt11002;
@@ -88,6 +89,7 @@ class EAMV11002 extends $pb.GeneratedMessage {
     if (eamvt11008 != null) result.eamvt11008 = eamvt11008;
     if (eamvt11009 != null) result.eamvt11009 = eamvt11009;
     if (eamvt11010 != null) result.eamvt11010 = eamvt11010;
+    if (eamvt11011 != null) result.eamvt11011 = eamvt11011;
     return result;
   }
 
@@ -114,6 +116,8 @@ class EAMV11002 extends $pb.GeneratedMessage {
     ..aOM<$0.ListValue>(4, _omitFieldNames ? '' : 'eamvt11009',
         subBuilder: $0.ListValue.$_createMessage)
     ..aOM<$0.ListValue>(5, _omitFieldNames ? '' : 'eamvt11010',
+        subBuilder: $0.ListValue.$_createMessage)
+    ..aOM<$0.ListValue>(6, _omitFieldNames ? '' : 'eamvt11011',
         subBuilder: $0.ListValue.$_createMessage)
     ..hasRequiredFields = false;
 
@@ -189,6 +193,17 @@ class EAMV11002 extends $pb.GeneratedMessage {
   void clearEamvt11010() => $_clearField(5);
   @$pb.TagNumber(5)
   $0.ListValue ensureEamvt11010() => $_ensure(4);
+
+  @$pb.TagNumber(6)
+  $0.ListValue get eamvt11011 => $_getN(5);
+  @$pb.TagNumber(6)
+  set eamvt11011($0.ListValue value) => $_setField(6, value);
+  @$pb.TagNumber(6)
+  $core.bool hasEamvt11011() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearEamvt11011() => $_clearField(6);
+  @$pb.TagNumber(6)
+  $0.ListValue ensureEamvt11011() => $_ensure(5);
 }
 
 class EAMV11003 extends $pb.GeneratedMessage {
