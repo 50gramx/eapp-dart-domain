@@ -416,6 +416,75 @@ class EAMV15005 extends $pb.GeneratedMessage {
   void clearEamvt15013() => $_clearField(2);
 }
 
+class EAMV15006 extends $pb.GeneratedMessage {
+  factory EAMV15006({
+    $core.String? eamvt15014,
+    $core.String? eamvt15015,
+  }) {
+    final result = EAMV15006._();
+    if (eamvt15014 != null) result.eamvt15014 = eamvt15014;
+    if (eamvt15015 != null) result.eamvt15015 = eamvt15015;
+    return result;
+  }
+
+  EAMV15006._();
+
+  factory EAMV15006.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      EAMV15006()..mergeFromBuffer(data, registry);
+  factory EAMV15006.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      EAMV15006()..mergeFromJson(json, registry);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EAMV15006',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'community.apps.gramx.fifty.zero.epn.epn_circle'),
+      createEmptyInstance: EAMV15006.$_createMessage)
+    ..aOS(1, _omitFieldNames ? '' : 'eamvt15014')
+    ..aOS(2, _omitFieldNames ? '' : 'eamvt15015')
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  EAMV15006 clone() => deepCopy();
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  EAMV15006 copyWith(void Function(EAMV15006) updates) =>
+      super.copyWith((message) => updates(message as EAMV15006)) as EAMV15006;
+
+  @$core.override
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  @$core.Deprecated('Use EAMV15006() / EAMV15006.new instead')
+  static EAMV15006 create() => EAMV15006._();
+  static $pb.GeneratedMessage $_createMessage() => EAMV15006._();
+  @$core.override
+  EAMV15006 createEmptyInstance() => EAMV15006._();
+  @$core.pragma('dart2js:noInline')
+  static EAMV15006 getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EAMV15006>(EAMV15006.$_createMessage);
+  static EAMV15006? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $core.String get eamvt15014 => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set eamvt15014($core.String value) => $_setString(0, value);
+  @$pb.TagNumber(1)
+  $core.bool hasEamvt15014() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearEamvt15014() => $_clearField(1);
+
+  @$pb.TagNumber(2)
+  $core.String get eamvt15015 => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set eamvt15015($core.String value) => $_setString(1, value);
+  @$pb.TagNumber(2)
+  $core.bool hasEamvt15015() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearEamvt15015() => $_clearField(2);
+}
+
 const $core.bool _omitFieldNames =
     $core.bool.fromEnvironment('protobuf.omit_field_names');
 const $core.bool _omitMessageNames =
