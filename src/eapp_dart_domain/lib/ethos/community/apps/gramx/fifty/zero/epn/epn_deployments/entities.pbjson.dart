@@ -155,3 +155,124 @@ final $typed_data.Uint8List eAMV9004Descriptor = $convert.base64Decode(
     'AxNBgEIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5MaXN0VmFsdWVSCWVhbXZ0OTAxNBI4CgllYW12'
     'dDkwMTUYBSABKAsyGi5nb29nbGUucHJvdG9idWYuTGlzdFZhbHVlUgllYW12dDkwMTUSHAoJZW'
     'FtdnQ5MDE2GAYgASgJUgllYW12dDkwMTY=');
+
+@$core.Deprecated('Use eAMV9005Descriptor instead')
+const EAMV9005$json = {
+  '1': 'EAMV9005',
+  '2': [
+    {'1': 'eamvt9017', '3': 1, '4': 1, '5': 9, '10': 'eamvt9017'},
+  ],
+};
+
+/// Descriptor for `EAMV9005`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List eAMV9005Descriptor = $convert
+    .base64Decode('CghFQU1WOTAwNRIcCgllYW12dDkwMTcYASABKAlSCWVhbXZ0OTAxNw==');
+
+@$core.Deprecated('Use eAMV9006Descriptor instead')
+const EAMV9006$json = {
+  '1': 'EAMV9006',
+  '2': [
+    {
+      '1': 'eamvt9018',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'eamvt9018'
+    },
+    {'1': 'eamvt9019', '3': 2, '4': 1, '5': 9, '10': 'eamvt9019'},
+  ],
+};
+
+/// Descriptor for `EAMV9006`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List eAMV9006Descriptor = $convert.base64Decode(
+    'CghFQU1WOTAwNhI4CgllYW12dDkwMTgYASABKAsyGi5nb29nbGUucHJvdG9idWYuTGlzdFZhbH'
+    'VlUgllYW12dDkwMTgSHAoJZWFtdnQ5MDE5GAIgASgJUgllYW12dDkwMTk=');
+
+@$core.Deprecated('Use eAMV9007Descriptor instead')
+const EAMV9007$json = {
+  '1': 'EAMV9007',
+  '2': [
+    {'1': 'eamvt9020', '3': 1, '4': 1, '5': 9, '10': 'eamvt9020'},
+  ],
+};
+
+/// Descriptor for `EAMV9007`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List eAMV9007Descriptor = $convert
+    .base64Decode('CghFQU1WOTAwNxIcCgllYW12dDkwMjAYASABKAlSCWVhbXZ0OTAyMA==');
+
+@$core.Deprecated('Use eAMV9008Descriptor instead')
+const EAMV9008$json = {
+  '1': 'EAMV9008',
+  '2': [
+    {'1': 'eamvt9028', '3': 1, '4': 1, '5': 9, '10': 'eamvt9028'},
+    {'1': 'eamvt9021', '3': 2, '4': 1, '5': 9, '10': 'eamvt9021'},
+    {'1': 'eamvt9022', '3': 3, '4': 1, '5': 9, '10': 'eamvt9022'},
+    {
+      '1': 'eamvt9023',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'eamvt9023'
+    },
+    {
+      '1': 'eamvt9024',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'eamvt9024'
+    },
+    {
+      '1': 'eamvt9025',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'eamvt9025'
+    },
+    {
+      '1': 'eamvt9026',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'eamvt9026'
+    },
+    {
+      '1': 'eamvt9027',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'eamvt9027'
+    },
+    {'1': 'eamvt9031', '3': 9, '4': 1, '5': 9, '10': 'eamvt9031'},
+  ],
+};
+
+/// Descriptor for `EAMV9008`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List eAMV9008Descriptor = $convert.base64Decode(
+    'CghFQU1WOTAwOBIcCgllYW12dDkwMjgYASABKAlSCWVhbXZ0OTAyOBIcCgllYW12dDkwMjEYAi'
+    'ABKAlSCWVhbXZ0OTAyMRIcCgllYW12dDkwMjIYAyABKAlSCWVhbXZ0OTAyMhI4CgllYW12dDkw'
+    'MjMYBCABKAsyGi5nb29nbGUucHJvdG9idWYuTGlzdFZhbHVlUgllYW12dDkwMjMSOAoJZWFtdn'
+    'Q5MDI0GAUgASgLMhouZ29vZ2xlLnByb3RvYnVmLkxpc3RWYWx1ZVIJZWFtdnQ5MDI0EjgKCWVh'
+    'bXZ0OTAyNRgGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5MaXN0VmFsdWVSCWVhbXZ0OTAyNRI4Cg'
+    'llYW12dDkwMjYYByABKAsyGi5nb29nbGUucHJvdG9idWYuTGlzdFZhbHVlUgllYW12dDkwMjYS'
+    'OAoJZWFtdnQ5MDI3GAggASgLMhouZ29vZ2xlLnByb3RvYnVmLkxpc3RWYWx1ZVIJZWFtdnQ5MD'
+    'I3EhwKCWVhbXZ0OTAzMRgJIAEoCVIJZWFtdnQ5MDMx');
+
+@$core.Deprecated('Use eAMV9009Descriptor instead')
+const EAMV9009$json = {
+  '1': 'EAMV9009',
+  '2': [
+    {'1': 'eamvt9029', '3': 1, '4': 1, '5': 9, '10': 'eamvt9029'},
+    {'1': 'eamvt9030', '3': 2, '4': 1, '5': 9, '10': 'eamvt9030'},
+  ],
+};
+
+/// Descriptor for `EAMV9009`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List eAMV9009Descriptor = $convert.base64Decode(
+    'CghFQU1WOTAwORIcCgllYW12dDkwMjkYASABKAlSCWVhbXZ0OTAyORIcCgllYW12dDkwMzAYAi'
+    'ABKAlSCWVhbXZ0OTAzMA==');
