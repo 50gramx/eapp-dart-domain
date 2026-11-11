@@ -62,6 +62,20 @@ class EAMV9008DiscoverServiceClient extends $grpc.Client {
     return $createUnaryCall(_$eAMC9007, request, options: options);
   }
 
+  $grpc.ResponseFuture<$0.EAMV9008> eAMC9008(
+    $0.EAMV9010 request, {
+    $grpc.CallOptions? options,
+  }) {
+    return $createUnaryCall(_$eAMC9008, request, options: options);
+  }
+
+  $grpc.ResponseFuture<$0.EAMV9008> eAMC9009(
+    $0.EAMV9007 request, {
+    $grpc.CallOptions? options,
+  }) {
+    return $createUnaryCall(_$eAMC9009, request, options: options);
+  }
+
   // method descriptors
 
   static final _$eAMC9004 = $grpc.ClientMethod<$0.EAMV9007, $0.EAMV9008>(
@@ -78,6 +92,14 @@ class EAMV9008DiscoverServiceClient extends $grpc.Client {
       $0.EAMV9008.fromBuffer);
   static final _$eAMC9007 = $grpc.ClientMethod<$0.EAMV9007, $0.EAMV9008>(
       '/community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008DiscoverService/EAMC9007',
+      ($0.EAMV9007 value) => value.writeToBuffer(),
+      $0.EAMV9008.fromBuffer);
+  static final _$eAMC9008 = $grpc.ClientMethod<$0.EAMV9010, $0.EAMV9008>(
+      '/community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008DiscoverService/EAMC9008',
+      ($0.EAMV9010 value) => value.writeToBuffer(),
+      $0.EAMV9008.fromBuffer);
+  static final _$eAMC9009 = $grpc.ClientMethod<$0.EAMV9007, $0.EAMV9008>(
+      '/community.apps.gramx.fifty.zero.epn.epn_deployments.EAMV9008DiscoverService/EAMC9009',
       ($0.EAMV9007 value) => value.writeToBuffer(),
       $0.EAMV9008.fromBuffer);
 }
@@ -117,6 +139,20 @@ abstract class EAMV9008DiscoverServiceBase extends $grpc.Service {
         false,
         ($core.List<$core.int> value) => $0.EAMV9007.fromBuffer(value),
         ($0.EAMV9008 value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$0.EAMV9010, $0.EAMV9008>(
+        'EAMC9008',
+        eAMC9008_Pre,
+        false,
+        false,
+        ($core.List<$core.int> value) => $0.EAMV9010.fromBuffer(value),
+        ($0.EAMV9008 value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$0.EAMV9007, $0.EAMV9008>(
+        'EAMC9009',
+        eAMC9009_Pre,
+        false,
+        false,
+        ($core.List<$core.int> value) => $0.EAMV9007.fromBuffer(value),
+        ($0.EAMV9008 value) => value.writeToBuffer()));
   }
 
   $async.Future<$0.EAMV9008> eAMC9004_Pre(
@@ -149,5 +185,21 @@ abstract class EAMV9008DiscoverServiceBase extends $grpc.Service {
   }
 
   $async.Future<$0.EAMV9008> eAMC9007(
+      $grpc.ServiceCall call, $0.EAMV9007 request);
+
+  $async.Future<$0.EAMV9008> eAMC9008_Pre(
+      $grpc.ServiceCall $call, $async.Future<$0.EAMV9010> $request) async {
+    return eAMC9008($call, await $request);
+  }
+
+  $async.Future<$0.EAMV9008> eAMC9008(
+      $grpc.ServiceCall call, $0.EAMV9010 request);
+
+  $async.Future<$0.EAMV9008> eAMC9009_Pre(
+      $grpc.ServiceCall $call, $async.Future<$0.EAMV9007> $request) async {
+    return eAMC9009($call, await $request);
+  }
+
+  $async.Future<$0.EAMV9008> eAMC9009(
       $grpc.ServiceCall call, $0.EAMV9007 request);
 }
