@@ -48,6 +48,13 @@ class EAMV14006DiscoverServiceClient extends $grpc.Client {
     return $createUnaryCall(_$eAMC14004, request, options: options);
   }
 
+  $grpc.ResponseFuture<$0.EAMV14006> eAMC14005(
+    $0.EAMV14008 request, {
+    $grpc.CallOptions? options,
+  }) {
+    return $createUnaryCall(_$eAMC14005, request, options: options);
+  }
+
   // method descriptors
 
   static final _$eAMC14003 = $grpc.ClientMethod<$0.EAMV14005, $0.EAMV14006>(
@@ -57,6 +64,10 @@ class EAMV14006DiscoverServiceClient extends $grpc.Client {
   static final _$eAMC14004 = $grpc.ClientMethod<$0.EAMV14007, $0.EAMV14006>(
       '/community.apps.gramx.fifty.zero.epn.epn_node.EAMV14006DiscoverService/EAMC14004',
       ($0.EAMV14007 value) => value.writeToBuffer(),
+      $0.EAMV14006.fromBuffer);
+  static final _$eAMC14005 = $grpc.ClientMethod<$0.EAMV14008, $0.EAMV14006>(
+      '/community.apps.gramx.fifty.zero.epn.epn_node.EAMV14006DiscoverService/EAMC14005',
+      ($0.EAMV14008 value) => value.writeToBuffer(),
       $0.EAMV14006.fromBuffer);
 }
 
@@ -81,6 +92,13 @@ abstract class EAMV14006DiscoverServiceBase extends $grpc.Service {
         false,
         ($core.List<$core.int> value) => $0.EAMV14007.fromBuffer(value),
         ($0.EAMV14006 value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$0.EAMV14008, $0.EAMV14006>(
+        'EAMC14005',
+        eAMC14005_Pre,
+        false,
+        false,
+        ($core.List<$core.int> value) => $0.EAMV14008.fromBuffer(value),
+        ($0.EAMV14006 value) => value.writeToBuffer()));
   }
 
   $async.Future<$0.EAMV14006> eAMC14003_Pre(
@@ -98,4 +116,12 @@ abstract class EAMV14006DiscoverServiceBase extends $grpc.Service {
 
   $async.Future<$0.EAMV14006> eAMC14004(
       $grpc.ServiceCall call, $0.EAMV14007 request);
+
+  $async.Future<$0.EAMV14006> eAMC14005_Pre(
+      $grpc.ServiceCall $call, $async.Future<$0.EAMV14008> $request) async {
+    return eAMC14005($call, await $request);
+  }
+
+  $async.Future<$0.EAMV14006> eAMC14005(
+      $grpc.ServiceCall call, $0.EAMV14008 request);
 }
