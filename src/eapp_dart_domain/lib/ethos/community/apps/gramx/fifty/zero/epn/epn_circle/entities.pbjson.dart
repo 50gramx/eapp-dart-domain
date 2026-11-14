@@ -142,6 +142,15 @@ const EAMV15004$json = {
       '6': '.google.protobuf.ListValue',
       '10': 'eamvt15020'
     },
+    {'1': 'eamvt15025', '3': 11, '4': 1, '5': 9, '10': 'eamvt15025'},
+    {
+      '1': 'eamvt15026',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'eamvt15026'
+    },
   ],
 };
 
@@ -156,7 +165,9 @@ final $typed_data.Uint8List eAMV15004Descriptor = $convert.base64Decode(
     'KAlSCmVhbXZ0MTUwMTcSOgoKZWFtdnQxNTAxOBgIIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5MaX'
     'N0VmFsdWVSCmVhbXZ0MTUwMTgSOgoKZWFtdnQxNTAxORgJIAEoCzIaLmdvb2dsZS5wcm90b2J1'
     'Zi5MaXN0VmFsdWVSCmVhbXZ0MTUwMTkSOgoKZWFtdnQxNTAyMBgKIAEoCzIaLmdvb2dsZS5wcm'
-    '90b2J1Zi5MaXN0VmFsdWVSCmVhbXZ0MTUwMjA=');
+    '90b2J1Zi5MaXN0VmFsdWVSCmVhbXZ0MTUwMjASHgoKZWFtdnQxNTAyNRgLIAEoCVIKZWFtdnQx'
+    'NTAyNRI6CgplYW12dDE1MDI2GAwgASgLMhouZ29vZ2xlLnByb3RvYnVmLkxpc3RWYWx1ZVIKZW'
+    'FtdnQxNTAyNg==');
 
 @$core.Deprecated('Use eAMV15005Descriptor instead')
 const EAMV15005$json = {

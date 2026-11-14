@@ -245,6 +245,8 @@ class EAMV15004 extends $pb.GeneratedMessage {
     $0.ListValue? eamvt15018,
     $0.ListValue? eamvt15019,
     $0.ListValue? eamvt15020,
+    $core.String? eamvt15025,
+    $0.ListValue? eamvt15026,
   }) {
     final result = EAMV15004._();
     if (eamvt15007 != null) result.eamvt15007 = eamvt15007;
@@ -257,6 +259,8 @@ class EAMV15004 extends $pb.GeneratedMessage {
     if (eamvt15018 != null) result.eamvt15018 = eamvt15018;
     if (eamvt15019 != null) result.eamvt15019 = eamvt15019;
     if (eamvt15020 != null) result.eamvt15020 = eamvt15020;
+    if (eamvt15025 != null) result.eamvt15025 = eamvt15025;
+    if (eamvt15026 != null) result.eamvt15026 = eamvt15026;
     return result;
   }
 
@@ -291,6 +295,9 @@ class EAMV15004 extends $pb.GeneratedMessage {
     ..aOM<$0.ListValue>(9, _omitFieldNames ? '' : 'eamvt15019',
         subBuilder: $0.ListValue.$_createMessage)
     ..aOM<$0.ListValue>(10, _omitFieldNames ? '' : 'eamvt15020',
+        subBuilder: $0.ListValue.$_createMessage)
+    ..aOS(11, _omitFieldNames ? '' : 'eamvt15025')
+    ..aOM<$0.ListValue>(12, _omitFieldNames ? '' : 'eamvt15026',
         subBuilder: $0.ListValue.$_createMessage)
     ..hasRequiredFields = false;
 
@@ -417,6 +424,26 @@ class EAMV15004 extends $pb.GeneratedMessage {
   void clearEamvt15020() => $_clearField(10);
   @$pb.TagNumber(10)
   $0.ListValue ensureEamvt15020() => $_ensure(9);
+
+  @$pb.TagNumber(11)
+  $core.String get eamvt15025 => $_getSZ(10);
+  @$pb.TagNumber(11)
+  set eamvt15025($core.String value) => $_setString(10, value);
+  @$pb.TagNumber(11)
+  $core.bool hasEamvt15025() => $_has(10);
+  @$pb.TagNumber(11)
+  void clearEamvt15025() => $_clearField(11);
+
+  @$pb.TagNumber(12)
+  $0.ListValue get eamvt15026 => $_getN(11);
+  @$pb.TagNumber(12)
+  set eamvt15026($0.ListValue value) => $_setField(12, value);
+  @$pb.TagNumber(12)
+  $core.bool hasEamvt15026() => $_has(11);
+  @$pb.TagNumber(12)
+  void clearEamvt15026() => $_clearField(12);
+  @$pb.TagNumber(12)
+  $0.ListValue ensureEamvt15026() => $_ensure(11);
 }
 
 class EAMV15005 extends $pb.GeneratedMessage {
