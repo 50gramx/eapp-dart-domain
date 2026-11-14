@@ -241,6 +241,10 @@ class EAMV15004 extends $pb.GeneratedMessage {
     $0.ListValue? eamvt15010,
     $0.ListValue? eamvt15011,
     $0.ListValue? eamvt15016,
+    $core.String? eamvt15017,
+    $0.ListValue? eamvt15018,
+    $0.ListValue? eamvt15019,
+    $0.ListValue? eamvt15020,
   }) {
     final result = EAMV15004._();
     if (eamvt15007 != null) result.eamvt15007 = eamvt15007;
@@ -249,6 +253,10 @@ class EAMV15004 extends $pb.GeneratedMessage {
     if (eamvt15010 != null) result.eamvt15010 = eamvt15010;
     if (eamvt15011 != null) result.eamvt15011 = eamvt15011;
     if (eamvt15016 != null) result.eamvt15016 = eamvt15016;
+    if (eamvt15017 != null) result.eamvt15017 = eamvt15017;
+    if (eamvt15018 != null) result.eamvt15018 = eamvt15018;
+    if (eamvt15019 != null) result.eamvt15019 = eamvt15019;
+    if (eamvt15020 != null) result.eamvt15020 = eamvt15020;
     return result;
   }
 
@@ -276,6 +284,13 @@ class EAMV15004 extends $pb.GeneratedMessage {
     ..aOM<$0.ListValue>(5, _omitFieldNames ? '' : 'eamvt15011',
         subBuilder: $0.ListValue.$_createMessage)
     ..aOM<$0.ListValue>(6, _omitFieldNames ? '' : 'eamvt15016',
+        subBuilder: $0.ListValue.$_createMessage)
+    ..aOS(7, _omitFieldNames ? '' : 'eamvt15017')
+    ..aOM<$0.ListValue>(8, _omitFieldNames ? '' : 'eamvt15018',
+        subBuilder: $0.ListValue.$_createMessage)
+    ..aOM<$0.ListValue>(9, _omitFieldNames ? '' : 'eamvt15019',
+        subBuilder: $0.ListValue.$_createMessage)
+    ..aOM<$0.ListValue>(10, _omitFieldNames ? '' : 'eamvt15020',
         subBuilder: $0.ListValue.$_createMessage)
     ..hasRequiredFields = false;
 
@@ -360,6 +375,48 @@ class EAMV15004 extends $pb.GeneratedMessage {
   void clearEamvt15016() => $_clearField(6);
   @$pb.TagNumber(6)
   $0.ListValue ensureEamvt15016() => $_ensure(5);
+
+  @$pb.TagNumber(7)
+  $core.String get eamvt15017 => $_getSZ(6);
+  @$pb.TagNumber(7)
+  set eamvt15017($core.String value) => $_setString(6, value);
+  @$pb.TagNumber(7)
+  $core.bool hasEamvt15017() => $_has(6);
+  @$pb.TagNumber(7)
+  void clearEamvt15017() => $_clearField(7);
+
+  @$pb.TagNumber(8)
+  $0.ListValue get eamvt15018 => $_getN(7);
+  @$pb.TagNumber(8)
+  set eamvt15018($0.ListValue value) => $_setField(8, value);
+  @$pb.TagNumber(8)
+  $core.bool hasEamvt15018() => $_has(7);
+  @$pb.TagNumber(8)
+  void clearEamvt15018() => $_clearField(8);
+  @$pb.TagNumber(8)
+  $0.ListValue ensureEamvt15018() => $_ensure(7);
+
+  @$pb.TagNumber(9)
+  $0.ListValue get eamvt15019 => $_getN(8);
+  @$pb.TagNumber(9)
+  set eamvt15019($0.ListValue value) => $_setField(9, value);
+  @$pb.TagNumber(9)
+  $core.bool hasEamvt15019() => $_has(8);
+  @$pb.TagNumber(9)
+  void clearEamvt15019() => $_clearField(9);
+  @$pb.TagNumber(9)
+  $0.ListValue ensureEamvt15019() => $_ensure(8);
+
+  @$pb.TagNumber(10)
+  $0.ListValue get eamvt15020 => $_getN(9);
+  @$pb.TagNumber(10)
+  set eamvt15020($0.ListValue value) => $_setField(10, value);
+  @$pb.TagNumber(10)
+  $core.bool hasEamvt15020() => $_has(9);
+  @$pb.TagNumber(10)
+  void clearEamvt15020() => $_clearField(10);
+  @$pb.TagNumber(10)
+  $0.ListValue ensureEamvt15020() => $_ensure(9);
 }
 
 class EAMV15005 extends $pb.GeneratedMessage {
@@ -498,6 +555,99 @@ class EAMV15006 extends $pb.GeneratedMessage {
   $core.bool hasEamvt15015() => $_has(1);
   @$pb.TagNumber(2)
   void clearEamvt15015() => $_clearField(2);
+}
+
+class EAMV15007 extends $pb.GeneratedMessage {
+  factory EAMV15007({
+    $core.String? eamvt15021,
+    $core.String? eamvt15022,
+    $core.String? eamvt15023,
+    $core.String? eamvt15024,
+  }) {
+    final result = EAMV15007._();
+    if (eamvt15021 != null) result.eamvt15021 = eamvt15021;
+    if (eamvt15022 != null) result.eamvt15022 = eamvt15022;
+    if (eamvt15023 != null) result.eamvt15023 = eamvt15023;
+    if (eamvt15024 != null) result.eamvt15024 = eamvt15024;
+    return result;
+  }
+
+  EAMV15007._();
+
+  factory EAMV15007.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      EAMV15007()..mergeFromBuffer(data, registry);
+  factory EAMV15007.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      EAMV15007()..mergeFromJson(json, registry);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'EAMV15007',
+      package: const $pb.PackageName(_omitMessageNames
+          ? ''
+          : 'community.apps.gramx.fifty.zero.epn.epn_circle'),
+      createEmptyInstance: EAMV15007.$_createMessage)
+    ..aOS(1, _omitFieldNames ? '' : 'eamvt15021')
+    ..aOS(2, _omitFieldNames ? '' : 'eamvt15022')
+    ..aOS(3, _omitFieldNames ? '' : 'eamvt15023')
+    ..aOS(4, _omitFieldNames ? '' : 'eamvt15024')
+    ..hasRequiredFields = false;
+
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  EAMV15007 clone() => deepCopy();
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  EAMV15007 copyWith(void Function(EAMV15007) updates) =>
+      super.copyWith((message) => updates(message as EAMV15007)) as EAMV15007;
+
+  @$core.override
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  @$core.Deprecated('Use EAMV15007() / EAMV15007.new instead')
+  static EAMV15007 create() => EAMV15007._();
+  static $pb.GeneratedMessage $_createMessage() => EAMV15007._();
+  @$core.override
+  EAMV15007 createEmptyInstance() => EAMV15007._();
+  @$core.pragma('dart2js:noInline')
+  static EAMV15007 getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EAMV15007>(EAMV15007.$_createMessage);
+  static EAMV15007? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $core.String get eamvt15021 => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set eamvt15021($core.String value) => $_setString(0, value);
+  @$pb.TagNumber(1)
+  $core.bool hasEamvt15021() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearEamvt15021() => $_clearField(1);
+
+  @$pb.TagNumber(2)
+  $core.String get eamvt15022 => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set eamvt15022($core.String value) => $_setString(1, value);
+  @$pb.TagNumber(2)
+  $core.bool hasEamvt15022() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearEamvt15022() => $_clearField(2);
+
+  @$pb.TagNumber(3)
+  $core.String get eamvt15023 => $_getSZ(2);
+  @$pb.TagNumber(3)
+  set eamvt15023($core.String value) => $_setString(2, value);
+  @$pb.TagNumber(3)
+  $core.bool hasEamvt15023() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearEamvt15023() => $_clearField(3);
+
+  @$pb.TagNumber(4)
+  $core.String get eamvt15024 => $_getSZ(3);
+  @$pb.TagNumber(4)
+  set eamvt15024($core.String value) => $_setString(3, value);
+  @$pb.TagNumber(4)
+  $core.bool hasEamvt15024() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearEamvt15024() => $_clearField(4);
 }
 
 const $core.bool _omitFieldNames =
