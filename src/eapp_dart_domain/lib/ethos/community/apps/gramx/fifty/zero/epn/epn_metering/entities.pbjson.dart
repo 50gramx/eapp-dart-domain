@@ -215,6 +215,7 @@ const EAMV11006$json = {
       '10': 'eamvt11034'
     },
     {'1': 'eamvt11035', '3': 13, '4': 1, '5': 9, '10': 'eamvt11035'},
+    {'1': 'eamvt11036', '3': 14, '4': 1, '5': 9, '10': 'eamvt11036'},
   ],
 };
 
@@ -232,4 +233,4 @@ final $typed_data.Uint8List eAMV11006Descriptor = $convert.base64Decode(
     '90b2J1Zi5MaXN0VmFsdWVSCmVhbXZ0MTEwMzISOgoKZWFtdnQxMTAzMxgLIAEoCzIaLmdvb2ds'
     'ZS5wcm90b2J1Zi5MaXN0VmFsdWVSCmVhbXZ0MTEwMzMSOgoKZWFtdnQxMTAzNBgMIAEoCzIaLm'
     'dvb2dsZS5wcm90b2J1Zi5MaXN0VmFsdWVSCmVhbXZ0MTEwMzQSHgoKZWFtdnQxMTAzNRgNIAEo'
-    'CVIKZWFtdnQxMTAzNQ==');
+    'CVIKZWFtdnQxMTAzNRIeCgplYW12dDExMDM2GA4gASgJUgplYW12dDExMDM2');
