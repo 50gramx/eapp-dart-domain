@@ -612,6 +612,14 @@ class EAMV9008 extends $pb.GeneratedMessage {
     $0.ListValue? eamvt9039,
     $core.String? eamvt9040,
     $core.String? eamvt9041,
+    $core.String? eamvt9050,
+    $core.String? eamvt9051,
+    $0.ListValue? eamvt9052,
+    $0.ListValue? eamvt9053,
+    $0.ListValue? eamvt9054,
+    $0.ListValue? eamvt9055,
+    $0.ListValue? eamvt9056,
+    $0.ListValue? eamvt9057,
   }) {
     final result = EAMV9008._();
     if (eamvt9028 != null) result.eamvt9028 = eamvt9028;
@@ -631,6 +639,14 @@ class EAMV9008 extends $pb.GeneratedMessage {
     if (eamvt9039 != null) result.eamvt9039 = eamvt9039;
     if (eamvt9040 != null) result.eamvt9040 = eamvt9040;
     if (eamvt9041 != null) result.eamvt9041 = eamvt9041;
+    if (eamvt9050 != null) result.eamvt9050 = eamvt9050;
+    if (eamvt9051 != null) result.eamvt9051 = eamvt9051;
+    if (eamvt9052 != null) result.eamvt9052 = eamvt9052;
+    if (eamvt9053 != null) result.eamvt9053 = eamvt9053;
+    if (eamvt9054 != null) result.eamvt9054 = eamvt9054;
+    if (eamvt9055 != null) result.eamvt9055 = eamvt9055;
+    if (eamvt9056 != null) result.eamvt9056 = eamvt9056;
+    if (eamvt9057 != null) result.eamvt9057 = eamvt9057;
     return result;
   }
 
@@ -676,6 +692,20 @@ class EAMV9008 extends $pb.GeneratedMessage {
         subBuilder: $0.ListValue.$_createMessage)
     ..aOS(16, _omitFieldNames ? '' : 'eamvt9040')
     ..aOS(17, _omitFieldNames ? '' : 'eamvt9041')
+    ..aOS(18, _omitFieldNames ? '' : 'eamvt9050')
+    ..aOS(19, _omitFieldNames ? '' : 'eamvt9051')
+    ..aOM<$0.ListValue>(20, _omitFieldNames ? '' : 'eamvt9052',
+        subBuilder: $0.ListValue.$_createMessage)
+    ..aOM<$0.ListValue>(21, _omitFieldNames ? '' : 'eamvt9053',
+        subBuilder: $0.ListValue.$_createMessage)
+    ..aOM<$0.ListValue>(22, _omitFieldNames ? '' : 'eamvt9054',
+        subBuilder: $0.ListValue.$_createMessage)
+    ..aOM<$0.ListValue>(23, _omitFieldNames ? '' : 'eamvt9055',
+        subBuilder: $0.ListValue.$_createMessage)
+    ..aOM<$0.ListValue>(24, _omitFieldNames ? '' : 'eamvt9056',
+        subBuilder: $0.ListValue.$_createMessage)
+    ..aOM<$0.ListValue>(25, _omitFieldNames ? '' : 'eamvt9057',
+        subBuilder: $0.ListValue.$_createMessage)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
@@ -870,6 +900,90 @@ class EAMV9008 extends $pb.GeneratedMessage {
   $core.bool hasEamvt9041() => $_has(16);
   @$pb.TagNumber(17)
   void clearEamvt9041() => $_clearField(17);
+
+  @$pb.TagNumber(18)
+  $core.String get eamvt9050 => $_getSZ(17);
+  @$pb.TagNumber(18)
+  set eamvt9050($core.String value) => $_setString(17, value);
+  @$pb.TagNumber(18)
+  $core.bool hasEamvt9050() => $_has(17);
+  @$pb.TagNumber(18)
+  void clearEamvt9050() => $_clearField(18);
+
+  @$pb.TagNumber(19)
+  $core.String get eamvt9051 => $_getSZ(18);
+  @$pb.TagNumber(19)
+  set eamvt9051($core.String value) => $_setString(18, value);
+  @$pb.TagNumber(19)
+  $core.bool hasEamvt9051() => $_has(18);
+  @$pb.TagNumber(19)
+  void clearEamvt9051() => $_clearField(19);
+
+  @$pb.TagNumber(20)
+  $0.ListValue get eamvt9052 => $_getN(19);
+  @$pb.TagNumber(20)
+  set eamvt9052($0.ListValue value) => $_setField(20, value);
+  @$pb.TagNumber(20)
+  $core.bool hasEamvt9052() => $_has(19);
+  @$pb.TagNumber(20)
+  void clearEamvt9052() => $_clearField(20);
+  @$pb.TagNumber(20)
+  $0.ListValue ensureEamvt9052() => $_ensure(19);
+
+  @$pb.TagNumber(21)
+  $0.ListValue get eamvt9053 => $_getN(20);
+  @$pb.TagNumber(21)
+  set eamvt9053($0.ListValue value) => $_setField(21, value);
+  @$pb.TagNumber(21)
+  $core.bool hasEamvt9053() => $_has(20);
+  @$pb.TagNumber(21)
+  void clearEamvt9053() => $_clearField(21);
+  @$pb.TagNumber(21)
+  $0.ListValue ensureEamvt9053() => $_ensure(20);
+
+  @$pb.TagNumber(22)
+  $0.ListValue get eamvt9054 => $_getN(21);
+  @$pb.TagNumber(22)
+  set eamvt9054($0.ListValue value) => $_setField(22, value);
+  @$pb.TagNumber(22)
+  $core.bool hasEamvt9054() => $_has(21);
+  @$pb.TagNumber(22)
+  void clearEamvt9054() => $_clearField(22);
+  @$pb.TagNumber(22)
+  $0.ListValue ensureEamvt9054() => $_ensure(21);
+
+  @$pb.TagNumber(23)
+  $0.ListValue get eamvt9055 => $_getN(22);
+  @$pb.TagNumber(23)
+  set eamvt9055($0.ListValue value) => $_setField(23, value);
+  @$pb.TagNumber(23)
+  $core.bool hasEamvt9055() => $_has(22);
+  @$pb.TagNumber(23)
+  void clearEamvt9055() => $_clearField(23);
+  @$pb.TagNumber(23)
+  $0.ListValue ensureEamvt9055() => $_ensure(22);
+
+  @$pb.TagNumber(24)
+  $0.ListValue get eamvt9056 => $_getN(23);
+  @$pb.TagNumber(24)
+  set eamvt9056($0.ListValue value) => $_setField(24, value);
+  @$pb.TagNumber(24)
+  $core.bool hasEamvt9056() => $_has(23);
+  @$pb.TagNumber(24)
+  void clearEamvt9056() => $_clearField(24);
+  @$pb.TagNumber(24)
+  $0.ListValue ensureEamvt9056() => $_ensure(23);
+
+  @$pb.TagNumber(25)
+  $0.ListValue get eamvt9057 => $_getN(24);
+  @$pb.TagNumber(25)
+  set eamvt9057($0.ListValue value) => $_setField(25, value);
+  @$pb.TagNumber(25)
+  $core.bool hasEamvt9057() => $_has(24);
+  @$pb.TagNumber(25)
+  void clearEamvt9057() => $_clearField(25);
+  @$pb.TagNumber(25)
+  $0.ListValue ensureEamvt9057() => $_ensure(24);
 }
 
 class EAMV9009 extends $pb.GeneratedMessage {

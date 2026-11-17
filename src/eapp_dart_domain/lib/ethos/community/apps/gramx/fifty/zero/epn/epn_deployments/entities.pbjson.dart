@@ -292,6 +292,56 @@ const EAMV9008$json = {
     },
     {'1': 'eamvt9040', '3': 16, '4': 1, '5': 9, '10': 'eamvt9040'},
     {'1': 'eamvt9041', '3': 17, '4': 1, '5': 9, '10': 'eamvt9041'},
+    {'1': 'eamvt9050', '3': 18, '4': 1, '5': 9, '10': 'eamvt9050'},
+    {'1': 'eamvt9051', '3': 19, '4': 1, '5': 9, '10': 'eamvt9051'},
+    {
+      '1': 'eamvt9052',
+      '3': 20,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'eamvt9052'
+    },
+    {
+      '1': 'eamvt9053',
+      '3': 21,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'eamvt9053'
+    },
+    {
+      '1': 'eamvt9054',
+      '3': 22,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'eamvt9054'
+    },
+    {
+      '1': 'eamvt9055',
+      '3': 23,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'eamvt9055'
+    },
+    {
+      '1': 'eamvt9056',
+      '3': 24,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'eamvt9056'
+    },
+    {
+      '1': 'eamvt9057',
+      '3': 25,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.ListValue',
+      '10': 'eamvt9057'
+    },
   ],
 };
 
@@ -311,7 +361,14 @@ final $typed_data.Uint8List eAMV9008Descriptor = $convert.base64Decode(
     'x1ZVIJZWFtdnQ5MDM3EjgKCWVhbXZ0OTAzOBgOIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5MaXN0'
     'VmFsdWVSCWVhbXZ0OTAzOBI4CgllYW12dDkwMzkYDyABKAsyGi5nb29nbGUucHJvdG9idWYuTG'
     'lzdFZhbHVlUgllYW12dDkwMzkSHAoJZWFtdnQ5MDQwGBAgASgJUgllYW12dDkwNDASHAoJZWFt'
-    'dnQ5MDQxGBEgASgJUgllYW12dDkwNDE=');
+    'dnQ5MDQxGBEgASgJUgllYW12dDkwNDESHAoJZWFtdnQ5MDUwGBIgASgJUgllYW12dDkwNTASHA'
+    'oJZWFtdnQ5MDUxGBMgASgJUgllYW12dDkwNTESOAoJZWFtdnQ5MDUyGBQgASgLMhouZ29vZ2xl'
+    'LnByb3RvYnVmLkxpc3RWYWx1ZVIJZWFtdnQ5MDUyEjgKCWVhbXZ0OTA1MxgVIAEoCzIaLmdvb2'
+    'dsZS5wcm90b2J1Zi5MaXN0VmFsdWVSCWVhbXZ0OTA1MxI4CgllYW12dDkwNTQYFiABKAsyGi5n'
+    'b29nbGUucHJvdG9idWYuTGlzdFZhbHVlUgllYW12dDkwNTQSOAoJZWFtdnQ5MDU1GBcgASgLMh'
+    'ouZ29vZ2xlLnByb3RvYnVmLkxpc3RWYWx1ZVIJZWFtdnQ5MDU1EjgKCWVhbXZ0OTA1NhgYIAEo'
+    'CzIaLmdvb2dsZS5wcm90b2J1Zi5MaXN0VmFsdWVSCWVhbXZ0OTA1NhI4CgllYW12dDkwNTcYGS'
+    'ABKAsyGi5nb29nbGUucHJvdG9idWYuTGlzdFZhbHVlUgllYW12dDkwNTc=');
 
 @$core.Deprecated('Use eAMV9009Descriptor instead')
 const EAMV9009$json = {
