@@ -22,13 +22,15 @@ const EAMV6001$json = {
     {'1': 'eamvt6001', '3': 1, '4': 1, '5': 9, '10': 'eamvt6001'},
     {'1': 'eamvt6002', '3': 2, '4': 1, '5': 9, '10': 'eamvt6002'},
     {'1': 'eamvt6003', '3': 3, '4': 1, '5': 9, '10': 'eamvt6003'},
+    {'1': 'eamvt6045', '3': 4, '4': 1, '5': 9, '10': 'eamvt6045'},
   ],
 };
 
 /// Descriptor for `EAMV6001`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List eAMV6001Descriptor = $convert.base64Decode(
     'CghFQU1WNjAwMRIcCgllYW12dDYwMDEYASABKAlSCWVhbXZ0NjAwMRIcCgllYW12dDYwMDIYAi'
-    'ABKAlSCWVhbXZ0NjAwMhIcCgllYW12dDYwMDMYAyABKAlSCWVhbXZ0NjAwMw==');
+    'ABKAlSCWVhbXZ0NjAwMhIcCgllYW12dDYwMDMYAyABKAlSCWVhbXZ0NjAwMxIcCgllYW12dDYw'
+    'NDUYBCABKAlSCWVhbXZ0NjA0NQ==');
 
 @$core.Deprecated('Use eAMV6002Descriptor instead')
 const EAMV6002$json = {
