@@ -247,6 +247,7 @@ class EAMV15004 extends $pb.GeneratedMessage {
     $0.ListValue? eamvt15020,
     $core.String? eamvt15025,
     $0.ListValue? eamvt15026,
+    $0.ListValue? eamvt15027,
   }) {
     final result = EAMV15004._();
     if (eamvt15007 != null) result.eamvt15007 = eamvt15007;
@@ -261,6 +262,7 @@ class EAMV15004 extends $pb.GeneratedMessage {
     if (eamvt15020 != null) result.eamvt15020 = eamvt15020;
     if (eamvt15025 != null) result.eamvt15025 = eamvt15025;
     if (eamvt15026 != null) result.eamvt15026 = eamvt15026;
+    if (eamvt15027 != null) result.eamvt15027 = eamvt15027;
     return result;
   }
 
@@ -298,6 +300,8 @@ class EAMV15004 extends $pb.GeneratedMessage {
         subBuilder: $0.ListValue.$_createMessage)
     ..aOS(11, _omitFieldNames ? '' : 'eamvt15025')
     ..aOM<$0.ListValue>(12, _omitFieldNames ? '' : 'eamvt15026',
+        subBuilder: $0.ListValue.$_createMessage)
+    ..aOM<$0.ListValue>(13, _omitFieldNames ? '' : 'eamvt15027',
         subBuilder: $0.ListValue.$_createMessage)
     ..hasRequiredFields = false;
 
@@ -444,6 +448,17 @@ class EAMV15004 extends $pb.GeneratedMessage {
   void clearEamvt15026() => $_clearField(12);
   @$pb.TagNumber(12)
   $0.ListValue ensureEamvt15026() => $_ensure(11);
+
+  @$pb.TagNumber(13)
+  $0.ListValue get eamvt15027 => $_getN(12);
+  @$pb.TagNumber(13)
+  set eamvt15027($0.ListValue value) => $_setField(13, value);
+  @$pb.TagNumber(13)
+  $core.bool hasEamvt15027() => $_has(12);
+  @$pb.TagNumber(13)
+  void clearEamvt15027() => $_clearField(13);
+  @$pb.TagNumber(13)
+  $0.ListValue ensureEamvt15027() => $_ensure(12);
 }
 
 class EAMV15005 extends $pb.GeneratedMessage {
